@@ -1,4 +1,4 @@
-package students_eduards_puzirevskis;
+package student_eduards_puzirevskis;
 
 public class HelloWorld {
 
