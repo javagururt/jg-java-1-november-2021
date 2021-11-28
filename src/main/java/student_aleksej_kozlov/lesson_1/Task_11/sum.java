@@ -22,7 +22,7 @@ public class sum
         // 4. print result to console
         System.out.println("Test Data:");                      // output
         System.out.println(firstNum + " + " + secondNum);
-        System.out.println("Expected Output: ");
+        System.out.println("Expected Output:");
         System.out.println(result);
     }
 
