@@ -1,5 +1,8 @@
 package student_stanislav_p;
 
+/**
+ *
+ */
 class Example3 {
     public static void main(String args []) {
         int num1; // в этой строке кода объявляется переменная с именем num
