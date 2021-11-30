@@ -1,4 +1,4 @@
-package student_stanislav_p;
+package student_stanislav_p.Lesson_1;
 
 /**
  *
