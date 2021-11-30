@@ -1,4 +1,4 @@
-package student_valeriia_kulikova;
+package student_valeriia_kulikova.Lesson_1;
 
 public class FirstVariable {
     public static void main (String[] args ) {

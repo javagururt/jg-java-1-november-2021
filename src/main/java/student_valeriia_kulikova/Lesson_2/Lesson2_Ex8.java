@@ -1,4 +1,4 @@
-package student_valeriia_kulikova;
+package student_valeriia_kulikova.Lesson_2;
 
 import java.util.Scanner;
 
