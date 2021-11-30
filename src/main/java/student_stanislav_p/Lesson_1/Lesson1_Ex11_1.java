@@ -1,6 +1,6 @@
 package student_stanislav_p.Lesson_1;
 
-class Lesson1_Ex2 {
+class Lesson1_Ex11_1 {
     public static void main(String args []) {
         int num1; // в этой строке кода объявляется переменная с именем num1
         num1 = 74; // в этой строке кода переменной num1 присваивается значение 74
