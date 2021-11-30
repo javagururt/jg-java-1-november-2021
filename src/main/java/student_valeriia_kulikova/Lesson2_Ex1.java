@@ -7,9 +7,11 @@ public class Lesson2_Ex1 {
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("write the FIRST number and press ENTER");
+        System.out.println("-->");
         int firstNumber = scanner.nextInt();
 
         System.out.println("write the SECOND number and press ENTER");
+        System.out.println("-->");
         int secondNumber = scanner.nextInt();
         int Сумма, Вычитание, Умножение, Деление;
 
