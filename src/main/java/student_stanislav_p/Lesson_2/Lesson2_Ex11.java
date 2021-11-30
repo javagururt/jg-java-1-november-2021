@@ -11,15 +11,15 @@ public class Lesson2_Ex11 {
             Scanner scanner = new Scanner(System.in);
 
 
-            System.out.println("Введите первое число ->");
+            System.out.println("Введите первое целое число ->");
 
             int Num1 = scanner.nextInt();
 
-            System.out.println("Введите второе число ->");
+            System.out.println("Введите второе целое число ->");
 
             int Num2 = scanner.nextInt();
 
-            System.out.println("Введите третье число ->");
+            System.out.println("Введите третье целое число ->");
 
             int Num3 = scanner.nextInt();
 
