@@ -3,7 +3,7 @@ package student_stanislav_p;
 /**
  *
  */
-class Example3 {
+class Lesson1_Ex3 {
     public static void main(String args []) {
         int num1; // в этой строке кода объявляется переменная с именем num
         num1 = 50; // в этой строке кода переменной num1 присваивается значение 50
