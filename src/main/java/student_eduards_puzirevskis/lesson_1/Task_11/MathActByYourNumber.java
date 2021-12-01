@@ -2,7 +2,7 @@ package student_eduards_puzirevskis.lesson_1.Task_11;
 
 import java.util.Scanner;
 
-public class SummaByYourNumber {
+public class MathActByYourNumber {
 
     public static void main(String[] args) {
 
@@ -14,6 +14,11 @@ public class SummaByYourNumber {
         int b = scan.nextInt();
 
         System.out.println("A + B = " + (a+b));
+        System.out.println("A - B = " + (a-b));
+        System.out.println("B - A = " + (b-a));
+        System.out.println("A * B = " + (a*b));
+        System.out.println("A / B = " + (a/b));
+        System.out.println("B / A = " + (b/a));
 
     }
 }
