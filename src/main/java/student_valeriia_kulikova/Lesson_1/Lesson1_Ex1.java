@@ -1,6 +1,6 @@
-package student_valeriia_kulikova;
+package student_valeriia_kulikova.Lesson_1;
 
-public class Ex1 {
+public class Lesson1_Ex1 {
     public static void main(String args []) {
         int x, y, summ;
         x = 74; y = 36;

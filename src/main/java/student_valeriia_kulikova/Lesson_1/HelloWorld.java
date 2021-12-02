@@ -1,4 +1,4 @@
-package student_valeriia_kulikova;
+package student_valeriia_kulikova.Lesson_1;
 
 public class HelloWorld {
 
