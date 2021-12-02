@@ -1,6 +1,6 @@
 package teacher.lesson_2_variables.lessoncode;
 
-class       VariablesDemo {
+class VariablesDemo {
 
     public static void main(String[] args) {
         int age = 15;
