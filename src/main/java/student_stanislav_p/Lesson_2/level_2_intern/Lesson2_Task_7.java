@@ -17,7 +17,9 @@ public class Lesson2_Task_7 {
 
    static class LoginService {
 
-        static public void main(String[] args) {System.out.println("You can login!");}
+        static public void main(String[] args) {
+            System.out.println("You can login!");
+        }
 
 
     }
