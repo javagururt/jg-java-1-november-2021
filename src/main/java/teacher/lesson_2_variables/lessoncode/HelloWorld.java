@@ -1,6 +1,6 @@
 package teacher.lesson_2_variables.lessoncode;
 
-public class Armstrong {
+class Armstrong {
 
     public static void main(String[] args) {
 
