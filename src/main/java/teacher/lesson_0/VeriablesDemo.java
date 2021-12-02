@@ -1,4 +1,4 @@
-package student_jurij_mardusevic.lessoncode;
+package teacher.lesson_0;
 
 public class VeriablesDemo {
 
