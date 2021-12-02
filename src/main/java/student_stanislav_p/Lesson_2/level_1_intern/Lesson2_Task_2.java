@@ -1,8 +1,17 @@
-package student_stanislav_p.Lesson_2;
+package student_stanislav_p.Lesson_2.level_1_intern;
 
+/*
+Написать консольную программу, которая запрашивает у пользователя два вещественных числа
+(числа с запятой) и выводит на консоль результаты: сложения, вычитания, умножения и деления.
+Вещественные числа можно запрашивать с консоли используя обьект Scanner
+следующим образом:
+
+    Scanner scanner = new Scanner(System.in);
+    double firstDoubleNumber = scanner.nextDouble();
+ */
 import java.util.Scanner;
 
-public class Lesson2_Ex2 {
+public class Lesson2_Task_2 {
 
         public static void main(String [] args) {
 

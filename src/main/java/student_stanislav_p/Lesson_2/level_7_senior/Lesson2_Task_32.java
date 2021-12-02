@@ -1,10 +1,13 @@
-package student_stanislav_p.Lesson_2;
+package student_stanislav_p.Lesson_2.level_7_senior;
 
-/**
+/*
+Напишите программу и продемонстрируйте в ней использование
+однострочного и многострочного коментариев.
+
  *
  */
 
-class Lesson2_Ex32 {
+class Lesson2_Task_32 {
     public static void main(String args []) {
         int num1; /* в этой строке кода объявляется переменная с именем num1
                    эта переменная целого вида*/

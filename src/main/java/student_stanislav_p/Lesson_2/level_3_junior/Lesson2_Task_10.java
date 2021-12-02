@@ -1,8 +1,20 @@
-package student_stanislav_p.Lesson_2;
+package student_stanislav_p.Lesson_2.level_3_junior;
 
+/*
+Напишите программу, которая запрашивает у пользователя
+радиус круга (вещественное число) и печатает на консоль
+периметр и площадь круга.
+
+Test Data:
+Radius = 7.5
+
+Expected Output
+Perimeter is = 47.12388980384689
+Area is = 176.71458676442586
+ */
 import java.util.Scanner;
 
-public class Lesson2_Ex10 {
+public class Lesson2_Task_10 {
 
         public static void main(String [] args) {
 

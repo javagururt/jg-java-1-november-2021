@@ -1,8 +1,15 @@
-package student_stanislav_p.Lesson_2;
+package student_stanislav_p.Lesson_2.level_3_junior;
 
+/*
+Напишите программу, которая запрашивает у пользователя
+три целых числа и выводит их среднее арифметическое
+(складывает все числа и делит на их количество).
+
+Примечение: обратите внимание, что результат может быть дробным числом.
+ */
 import java.util.Scanner;
 
-public class Lesson2_Ex11 {
+public class Lesson2_Task_11 {
 
         public static void main(String [] args) {
 
