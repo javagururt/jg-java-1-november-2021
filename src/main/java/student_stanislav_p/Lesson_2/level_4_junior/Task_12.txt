@@ -1,12 +1,10 @@
-Как узнать какая версия JDK установлена на вашем компьютере?
+Last login: Tue Nov 30 13:11:17 on ttys000
 
-Вот краткое руководство, показывающее использование команды «java -version» для проверки текущей версии JDK,
-установленной на вашем компьютере.
-
-Откройте командную строку в Windows или терминал в unix. + 2.
-Введите java -version.
-
-C:\Users\javaguru>java -version
-openjdk version "14.0.1" 2020-04-14
-OpenJDK Runtime Environment AdoptOpenJDK (build 14.0.1+7)
-OpenJDK 64-Bit Server VM AdoptOpenJDK (build 14.0.1+7, mixed mode, sharing)
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+MBP-MHome:~ HMac$ java -version
+java version "17.0.1" 2021-10-19 LTS
+Java(TM) SE Runtime Environment (build 17.0.1+12-LTS-39)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.1+12-LTS-39, mixed mode, sharing)
+MBP-MHome:~ HMac$
