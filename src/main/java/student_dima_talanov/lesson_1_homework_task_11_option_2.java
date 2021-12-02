@@ -6,7 +6,7 @@ public class lesson_1_homework_task_11_option_2 {
         int a = 50;
         int b = 3;
         int c = a / b;
-        System.out.println( 16 );
+        System.out.println( c );
     }
 }
 
