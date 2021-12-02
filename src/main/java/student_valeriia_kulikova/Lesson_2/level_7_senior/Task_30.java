@@ -1,16 +1,17 @@
-package student_valeriia_kulikova.Lesson_2;
+package student_valeriia_kulikova.Lesson_2.level_7_senior;
 
-public class Lesson2_Ex29 {
-    static public class SumTwoNumbers {
+public class Task_30 {
+    static public class CorrectDataTypes {
 
         public static void main(String[] args) {
 
             int numberOne = 10;
-            int numberTwo = 20;
-            int sum = numberOne + numberTwo;
+            double numberTwo = 20.0;
 
             System.out.println("Number 1 = " + numberOne);
             System.out.println("Number 2 = " + numberTwo);
+
+            double sum = (numberOne + numberTwo);
 
             System.out.println("Sum = " + sum);
         }

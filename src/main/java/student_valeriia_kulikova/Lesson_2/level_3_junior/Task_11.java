@@ -1,8 +1,8 @@
-package student_valeriia_kulikova.Lesson_2;
+package student_valeriia_kulikova.Lesson_2.level_3_junior;
 
 import java.util.Scanner;
 
-public class Lesson2_Ex11 {
+public class Task_11 {
     public static void main(String [] args) {
 
         double СрЗнач;

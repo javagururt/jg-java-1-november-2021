@@ -1,8 +1,8 @@
-package student_valeriia_kulikova.Lesson_2;
+package student_valeriia_kulikova.Lesson_2.level_1_intern;
 
 import java.util.Scanner;
 
-public class Lesson2_Ex1 {
+public class Task_1 {
     public static void main(String [] args) {
 
         Scanner scanner = new Scanner(System.in);

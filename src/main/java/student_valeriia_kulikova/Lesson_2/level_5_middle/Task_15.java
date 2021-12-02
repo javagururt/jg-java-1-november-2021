@@ -1,6 +1,6 @@
-package student_valeriia_kulikova.Lesson_2;
+package student_valeriia_kulikova.Lesson_2.level_5_middle;
 
-public class Lesson2_Ex15 {
+public class Task_15 {
     public static void main(String [] args) {
 
 

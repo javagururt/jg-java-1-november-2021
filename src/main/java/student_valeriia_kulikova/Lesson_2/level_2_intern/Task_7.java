@@ -1,6 +1,6 @@
-package student_valeriia_kulikova.Lesson_2;
+package student_valeriia_kulikova.Lesson_2.level_2_intern;
 
-public class Lesson2_Ex7 {
+public class Task_7 {
     static class LoginService {
 
         static public void main(String[] args) {
