@@ -1,6 +1,6 @@
-package student_dima_talanov;
+package student_dima_talanov.lesson_1;
 
-public class lesson_1_homework_task_11_option_2 {
+public class Task_11_1 {
 
     public static void main(String[] args) {
         int a = 50;
