@@ -11,7 +11,7 @@ public class Task_11 {
         int second = scanner.nextInt();
         System.out.print("Enter third number: ");
         int third = scanner.nextInt();
-        float result = (first + second + third)  / 3;
+        double result = (first + second + third)  / (double) 3;
         System.out.println("Result is = " + result);
     }
 }
