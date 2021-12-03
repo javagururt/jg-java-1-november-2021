@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class Task_9 {
 
     public static void main(String[] args) {
-        System.out.print("Enter first whole number: ");
+        System.out.print("Enter whole number: ");
         Scanner scanner = new Scanner(System.in);
         int a = scanner.nextInt(); // 8
         int result1 = (a * 1);
