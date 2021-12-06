@@ -1,4 +1,4 @@
-package student_dima_talanov.level_6_middle;
+package student_dima_talanov.lesson_2.level_6_middle;
 
 public class NoSleepNoFocus {
 

@@ -1,4 +1,4 @@
-package student_dima_talanov.level_5_middle;
+package student_dima_talanov.lesson_2.level_5_middle;
 
 public class SizeMatters {
 
