@@ -1,3 +1,6 @@
+package student_stanislav_p.Lesson_2.level_7_senior;
+
+/*
 При написании Java кода для названий классов принято использовать
 нотацию под названием CamelCase (с англ. — «ВерблюжийРегистр»,
 также «ГорбатыйРегистр», «СтильВерблюда») — стиль написания
@@ -20,4 +23,23 @@ Login_Service
 banktransaction
 task1
 
-Создайте эти классы с корректными с точки зрения Java кода названиями.
+Создайте эти классы с корректными с точки зрения Java кода назнаниями.
+ */
+
+public class Lesson2_Task_28 {
+
+     static class Book {}
+
+
+    static class BankAccount {}
+    static class SystemUnit {}
+    static class LoginService {}
+    static class BankTransaction {}
+    static class Task1 {}
+
+        public static void main(String[] args) {
+
+
+
+                }
+            }
