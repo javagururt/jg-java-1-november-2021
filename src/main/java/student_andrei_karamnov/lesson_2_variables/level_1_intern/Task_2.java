@@ -22,7 +22,7 @@ public class Task_2 {
     double multiplyResult = firstDoubleNumber * secondDoubleNumber;
 
     System.out.println("Multiply:" + multiplyResult);
-    System.out.println("Divide:" + divideResult);
+    System.out.printf("Divide %.3f %n:", divideResult);
     System.out.println("Sum:" + sumResult);
     System.out.println("Sub:" + subResult);
 }
