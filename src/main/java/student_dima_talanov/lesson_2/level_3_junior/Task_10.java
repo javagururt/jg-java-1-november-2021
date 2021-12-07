@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class Task_10 {
 
     public static void main(String[] args){
-        System.out.print("Radius");
+        System.out.print("Radius ");
         Scanner scanner = new Scanner(System.in);
         double a = scanner.nextDouble(); // 7.5
         double Pi = 3.141592653589793238462643383279502;

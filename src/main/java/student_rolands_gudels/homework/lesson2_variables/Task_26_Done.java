@@ -1,6 +1,6 @@
 package Homework.lesson2_variables;
 
-public class Task_26 {
+public class Task_26_Done {
     //Проверьте все названия созданных вами пакетов.
     //
     //В их названии должны использоваться только маленькие буквы!

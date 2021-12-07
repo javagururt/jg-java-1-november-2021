@@ -1,4 +1,4 @@
-package student_andrei_karamnov;
+package student_andrei_karamnov.lesson_1;
 /*
 Write a Java program to print the sum of two numbers.
 Test Data:
