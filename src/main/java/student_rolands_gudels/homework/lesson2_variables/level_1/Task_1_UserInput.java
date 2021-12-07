@@ -1,4 +1,4 @@
-package Homework.lesson2_variables;
+package student_rolands_gudels.homework.lesson2_variables.level_1;
 
 import java.util.Scanner;
 
