@@ -17,10 +17,13 @@ public class Task_31 {
 
     public static void main(String[] args){
         Scanner scanner = new Scanner(System.in);
+        String nameBook;
+        String nameAuthor;
         System.out.println("Witch book are you reading?"); // Мастер и Маргарита
-        String nameBook = scanner.nextLine();
+        nameBook = scanner.nextLine();
         System.out.println("Who is the author?"); // Михаил Булгаков
-        String nameAuthor = scanner.nextLine();
+        nameAuthor = scanner.nextLine();
+
 
         System.out.println("Number of odd pages");
         int a = 732;

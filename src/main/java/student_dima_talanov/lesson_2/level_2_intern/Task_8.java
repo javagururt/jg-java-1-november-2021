@@ -10,9 +10,9 @@ import teacher.annotations.CodeReviewComment;
 public class Task_8 {
 
     public static void main(String[] args){
+        Scanner in = new Scanner(System.in);
         System.out.print("Enter your name please: ");
-        Scanner scanner = new Scanner(System.in);
-        String name = scanner.nextLine();
-        System.out.println("Hello Dima!");
+        String name = in.nextLine();
+        System.out.println("Hello " + name);
     }
 }
