@@ -13,7 +13,7 @@ public class Lesson2_Ex1 {
         System.out.println("write the SECOND number and press ENTER");
         int secondNumber = scanner.nextInt();
 
-        int Сумма =firstNumber + secondNumber;
+        int Сумма = firstNumber + secondNumber;
         int Вычитание = firstNumber - secondNumber;
         int Умножение = firstNumber * secondNumber;
         int Деление = firstNumber / secondNumber;
