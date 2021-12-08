@@ -8,6 +8,11 @@
 package student_dima_talanov.lesson_2.level_7_senior;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = false)
+@CodeReviewComment(comment = "не используются переменные nameBook и nameAuthor. Нужно вывести значения на консоль")
 public class Task_31 {
 
     public static void main(String[] args){
@@ -21,7 +26,7 @@ public class Task_31 {
         int a = 732;
         int result;
 
-        result = (a / 2);
+        result = (a / 2); // можно сразу создать переменную result и присвоить значение. int result = a / 2;
         System.out.println("Result is: " + result);
 
         System.out.println("Additional task:");
