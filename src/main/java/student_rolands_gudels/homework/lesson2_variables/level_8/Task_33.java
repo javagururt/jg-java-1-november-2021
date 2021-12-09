@@ -5,31 +5,38 @@ import teacher.annotations.CodeReview;
 @CodeReview(approved = true)
 public class Task_33 {
 
-    //Дописать код программы, что бы она запускалась
-    //и выводила на консоль производителя и модель компьютера.
-    //Менять можно только класс Computer.
-    //
-    //class Computer {
-    //
-    //    String manufacturer;
-    //    String model;
-    //
-    //    Computer(String manufacturer, String model) {
-    //        this.manufacturer = manufacturer;
-    //        this.model = model;
-    //    }
-    //
-    //}
-    //
-    //class ComputerDemo {
-    //
-    //    public static void main(String[] args) {
-    //        Computer dell = new Computer("Dell", "XXX-1");
-    //        String manufacturer = dell.getManufacturer();
-    //        String model = dell.getModel();
-    //        System.out.println("Computer manufacturer = " + manufacturer);
-    //        System.out.println("Computer model = " + model);
-    //    }
-    //
-    //}
+/*Возможности приходят к тем, кто перестает ждать и начинает искать.
+    Успех приходит к тем, кто перестает думать и начинает делать.
+    Поздравляем с поиском и делом.
+
+    Opportunity comes to those who quit Waiting and start Looking.
+    Success comes to those who quit Thinking and start Doing.
+    Congratulations for Looking and Doing.
+
+
+    Если вы читаете эти строки то вы выполнили все задания текущего урока.
+
+    Мы вас поздравляем! Вы достоины похвалы за своё упорство и мужество!
+    До конца доходят далеко не все! Вы покорили эту вершину! Поздравляем!
+
+    Теперь вы один из тех перед кем открываются новые цели и возможности.
+
+    Если у вас осталось время до следующего занятия и вы готовы потратить
+    это время на обучение, то предлагаем вам следующие варианты:
+
+            - помогите разобраться с задачами и материалом тем, кто в чате
+    просит о помощи, помогая другим вы оттачиваете своё мастерство!
+
+            - предложите свою помощь в чате, ИТ это командный вид спорта, умение
+    и желание помогать другим это тоже отличный навык, помогая другим
+    вы делаете хорошее дело, придёт время и помощь понадобиться вам,
+    добрые дела возвращаются!
+
+            - придумайте себе задачу и попытайтесь её реализовать самостоятельно
+    или найдите себе помошника среди слушателей курса!
+
+            - прочитайте главы из книги "Thinking in Java" или "Head First Java"
+    по теме урока и выполните задания приведённые в качестве примеров
+    в этих главах
+    */
 }
