@@ -1,6 +1,6 @@
 Дан код, нужно сделать этот код запускаемым.
 Для сдачи работы создайте исправленный класс.
-
+@CodeReview(approved = true)
 public class LoginService {
 
 	public static void main(String[] args) {

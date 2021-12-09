@@ -12,7 +12,9 @@ class SizeMatters {
 
  */
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class Lesson2_Task_18 {
 
      static class SizeMatters {

@@ -1,5 +1,7 @@
 package student_andrei_karamnov.lesson_2_variables.level_5_midle;
 
+import teacher.annotations.CodeReview;
+
 /*Команда System.out.println("text"); выводит указанный "text"
 на консоль, и переводит курсор на новую строку.
 
@@ -10,6 +12,7 @@ package student_andrei_karamnov.lesson_2_variables.level_5_midle;
 
 Напишите программу, которая демонстрирует использование команды
     System.out.print("text");*/
+@CodeReview(approved = true)
 public class Task_15 {
     public static void main(String[] args) {
         System.out.print("text2");

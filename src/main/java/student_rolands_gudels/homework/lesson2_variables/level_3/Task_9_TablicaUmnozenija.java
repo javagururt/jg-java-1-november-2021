@@ -2,6 +2,9 @@ package student_rolands_gudels.homework.lesson2_variables.level_3;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_9_TablicaUmnozenija {
 
     //Напишите программу, которая запрашивает у пользователя целое число

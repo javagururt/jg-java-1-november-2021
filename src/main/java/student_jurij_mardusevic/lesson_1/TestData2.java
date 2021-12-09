@@ -1,4 +1,4 @@
-package student_jurij_mardusevic;
+package student_jurij_mardusevic.lesson_1;
 
 public class TestData2 {
     public static void main(String[] args) {

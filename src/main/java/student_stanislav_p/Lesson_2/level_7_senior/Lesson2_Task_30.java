@@ -1,6 +1,8 @@
 package student_stanislav_p.Lesson_2.level_7_senior;
 
 
+import teacher.annotations.CodeReview;
+
 /*
 Исправьте ошибки компиляции в данной программе.
 
@@ -33,7 +35,7 @@ public class CorrectDataTypes {
 можно представить значения из большего диапазона.
 Диапазон типа данных long больше чем диапазон типа int.
  */
-
+@CodeReview(approved = true)
 public class Lesson2_Task_30 {
 
 

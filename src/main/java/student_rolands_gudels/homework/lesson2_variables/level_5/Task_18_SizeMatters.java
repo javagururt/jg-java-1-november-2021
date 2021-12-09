@@ -1,5 +1,8 @@
 package student_rolands_gudels.homework.lesson2_variables.level_5;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_18_SizeMatters {
 
     //Заставьте эту программу работать!

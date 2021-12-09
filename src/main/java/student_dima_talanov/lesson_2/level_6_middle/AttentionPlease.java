@@ -1,5 +1,8 @@
 package student_dima_talanov.lesson_2.level_6_middle;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class AttentionPlease {
 
     public static void main(String[] args) {

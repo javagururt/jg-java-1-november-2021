@@ -14,6 +14,13 @@ package student_stanislav_p.Lesson_2.level_1_intern;
  */
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "названия переменных должны начинаться с маленькой буквы" +
+        "переменные лучше объявлять и сразу присваивать значение" +
+        "Лучше следовать правилу 1 переменная - 1 строка. Не нужно объявлять все переменные в одной строке.")
 public class Lesson2_Task_1 {
 
         public static void main(String [] args) {

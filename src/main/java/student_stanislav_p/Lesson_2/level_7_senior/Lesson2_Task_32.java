@@ -1,12 +1,14 @@
 package student_stanislav_p.Lesson_2.level_7_senior;
 
+import teacher.annotations.CodeReview;
+
 /*
 Напишите программу и продемонстрируйте в ней использование
 однострочного и многострочного коментариев.
 
  *
  */
-
+@CodeReview(approved = true)
 class Lesson2_Task_32 {
     public static void main(String args []) {
         int num1; /* в этой строке кода объявляется переменная с именем num1

@@ -2,6 +2,9 @@ package student_rolands_gudels.homework.lesson2_variables.level_1;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_1_UserInput {
     //Написать консольную программу, которая запрашивает у пользователя два целых числа и
     //выводит на консоль результаты: сложения, вычитания, умножения и деления.

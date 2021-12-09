@@ -1,6 +1,9 @@
 package student_dmitrijs_sinkevics;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Lesson2_Lvl3_Task10 {
     public static void main(String[] args) {
        /* Напишите программу, которая запрашивает у пользователя
