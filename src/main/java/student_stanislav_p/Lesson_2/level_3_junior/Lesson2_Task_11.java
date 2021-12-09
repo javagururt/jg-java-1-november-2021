@@ -9,6 +9,9 @@ package student_stanislav_p.Lesson_2.level_3_junior;
  */
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Lesson2_Task_11 {
 
         public static void main(String [] args) {

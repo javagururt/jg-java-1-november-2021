@@ -1,5 +1,8 @@
 package student_rolands_gudels.homework.lesson2_variables.level7;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_31 {
 
     //Что такое типизированные
@@ -54,4 +57,6 @@ public class Task_31 {
     //а язык Python — динамическую сильную неявную.
     //
     //Полная версия статьи: https://habr.com/ru/post/161205/
+
+    //Done
 }

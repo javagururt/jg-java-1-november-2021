@@ -1,4 +1,7 @@
 package student_andrei_karamnov.lesson_2_variables.level_7_senior;
+
+import teacher.annotations.CodeReview;
+
 /*Исправьте ошибки компиляции в данной программе.
 
 public class SumTwoNumbers {
@@ -23,6 +26,7 @@ public class SumTwoNumbers {
 
 Подсказка: в Java использовать переменные нельзя до тех пор пока
 им не будет присвоено начальное значение.*/
+@CodeReview(approved = true)
 public class SumTwoNumbers {
     public static void main(String[] args) {
         int numberOne = 10;

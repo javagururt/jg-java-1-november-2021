@@ -16,6 +16,9 @@ Expected Output :
  */
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Lesson2_Task_9 {
 
         public static void main(String [] args) {

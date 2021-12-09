@@ -1,5 +1,8 @@
 package student_rolands_gudels.homework.lesson2_variables.level_6;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_27 {
 
     //Проверьте, соответствует ли структура созданных вами пакетов структуре пакетов в папке teacher.
@@ -32,4 +35,6 @@ public class Task_27 {
     //
     //Если структура ваших пакетов не будет соответствовать структуре пакетов в папке teacher преподаватель
     //не сможет проверить ваши работы (провести code review).
+
+    //Done
 }

@@ -14,6 +14,12 @@ package student_jurij_mardusevic.lesson_2;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "scanner не используется. Названия переменной должно начинать с маленькой буквы." +
+        " Используйте латинские буквы и английские названия.")
 public class Lesson2_Task1{
     public static void main(String[] args) {
 

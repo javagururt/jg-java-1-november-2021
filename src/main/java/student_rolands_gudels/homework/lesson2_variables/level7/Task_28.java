@@ -1,5 +1,8 @@
 package student_rolands_gudels.homework.lesson2_variables.level7;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_28 {
     //При написании Java кода для названий классов принято использовать
     //нотацию под названием CamelCase (с англ. — «ВерблюжийРегистр»,

@@ -2,6 +2,11 @@ package student_valeriia_kulikova.Lesson_2.level_1_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "Лучше следовать правилу 1 объявление переменной = 1 строка кода.")
 public class Task_2 {
     public static void main(String [] args) {
 

@@ -12,18 +12,22 @@ Expected Output :
 8 x 10 = 80*/
 
 package student_jurij_mardusevic.lesson_2;
-    public class Lesson2_Task9 {
 
-        public static void main(String[] args) {
-            int[] pif = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-            for (int q : pif) {
-                for (int w : pif) {
-                    System.out.printf("%4d", (q * w));
-                }
-                System.out.println();
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class Lesson2_Task9 {
+
+    public static void main(String[] args) {
+        int[] pif = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        for (int q : pif) {
+            for (int w : pif) {
+                System.out.printf("%4d", (q * w));
             }
+            System.out.println();
         }
     }
+}
 
 
 

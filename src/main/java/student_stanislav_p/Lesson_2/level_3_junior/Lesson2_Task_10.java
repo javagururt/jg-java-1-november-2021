@@ -14,6 +14,11 @@ Area is = 176.71458676442586
  */
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "переменные лучше называть на английском языке.")
 public class Lesson2_Task_10 {
 
         public static void main(String [] args) {

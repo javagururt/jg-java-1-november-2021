@@ -1,5 +1,7 @@
 package student_stanislav_p.Lesson_2.level_4_junior;
 
+import teacher.annotations.CodeReview;
+
 /*
 Как откомпилировать код с помощью JDK компилятора javac,
 без помощи среды разработки (из консоли)?
@@ -31,6 +33,7 @@ javac Main.java
 Эта команда вызовет компилятор, который создаст файл Main.class,
 содержащий скомпилированный код нашей java программы.
  */
+@CodeReview(approved = true)
 public class Lesson2_Ex13 {
 
         public static void main(String[] args) {

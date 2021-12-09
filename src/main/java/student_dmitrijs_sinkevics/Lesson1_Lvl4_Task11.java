@@ -1,5 +1,8 @@
 package student_dmitrijs_sinkevics;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Lesson1_Lvl4_Task11 {
 
     public static void main(String[] args) {

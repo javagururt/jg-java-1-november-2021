@@ -1,5 +1,7 @@
 package student_stanislav_p.Lesson_2.level_7_senior;
 
+import teacher.annotations.CodeReview;
+
 /*
 При написании Java кода для названий классов принято использовать
 нотацию под названием CamelCase (с англ. — «ВерблюжийРегистр»,
@@ -25,7 +27,7 @@ task1
 
 Создайте эти классы с корректными с точки зрения Java кода назнаниями.
  */
-
+@CodeReview(approved = true)
 public class Lesson2_Task_28 {
 
      static class Book {}

@@ -1,5 +1,7 @@
 package student_stanislav_p.Lesson_2.level_7_senior;
 
+import teacher.annotations.CodeReview;
+
 /*
 Исправьте ошибки компиляции в данной программе.
 
@@ -26,6 +28,7 @@ public class SumTwoNumbers {
 Подсказка: в Java использовать переменные нельзя до тех пор пока
 им не будет присвоено начальное значение.
  */
+@CodeReview(approved = true)
 public class Lesson2_Task_29 {
 
 

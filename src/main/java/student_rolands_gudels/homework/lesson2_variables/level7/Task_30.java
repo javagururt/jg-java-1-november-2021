@@ -1,5 +1,8 @@
 package student_rolands_gudels.homework.lesson2_variables.level7;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_30 {
 
     //Исправьте ошибки компиляции в данной программе.
@@ -32,4 +35,17 @@ public class Task_30 {
     //Широкий - в том смысле, что в переменной этого типа данных
     //можно представить значения из большего диапазона.
     //Диапазон типа данных long больше чем диапазон типа int.
+
+    public static void main(String[] args) {
+
+        		int numberOne = 10;
+        		double numberTwo = 20.0;
+
+        		System.out.println("Number 1 = " + numberOne);
+        		System.out.println("Number 2 = " + numberTwo);
+
+        		double sum = numberOne + numberTwo;
+
+        		System.out.println("Sum = " + sum);
+}
 }
