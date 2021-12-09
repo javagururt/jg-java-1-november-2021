@@ -21,9 +21,10 @@ public class Task_31 {
         String nameAuthor;
         System.out.println("Witch book are you reading?"); // Мастер и Маргарита
         nameBook = scanner.nextLine();
+        System.out.println("I`m reading- " + nameBook);
         System.out.println("Who is the author?"); // Михаил Булгаков
         nameAuthor = scanner.nextLine();
-
+        System.out.println("Author is- " + nameAuthor);
 
         System.out.println("Number of odd pages");
         int a = 732;
