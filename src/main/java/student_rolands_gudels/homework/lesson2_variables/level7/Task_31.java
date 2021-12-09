@@ -57,4 +57,6 @@ public class Task_31 {
     //а язык Python — динамическую сильную неявную.
     //
     //Полная версия статьи: https://habr.com/ru/post/161205/
+
+    //Done
 }
