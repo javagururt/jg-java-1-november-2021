@@ -1,6 +1,6 @@
 Дан код, нужно исправить ошибку компиляции.
 Для сдачи работы создайте исправленный класс.
-
+@CodeReview(approved = true)
 public class BankAccount {
 
 	public static void main(String[] args) {

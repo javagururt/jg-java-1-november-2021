@@ -7,6 +7,9 @@ package student_andrei_karamnov.lesson_2_variables.level_3_junior;
 Примечение: обратите внимание, что результат может быть дробным числом.*/
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_11 {
     public static void main(String[] args) {
         System.out.println("Enter three numbers:");

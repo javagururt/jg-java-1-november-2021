@@ -1,5 +1,8 @@
 package student_dmitrijs_sinkevics;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class HelloWorld {
 
     public static void main(String[] args) {

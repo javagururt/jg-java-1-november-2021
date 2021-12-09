@@ -2,6 +2,11 @@ package student_julija_radchenko.lesson2.homeworks;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "second input не используется")
 public class Lesson2Task1 {
 
     public static void main(String[] args) {

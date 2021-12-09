@@ -1,4 +1,7 @@
 package student_andrei_karamnov.lesson_2_variables.level_7_senior;
+
+import teacher.annotations.CodeReview;
+
 /*При написании Java кода для названий классов принято использовать
 нотацию под названием CamelCase (с англ. — «ВерблюжийРегистр»,
 также «ГорбатыйРегистр», «СтильВерблюда») — стиль написания
@@ -22,6 +25,7 @@ banktransaction
 task1
 
 Создайте эти классы с корректными с точки зрения Java кода названиями.*/
+@CodeReview(approved = true)
 public class Task_28 {
     /*Book
     BankAccount

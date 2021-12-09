@@ -1,5 +1,8 @@
 package student_rolands_gudels.homework.lesson2_variables.level_8;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_33 {
 
     //Дописать код программы, что бы она запускалась

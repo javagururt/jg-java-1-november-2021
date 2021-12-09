@@ -9,6 +9,9 @@ package student_andrei_karamnov.lesson_2_variables.level_1_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_2 {
     public static void main(String[] args) {
     Scanner scanner = new Scanner(System.in);

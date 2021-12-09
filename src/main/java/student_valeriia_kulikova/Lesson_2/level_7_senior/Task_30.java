@@ -1,5 +1,8 @@
 package student_valeriia_kulikova.Lesson_2.level_7_senior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_30 {
     static public class CorrectDataTypes {
 

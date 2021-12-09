@@ -2,6 +2,9 @@ package student_rolands_gudels.homework.lesson2_variables.level_3;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_10_Krug {
     //Напишите программу, которая запрашивает у пользователя
     //радиус круга (вещественное число) и печатает на консоль

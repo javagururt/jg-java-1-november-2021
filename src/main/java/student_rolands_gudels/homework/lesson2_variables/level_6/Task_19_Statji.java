@@ -1,5 +1,8 @@
 package student_rolands_gudels.homework.lesson2_variables.level_6;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_19_Statji {
 
     //Прочитать статьи:

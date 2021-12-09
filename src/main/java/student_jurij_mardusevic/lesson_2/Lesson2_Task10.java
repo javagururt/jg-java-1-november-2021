@@ -11,6 +11,9 @@ Area is = 176.71458676442586*/
 
 package student_jurij_mardusevic.lesson_2;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Lesson2_Task10 {
     private static final double radius = 7.5;
     public static void main(String[] args) {

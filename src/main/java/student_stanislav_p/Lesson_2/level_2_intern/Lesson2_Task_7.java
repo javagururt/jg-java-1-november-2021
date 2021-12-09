@@ -1,4 +1,7 @@
 package student_stanislav_p.Lesson_2.level_2_intern;
+
+import teacher.annotations.CodeReview;
+
 /*
 Дан код, нужно сделать этот код запускаемым.
 Для сдачи работы создайте исправленный класс.
@@ -13,6 +16,7 @@ class LoginService {
 }
 
  */
+@CodeReview(approved = true)
 public class Lesson2_Task_7 {
 
    static class LoginService {
