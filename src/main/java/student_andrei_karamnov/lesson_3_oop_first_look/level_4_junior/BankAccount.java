@@ -1,6 +1,6 @@
 package student_andrei_karamnov.lesson_3_oop_first_look.level_4_junior;
 
-public class BankAccount {
+class BankAccount {
     String ownerFirstName;
     String ownerLastName;
     int moneyAmount;

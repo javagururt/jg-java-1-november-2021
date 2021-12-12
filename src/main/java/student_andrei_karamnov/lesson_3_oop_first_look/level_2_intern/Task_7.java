@@ -11,7 +11,7 @@ package student_andrei_karamnov.lesson_3_oop_first_look.level_2_intern;
 
     String myName = "Viktor";
     System.out.println(myName);*/
-public class Task_7 {
+class Task_7 {
 
     public static void main(String[] args) {
         String myName = "Andrei";
