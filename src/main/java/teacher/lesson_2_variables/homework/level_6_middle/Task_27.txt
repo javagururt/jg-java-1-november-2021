@@ -1,7 +1,7 @@
 Проверьте, соответствует ли структура созданных вами пакетов структуре пакетов в папке teacher.
 
 teacher
-    lesson_1
+    student_.lesson_1
         level_1
         level_2
         level_3
