@@ -1,0 +1,43 @@
+package student_stanislav_p.Lesson_2.level_4_junior;
+
+import teacher.annotations.CodeReview;
+
+/*
+Как откомпилировать код с помощью JDK компилятора javac,
+без помощи среды разработки (из консоли)?
+
+Независимо от того, какую операционную систему вы используете,
+Linux, Mac или Windows, если на вашем компьютере установлен
+JDK (Java Development Kit), вы можете в консоли набрать
+следующую команду, чтобы скомпилировать вашу программу:
+
+javac (или javac.exe)
+
+При этом будет вызван компилятор javac.exe.
+Этот файл лежит в папке bin  вашего JDK.
+
+Рассмотрим на примере.
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+Для того, чтобы скомпилировать этот класс нужно набрать в консоли команду
+javac и в качестве параметра передать имя нашего файла в котором
+сохранена ваша программа:
+
+javac Main.java
+
+Эта команда вызовет компилятор, который создаст файл Main.class,
+содержащий скомпилированный код нашей java программы.
+ */
+@CodeReview(approved = true)
+public class Lesson2_Ex13 {
+
+        public static void main(String[] args) {
+            System.out.println("Hello, World!");
+        }
+
+}
