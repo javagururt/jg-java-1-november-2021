@@ -1,6 +1,6 @@
-package student_dmitrijs_sinkevics;
+package student_dmitrijs_sinkevics.lesson_2.lvl_5;
 
-public class Lesson2_Lvl5_Task18 {
+public class Task18 {
     public static void main(String[] args) {
 
                  System.out.println("Sorry, I have an errors.");

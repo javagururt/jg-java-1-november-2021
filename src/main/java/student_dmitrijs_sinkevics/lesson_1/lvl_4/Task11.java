@@ -1,6 +1,6 @@
-package student_dmitrijs_sinkevics;
+package student_dmitrijs_sinkevics.lesson_1.lvl_4;
 
-public class Lesson1_Lvl4_Task11 {
+public class Task11 {
 
     public static void main(String[] args) {
 

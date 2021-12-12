@@ -1,7 +1,7 @@
-package student_dmitrijs_sinkevics;
+package student_dmitrijs_sinkevics.lesson_2.lvl_3;
 import java.util.Scanner;
 
-public class Lesson2_Lvl3_Task10 {
+public class Task10 {
     public static void main(String[] args) {
        /* Напишите программу, которая запрашивает у пользователя
         радиус круга (вещественное число) и печатает на консоль

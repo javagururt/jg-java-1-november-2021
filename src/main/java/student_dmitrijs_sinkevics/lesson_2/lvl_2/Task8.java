@@ -1,4 +1,4 @@
-package student_dmitrijs_sinkevics;
+package student_dmitrijs_sinkevics.lesson_2.lvl_2;
 import java.util.Scanner;
 /*
 Написать консольную программу, которая запрашивает
@@ -6,7 +6,7 @@ import java.util.Scanner;
         Hello имя пользователя!
 
  */
-public class Lesson2_Lvl2_Task8 {
+public class Task8 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);
         System.out.println("Введите имя пользователя");

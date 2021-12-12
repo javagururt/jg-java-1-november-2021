@@ -1,6 +1,6 @@
-package student_dmitrijs_sinkevics;
+package student_dmitrijs_sinkevics.lesson_2.lvl_1;
 import java.util.Scanner;
-public class Lesson2_Lvl1_Task2 {
+public class Task2 {
     public static void main(String[] args){
         /*
         Написать консольную программу, которая запрашивает у пользователя два вещественных числа

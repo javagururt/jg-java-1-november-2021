@@ -1,6 +1,6 @@
-package student_dmitrijs_sinkevics;
+package student_dmitrijs_sinkevics.lesson_2.lvl_3;
 import java.util.Scanner;
-public class Lesson2_Lvl3_Task9 {
+public class Task9 {
     public static void main(String[] args) {
   /*  Напишите программу, которая запрашивает у пользователя целое число
     и печатает на консоль таблицу умножения для этого числа до 10.
