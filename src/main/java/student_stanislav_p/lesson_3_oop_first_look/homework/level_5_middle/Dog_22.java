@@ -7,7 +7,7 @@ public class Dog_22 {
     public void voice() {
 
         System.out.println("Гав! Гав! Гав! ");
-        System.out.println("Dog color - "+" " + this.dogColor );
+        System.out.println("Dog color - "+ this.dogColor );
     }
     public void changeColor(String newColor){
         this.dogColor = newColor;
