@@ -3,17 +3,17 @@ package student_stanislav_p.lesson_3_oop_first_look.homework.level_1_intern;
 
 public class RobotDemo {
         public static void main(String[] args) {
-            student_stanislav_p.lesson_3_oop_first_look.homework.level_1_intern.Robot robotDemo = new student_stanislav_p.lesson_3_oop_first_look.homework.level_1_intern.Robot("Robot1");
+            Robot robotDemo = new Robot("Robot1");
             robotDemo.sayHello();
             robotDemo.sayYourName();
             System.out.println();
 
-            student_stanislav_p.lesson_3_oop_first_look.homework.level_1_intern.Robot robot1 = new student_stanislav_p.lesson_3_oop_first_look.homework.level_1_intern.Robot("Robot2");
+            Robot robot1 = new Robot("Robot2");
             robot1.sayHello();
             robot1.sayYourName();
             System.out.println();
 
-            student_stanislav_p.lesson_3_oop_first_look.homework.level_1_intern.Robot robot2 = new student_stanislav_p.lesson_3_oop_first_look.homework.level_1_intern.Robot("Robot3");
+            Robot robot2 = new Robot("Robot3");
             robot2.sayHello();
             robot2.sayYourName();
         }
