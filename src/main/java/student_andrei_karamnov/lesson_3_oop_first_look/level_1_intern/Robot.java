@@ -1,6 +1,6 @@
 package student_andrei_karamnov.lesson_3_oop_first_look.level_1_intern;
 /**/
-public class Robot {
+class Robot {
      String name;
 
     public void sayHello(){

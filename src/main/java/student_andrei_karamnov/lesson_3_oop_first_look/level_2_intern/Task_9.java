@@ -13,7 +13,7 @@ import java.util.Scanner;
 Подсказка: строку с консоли можно считать используя
 обьект Scanner. Загуглите как это можно сделать:
 "как в Java считать строку с консоли".*/
-public class Task_9 {
+class Task_9 {
     public static void main(String[] args) {
         String question = "What is your user name?";
         System.out.println(question);

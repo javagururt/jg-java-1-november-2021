@@ -26,7 +26,7 @@ class BookDemo {
     }
 
 }*/
-public class Book {
+class Book {
     String title;
 
     public Book(String bookTitle) {

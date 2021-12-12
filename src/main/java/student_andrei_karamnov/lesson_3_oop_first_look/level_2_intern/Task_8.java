@@ -11,7 +11,7 @@ package student_andrei_karamnov.lesson_3_oop_first_look.level_2_intern;
 
     String userName = "Viktor";
     String greeting = "Hi " + userName + "!";*/
-public class Task_8 {
+class Task_8 {
     public static void main(String[] args) {
         String userNAme = "Andrei";
         String greeting = "Hi " + userNAme + "!";
