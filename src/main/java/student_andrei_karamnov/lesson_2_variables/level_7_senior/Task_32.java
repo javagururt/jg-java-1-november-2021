@@ -10,7 +10,7 @@ import teacher.annotations.CodeReview;
 @CodeReview(approved = true)
 public class Task_32 {
     public static void main(String[] args) {
-        System.out.println("Hello Mr. %n"); //Приветствие.
+        System.out.println("Hello Mr."); //Приветствие.
         System.out.println("Please enter two integer or fractional numbers"); //Запрос.
         Scanner input = new Scanner(System.in);
         double a = input.nextDouble();//Ввод переменной 1
