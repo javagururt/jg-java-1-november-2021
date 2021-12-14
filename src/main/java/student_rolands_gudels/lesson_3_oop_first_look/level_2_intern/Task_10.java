@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_2_intern;
 
-public class Task_10 {
+class Task_10 {
     /*    }
 }
 

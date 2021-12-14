@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_7_senior;
 
-public class Task_31 {
+class Task_31 {
     /*Разработать класс - продукт,
 у которого должны быть следующие характеристики:
 

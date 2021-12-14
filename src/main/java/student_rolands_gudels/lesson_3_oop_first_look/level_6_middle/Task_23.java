@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_6_middle;
 
-public class Task_23 {
+ class Task_23 {
     /*Проверьте все названия созданных вами классов.
 
 В Java принято называть классы с заглавной буквы.

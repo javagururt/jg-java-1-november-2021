@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_7_senior;
 
-public class Task_29 {
+ class Task_29 {
     /*Выберите два разных объекта из реального мира.
 Для каждого объекта выделите 2 - 3 самых важных
 свойства и поведения, которое с этими свойствами

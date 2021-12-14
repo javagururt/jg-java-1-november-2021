@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_1_intern;
 
-public class RobotDemo {
+ class RobotDemo {
     public static void main(String[] args) {
     Robot robot = new Robot("Elektronik");
     robot.sayHello();

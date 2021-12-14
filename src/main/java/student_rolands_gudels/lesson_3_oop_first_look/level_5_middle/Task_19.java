@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_5_middle;
 
-public class Task_19 {
+class Task_19 {
     /*Тема: создание класса Dog. Продолжение.
 
 Создать класс собака (Dog)

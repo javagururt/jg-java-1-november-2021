@@ -2,7 +2,7 @@ package student_rolands_gudels.lesson_3_oop_first_look.level_2_intern;
 
 import java.util.Scanner;
 
-public class Task_9 {
+class Task_9 {
     /*Учимся работать со строками.
 
 Тема: Считывание строк с консоли.

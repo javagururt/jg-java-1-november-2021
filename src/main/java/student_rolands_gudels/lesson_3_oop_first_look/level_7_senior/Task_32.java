@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_7_senior;
 
-public class Task_32 {
+ class Task_32 {
     /*Найти логическую ошибку в коде.
 Исправить и запустить программу так, что бы она выводила
 на консоль владельца банковского счёта и количество денег.

@@ -2,7 +2,7 @@ package student_rolands_gudels.lesson_3_oop_first_look.level_5_middle;
 
 import java.util.Scanner;
 
-public class Task_18 {
+ class Task_18 {
     static class Dog {
         private String dogName;
         private String dogColor;

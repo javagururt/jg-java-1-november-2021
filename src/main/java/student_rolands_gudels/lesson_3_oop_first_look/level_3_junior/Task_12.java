@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_3_junior;
 
-public class Task_12 {
+class Task_12 {
     /*Дайте роботу имя! Продолжение.
 
 Тема: объявление конструктора класса.

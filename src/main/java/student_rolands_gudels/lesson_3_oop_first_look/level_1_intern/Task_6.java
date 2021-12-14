@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_1_intern;
 
-public class Task_6 {
+class Task_6 {
     /*Создаём свою армию роботов!
 
 В этом задании мы продолжаем работать с классом Robot.

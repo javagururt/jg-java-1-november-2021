@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_8_architect;
 
-public class Task_34 {
+ class Task_34 {
     /*Многие люди потерпели неудачу в том, чего вы достигли,
 просто потому, что они были заняты поиском проблем,
 в то время как вы были заняты поиском решений. Отлично сработано.

@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_7_senior;
 
-public class Task_33 {
+ class Task_33 {
     /*Дописать код программы, что бы она запускалась
 и выводила на консоль производителя и модель компьютера.
 Менять можно только класс Computer.

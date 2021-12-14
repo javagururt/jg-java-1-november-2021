@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_6_middle;
 
-public class Task_24 {
+class Task_24 {
     /*Проверьте все названия созданных вами пакетов.
 
 В их названии должны использоваться только маленькие буквы!

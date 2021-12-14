@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_3_junior;
 
-public class Task_13 {
+ class Task_13 {
     /*Дайте роботу имя! Продолжение.
 
 Тема: использование свойства класса.
