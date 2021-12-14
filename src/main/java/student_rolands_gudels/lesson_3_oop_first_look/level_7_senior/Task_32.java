@@ -1,38 +1,31 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_7_senior;
 
  class Task_32 {
-    /*Найти логическую ошибку в коде.
+  /*Найти логическую ошибку в коде.
 Исправить и запустить программу так, что бы она выводила
-на консоль владельца банковского счёта и количество денег.
+на консоль владельца банковского счёта и количество денег. */
 
-class BankAccount {
+
+   static class BankAccount {
 
     String owner;
     int money;
 
-    BankAccount(int moneyAmount) {
-        this.owner = owner;
+    BankAccount(String owner, int money) {
+     this.owner = owner;
+     this.money = money;
     }
 
     String getOwner() {
-        return this.owner;
+     return this.owner;
     }
 
-    void getMoney() {
-        return this.money;
+    int getMoney() {
+     return this.money;
     }
 
-}
+   }
 
-class BankAccountDemo {
+  }
 
-    public static void main(String[] args) {
-        BankAccount bankAccount = new BankAccount("Viktor", 100000);
-        String ownerFirstName = bankAccount.getOwner();
-        String moneyAmount = bankAccount.getMoney();
-        System.out.println("Owner = " + owner);
-        System.out.println("Money = " + money);
-    }
-
-}*/
-}
+// Done result is in BankAccountDemo
