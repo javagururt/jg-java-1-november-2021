@@ -30,7 +30,7 @@ package student_rolands_gudels.lesson_3_oop_first_look.level_7_senior;
              return model;
          }
      }
-         class ComputerDemo {
+        static class ComputerDemo {
 
              public static void main(String[] args) {
                  Computer dell = new Computer("Dell", "XXX-1");
