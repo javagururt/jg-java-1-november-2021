@@ -7,11 +7,11 @@ public class RobotDemo {
         myRobot.sayYourName();
 
 
-        Robot robot1 = new Robot("Robik");
+        Robot robot1 = new Robot("Rider");
         robot1.sayHello();
         robot1.sayYourName();
 
-        Robot robot2 = new Robot ("Vasja");
+        Robot robot2 = new Robot ("John");
         robot2.sayHello();
         robot2.sayYourName();
 

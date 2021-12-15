@@ -11,12 +11,12 @@ public class Robot {
     }
 
     public Robot(String newName){
-        name = newName;
+        this.name = newName;
 
     }
 
     public void sayYourName() {
-        System.out.println("My name ir ROBO");
+        System.out.println("My name is"+ this.name);
 
     }
 }
