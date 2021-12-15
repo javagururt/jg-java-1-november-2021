@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_6_middle;
 
-public class Task_25 {
+ class Task_25 {
     /*Проверьте, соответствует ли структура созданных вами пакетов структуре пакетов в папке teacher.
 
 teacher

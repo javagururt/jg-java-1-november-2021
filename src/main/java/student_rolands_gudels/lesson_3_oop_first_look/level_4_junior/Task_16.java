@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_4_junior;
 
-public class Task_16 {
+ class Task_16 {
     /*Найти ошибку в коде.
 Исправить и запустить программу.
 Менять можно только класс Car. */
