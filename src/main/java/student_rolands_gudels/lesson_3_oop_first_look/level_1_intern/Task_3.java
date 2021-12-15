@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_1_intern;
 
-public class Task_3 {
+ class Task_3 {
     /*Создайте отдельный класс RobotDemo для демонстрации
 работы с классом Robot.
 

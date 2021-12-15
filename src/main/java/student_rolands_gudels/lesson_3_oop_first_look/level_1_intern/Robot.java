@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_1_intern;
 
-public class Robot {
+class Robot {
 
             //Создайте класс робот (Robot).
         //
@@ -12,14 +12,14 @@ public class Robot {
         //         // тут напишите команду распечатки на консоли строки "Hello!"
         //
 
-        public void sayHello() {
+         void sayHello() {
               System.out.println("Hello!");
         }
     String name;
     Robot(String robotName) {
         this.name = robotName;}
 
-        public void sayYourName() {
+        void sayYourName() {
             System.out.println("My name is " + this.name);
         }
 

@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_4_junior;
 
-public class BookDemo {
+ class BookDemo {
 
         public static void main(String[] args) {
             Task_14.Book myBook = new Task_14.Book("Principles");

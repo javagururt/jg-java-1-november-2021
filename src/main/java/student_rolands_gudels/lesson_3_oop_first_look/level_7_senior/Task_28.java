@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_7_senior;
 
-public class Task_28 {
+ class Task_28 {
     /*Topic: Environment variable JAVA_HOME.
 
 JAVA_HOME is an operating system (OS) environment variable
@@ -95,4 +95,6 @@ a JDK or JRE available from anywhere on the command line.
 As a result, if a program cannot locate the JAVA_HOME variable,
 it may still be able to access Java runtime tools by looking at
 which utilities have been made available through the PATH.*/
+
+  //Done
 }
