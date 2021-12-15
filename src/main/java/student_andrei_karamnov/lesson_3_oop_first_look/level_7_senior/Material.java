@@ -6,19 +6,24 @@ class Material {
     double density;
     double weight;
     String manufacturer;
+    String type;
 
-    public Material(){
+    public Material(String materialName){
+        this.name = materialName;
         this.price = 0;
         this.density = 0;
         this.weight = 0;
     }
-    void Ferum(String ferumType, String ferumManufacturer){
+    String getName(){
+        return this.name;
+    }
+    void Ferum(String type, String manufacturer){
         this.density = 1.2;
         this.weight = 1;
-        this.name = ferumType;
+        this.type = type;
         this.price = 0.44;
-        this.manufacturer = ferumManufacturer;
-        System.out.println("Name: " + this.name + "Manufacturer: " + this.manufacturer);
+        this.manufacturer = manufacturer;
+        System.out.println("Type: " + type + "Manufacturer: " + manufacturer);
         System.out.println(this.density + " g/cm3");
         System.out.println(this.weight + " kg");
         System.out.println(this.price +" $ per 1kg");
