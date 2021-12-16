@@ -5,6 +5,9 @@ package student_eduards_puzirevskis.lesson_2_variables.level_7_senior;
  */
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Comments {
     public static void main(String[] args) {
         double pi = 3.1415926536 ; // в данном случае решил взять одну из программ по домашкам

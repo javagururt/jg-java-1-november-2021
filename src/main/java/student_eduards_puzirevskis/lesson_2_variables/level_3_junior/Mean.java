@@ -2,6 +2,8 @@ package student_eduards_puzirevskis.lesson_2_variables.level_3_junior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Напишите программу, которая запрашивает у пользователя
 три целых числа и выводит их среднее арифметическое
@@ -9,6 +11,7 @@ import java.util.Scanner;
 
 Примечение: обратите внимание, что результат может быть дробным числом.
  */
+@CodeReview(approved = true)
 public class Mean {
     public static void main(String[] args) {
         System.out.println("Please, enter Firsth number :");

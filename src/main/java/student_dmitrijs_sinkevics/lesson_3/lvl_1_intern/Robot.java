@@ -1,5 +1,7 @@
 package student_dmitrijs_sinkevics.lesson_3.lvl_1_intern;
 
+import teacher.annotations.CodeReview;
+
 /*
 Создайте класс робот (Robot).
 
@@ -8,7 +10,7 @@ package student_dmitrijs_sinkevics.lesson_3.lvl_1_intern;
         Создайте в классе Robot метод со следующей сигнатурой:
 
  */
-
+@CodeReview(approved = true)
 public class Robot {
     String name;
     Robot(String robotName) {

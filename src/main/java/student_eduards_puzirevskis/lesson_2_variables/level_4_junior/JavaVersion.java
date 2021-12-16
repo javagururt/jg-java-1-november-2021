@@ -1,4 +1,7 @@
 package student_eduards_puzirevskis.lesson_2_variables.level_4_junior;
+
+import teacher.annotations.CodeReview;
+
 /*
 Как узнать какая версия JDK установлена на вашем компьютере?
 
@@ -13,6 +16,7 @@ openjdk version "14.0.1" 2020-04-14
 OpenJDK Runtime Environment AdoptOpenJDK (build 14.0.1+7)
 OpenJDK 64-Bit Server VM AdoptOpenJDK (build 14.0.1+7, mixed mode, sharing)
  */
+@CodeReview(approved = true)
 public class JavaVersion {
     public static void main(String[] args) {
         System.out.println("C:\\Users\\User>java -version");

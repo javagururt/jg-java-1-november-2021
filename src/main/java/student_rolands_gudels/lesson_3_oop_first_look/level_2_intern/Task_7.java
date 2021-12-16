@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_2_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
  class Task_7 {
     /*Учимся работать со строками.
 

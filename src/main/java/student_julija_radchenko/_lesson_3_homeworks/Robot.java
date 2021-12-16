@@ -1,5 +1,8 @@
 package student_julija_radchenko._lesson_3_homeworks;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Robot {
     String name;
 

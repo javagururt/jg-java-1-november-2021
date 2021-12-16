@@ -1,7 +1,9 @@
 package student_andrei_karamnov.lesson_3_oop_first_look.level_1_intern;
 
 import student_andrei_karamnov.lesson_3_oop_first_look.level_1_intern.Robot;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class RobotDemo {
     public static void main(String[] args) {
         Robot robot = new Robot("San Juan");
