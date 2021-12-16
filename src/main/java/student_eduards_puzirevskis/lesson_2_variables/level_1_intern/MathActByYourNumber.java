@@ -2,6 +2,9 @@ package student_eduards_puzirevskis.lesson_2_variables.level_1_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class MathActByYourNumber {
 
     public static void main(String[] args) {

@@ -1,5 +1,8 @@
 package student_victor_veselov.lesson_3.Task33;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Computer {
     static String manufacturer;
     static String model;

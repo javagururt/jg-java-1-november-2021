@@ -6,7 +6,9 @@ package student_eduards_puzirevskis.lesson_2_variables.level_2_intern;
 class Book {
  */
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class Book {
     public static void main(String[] args) {
 

@@ -1,13 +1,14 @@
 package student_dmitrijs_sinkevics.lesson_3.lvl_4_junior;
 
 
+import teacher.annotations.CodeReview;
 
-   /* Найти ошибку в коде.
+/* Найти ошибку в коде.
     Исправить и запустить программу.
     Менять можно только класс Phone.
 
     */
-
+@CodeReview(approved = true)
     class Phone {
 
         private String model;

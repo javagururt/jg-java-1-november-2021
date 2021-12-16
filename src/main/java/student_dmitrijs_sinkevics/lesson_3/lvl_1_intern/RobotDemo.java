@@ -1,7 +1,8 @@
 package student_dmitrijs_sinkevics.lesson_3.lvl_1_intern;
 
+import teacher.annotations.CodeReview;
 import teacher.lesson_3_oop_first_look.lessoncode.Cat;
-
+@CodeReview(approved = true)
 public class RobotDemo {
 
     public static void main(String[] args) {

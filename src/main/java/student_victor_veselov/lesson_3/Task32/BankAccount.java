@@ -1,5 +1,8 @@
 package student_victor_veselov.lesson_3.Task32;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class BankAccount {
 
     String owner;

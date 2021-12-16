@@ -1,5 +1,8 @@
 package student_julija_radchenko._lesson_3_homeworks;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Robot {
     String name;
 
@@ -11,12 +14,12 @@ public class Robot {
     }
 
     public Robot(String newName){
-        name = newName;
+        this.name = newName;
 
     }
 
     public void sayYourName() {
-        System.out.println("My name ir ROBO");
+        System.out.println("My name is"+ this.name);
 
     }
 }

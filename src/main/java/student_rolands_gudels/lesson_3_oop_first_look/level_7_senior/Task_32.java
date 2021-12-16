@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson_3_oop_first_look.level_7_senior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
  class Task_32 {
   /*Найти логическую ошибку в коде.
 Исправить и запустить программу так, что бы она выводила

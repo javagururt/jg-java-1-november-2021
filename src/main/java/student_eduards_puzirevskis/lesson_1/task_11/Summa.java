@@ -1,5 +1,8 @@
 package student_eduards_puzirevskis.lesson_1.task_11;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Summa {
 
 

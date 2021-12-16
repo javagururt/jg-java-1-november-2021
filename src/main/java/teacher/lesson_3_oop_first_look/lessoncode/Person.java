@@ -21,7 +21,7 @@ class Person {
 
     public int getAge() {
         return age;
-    }//http://javist.ru/kak-ispolzovat-robot-klassa-v-java/
+    }
 
     public void setAge(int newAge) {
         age = newAge;

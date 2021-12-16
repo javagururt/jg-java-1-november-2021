@@ -1,4 +1,7 @@
 package student_andrei_karamnov.lesson_3_oop_first_look.level_2_intern;
+
+import teacher.annotations.CodeReview;
+
 /*Учимся работать со строками.
 
 Тема: Конкатенация строк.
@@ -11,6 +14,7 @@ package student_andrei_karamnov.lesson_3_oop_first_look.level_2_intern;
 
     String userName = "Viktor";
     String greeting = "Hi " + userName + "!";*/
+@CodeReview(approved = true)
 class Task_8 {
     public static void main(String[] args) {
         String userNAme = "Andrei";
