@@ -1,5 +1,8 @@
 package student_dmitrijs_sinkevics.lesson_3.lvl_5_middle;
- /*Тема: создание класса Dog.
+
+import teacher.annotations.CodeReview;
+
+/*Тема: создание класса Dog.
 
          Создать класс собака (Dog)
          и продемонстрировать его работу с ним в программе.
@@ -16,6 +19,7 @@ package student_dmitrijs_sinkevics.lesson_3.lvl_5_middle;
          использование класса собака (Dog).
 
   */
+@CodeReview(approved = true)
 public class Dog {
      final String dogName = "Skubidu";
      public void voice () {

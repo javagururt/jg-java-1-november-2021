@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_3_oop_first_look.level_7_senior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Circle {
     double radius;
     double Pi = 3.14;

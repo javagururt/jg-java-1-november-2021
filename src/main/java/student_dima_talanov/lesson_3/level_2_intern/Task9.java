@@ -1,6 +1,9 @@
 package student_dima_talanov.lesson_3.level_2_intern;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task9 {
 
     public static void main(String[] args) {

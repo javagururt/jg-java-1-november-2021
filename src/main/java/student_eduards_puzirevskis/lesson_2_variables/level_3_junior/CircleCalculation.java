@@ -2,6 +2,8 @@ package student_eduards_puzirevskis.lesson_2_variables.level_3_junior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Напишите программу, которая запрашивает у пользователя
 радиус круга (вещественное число) и печатает на консоль
@@ -14,6 +16,7 @@ Expected Output
 Perimeter is = 47.12388980384689
 Area is = 176.71458676442586
  */
+@CodeReview(approved = true)
 public class CircleCalculation {
     public static void main(String[] args) {
         double pi = 3.1415926536 ;

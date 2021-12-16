@@ -11,8 +11,7 @@ import java.util.Scanner;
 import teacher.annotations.CodeReview;
 import teacher.annotations.CodeReviewComment;
 
-@CodeReview(approved = false)
-@CodeReviewComment(comment = "не используются переменные nameBook и nameAuthor. Нужно вывести значения на консоль")
+@CodeReview(approved = true)
 public class Task_31 {
 
     public static void main(String[] args){

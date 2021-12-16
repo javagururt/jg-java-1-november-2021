@@ -1,4 +1,7 @@
 package student_andrei_karamnov.lesson_3_oop_first_look.level_2_intern;
+
+import teacher.annotations.CodeReview;
+
 /*чимся работать со строками.
 
 Тема: создание переменной типа String.
@@ -11,6 +14,7 @@ package student_andrei_karamnov.lesson_3_oop_first_look.level_2_intern;
 
     String myName = "Viktor";
     System.out.println(myName);*/
+@CodeReview(approved = true)
 class Task_7 {
 
     public static void main(String[] args) {

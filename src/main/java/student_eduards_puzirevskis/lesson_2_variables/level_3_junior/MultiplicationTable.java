@@ -2,6 +2,8 @@ package student_eduards_puzirevskis.lesson_2_variables.level_3_junior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Напишите программу, которая запрашивает у пользователя целое число
 и печатает на консоль таблицу умножения для этого числа до 10.
@@ -18,6 +20,7 @@ Expected Output :
  */
 /*
 */
+@CodeReview(approved = true)
 public class MultiplicationTable {
     public static void main(String[] args) {
         System.out.println("Please, enter integer number : ");
