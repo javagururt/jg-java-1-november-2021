@@ -5,14 +5,17 @@ public class DogDemo {
     public static void main(String[] args) {
 
         Dog myDog;
-        myDog = new Dog("Bim","Bim,Bim,Bim", 3);
+        myDog = new Dog("Bim","Bim,Bim,Bim","Braun", 3);
         String dogName = myDog.getDogName();
         String dogVoice = myDog.getDogVoice();
+        String dogColor = myDog.getDogColor();
         int dogAge = myDog.getDogAge();
 
 
         System.out.println("Dog name = " + dogName);
         System.out.println("Dog voice = " + dogVoice);
+        System.out.println("Dog color = " + dogColor);
         System.out.println("Dog Age = " + dogAge);
+
     }
 }

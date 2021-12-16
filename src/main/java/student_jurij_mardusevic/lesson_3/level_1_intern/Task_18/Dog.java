@@ -4,11 +4,13 @@ public class Dog {
 
     String dogName;
     String dogVoice;
+    String dogColor;
     int dogAge;
 
-    Dog(String dogName, String dogVoice, int dogAge) {
+    Dog(String dogName, String dogVoice, String dogColor, int dogAge) {
         this.dogName = dogName;
         this.dogVoice = dogVoice;
+        this.dogColor = dogColor;
         this.dogAge = dogAge;
     }
 
@@ -17,6 +19,9 @@ public class Dog {
     }
     String getDogVoice() {
         return this.dogVoice;
+    }
+    String getDogColor() {
+        return this.dogColor;
     }
     int getDogAge() {
         return this.dogAge;
