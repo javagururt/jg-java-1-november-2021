@@ -31,15 +31,15 @@ public class Calculating {
         System.out.println("write the SECOND number and press ENTER");
         int secondNumber = 5;
 
-        int Сложение = firstNumber + secondNumber;
-        int Вычитание = firstNumber - secondNumber;
-        int Умножение = firstNumber * secondNumber;
-        int Деление = firstNumber / secondNumber;
+        int Addition = firstNumber + secondNumber;
+        int Subtraction = firstNumber - secondNumber;
+        int Multiplication = firstNumber * secondNumber;
+        int Division = firstNumber / secondNumber;
 
-        System.out.println("Сложение = " + Сложение);
-        System.out.println("Вычитание = " + Вычитание);
-        System.out.println("Умножение = " + Умножение);
-        System.out.println("Деление = " + Деление);
+        System.out.println("Addition = " + Addition);
+        System.out.println("Subtraction = " + Subtraction);
+        System.out.println("Multiplication = " + Multiplication);
+        System.out.println("Division = " + Division);
 
     }
 }
