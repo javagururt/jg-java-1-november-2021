@@ -2,11 +2,14 @@ package student_eduards_puzirevskis.lesson_2_variables.level_2_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Написать консольную программу, которая запрашивает
 имя пользователя и выводит на консоль текст:
 Hello имя пользователя!
  */
+@CodeReview(approved = true)
 public class Acquaintance {
     public static void main(String[] args) {
         System.out.println("Hello there! Who are you?");

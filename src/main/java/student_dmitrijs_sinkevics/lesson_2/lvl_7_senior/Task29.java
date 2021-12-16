@@ -1,5 +1,8 @@
 package student_dmitrijs_sinkevics.lesson_2.lvl_7_senior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task29 {
 
         public static void main(String[] args) {

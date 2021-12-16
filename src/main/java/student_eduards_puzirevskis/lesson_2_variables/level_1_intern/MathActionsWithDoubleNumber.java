@@ -2,6 +2,8 @@ package student_eduards_puzirevskis.lesson_2_variables.level_1_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Написать консольную программу, которая запрашивает у пользователя два вещественных числа
 (числа с запятой) и выводит на консоль результаты: сложения, вычитания, умножения и деления.
@@ -11,6 +13,7 @@ import java.util.Scanner;
     Scanner scanner = new Scanner(System.in);
     double firstDoubleNumber = scanner.nextDouble();
  */
+@CodeReview(approved = true)
 public class MathActionsWithDoubleNumber {
 
     public static void main(String[] args) {

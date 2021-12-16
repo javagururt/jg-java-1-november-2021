@@ -1,4 +1,7 @@
 package student_eduards_puzirevskis.lesson_2_variables.level_7_senior;
+
+import teacher.annotations.CodeReview;
+
 /*
 Исправьте ошибки компиляции в данной программе.
 
@@ -31,6 +34,7 @@ public class CorrectDataTypes {
 можно представить значения из большего диапазона.
 Диапазон типа данных long больше чем диапазон типа int.
  */
+@CodeReview(approved = true)
 public class CorrectDataTypes {
     public static void main(String[] args) {
         int numberOne = 10;

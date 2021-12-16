@@ -1,10 +1,12 @@
 package student_dmitrijs_sinkevics.lesson_3.lvl_4_junior;
 
+import teacher.annotations.CodeReview;
+
 /*Найти ошибку в коде.
         Исправить и запустить программу.
 
  */
-
+@CodeReview(approved = true)
 class BankAccount {
 
     String ownerFirstName;

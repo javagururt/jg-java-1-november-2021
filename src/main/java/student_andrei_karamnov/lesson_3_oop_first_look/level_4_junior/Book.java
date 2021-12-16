@@ -1,4 +1,7 @@
 package student_andrei_karamnov.lesson_3_oop_first_look.level_4_junior;
+
+import teacher.annotations.CodeReview;
+
 /*Найти ошибку в коде.
 Исправить и запустить программу.
 Менять можно только класс Book.
@@ -26,6 +29,7 @@ class BookDemo {
     }
 
 }*/
+@CodeReview(approved = true)
 class Book {
     String title;
 

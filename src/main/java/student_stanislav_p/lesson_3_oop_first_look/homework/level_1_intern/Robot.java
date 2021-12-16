@@ -1,5 +1,10 @@
 package student_stanislav_p.lesson_3_oop_first_look.homework.level_1_intern;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "нет необходимости использовать '1' в конце названия перменной 'name'")
 public class Robot {
 
     String name1;

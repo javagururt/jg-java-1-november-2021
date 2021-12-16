@@ -2,6 +2,9 @@ package student_rolands_gudels.lesson_3_oop_first_look.level_7_senior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Task_29 {
   /*Выберите два разных объекта из реального мира.
 Для каждого объекта выделите 2 - 3 самых важных
