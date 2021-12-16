@@ -4,6 +4,6 @@ public class Task8 {
         public static void main(String[] args) {
             String myName = "Stanislav";
 
-            System.out.println("Hi " + myName + " !");
+            System.out.println("Hi, " + myName + " !");
         }
 }
