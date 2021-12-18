@@ -1,4 +1,4 @@
-package student_dima_talanov.lesson_3.level_5_middle;
+package student_dima_talanov.lesson_3.level_5_middle.Task18;
 
 import teacher.annotations.CodeReview;
 
