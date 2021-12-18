@@ -1,4 +1,4 @@
-package student_valeriia_kulikova.Lesson_3.homework.level_1_intern;
+package student_valeriia_kulikova.Lesson_3.level_1_intern;
 
 import teacher.annotations.CodeReview;
 
