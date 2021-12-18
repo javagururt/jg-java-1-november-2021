@@ -1,4 +1,4 @@
-package student_valeriia_kulikova.Lesson_3.homework.level_5_middle;
+package student_valeriia_kulikova.Lesson_3.level_5_middle;
 
 public class Dog {
     String dogName;
