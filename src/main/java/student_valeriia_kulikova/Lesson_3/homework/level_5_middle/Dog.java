@@ -8,8 +8,9 @@ public class Dog {
     }
 
     public void Voice () {
-        System.out.println("Dog name - " + this.dogName);
-
+        System.out.println(this.dogName);
+        System.out.println(this.dogName);
+        System.out.println(this.dogName);
     }
 
 }
