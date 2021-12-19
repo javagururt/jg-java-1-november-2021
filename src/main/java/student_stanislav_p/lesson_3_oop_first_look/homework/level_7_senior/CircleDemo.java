@@ -20,8 +20,8 @@ class Circle {
     double Radius;
     double calculatedArea;
 
-    double circleArea(Double Radius) {
-        this.Radius = Radius;
+    double circleArea(double radius) {
+        this.Radius = radius;
 
         this.calculatedArea = Pi * this.Radius * this.Radius;
 
