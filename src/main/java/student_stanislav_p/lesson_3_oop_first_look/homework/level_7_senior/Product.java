@@ -8,8 +8,8 @@ public class Product {
     double discount;
 
     public double actualPrice() {
-        double summOfDiscount = regularPrice * discount;
-        return regularPrice - summOfDiscount;
+      //  double summOfDiscount = regularPrice * discount;
+        return regularPrice - regularPrice * discount;
     }
 
     void printInformation() {
