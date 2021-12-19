@@ -1,9 +1,3 @@
-//Write a Java program that accepts three numbers and prints:
-// -"All numbers are equal" if all three numbers are equal,
-// - "All numbers are different" if all three numbers are different
-// - "Neither all are equal or different" otherwise.
-
-
 package student_dima_talanov.lesson_4.level_3_junior;
 
 import java.util.Scanner;
