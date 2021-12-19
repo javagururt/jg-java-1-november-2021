@@ -10,7 +10,9 @@ public class Task5 {
         int holeNumber2;
         System.out.println("Enter the hole number:");
         holeNumber1 = num.nextInt();
+        System.out.println("Enter the hole number:");
         holeNumber2 = num.nextInt();
+        System.out.println("Number:");
 
         if (holeNumber1 > holeNumber2) {
             System.out.println(holeNumber1);

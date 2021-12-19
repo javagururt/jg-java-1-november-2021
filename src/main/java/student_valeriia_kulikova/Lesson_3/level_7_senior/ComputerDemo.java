@@ -1,6 +1,6 @@
 package student_valeriia_kulikova.Lesson_3.level_7_senior;
 
- class Computer {
+ class  Computer {
     String computerName;
     int diagonal;
     String color;
