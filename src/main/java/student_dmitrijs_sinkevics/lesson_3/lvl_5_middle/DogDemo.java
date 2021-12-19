@@ -11,7 +11,5 @@ public class DogDemo {
         DogDemo.changeColor("Black");
         DogDemo.happyBirthday(); //increase age by 1
         DogDemo.voice(); //greeting, age, color
-
-
     }
 }

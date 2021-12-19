@@ -23,8 +23,6 @@ public class Dog {
     public void changeColor(String newColor) {
         dogColor=newColor;
     }
-    //public void setDogColor(String dogColor) {this.dogColor = dogColor;}
-
 
 
     public void voice () {
