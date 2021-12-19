@@ -1,7 +1,12 @@
+package student_stanislav_p.lesson_3_oop_first_look.homework.level_7_senior;
+
+
+/*
 Дописать код программы, что бы она запускалась
 и выводила на консоль производителя и модель компьютера.
 Менять можно только класс Computer.
 
+ */
 class Computer {
 
     String manufacturer;
@@ -11,6 +16,14 @@ class Computer {
         this.manufacturer = manufacturer;
         this.model = model;
     }
+    String getManufacturer() {
+        return this.manufacturer;
+    }
+
+    String getModel() {
+        return this.model;
+    }
+
 
 }
 
