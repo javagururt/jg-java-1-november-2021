@@ -6,21 +6,20 @@ package student_eduards_puzirevskis.lesson_3_oop_first_look.level_5_middle;
 
         Dog Rex = new Dog("Rex");
         Dog Bim = new Dog("Bim", 2);
-        Rex.voice1();
+        Rex.voice();
         System.out.println("");
-        Bim.voice2();
+        Bim.voiceWithNameAndAge();
         System.out.println("");
         Bim.happyBirthday();
         System.out.println("");
-        System.out.println("Oh, look's like Bim had a Birthday!!!");
-        Bim.voice3();
+        Bim.voiceWithNameAndNewAge();
         System.out.println("");
         Dog Muha = new Dog("Muha", 3, "Black");
-        Muha.voice4();
+        Muha.voiceWithNameAgeColor();
         System.out.println("");
-        Muha.changeColor("White");
-        System.out.println("Look's like it's not a dog, but a chameleon");
+        Muha.changeColor();
         System.out.println("");
-        Muha.voice4();
+        Muha.voiceWithNameAgeColor();
+
     }
 }
