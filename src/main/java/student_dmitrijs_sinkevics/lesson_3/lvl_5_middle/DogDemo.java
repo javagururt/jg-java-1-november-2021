@@ -7,10 +7,9 @@ import teacher.annotations.CodeReviewComment;
 @CodeReviewComment(comment = "неудачное название переменной - совпадает с названием класса (не связанного с DogDemo)")
 public class DogDemo {
     public static void main(String[] args) {
-        Dog DogDemo=new Dog();
-
-        DogDemo.voice();
-
-
+        Dog DogDemo=new Dog("Brown");
+        DogDemo.changeColor("Black");
+        DogDemo.happyBirthday(); //increase age by 1
+        DogDemo.voice(); //greeting, age, color
     }
 }
