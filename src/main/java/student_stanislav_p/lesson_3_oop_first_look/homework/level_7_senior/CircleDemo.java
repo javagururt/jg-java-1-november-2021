@@ -1,5 +1,13 @@
 package student_stanislav_p.lesson_3_oop_first_look.homework.level_7_senior;
 
+
+/*Разработать класс - круг, у которого должны быть следующие характеристики:
+        Свойства: радиус (double radius),
+        Методы: расчет площади (double calculateArea()).
+
+        Класс с объявлением фигуры круг должен называться "Circle".
+        Класс с демонстрацией работы должен называться "CircleDemo".*/
+
 import java.util.Scanner;
 
 import teacher.annotations.CodeReview;
@@ -12,8 +20,8 @@ class Circle {
     double Radius;
     double calculatedArea;
 
-    double circleArea(Double Radius) {
-        this.Radius = Radius;
+    double circleArea(double radius) {
+        this.Radius = radius;
 
         this.calculatedArea = Pi * this.Radius * this.Radius;
 
