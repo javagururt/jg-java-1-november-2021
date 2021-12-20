@@ -20,12 +20,11 @@ public class Task1 {
 
         int number = scanner.nextInt();
 
-        if (number> 0) {
+        if (number > 0) {
 
             System.out.println("Number is > 0");
-        } else {
-            System.out.println("Number is < 0");
-        }
+        } else System.out.println("Number is < 0");
+
 
     }
 }
