@@ -12,6 +12,7 @@ PS: перед решением этой задачи распишите на б
 Нельзя пользоваться классом Math.
  */
 class Task_10 {
+
     public static void main(String[] args) {
         System.out.println("Hi! Let's compare three numbers and calculate, which one of them is the BIGGEST.");
         System.out.println("Please, type first number:");
@@ -28,6 +29,12 @@ class Task_10 {
             System.out.println("The biggest number is: " + userSecondNumber);
         } else if (userThirdNumber > userFirstNumber && userThirdNumber > userSecondNumber) {
             System.out.println("The biggest number is: " + userThirdNumber);
+        } else if (userFirstNumber < userSecondNumber && userSecondNumber == userThirdNumber) {
+            System.out.println("The biggest number is: " + userThirdNumber);
+        } else if (userFirstNumber == userSecondNumber && userFirstNumber > userThirdNumber){
+            System.out.println("The biggest number is: " + userFirstNumber);
+        } else if (userFirstNumber == userThirdNumber && userFirstNumber > userSecondNumber) {
+            System.out.println("The biggest number is: " + userFirstNumber);
         } else {
             System.out.println("All number are equal");
         }
