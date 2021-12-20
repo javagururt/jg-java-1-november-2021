@@ -4,15 +4,19 @@ public class Task_11 {
     /*Создайте класс Calculator. В этом классе создайте методы
 для сложения, вычитания, деления и умножения двух целых чисел.
 
-Подсказка:
+Подсказка:*/
 
 class Calculator {
-
     public int sum(int firstNumber, int secondNumber) {
-        return firstNumber + secondNumber;
+        return firstNumber + secondNumber;}
+     public int substraction(int firstNumber, int secondNumber){
+         return firstNumber - secondNumber;}
+    public int division (int firstNumber, int secondNumber){
+        return firstNumber / secondNumber;}
+    public int multiplication (int firstNumber, int secondNumber){
+        return firstNumber * secondNumber;}
+        }
+
+
     }
 
-    // реализуйте по аналогии оставшиеся методы
-
-}*/
-}
