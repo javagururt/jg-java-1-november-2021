@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson4_if_statement.level_7_senior;
 
-public class Task_23 {
+class Task_23 {
     /*    Написать класс для определения високосный год или нет.
 
 class LeapYear {

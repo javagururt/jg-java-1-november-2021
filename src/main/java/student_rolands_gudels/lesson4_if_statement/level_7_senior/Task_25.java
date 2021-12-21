@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson4_if_statement.level_7_senior;
 
-public class Task_25 {
+class Task_25 {
     /*Дан класс LightColorDetector и его тест LightColorDetectorTest.
 Найдите способ упростить тесты в LightColorDetectorTest.
 
