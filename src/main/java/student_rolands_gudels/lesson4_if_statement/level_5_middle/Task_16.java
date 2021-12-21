@@ -30,4 +30,6 @@ class LightColorDetector {
 Написать тестовые сценарии для класса LightColorDetector
 в классе LightColorDetectorTest. Тестовые сценарии должны
 покрывать все возможные варианты.*/
+
+    // Done
 }
