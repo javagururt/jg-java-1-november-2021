@@ -43,7 +43,7 @@ class LightColorDetectorTest {
             int enteredNumber = 380;
             String expectedResult = "Violet";
             LightColorDetector detector = new LightColorDetector();
-            if (expectedResult == detector.detect(enteredNumber)) {
+            if (expectedResult.equals(detector.detect(enteredNumber))) {
              System.out.println("Violet Border Test One = OK");
             } else { System.out.println("Violet Border Test One = FAIL");
             }
@@ -52,7 +52,7 @@ class LightColorDetectorTest {
         int enteredNumber = 449;
         String expectedResult = "Violet";
         LightColorDetector detector = new LightColorDetector();
-        if (expectedResult == detector.detect(enteredNumber)) {
+        if (expectedResult.equals(detector.detect(enteredNumber))) {
             System.out.println("Violet Border Test Two = OK");
         } else { System.out.println("Violet Border Test Two = FAIL");
         }
@@ -61,7 +61,7 @@ class LightColorDetectorTest {
         int enteredNumber = 450;
         String expectedResult = "Blue";
         LightColorDetector detector = new LightColorDetector();
-        if (expectedResult == detector.detect(enteredNumber)) {
+        if (expectedResult.equals(detector.detect(enteredNumber))) {
             System.out.println("Blue Border Test One = OK");
         } else { System.out.println("Blue Border Test One = FAIL");
         }
@@ -70,7 +70,7 @@ class LightColorDetectorTest {
         int enteredNumber = 494;
         String expectedResult = "Blue";
         LightColorDetector detector = new LightColorDetector();
-        if (expectedResult == detector.detect(enteredNumber)) {
+        if (expectedResult.equals(detector.detect(enteredNumber))) {
             System.out.println("Blue Border Test Two = OK");
         } else { System.out.println("Blue Border Test Two = FAIL");
         }
@@ -79,7 +79,7 @@ class LightColorDetectorTest {
         int enteredNumber = 495;
         String expectedResult = "Green";
         LightColorDetector detector = new LightColorDetector();
-        if (expectedResult == detector.detect(enteredNumber)) {
+        if (expectedResult.equals(detector.detect(enteredNumber))) {
             System.out.println("Green Border Test One = OK");
         } else { System.out.println("Green Border Test One = FAIL");
         }
@@ -88,7 +88,7 @@ class LightColorDetectorTest {
         int enteredNumber = 569;
         String expectedResult = "Green";
         LightColorDetector detector = new LightColorDetector();
-        if (expectedResult == detector.detect(enteredNumber)) {
+        if (expectedResult.equals(detector.detect(enteredNumber))) {
             System.out.println("Green Border Test Two = OK");
         } else { System.out.println("Green Border Test Two = FAIL");
         }
@@ -97,7 +97,7 @@ class LightColorDetectorTest {
         int enteredNumber = 570;
         String expectedResult = "Yellow";
         LightColorDetector detector = new LightColorDetector();
-        if (expectedResult == detector.detect(enteredNumber)) {
+        if (expectedResult.equals(detector.detect(enteredNumber))) {
             System.out.println("Yellow Border Test One = OK");
         } else { System.out.println("Yellow Border Test One = FAIL");
         }
@@ -106,7 +106,7 @@ class LightColorDetectorTest {
         int enteredNumber = 589;
         String expectedResult = "Yellow";
         LightColorDetector detector = new LightColorDetector();
-        if (expectedResult == detector.detect(enteredNumber)) {
+        if (expectedResult.equals(detector.detect(enteredNumber))) {
             System.out.println("Yellow Border Test Two = OK");
         } else { System.out.println("Yellow Border Test Two = FAIL");
         }
@@ -115,7 +115,7 @@ class LightColorDetectorTest {
         int enteredNumber = 590;
         String expectedResult = "Orange";
         LightColorDetector detector = new LightColorDetector();
-        if (expectedResult == detector.detect(enteredNumber)) {
+        if (expectedResult.equals(detector.detect(enteredNumber))) {
             System.out.println("Orange Border Test One = OK");
         } else { System.out.println("Orange Border Test One = FAIL");
         }
@@ -124,7 +124,7 @@ class LightColorDetectorTest {
         int enteredNumber = 619;
         String expectedResult = "Orange";
         LightColorDetector detector = new LightColorDetector();
-        if (expectedResult == detector.detect(enteredNumber)) {
+        if (expectedResult.equals(detector.detect(enteredNumber))) {
             System.out.println("Orange Border Test Two = OK");
         } else { System.out.println("Orange Border Test Two = FAIL");
         }
@@ -133,7 +133,7 @@ class LightColorDetectorTest {
         int enteredNumber = 620;
         String expectedResult = "Red";
         LightColorDetector detector = new LightColorDetector();
-        if (expectedResult == detector.detect(enteredNumber)) {
+        if (expectedResult.equals(detector.detect(enteredNumber))) {
             System.out.println("Red Border Test One = OK");
         } else { System.out.println("Red Border Test One = FAIL");
         }
@@ -142,7 +142,7 @@ class LightColorDetectorTest {
         int enteredNumber = 750;
         String expectedResult = "Red";
         LightColorDetector detector = new LightColorDetector();
-        if (expectedResult == detector.detect(enteredNumber)) {
+        if (expectedResult.equals(detector.detect(enteredNumber))) {
             System.out.println("Red Border Test Two = OK");
         } else { System.out.println("Red Border Test Two = FAIL");
         }
@@ -151,7 +151,7 @@ class LightColorDetectorTest {
         int enteredNumber = 379;
         String expectedResult = "Invisible Light";
         LightColorDetector detector = new LightColorDetector();
-        if (expectedResult == detector.detect(enteredNumber)) {
+        if (expectedResult.equals(detector.detect(enteredNumber))) {
             System.out.println("Under Range Under Violet Spectre Test One = OK");
         } else { System.out.println("Under Range Under Violet Spectre Test One = FAIL");
         }
@@ -160,7 +160,7 @@ class LightColorDetectorTest {
         int enteredNumber = 751;
         String expectedResult = "Invisible Light";
         LightColorDetector detector = new LightColorDetector();
-        if (expectedResult == detector.detect(enteredNumber)) {
+        if (expectedResult.equals(detector.detect(enteredNumber))) {
             System.out.println("Under Range Under Red Spectre Test Two = OK");
         } else { System.out.println("Under Range Under Red Spectre Test Two = FAIL");
         }
