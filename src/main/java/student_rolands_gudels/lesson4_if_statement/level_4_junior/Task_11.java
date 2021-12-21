@@ -30,13 +30,17 @@ public class Task_11 {
                 return false;
             }
         }
+        public void SomethingWentWrong(){
+            System.out.print("Something went wrong or some numbers are the same ");
+        }
         public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
             if (firstNumber > secondNumber) {
                 return firstNumber;
             } else if (firstNumber < secondNumber) {
                 return secondNumber;
-            } else {return 0;}
-        }
+            } else SomethingWentWrong();
+        return 0;}
+
         public int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
             if (firstNumber > secondNumber & firstNumber>thirdNumber) {
                 return firstNumber;
@@ -44,10 +48,12 @@ public class Task_11 {
                 return secondNumber;
             } else if (thirdNumber>firstNumber & thirdNumber>secondNumber){
                 return thirdNumber;
-            } else {return 0;}
+            } else SomethingWentWrong();
+            return 0;
+        }
         }
 
 
     }
-}
+
 
