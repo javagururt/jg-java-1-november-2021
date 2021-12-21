@@ -12,6 +12,11 @@ public class CalculatorTest {
             calculatorTest.maxOfTwoNumbersTestWhereFirstNumberIsBiggerThanSecond();
             calculatorTest.maxOfTwoNumbersTestWhereSecondNumberIsBiggerThanFirst();
             calculatorTest.maxOfTwoNumbersTestWhereAllNumbersAreTheSame();
+            calculatorTest.maxOfThreeNumbersWhereFirstsIsBiggerThanSecondAndThird();
+            calculatorTest.maxOfThreeNumbersWhereSecondIsBiggerThanFirstAndThird();
+            calculatorTest.maxOfThreeNumbersWhereThirdIsBiggerThanFirstAndSecond();
+            calculatorTest.maxOfThreeNumbersWhereFirstTwoAreTheSameAndBiggerThanThird();
+            calculatorTest.maxOfThreeNumbersWhereAllNumbersAreTheSame();
         }
         public void sumTest() {
             int firstNumber = 10;
@@ -106,6 +111,71 @@ public class CalculatorTest {
             System.out.println("MaxOfTwoNumbers test 3 where numbers are the same = OK");
         } else {
             System.out.println("MaxOfTwoNumbers test 3 where numbers are the same = FAIL");
+        }
+    }
+    public void maxOfThreeNumbersWhereFirstsIsBiggerThanSecondAndThird() {
+        int firstNumber = 10;
+        int secondNumber = 5;
+        int thirdNumber = 6;
+        int expectedResult = 10;
+        Task_11.Calculator calculator = new Task_11.Calculator();
+        int realResult = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber );
+        if (realResult == expectedResult) {
+            System.out.println("MaxOfThreeNumbers test 1 where first number is bigger than others two = OK");
+        } else {
+            System.out.println("MaxOfThreeNumbers test 1 where first number is bigger than others two = FAIL");
+        }
+    }
+    public void maxOfThreeNumbersWhereSecondIsBiggerThanFirstAndThird() {
+        int firstNumber = 5;
+        int secondNumber = 10;
+        int thirdNumber = 6;
+        int expectedResult = 10;
+        Task_11.Calculator calculator = new Task_11.Calculator();
+        int realResult = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber );
+        if (realResult == expectedResult) {
+            System.out.println("MaxOfThreeNumbers test 2 where second number is bigger than others two = OK");
+        } else {
+            System.out.println("MaxOfThreeNumbers test 2 where second number is bigger than others two = FAIL");
+        }
+    }
+    public void maxOfThreeNumbersWhereThirdIsBiggerThanFirstAndSecond() {
+        int firstNumber = 5;
+        int secondNumber = 6;
+        int thirdNumber = 10;
+        int expectedResult = 10;
+        Task_11.Calculator calculator = new Task_11.Calculator();
+        int realResult = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber );
+        if (realResult == expectedResult) {
+            System.out.println("MaxOfThreeNumbers test 3 where third number is bigger than others two = OK");
+        } else {
+            System.out.println("MaxOfThreeNumbers test 3 where third number is bigger than others two = FAIL");
+        }
+    }
+    public void maxOfThreeNumbersWhereFirstTwoAreTheSameAndBiggerThanThird() {
+        int firstNumber = 10;
+        int secondNumber = 10;
+        int thirdNumber = 5;
+        int expectedResult = 0;
+        Task_11.Calculator calculator = new Task_11.Calculator();
+        int realResult = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber );
+        if (realResult == expectedResult) {
+            System.out.println("MaxOfThreeNumbers test 4 where first and second numbers are the same and are bigger than third = OK");
+        } else {
+            System.out.println("MaxOfThreeNumbers test 4 where first and second numbers are the same and are bigger than third = FAIL");
+        }
+    }
+    public void maxOfThreeNumbersWhereAllNumbersAreTheSame() {
+        int firstNumber = 10;
+        int secondNumber = 10;
+        int thirdNumber = 10;
+        int expectedResult = 0;
+        Task_11.Calculator calculator = new Task_11.Calculator();
+        int realResult = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber );
+        if (realResult == expectedResult) {
+            System.out.println("MaxOfThreeNumbers test 5 where all numbers are the same = OK");
+        } else {
+            System.out.println("MaxOfThreeNumbers test 5 where all numbers are the same = FAIL");
         }
     }
 
