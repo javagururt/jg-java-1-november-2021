@@ -30,6 +30,14 @@ public class Task_11 {
                 return false;
             }
         }
+        public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
+            if (firstNumber > secondNumber) {
+                return firstNumber;
+            } else if (firstNumber < secondNumber) {
+                return secondNumber;
+            } else {return 0;}
+        }
+
 
     }
 }

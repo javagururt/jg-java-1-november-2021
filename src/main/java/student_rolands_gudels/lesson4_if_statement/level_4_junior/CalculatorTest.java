@@ -9,6 +9,9 @@ public class CalculatorTest {
             calculatorTest.divisionTest();
             calculatorTest.multiplicationTest();
             calculatorTest.isEvenTest();
+            calculatorTest.maxOfTwoNumbersTestWhereFirstNumberIsBiggerThanSecond();
+            calculatorTest.maxOfTwoNumbersTestWhereSecondNumberIsBiggerThanFirst();
+            calculatorTest.maxOfTwoNumbersTestWhereAllNumbersAreTheSame();
         }
         public void sumTest() {
             int firstNumber = 10;
@@ -66,6 +69,43 @@ public class CalculatorTest {
             System.out.println("isEven test = OK");
         } else {
             System.out.println("isEven test = FAIL");
+        }
+    }
+
+    public void maxOfTwoNumbersTestWhereFirstNumberIsBiggerThanSecond() {
+        int firstNumber = 10;
+        int secondNumber = 5;
+        int expectedResult = 10;
+        Task_11.Calculator calculator = new Task_11.Calculator();
+        int realResult = calculator.maxOfTwoNumbers(firstNumber, secondNumber);
+        if (realResult == expectedResult) {
+            System.out.println("MaxOfTwoNumbers test 1 where first number is bigger than second = OK");
+        } else {
+            System.out.println("MaxOfTwoNumbers test 1 where first number is bigger than second = FAIL");
+        }
+    }
+    public void maxOfTwoNumbersTestWhereSecondNumberIsBiggerThanFirst() {
+        int firstNumber = 5;
+        int secondNumber = 10;
+        int expectedResult = 10;
+        Task_11.Calculator calculator = new Task_11.Calculator();
+        int realResult = calculator.maxOfTwoNumbers(firstNumber, secondNumber);
+        if (realResult == expectedResult) {
+            System.out.println("MaxOfTwoNumbers test 2 where second number is bigger than first = OK");
+        } else {
+            System.out.println("MaxOfTwoNumbers test 2 where second number is bigger than first = FAIL");
+        }
+    }
+    public void maxOfTwoNumbersTestWhereAllNumbersAreTheSame() {
+        int firstNumber = 10;
+        int secondNumber = 10;
+        int expectedResult = 0;
+        Task_11.Calculator calculator = new Task_11.Calculator();
+        int realResult = calculator.maxOfTwoNumbers(firstNumber, secondNumber);
+        if (realResult == expectedResult) {
+            System.out.println("MaxOfTwoNumbers test 3 where numbers are the same = OK");
+        } else {
+            System.out.println("MaxOfTwoNumbers test 3 where numbers are the same = FAIL");
         }
     }
 
