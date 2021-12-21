@@ -99,5 +99,12 @@ As a result, if a program cannot locate the JAVA_HOME variable,
 it may still be able to access Java runtime tools by looking at
 which utilities have been made available through the PATH.*/
 
-  //Done
+  //Done  C:\Users\darba>where java
+ //C:\Program Files\Eclipse Foundation\jdk-16.0.2.7-hotspot\bin\java.exe
+ //
+ //C:\Users\darba>java -version
+ //openjdk version "16.0.2" 2021-07-20
+ //OpenJDK Runtime Environment Temurin-16.0.2+7 (build 16.0.2+7)
+ //OpenJDK 64-Bit Server VM Temurin-16.0.2+7 (build 16.0.2+7, mixed mode, sharing)
+
 }
