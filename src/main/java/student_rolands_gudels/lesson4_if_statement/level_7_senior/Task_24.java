@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson4_if_statement.level_7_senior;
 
-public class Task_24 {
+class Task_24 {
     /*Дан класс Calculator и его тест CalculatorTest.
 Найдите способ упростить тесты в CalculatorTest.
 
