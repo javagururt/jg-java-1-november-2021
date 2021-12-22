@@ -1,4 +1,4 @@
-package student_eduards_puzirevskis.lesson_3_oop_first_look.level_7_senior.Task_29;
+package student_eduards_puzirevskis.lesson_3_oop_first_look.level_7_senior.task_29;
 
 class Coffee {
     public String kindOfCoffee;

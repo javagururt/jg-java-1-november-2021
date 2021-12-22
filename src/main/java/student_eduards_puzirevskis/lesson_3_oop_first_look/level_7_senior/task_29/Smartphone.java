@@ -1,6 +1,4 @@
-package student_eduards_puzirevskis.lesson_3_oop_first_look.level_7_senior.Task_29;
-
-import java.util.Scanner;
+package student_eduards_puzirevskis.lesson_3_oop_first_look.level_7_senior.task_29;
 
 class Smartphone {
     public String brand;
