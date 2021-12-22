@@ -1,4 +1,4 @@
-package student_eduards_puzirevskis.lesson_3_oop_first_look.level_7_senior.Task_29;
+package student_eduards_puzirevskis.lesson_3_oop_first_look.level_7_senior.task_29;
 
 /*
 хотел сделать, чтобы сканировал Does it give energy по ответу Yes or No.
