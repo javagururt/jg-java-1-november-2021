@@ -1,4 +1,4 @@
-package student_jurij_mardusevic.lesson_3_oop_first_look.homework.level_2_intern.Task_7_8_9.Tasks;
+package student_jurij_mardusevic.lesson_3_oop_first_look.homework.level_2_intern.Task_7_8_9.Task_7_8_9.Tasks;
 
 
 import teacher.annotations.CodeReview;
