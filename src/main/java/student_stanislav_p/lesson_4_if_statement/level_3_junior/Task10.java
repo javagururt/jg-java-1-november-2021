@@ -17,14 +17,16 @@ public class Task10 {
         System.out.println("Enter the number3 ->");
         int number3 = num.nextInt();
 
-        if (number1 > number2 && number1 > number3) {
+        if (number1 >= number2 && number1 >= number3) {
             System.out.println("The largest number is number1 - " + " " + number1);
 
-        } else if (number2 > number1 && number2 > number3) {
+        } else if (number2 >= number1 && number2 >= number3) {
             System.out.println("The largest number is number2 - " + " " + number2);
 
-        } else if (number3 > number1 && number3 > number2) {
+        } else  {
             System.out.println("The largest number is number3 - " + " " + number3);
         }
+
+
     }
 }
