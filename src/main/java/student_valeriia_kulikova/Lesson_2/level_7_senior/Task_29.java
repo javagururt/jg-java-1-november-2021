@@ -3,7 +3,7 @@ package student_valeriia_kulikova.Lesson_2.level_7_senior;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-public class Task_29 {
+class Task_29 {
     static public class SumTwoNumbers {
 
         public static void main(String[] args) {

@@ -5,7 +5,7 @@ import java.util.Scanner;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-public class Task_10 {
+class Task_10 {
     public static void main(String [] args) {
 
         Scanner scanner = new Scanner(System.in);
