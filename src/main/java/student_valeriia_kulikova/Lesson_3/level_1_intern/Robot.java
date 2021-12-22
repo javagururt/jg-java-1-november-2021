@@ -3,7 +3,7 @@ package student_valeriia_kulikova.Lesson_3.level_1_intern;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-public class Robot {
+ class Robot {
 
     String name;
 

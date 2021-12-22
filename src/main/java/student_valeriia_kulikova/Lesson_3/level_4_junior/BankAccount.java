@@ -3,7 +3,7 @@ package student_valeriia_kulikova.Lesson_3.level_4_junior;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-public class BankAccount {
+class BankAccount {
     String ownerFirstName;
     String ownerLastName;
     int moneyAmount;
