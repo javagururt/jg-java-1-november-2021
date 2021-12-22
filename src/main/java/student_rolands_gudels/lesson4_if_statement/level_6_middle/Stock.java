@@ -67,8 +67,11 @@ class Stock {
         } else if (this.currentPrice<this.minimalPrice){
             this.minimalPrice=this.currentPrice;
         }
-
         }
+
+    int testMax() {
+        return maximalPrice;
+    }
 
     void getPriceInformation() {
         System.out.println("Company = " + companyName + " , " + "Current price = " + currentPrice + " Min Price = "
