@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson4_if_statement.level_6_middle;
 
-public class Stock {
+class Stock {
     public static void main(String[] args) {
         Stock stock = new Stock("Google", 1000);
         stock.updatePrice(99);
@@ -9,7 +9,6 @@ public class Stock {
         stock.getPriceInformation();
 
     }
-
 
 
     /*Необходимо реализовать класс Stock ("акция") таким образом,
@@ -47,27 +46,34 @@ public class Stock {
     //После выполнения кода вывод в консоли должет быть следующим:
     //Company = "GOOG", Current Price = 10, Min Price = 10, Max Price = 10
     //Company = "GOOG", Current Price = 14, Min Price = 7, Max Price = 15*/
-    static String companyName;
-    static int currentPrice;
-    static int minimalPrice;
-    static int maximalPrice;
-    static int newPrice;
+    String companyName;
+    int currentPrice;
+    int minimalPrice;
+    int maximalPrice;
 
     Stock(String companyName, int currentPrice) {
-        Stock.companyName =companyName;
+        this.companyName = companyName;
+        this.currentPrice = currentPrice;
+        this.minimalPrice = currentPrice;
+        this.maximalPrice = currentPrice;
     }
 
-
-
-                 int updatePrice (int newPrice){
-                     currentPrice = newPrice;
-                     return currentPrice;
-                }
-                void getPriceInformation () {
-                    System.out.println("Company = " + companyName + " , " + "Current price = " + currentPrice + " Min Price = " + minimalPrice + ", " + " Max Price = " + maximalPrice);
-
+    void updatePrice(int newPrice) {
+        currentPrice = newPrice;
+      /*  minimalPrice = Math.min(minimalPrice,currentPrice);
+        maximalPrice = Math.max(maximalPrice,currentPrice); */
+        if (this.currentPrice>this.maximalPrice){
+            this.maximalPrice=this.currentPrice;
+        } else if (this.currentPrice<this.minimalPrice){
+            this.minimalPrice=this.currentPrice;
+        }
 
         }
-            }
+
+    void getPriceInformation() {
+        System.out.println("Company = " + companyName + " , " + "Current price = " + currentPrice + " Min Price = "
+                + minimalPrice + ", " + " Max Price = " + maximalPrice);
+    }
+}
 
 
