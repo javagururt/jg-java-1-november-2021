@@ -12,9 +12,9 @@ public class Task_2 {
         int x = scanner.nextInt();
         if (x > 0) {
             System.out.println("You entered positive number");
-        } if (x == 0){
+        } else if (x == 0) {
             System.out.println("You entered zero");
-        } if (x < 0){
+        } else if (x < 0){
             System.out.println("You entered negative number");
         }
     }

@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson4_if_statement.level_7_senior;
 
-public class Task_22 {
+class Task_22 {
     /*Создайте класс FizzBuzz.
 В классе FizzBuzz создайте метод со следующей сигнатурой:
 
