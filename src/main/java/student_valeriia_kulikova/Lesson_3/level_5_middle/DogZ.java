@@ -1,6 +1,6 @@
 package student_valeriia_kulikova.Lesson_3.level_5_middle;
 
-public class DogZ {
+class DogZ {
     String dogNameZ;
     int dogAgeZ;
 

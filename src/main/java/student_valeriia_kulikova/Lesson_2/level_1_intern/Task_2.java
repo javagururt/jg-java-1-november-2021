@@ -7,7 +7,7 @@ import teacher.annotations.CodeReviewComment;
 
 @CodeReview(approved = true)
 @CodeReviewComment(comment = "Лучше следовать правилу 1 объявление переменной = 1 строка кода.")
-public class Task_2 {
+ class Task_2 {
     public static void main(String [] args) {
 
         Scanner scanner = new Scanner(System.in);
