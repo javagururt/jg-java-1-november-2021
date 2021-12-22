@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson4_if_statement.level_4_junior;
 
-public class CalculatorTest {
+ class CalculatorTest {
 
         public static void main(String[] args) {
             CalculatorTest calculatorTest = new CalculatorTest();
