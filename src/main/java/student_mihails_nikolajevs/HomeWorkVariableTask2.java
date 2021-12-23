@@ -38,7 +38,7 @@ package student_mihails_nikolajevs;
                 System.out.println("DIV: " + a + " / " + b );
                 System.out.println("DIV= "  + DIV);
                 System.out.println("MULT: "  + a + " * " + b );
-                System.out.println("MULT: " + MULT);
+                System.out.println("MULT= " + MULT);
 
 
 
