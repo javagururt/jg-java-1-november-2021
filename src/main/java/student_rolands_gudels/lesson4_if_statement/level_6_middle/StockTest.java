@@ -10,6 +10,7 @@ class StockTest {
              stockTest.maxTestThree();
              stockTest.maxTestFour();
              stockTest.maxTestFive();
+             stockTest.maxTestSix();
 
      }
 
@@ -64,6 +65,19 @@ class StockTest {
         if (Objects.equals(expectedResult, stock.maximalPrice)) {
             System.out.println(" Max test five = OK");
         } else { System.out.println("Max five five = FAIL");
+        }
+    }
+    public void maxTestSix() {
+        int expectedResult = 99;
+        Stock stock = new Stock("Test1",10);
+        stock.updatePrice(12);
+        stock.updatePrice(5);
+        stock.updatePrice(7);
+        stock.updatePrice(99);
+        stock.updatePrice(77);
+        if (Objects.equals(expectedResult, stock.maximalPrice)) {
+            System.out.println(" Max test six = OK");
+        } else { System.out.println("Max five six = FAIL");
         }
     }
 }
