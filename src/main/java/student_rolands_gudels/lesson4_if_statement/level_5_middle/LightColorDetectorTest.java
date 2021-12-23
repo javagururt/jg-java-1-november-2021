@@ -1,7 +1,5 @@
 package student_rolands_gudels.lesson4_if_statement.level_5_middle;
 
-import student_rolands_gudels.lesson4_if_statement.level_4_junior.Task_11;
-
 class LightColorDetectorTest {
     public static void main(String[] args) {
 
