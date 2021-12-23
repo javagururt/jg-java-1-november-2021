@@ -7,13 +7,14 @@ class Stock {
     int minPrice ;
 
     public Stock(String stockName, int price){
-        this.name = "Yandex";
+        this.name = stockName;
         this.currentPrice = price;
+        this.minPrice = currentPrice;
+        this.maxPrice = currentPrice;
     }
     public int updatePrice(int newPrice){
         currentPrice = newPrice;
-        if (newPrice < minPrice) {   /*используя подсказку из домашки непонятно как реализовать этот код,
-        если minPrice всегда = 0 */
+        if (newPrice < minPrice) {
             minPrice = newPrice;
         }
         if (newPrice > maxPrice) {
