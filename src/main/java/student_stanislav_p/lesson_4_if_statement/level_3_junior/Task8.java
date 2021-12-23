@@ -3,6 +3,9 @@ package student_stanislav_p.lesson_4_if_statement.level_3_junior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task8 {
 
     public static void main(String[] args) {

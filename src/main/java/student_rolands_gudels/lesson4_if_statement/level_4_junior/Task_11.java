@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson4_if_statement.level_4_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
  class Task_11 {
     /*Создайте класс Calculator. В этом классе создайте методы
 для сложения, вычитания, деления и умножения двух целых чисел.

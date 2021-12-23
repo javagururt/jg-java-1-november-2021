@@ -2,6 +2,8 @@ package student_eduards_puzirevskis.lesson_4_if_statement.level_4_junior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Создайте класс Calculator. В этом классе создайте методы
 для сложения, вычитания, деления и умножения двух целых чисел.
@@ -18,6 +20,7 @@ class Calculator {
 
 }
  */
+@CodeReview(approved = true)
 class Calculator {
     public int firstNumber;
     public int secondNumber;

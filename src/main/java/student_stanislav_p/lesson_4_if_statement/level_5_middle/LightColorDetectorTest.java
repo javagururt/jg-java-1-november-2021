@@ -1,6 +1,8 @@
 package student_stanislav_p.lesson_4_if_statement.level_5_middle;
 
 
+import teacher.annotations.CodeReview;
+
 /*
 
 380 ... 449 - Фиолетовый ("Violet")
@@ -14,7 +16,7 @@ package student_stanislav_p.lesson_4_if_statement.level_5_middle;
 Написать тестовые сценарии для класса LightColorDetector в классе LightColorDetectorTest.
 Тестовые сценарии должны покрывать все возможные варианты.
  */
-
+@CodeReview(approved = true)
 class LightColorDetectorTest {
     public static void main(String[] args) {
         LightColorDetectorTest lightColorDetectorTest = new LightColorDetectorTest();

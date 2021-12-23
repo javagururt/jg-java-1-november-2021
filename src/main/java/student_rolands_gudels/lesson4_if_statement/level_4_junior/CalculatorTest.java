@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson4_if_statement.level_4_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
  class CalculatorTest {
 
         public static void main(String[] args) {

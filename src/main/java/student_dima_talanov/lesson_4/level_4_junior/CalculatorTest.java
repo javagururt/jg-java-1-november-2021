@@ -1,5 +1,8 @@
 package student_dima_talanov.lesson_4.level_4_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class CalculatorTest {
 
     public static void main(String[] args) {

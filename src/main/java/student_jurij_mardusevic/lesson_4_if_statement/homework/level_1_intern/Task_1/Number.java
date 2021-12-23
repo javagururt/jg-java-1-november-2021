@@ -2,6 +2,9 @@ package student_jurij_mardusevic.lesson_4_if_statement.homework.level_1_intern.T
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Number {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

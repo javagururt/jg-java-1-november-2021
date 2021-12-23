@@ -1,4 +1,7 @@
 package student_eduards_puzirevskis.lesson_3_oop_first_look.level_1_and_3;
+
+import teacher.annotations.CodeReview;
+
 /*
 Создайте отдельный класс RobotDemo для демонстрации
 работы с классом Robot.
@@ -12,6 +15,7 @@ package student_eduards_puzirevskis.lesson_3_oop_first_look.level_1_and_3;
         // она нам понадобиться для дальнейшего использования.
     }
  */
+@CodeReview(approved = true)
 public class RobotDemo {
     public static void main(String[] args) {
 

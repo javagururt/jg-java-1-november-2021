@@ -2,6 +2,9 @@ package student_valeriia_kulikova.lesson_4_if_statement.homework.level_2_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_7 {
     public static void main(String[] args) {
 

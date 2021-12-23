@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_4_if_statement.level_6_middle;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Stock {
     String name;
     int currentPrice;

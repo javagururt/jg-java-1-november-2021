@@ -1,4 +1,7 @@
 package student_eduards_puzirevskis.lesson_4_if_statement.level_5_middle;
+
+import teacher.annotations.CodeReview;
+
 /*
 Функциональные требования:
 Программа должна определять цвет в зависимости
@@ -12,6 +15,7 @@ package student_eduards_puzirevskis.lesson_4_if_statement.level_5_middle;
 620 ... 750 - Красный ("Red")
 Вне диапазонов - невидимый спектр ("Invisible Light")
  */
+@CodeReview(approved = true)
 class LightColorDetector {
     public int wavelength;
     public String detect(int wavelength) {

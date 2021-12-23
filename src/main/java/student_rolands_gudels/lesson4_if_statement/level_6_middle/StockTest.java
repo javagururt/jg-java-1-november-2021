@@ -2,6 +2,9 @@ package student_rolands_gudels.lesson4_if_statement.level_6_middle;
 
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class StockTest {
      public static void main(String[] args) {
              StockTest stockTest = new StockTest();

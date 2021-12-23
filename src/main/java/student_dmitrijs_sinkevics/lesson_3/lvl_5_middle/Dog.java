@@ -1,6 +1,8 @@
 package student_dmitrijs_sinkevics.lesson_3.lvl_5_middle;
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class Dog {
      final String dogName = "Skubi";
      int age=3;

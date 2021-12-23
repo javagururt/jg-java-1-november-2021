@@ -2,12 +2,15 @@ package student_eduards_puzirevskis.lesson_4_if_statement.level_2_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Написать программу, которая запрашивает у пользователя
 два целых числа и выводит на консоль:
 - "Numbers are equals" - если числа равны
 - "Numbers are different" - если числа не равны
  */
+@CodeReview(approved = true)
 class Task_7 {
     public static void main(String[] args) {
         System.out.println("Hi! Let's compare two integers and decide, are they equal or not");

@@ -1,4 +1,7 @@
 package student_eduards_puzirevskis.lesson_3_oop_first_look.level_7_senior.task_30;
+
+import teacher.annotations.CodeReview;
+
 /*
 Разработать класс - круг, у которого должны быть следующие характеристики:
 Свойства: радиус (double radius),
@@ -7,6 +10,7 @@ package student_eduards_puzirevskis.lesson_3_oop_first_look.level_7_senior.task_
 Класс с объявлением фигуры круг должен называться "Circle".
 Класс с демонстрацией работы должен называться "CircleDemo".
  */
+@CodeReview(approved = true)
 class Circle {
     double radius;
     double area;

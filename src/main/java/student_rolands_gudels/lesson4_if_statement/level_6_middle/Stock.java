@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson4_if_statement.level_6_middle;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Stock {
     public static void main(String[] args) {
         Stock stock = new Stock("Google", 1000);

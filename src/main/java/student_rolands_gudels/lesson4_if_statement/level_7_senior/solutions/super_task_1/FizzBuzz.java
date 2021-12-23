@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson4_if_statement.level_7_senior.solutions.super_task_1;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class FizzBuzz {
 
     public String detect(int number){

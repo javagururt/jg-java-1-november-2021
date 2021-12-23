@@ -2,6 +2,9 @@ package student_eduards_puzirevskis.lesson_3_oop_first_look.level_7_senior.task_
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class CircleDemo {
     public static void main(String[] args) {
 

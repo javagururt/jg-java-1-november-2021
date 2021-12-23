@@ -1,7 +1,9 @@
 package student_stanislav_p.lesson_4_if_statement.level_6_middle;
 
 
-    /*Необходимо реализовать класс Stock ("акция") таким образом,
+import teacher.annotations.CodeReview;
+
+/*Необходимо реализовать класс Stock ("акция") таким образом,
 чтобы была возможность узнать текущую цену акции,
 а также ее максимальную и минимальную стоимость
 за период существования.
@@ -36,7 +38,7 @@ package student_stanislav_p.lesson_4_if_statement.level_6_middle;
     //После выполнения кода вывод в консоли должет быть следующим:
     //Company = "GOOG", Current Price = 10, Min Price = 10, Max Price = 10
     //Company = "GOOG", Current Price = 14, Min Price = 7, Max Price = 15*/
-
+@CodeReview(approved = true)
 class Stock {
 
         String companyName;

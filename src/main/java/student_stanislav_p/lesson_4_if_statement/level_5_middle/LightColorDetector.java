@@ -1,4 +1,7 @@
 package student_stanislav_p.lesson_4_if_statement.level_5_middle;
+
+import teacher.annotations.CodeReview;
+
 /*
 Функциональные требования:
 Программа должна определять цвет в зависимости
@@ -16,7 +19,7 @@ package student_stanislav_p.lesson_4_if_statement.level_5_middle;
 в отдельном классе LightColorDetector:
 
  */
-
+@CodeReview(approved = true)
 class LightColorDetector {
 
     String detect(int waveLength) {

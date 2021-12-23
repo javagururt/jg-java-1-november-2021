@@ -2,6 +2,9 @@ package student_eduards_puzirevskis.lesson_3_oop_first_look.level_5_middle;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Dog {
    public String name;
    public int age;

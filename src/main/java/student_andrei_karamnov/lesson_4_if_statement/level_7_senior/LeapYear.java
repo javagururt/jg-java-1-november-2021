@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_4_if_statement.level_7_senior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class LeapYear {
     public boolean isLeapYear(int year) {
       if (year % 4 != 0){

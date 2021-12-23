@@ -2,6 +2,9 @@ package student_rolands_gudels.lesson4_if_statement.level_1_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Task_4 {
 
     /*Написать программу, которая запрашивает у пользователя

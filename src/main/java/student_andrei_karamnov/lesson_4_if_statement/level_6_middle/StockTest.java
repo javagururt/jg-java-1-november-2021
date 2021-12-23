@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_4_if_statement.level_6_middle;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class StockTest {
     public static void main(String[] args) {
     Stock stock = new Stock("Yandex", 10);

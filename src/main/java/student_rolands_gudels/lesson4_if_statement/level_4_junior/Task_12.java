@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson4_if_statement.level_4_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
  class Task_12 {
     /*Тестирование своего кода - это очень важный навык, которому
 мы хотим вас научить. В реальном мире ИТ не достаточно просто

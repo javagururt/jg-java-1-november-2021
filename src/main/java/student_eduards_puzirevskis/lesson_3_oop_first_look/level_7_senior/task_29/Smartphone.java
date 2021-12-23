@@ -1,5 +1,8 @@
 package student_eduards_puzirevskis.lesson_3_oop_first_look.level_7_senior.task_29;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Smartphone {
     public String brand;
     public String model;

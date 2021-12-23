@@ -1,4 +1,7 @@
 package student_eduards_puzirevskis.lesson_3_oop_first_look.level_7_senior.task_31;
+
+import teacher.annotations.CodeReview;
+
 /*
 Разработать класс - продукт,
 у которого должны быть следующие характеристики:
@@ -16,6 +19,7 @@ package student_eduards_puzirevskis.lesson_3_oop_first_look.level_7_senior.task_
 Класс с объявлением продукта должен называться "Product".
 Класс с демонстрацией работы должен называться "ProductDemo".
  */
+@CodeReview(approved = true)
 class Product {
     String name;
     double regularPrice;

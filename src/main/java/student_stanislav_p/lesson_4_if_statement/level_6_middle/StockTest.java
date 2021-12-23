@@ -1,7 +1,9 @@
 package student_stanislav_p.lesson_4_if_statement.level_6_middle;
 
 
-    /*Изменение цены акции: 999  = Максимальная цена за указанный переуд: 999
+import teacher.annotations.CodeReview;
+
+/*Изменение цены акции: 999  = Максимальная цена за указанный переуд: 999
 Изменение цены акции: 999 -> 1  = Максимальная цена за указанный переуд: 999
 Изменение цены акции: 999 -> 2 -> 1000 = Максимальная цена за указанный переуд: 1000
 Изменение цены акции: 999 -> 2 -> 1000 -> 8 = Максимальная цена за указанный переуд: 1000
@@ -16,7 +18,7 @@ package student_stanislav_p.lesson_4_if_statement.level_6_middle;
         }
     }
 } */
-
+@CodeReview(approved = true)
 public class StockTest {
 
     public static void main(String[] args) {

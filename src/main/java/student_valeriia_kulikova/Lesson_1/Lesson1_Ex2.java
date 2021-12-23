@@ -1,5 +1,8 @@
 package student_valeriia_kulikova.Lesson_1;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
  class Lesson1_Ex2 {
     public static void main(String args []) {
         int x, y, div;

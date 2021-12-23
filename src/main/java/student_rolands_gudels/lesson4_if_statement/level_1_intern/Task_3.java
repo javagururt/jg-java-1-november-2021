@@ -2,6 +2,9 @@ package student_rolands_gudels.lesson4_if_statement.level_1_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
  class Task_3 {
     /*Написать программу, которая запрашивает у пользователя
 целое число от 1 до 7 и выводит на консоль соотметствующий

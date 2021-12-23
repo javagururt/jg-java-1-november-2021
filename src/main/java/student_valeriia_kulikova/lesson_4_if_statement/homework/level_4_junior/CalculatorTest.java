@@ -1,5 +1,8 @@
 package student_valeriia_kulikova.lesson_4_if_statement.homework.level_4_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class CalculatorTest {
     public static void main(String[] args) {
         CalculatorTest calculatorTest = new CalculatorTest();
