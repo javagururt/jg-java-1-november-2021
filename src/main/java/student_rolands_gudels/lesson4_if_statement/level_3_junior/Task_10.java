@@ -2,7 +2,7 @@ package student_rolands_gudels.lesson4_if_statement.level_3_junior;
 
 import java.util.Scanner;
 
-public class Task_10 {
+class Task_10 {
     /*Написать программу, которая запрашивает у пользователя
 три целых числа и выводит на консоль наибольшее из них.
 

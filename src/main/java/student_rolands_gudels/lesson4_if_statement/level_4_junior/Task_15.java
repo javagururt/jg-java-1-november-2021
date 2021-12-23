@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson4_if_statement.level_4_junior;
 
-public class Task_15 {
+ class Task_15 {
     /*Добавьте в класс Calculator метод для определения
 максимального из трёх целых чисел.
 

@@ -2,7 +2,7 @@ package student_rolands_gudels.lesson4_if_statement.level_1_intern;
 
 import java.util.Scanner;
 
-public class Task_1 {
+class Task_1 {
 
     /*Написать программу, которая запрашивает у
     пользователя

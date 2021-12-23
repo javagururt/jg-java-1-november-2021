@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson4_if_statement.level_4_junior;
 
-public class Task_14 {
+ class Task_14 {
     /*Добавьте в класс Calculator метод для определения
 максимального из двух целых чисел.
 

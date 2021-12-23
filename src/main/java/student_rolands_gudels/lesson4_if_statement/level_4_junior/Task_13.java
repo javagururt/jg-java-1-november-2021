@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson4_if_statement.level_4_junior;
 
-public class Task_13 {
+ class Task_13 {
     /*Добавьте в класс Calculator метод для определения
 чётное число или не чётное.
 

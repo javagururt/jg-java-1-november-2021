@@ -69,9 +69,7 @@ class Stock {
         }
         }
 
-    int testMax() {
-        return maximalPrice;
-    }
+
 
     void getPriceInformation() {
         System.out.println("Company = " + companyName + " , " + "Current price = " + currentPrice + " Min Price = "

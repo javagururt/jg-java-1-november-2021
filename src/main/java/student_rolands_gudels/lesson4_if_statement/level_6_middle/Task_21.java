@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson4_if_statement.level_6_middle;
 
-public class Task_21 {
+ class Task_21 {
     /*Проверьте все ваши классы и уберите с них идентификатор доступа public.
 
 В Java можно создать классы двумя способами:
