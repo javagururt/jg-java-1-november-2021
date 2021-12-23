@@ -17,6 +17,12 @@ class StockTest {
              stockTest.minTestFour();
              stockTest.minTestFive();
              stockTest.minTestSix();
+             stockTest.curTestOne();
+             stockTest.curTestTwo();
+             stockTest.curTestThree();
+             stockTest.curTestFour();
+             stockTest.curTestFive();
+             stockTest.curTestSix();
 
      }
 
@@ -87,7 +93,6 @@ class StockTest {
         }
     }
 
-    //
 
     public void minTestOne() {
         int expectedResult = 999;
@@ -124,7 +129,7 @@ class StockTest {
         stock.updatePrice(8);
         if (Objects.equals(expectedResult, stock.minimalPrice)) {
             System.out.println(" Min test four = OK");
-        } else { System.out.println("Min four Three = FAIL");
+        } else { System.out.println("Min test four = FAIL");
         }
     }
     public void minTestFive() {
@@ -133,7 +138,7 @@ class StockTest {
         stock.updatePrice(27);
         if (Objects.equals(expectedResult, stock.minimalPrice)) {
             System.out.println(" Min test five = OK");
-        } else { System.out.println("Min five five = FAIL");
+        } else { System.out.println("Min test five = FAIL");
         }
     }
     public void minTestSix() {
@@ -146,7 +151,69 @@ class StockTest {
         stock.updatePrice(77);
         if (Objects.equals(expectedResult, stock.minimalPrice)) {
             System.out.println(" Min test six = OK");
-        } else { System.out.println("Min five six = FAIL");
+        } else { System.out.println("Min test six = FAIL");
+        }
+    }
+    //
+
+    public void curTestOne() {
+        int expectedResult = 999;
+        Stock stock = new Stock("Test1",999);
+        if (Objects.equals(expectedResult, stock.currentPrice)) {
+            System.out.println(" Current test One = OK");
+        } else { System.out.println("Current test One = FAIL");
+        }
+    }
+    public void curTestTwo() {
+        int expectedResult = 1;
+        Stock stock = new Stock("Test1",999);
+        stock.updatePrice(1);
+        if (Objects.equals(expectedResult, stock.currentPrice)) {
+            System.out.println(" Current test Two = OK");
+        } else { System.out.println("Current test Two = FAIL");
+        }
+    }
+    public void curTestThree() {
+        int expectedResult = 1000;
+        Stock stock = new Stock("Test1",999);
+        stock.updatePrice(2);
+        stock.updatePrice(1000);
+        if (Objects.equals(expectedResult, stock.currentPrice)) {
+            System.out.println(" Current test Three = OK");
+        } else { System.out.println("Current test Three = FAIL");
+        }
+    }
+    public void curTestFour() {
+        int expectedResult = 8;
+        Stock stock = new Stock("Test1",999);
+        stock.updatePrice(2);
+        stock.updatePrice(1000);
+        stock.updatePrice(8);
+        if (Objects.equals(expectedResult, stock.currentPrice)) {
+            System.out.println(" Current test four = OK");
+        } else { System.out.println("Current test four  = FAIL");
+        }
+    }
+    public void curTestFive() {
+        int expectedResult = 27;
+        Stock stock = new Stock("Test1",9);
+        stock.updatePrice(27);
+        if (Objects.equals(expectedResult, stock.currentPrice)) {
+            System.out.println(" Current test five = OK");
+        } else { System.out.println("Current test five = FAIL");
+        }
+    }
+    public void curTestSix() {
+        int expectedResult = 77;
+        Stock stock = new Stock("Test1",10);
+        stock.updatePrice(12);
+        stock.updatePrice(5);
+        stock.updatePrice(7);
+        stock.updatePrice(99);
+        stock.updatePrice(77);
+        if (Objects.equals(expectedResult, stock.currentPrice)) {
+            System.out.println(" Current test six = OK");
+        } else { System.out.println("Current test six = FAIL");
         }
     }
 }
