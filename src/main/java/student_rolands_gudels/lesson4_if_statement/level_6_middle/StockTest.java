@@ -8,7 +8,7 @@ import teacher.annotations.CodeReview;
 class StockTest {
      public static void main(String[] args) {
              StockTest stockTest = new StockTest();
-             stockTest.maxTestOne();
+            stockTest.maxTestOne();
              stockTest.maxTestTwo();
              stockTest.maxTestThree();
              stockTest.maxTestFour();
@@ -26,8 +26,24 @@ class StockTest {
              stockTest.curTestFour();
              stockTest.curTestFive();
              stockTest.curTestSix();
+             stockTest.maximalPriceTest();
 
      }
+
+    void trueOrFalse (String testName, int actual, int expected){
+         if (actual == expected) {
+             System.out.println(testName + " SUCESS");
+         } else { System.out.println(testName+ " FAIL");
+             }
+         }
+
+         void maximalPriceTest() {
+         Stock stock = new Stock("Test",999);
+         int expected = 999;
+         int actual = stock.maximalPrice;
+         trueOrFalse("maximalPriceTest",expected,actual);
+         }
+
 
 
     /*Изменение цены акции: 999  = Максимальная цена за указанный переуд: 999
@@ -38,11 +54,15 @@ class StockTest {
      public void maxTestOne() {
         int expectedResult = 999;
         Stock stock = new Stock("Test1",999);
-        if (Objects.equals(expectedResult, stock.maximalPrice)) {
-            System.out.println(" Max test One = OK");
-        } else { System.out.println("Max test One = FAIL");
-        }
-    }
+         if (Objects.equals(expectedResult, stock.maximalPrice)) {
+             System.out.println(" Max test One = OK");
+         } else { System.out.println("Max test One = FAIL");
+         }
+     }
+
+
+
+
     public void maxTestTwo() {
         int expectedResult = 999;
         Stock stock = new Stock("Test1",999);
