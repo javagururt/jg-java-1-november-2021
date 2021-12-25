@@ -16,26 +16,22 @@ class Task_31 {
 
 Класс с объявлением продукта должен называться "Product".
 Класс с демонстрацией работы должен называться "ProductDemo".*/
- /*   static class Product{
-                String name;
+    static class Product{
         double regularPrice;
         double discount;
-        double actualPrice;
-        Product(String name) {this.name = name;}
+        String name;
 
-        public double getActualPrice() {
-            return actualPrice;
+        public double actualPrice(){
+            double x = (regularPrice/100)*discount;
+            return regularPrice - x;
         }
-
-        public void setActualPrice(double actualPrice) {
-            this.actualPrice = actualPrice;
-        }
-
-        void actualPrice() {
-        }
-
         void printInformation(){
-
+            System.out.println("This product price is "+regularPrice+"  product discount is: "+discount+"  product price including discount is:  "+actualPrice());
         }
-    } */
+        public Product(String name) {this.name = name;}
+
+        public void setRegularPrice(double regularPrice){this.regularPrice = regularPrice;
+        }
+        public  void setDiscount(double discount){this.discount = discount;}
+    }
 }

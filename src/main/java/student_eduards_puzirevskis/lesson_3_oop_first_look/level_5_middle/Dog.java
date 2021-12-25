@@ -1,35 +1,76 @@
 package student_eduards_puzirevskis.lesson_3_oop_first_look.level_5_middle;
-/*
-Тема: создание класса Dog.
 
-Создать класс собака (Dog)
-и продемонстрировать его работу с ним в программе.
+import java.util.Scanner;
 
-Бизнес требования:
-- У собаки должна быть кличка.
-- Кличку собаке дают в момент создания и потом ее изменить нельзя.
-- Собака должна уметь выполнять команду голос (voice()),
-при выполнении этой команды на консоль должно выводиться
-кличка собаки три раза.
+import teacher.annotations.CodeReview;
 
-Создать отдельный класс DogDemo,
-объявить в нём main() метод и продемонстрировать
-использование класса собака (Dog).
- */
+@CodeReview(approved = true)
 class Dog {
    public String name;
    public int age;
+   public int dogNewAge;
+   public String color;
+   private String newColor;
+
+
+    public Dog(String dogName){
+
+        this.name = dogName;
+
+    }
 
    public Dog(String dogName, int dogAge){
 
        this.name = dogName;
        this.age = dogAge;
-       if (dogAge < 1 ) {
-           System.out.println("Dog age can't be negative");
-       }
 
    }
-   public void voice() {
+
+    public Dog(String dogName, int dogAge, String color){
+
+        this.name = dogName;
+        this.age = dogAge;
+        this.color = color;
+
+    }
+
+ public void voice() {
        System.out.println(this.name+ " ! " + this.name + " ! " + this.name + " ! ");
    }
+    public void voiceWithNameAndAge() {
+        System.out.println(this.name+ " ! " + this.name + " ! " + this.name + " ! ");
+        System.out.println("Dog's name is : " + this.name);
+        System.out.println("Dog's age is : " + this.age);
+    }
+
+    public int happyBirthday() {
+       this.dogNewAge = (age + 1);
+        System.out.println("Oh, look's like "+ this.name + " had a Birthday!!!");
+       return dogNewAge;
+
+    }
+    public void voiceWithNameAndNewAge() {
+        System.out.println(this.name+ " ! " + this.name + " ! " + this.name + " ! ");
+        System.out.println("Dog's name is : " + this.name);
+        System.out.println("Dog's age is : " + this.dogNewAge);
+    }
+    public void voiceWithNameAgeColor() {
+        System.out.println(this.name+ " ! " + this.name + " ! " + this.name + " ! ");
+        System.out.println("Dog's name is : " + this.name);
+        System.out.println("Dog's age is : " + this.age);
+        System.out.println("Dog's color is : " + this.color);
+    }
+
+
+    public void changeColor() {
+        System.out.println("Look's like " + this.name + " is not a dog, but a chameleon");
+        System.out.println("What color should he repaint?");
+        Scanner scan = new Scanner(System.in);
+        String newColor = scan.nextLine();
+
+        this.color = newColor;
+
+
+    }
+
 }
