@@ -19,7 +19,7 @@ public class Task_25 {
                     numbers[j]=scanner.nextInt();
                 }
         for (int j=0;j<length;j++){
-            System.out.println(numbers[j]);
+            System.out.println("The arrays number is: "+numbers[j]);
         }
 
 
