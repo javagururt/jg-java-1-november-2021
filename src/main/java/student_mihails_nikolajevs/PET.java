@@ -17,7 +17,7 @@ public class PET {
     }
 
     public String say(String aWord) {
-        String petResponse = "Ну ладно" + aWord;
+        String petResponse = "Ну ладно  " + aWord;
         return petResponse;
     }
 }
