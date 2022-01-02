@@ -1,7 +1,6 @@
 package student_dima_talanov.lesson_5.level_2_intern;
 
-
-public class Task12 {
+public class Task13 {
 
     public static void main(String[] args) {
         int[] myArray = new int[3];
@@ -14,8 +13,11 @@ public class Task12 {
         System.out.println("Third random array number: ");
         myArray[2] = (int) (Math.random() * 20);
         System.out.println(myArray[2]);
+        int sum = myArray[0] + myArray[1] + myArray[2];
+        System.out.print("Result is: " + sum);
     }
 }
+
 
 
 
