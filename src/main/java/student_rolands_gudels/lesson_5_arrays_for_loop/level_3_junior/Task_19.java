@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_5_arrays_for_loop.level_3_junior;
 
-public class Task_19 {
+ class Task_19 {
 
 /*    Найдите логическую ошибку в программе и исправьте её: */
 

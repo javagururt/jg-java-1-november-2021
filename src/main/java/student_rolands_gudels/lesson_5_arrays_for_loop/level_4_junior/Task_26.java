@@ -3,7 +3,7 @@ package student_rolands_gudels.lesson_5_arrays_for_loop.level_4_junior;
 import java.util.Random;
 import java.util.Scanner;
 
-public class Task_26 {
+ class Task_26 {
     public static void main(String[] args) {
 /*    Напишите программу, в которой:
             - запросите у пользователя с консоли длину массива

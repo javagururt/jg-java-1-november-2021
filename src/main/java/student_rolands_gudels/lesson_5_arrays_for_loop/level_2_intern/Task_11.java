@@ -2,7 +2,7 @@ package student_rolands_gudels.lesson_5_arrays_for_loop.level_2_intern;
 
 import java.util.Scanner;
 
-public class Task_11 {
+ class Task_11 {
     /*Напишите программу, в которой:
  - создайте массив целых чисел длиной 3,
  - заполните каждую ячейку массива числом, запрошенным у пользователя,

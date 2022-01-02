@@ -2,7 +2,7 @@ package student_rolands_gudels.lesson_5_arrays_for_loop.level_2_intern;
 
 import java.util.Random;
 
-public class Task_12 {
+ class Task_12 {
     public static void main(String[] args) {
 
 

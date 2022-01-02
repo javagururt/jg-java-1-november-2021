@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_5_arrays_for_loop.level_2_intern;
 
-public class Task_10 {
+class Task_10 {
    /* Напишите программу, в которой:
             - создайте массив целых чисел длиной 3,
             - заполните каждую ячейку массива любым целым числом,

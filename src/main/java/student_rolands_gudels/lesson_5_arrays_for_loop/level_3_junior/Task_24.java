@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_5_arrays_for_loop.level_3_junior;
 
-public class Task_24 {
+ class Task_24 {
 
 /*    Исправьте код таким образом, что бы программа
     выводила на консоль числа от 0 до 100:*/

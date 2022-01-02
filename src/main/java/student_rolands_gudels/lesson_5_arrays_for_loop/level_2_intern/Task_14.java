@@ -2,7 +2,7 @@ package student_rolands_gudels.lesson_5_arrays_for_loop.level_2_intern;
 
 import java.util.Random;
 
-public class Task_14 {
+ class Task_14 {
 /*    Напишите программу, в которой:
             - создайте массив целых чисел длиной 3,
             - заполните каждую ячейку массива случайным числом,

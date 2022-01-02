@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson_5_arrays_for_loop.level_1_intern;
 
-public class Task_7 {
+ class Task_7 {
 
     class ArrayLength1 {
 

@@ -1,16 +1,66 @@
 package student_rolands_gudels.lesson_5_arrays_for_loop.level_5_middle;
 
-public class Task_31 {
+import java.util.Random;
+
+class Task_31 {
 
  /*   Создайте класс ArrayUtil.
     Напишите в этом классе метод для создания
-    массива целых чисел указанной длины.
+    массива целых чисел указанной длины.*/
 
-    class ArrayUtil {
+    static class ArrayUtil {
+        int arrayLength;
+        int[] array = new int[arrayLength];
+        Random random = new Random();
 
-        public int[] createArray(int arrayLength) {
-            // Напишите реализацию !!!
+
+
+         int[] createArray(int arrayLength) {
+            this.arrayLength = arrayLength;
+            int[] array = new int[arrayLength];
+            this.array = array;
+            return array;
+
         }
 
-    }*/
+        // Напишите реализацию Создайте в классе ArrayUtil метод для
+        //    заполнения массива случайными целыми числами. !!!
+
+         void fillArrayWithRandomNumbers() {
+            for (int i = 0; i < array.length; i++) {
+                array[i] = random.nextInt(10);  // Так будет правильно?
+            }
+        }
+         void printArrayToConsole(int[] array){
+            for (int i = 0; i < array.length; i++) {
+                System.out.println(array[i]);
+            }
+        }
+         int findMaxNumber(int[] array){
+            int max = array[0];
+            for (int j : array) {
+                if (j > max) max = j;
+            }
+            return max;
+        }
+         int findMinNumber(int[] array) {
+            int min = array[0];
+            for (int j : array) {
+                if (j < min) min = j;
+            }
+            return min;
+        }
+         int[] shouldCreateArray() {
+            int[] array = new int[5];
+            array[0]=1;
+            array[1]=2;
+            array[2]=3;
+            array[3]=0;
+            array[4]=-1;
+            return array;
+        }
+
+    }
 }
+
+

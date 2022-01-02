@@ -2,7 +2,7 @@ package student_rolands_gudels.lesson_5_arrays_for_loop.level_4_junior;
 
 import java.util.Scanner;
 
-public class Task_25 {
+ class Task_25 {
     public static void main(String[] args) {
 
 /*    Напишите программу, в которой:

@@ -2,7 +2,7 @@ package student_rolands_gudels.lesson_5_arrays_for_loop.level_2_intern;
 
 import java.util.Random;
 
-public class Task_15 {
+class Task_15 {
 
 /*    Напишите программу, в которой:
             - создайте массив целых чисел длиной 3,

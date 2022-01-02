@@ -2,7 +2,7 @@ package student_rolands_gudels.lesson_5_arrays_for_loop.level_4_junior;
 
 import java.util.Random;
 
-public class Task_29 {
+ class Task_29 {
     public static void main(String[] args) {
 /*    Напишите программу, в которой:
             - создайте массив произвольной длины
@@ -21,6 +21,8 @@ public class Task_29 {
             if (numbers[j] % 2 == 0) {
                 System.out.println("All arrays even numbers are: " + numbers[j]);
             }
+
+
         }
     }
 }

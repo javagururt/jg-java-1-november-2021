@@ -1,11 +1,11 @@
 package student_rolands_gudels.lesson_5_arrays_for_loop.level_4_junior;
 
 import java.util.Random;
-import java.util.Arrays;
+/*import java.util.Arrays;
 import java.util.OptionalInt;
-import java.util.stream.IntStream;
+import java.util.stream.IntStream;*/
 
-public class Task_28 {
+ class Task_28 {
     public static void main(String[] args) {
 /*    Напишите программу, в которой:
             - создайте массив произвольной длины
@@ -16,13 +16,23 @@ public class Task_28 {
         random.nextInt(10);
         int x = random.nextInt(10);
         int[] numbers = new int[x];
-        for (int i=0;i<numbers.length;i++){
-            numbers[i]= random.nextInt(10)+1;
+
+        for (int i = 0; i < numbers.length; i++) {
+            numbers[i] = random.nextInt(10);
             System.out.println(numbers[i]);
         }
-        IntStream intStream = Arrays.stream(numbers);
+          int min = numbers[0];
+            for (int j = 0; j < numbers.length; j++) {
+                if (numbers[j] < min) {
+                  min = numbers[j];
+                }
+            }
+        /*IntStream intStream = Arrays.stream(numbers);
         OptionalInt optionalInt = intStream.min();
         int minAsInt = optionalInt.getAsInt();
-        System.out.println("Minimal number = " + minAsInt);
+        System.out.println("Minimal number = " + minAsInt);*/
+            System.out.println("Min number is: " + min);
+        }
     }
-}
+
+
