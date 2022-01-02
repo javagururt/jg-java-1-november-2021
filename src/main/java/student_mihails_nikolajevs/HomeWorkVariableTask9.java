@@ -58,17 +58,18 @@ public class HomeWorkVariableTask9 {
         c9 = a * b9;
         c10 = a * b10;
 
+        System.out.println("Expected Output : ");
 
-        System.out.println(c1);
-        System.out.println(c2);
-        System.out.println(c3);
-        System.out.println(c4);
-        System.out.println(c5);
-        System.out.println(c6);
-        System.out.println(c7);
-        System.out.println(c8);
-        System.out.println(c9);
-        System.out.println(c10);
+        System.out.println(  a + " * " + b1 + " = " + c1);
+        System.out.println(  a + " * " + b2 + " = " + c2);
+        System.out.println(  a + " * " + b3 + " = " + c3);
+        System.out.println(  a + " * " + b4 + " = " + c4);
+        System.out.println(  a + " * " + b5 + " = " + c5);
+        System.out.println(  a + " * " + b6 + " = " + c6);
+        System.out.println(  a + " * " + b7 + " = " + c7);
+        System.out.println(  a + " * " + b8 + " = " + c8);
+        System.out.println(  a + " * " + b9 + " = " + c9);
+        System.out.println(  a + " * " + b10 + " = " + c10);
 
 
     }
