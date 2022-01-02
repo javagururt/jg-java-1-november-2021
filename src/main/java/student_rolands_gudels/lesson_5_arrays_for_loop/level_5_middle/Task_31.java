@@ -3,39 +3,30 @@ package student_rolands_gudels.lesson_5_arrays_for_loop.level_5_middle;
 import java.util.Random;
 
 class Task_31 {
-
- /*   Создайте класс ArrayUtil.
-    Напишите в этом классе метод для создания
-    массива целых чисел указанной длины.*/
-
     static class ArrayUtil {
         int arrayLength;
         int[] array = new int[arrayLength];
         Random random = new Random();
-
-
 
          int[] createArray(int arrayLength) {
             this.arrayLength = arrayLength;
             int[] array = new int[arrayLength];
             this.array = array;
             return array;
-
         }
-
-        // Напишите реализацию Создайте в классе ArrayUtil метод для
-        //    заполнения массива случайными целыми числами. !!!
 
          void fillArrayWithRandomNumbers() {
             for (int i = 0; i < array.length; i++) {
                 array[i] = random.nextInt(10);  // Так будет правильно?
             }
         }
+
          void printArrayToConsole(int[] array){
             for (int i = 0; i < array.length; i++) {
                 System.out.println(array[i]);
             }
         }
+
          int findMaxNumber(int[] array){
             int max = array[0];
             for (int j : array) {
@@ -43,12 +34,14 @@ class Task_31 {
             }
             return max;
         }
+
          int findMinNumber(int[] array) {
             int min = array[0];
             for (int j : array) {
                 if (j < min) min = j;
             }
             return min;
+
         }
          int[] shouldCreateArray() {
             int[] array = new int[5];
@@ -59,7 +52,6 @@ class Task_31 {
             array[4]=-1;
             return array;
         }
-
     }
 }
 
