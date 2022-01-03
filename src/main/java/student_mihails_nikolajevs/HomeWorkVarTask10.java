@@ -32,7 +32,7 @@ package student_mihails_nikolajevs;
      Double Area;
 
      Area = radius * radius * 3.14;
-     System.out.println(" Area is -> " + Area);
+     System.out.println(" Area is -> " + Area );
 
 
 
