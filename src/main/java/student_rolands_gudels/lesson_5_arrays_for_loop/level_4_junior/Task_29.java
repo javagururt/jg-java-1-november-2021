@@ -21,8 +21,6 @@ import java.util.Random;
             if (numbers[j] % 2 == 0) {
                 System.out.println("All arrays even numbers are: " + numbers[j]);
             }
-
-
         }
     }
 }
