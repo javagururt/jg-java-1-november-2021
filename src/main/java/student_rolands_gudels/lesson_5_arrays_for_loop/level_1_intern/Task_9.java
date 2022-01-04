@@ -1,7 +1,7 @@
 package student_rolands_gudels.lesson_5_arrays_for_loop.level_1_intern;
 
  class Task_9 {
-    class ArrayLength3 {
+    static class ArrayLength3 {
 
         public static void main(String[] args) {
             int[] numbers = new int[2];
