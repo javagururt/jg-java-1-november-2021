@@ -15,8 +15,7 @@ class Task_22 {
             }
             if(isDividedByFive(number)) {
                 return "Buzz";
-            }
-            return "" + number;
+            } else return "" + number;
         }
 
 
