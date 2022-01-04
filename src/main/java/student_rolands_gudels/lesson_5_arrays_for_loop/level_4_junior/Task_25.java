@@ -4,7 +4,6 @@ import java.util.Scanner;
 
  class Task_25 {
     public static void main(String[] args) {
-
 /*    Напишите программу, в которой:
             - запросите у пользователя с консоли длину массива
 - создайте массив указанной пользователем длины
@@ -21,9 +20,5 @@ import java.util.Scanner;
         for (int j=0;j<length;j++){
             System.out.println("The arrays number is: "+numbers[j]);
         }
-
-
-
-
     }
 }
