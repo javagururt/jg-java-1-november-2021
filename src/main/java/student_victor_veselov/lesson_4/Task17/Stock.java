@@ -20,7 +20,7 @@ public class Stock {
     }
 
     public void getPriceInformation() {
-        System.out.println("Company name: " + name + " Company Price: " + price + " " + "MinPrice " + minPrice + " " + "MaxPrice " + maxPrice);
+        System.out.println("Company name: " + name + " Company Price: " + price + " " + " MinPrice " + minPrice + " " + "MaxPrice " + maxPrice);
     }
 
 }

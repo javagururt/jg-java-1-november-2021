@@ -18,7 +18,7 @@ public class StockTest {
 
     void mustCreateWithName(){
         Stock stock = new Stock("HBO",500);
-        String name = "HBO";
+        String name = "HBO ";
         String actualName = stock.name;
 
         if (name.equals(actualName)) {
