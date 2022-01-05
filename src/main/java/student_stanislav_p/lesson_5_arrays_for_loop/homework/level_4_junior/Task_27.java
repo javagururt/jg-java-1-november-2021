@@ -15,7 +15,7 @@ public class Task_27 {
 
         Random random = new Random();
 
-        int arrayLength = random.nextInt(20);
+        int arrayLength = random.nextInt(20)+1;
 
         System.out.println("Array length -> "+ arrayLength);
 
