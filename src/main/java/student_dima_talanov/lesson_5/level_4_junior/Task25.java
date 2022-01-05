@@ -15,9 +15,10 @@ public class Task25 {
         System.out.println("Enter my array length: ");
         int arrayLength = scanner.nextInt();
 
+        System.out.print("");
+        System.out.println("Array number is: ");
         int myArray[] = new int[arrayLength];
         for (int i = 0; i < arrayLength; i++) {
-            System.out.println("Array number is: ");
             myArray[i] = scanner.nextInt();
         }
 
