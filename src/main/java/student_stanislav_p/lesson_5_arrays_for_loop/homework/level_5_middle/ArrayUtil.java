@@ -96,14 +96,14 @@ class ArrayUtil {
 
 
         Random random = new Random();
-        for (int i = 0; i < arrayLength; i++){
+        for (int i = 0; i < newArray.length; i++){
             newArray[i] = random.nextInt(bound);
         }
 
 
     }
     public void printArrayToConsole(int[] newArray) {
-        for (int i = 0; i < arrayLength; i++) {
+        for (int i = 0; i < newArray.length; i++) {
             System.out.println("Array number № "+ (i+1) + " -> "+newArray[i]);
         }
 
