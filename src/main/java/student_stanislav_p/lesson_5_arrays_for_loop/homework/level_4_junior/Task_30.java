@@ -1,15 +1,17 @@
 package student_stanislav_p.lesson_5_arrays_for_loop.homework.level_4_junior;
 
-/*    Напишите программу, в которой:
+/*
+Напишите программу, в которой:
 - создайте массив произвольной длины
 - заполните массив случайными числами
 - распечатайте на консоль все элементы массива
-- найдите наибольшее число в массиве и выведети его на консоль.
+- найдите все нечётные числа в массиве и выведети их на консоль.
 */
 
 import java.util.Random;
 
-public class Task_27 {
+
+public class Task_30 {
 
     public static void main(String[] args) {
 
@@ -26,20 +28,22 @@ public class Task_27 {
 
         int[] numbers = new int[arrayLength];
 
-        int arrayNumbersMax=0;
-        int arrayMax=0;
 
         for (int i=0;i<arrayLength;i++){
             numbers[i]=random.nextInt(100);
             
             System.out.println("The arrays number №"+(i+1) + " -> "+numbers[i]);
 
-            if (numbers[i]>arrayMax) {
-                arrayMax=numbers[i];
-                arrayNumbersMax=i;
-            }
+
         }
 
-        System.out.println("The maxinum arrays number №"+(arrayNumbersMax+1) + " -> "+arrayMax);
+        System.out.println("");
+        System.out.println("List of odd array elements :");
+
+        for (int i=0;i<arrayLength;i++){
+
+            if ((numbers[i] >0) & (numbers[i] %2 != 0)) System.out.println("The arrays number №"+(i+1) + " -> "+numbers[i]);
+
+        }
     }
 }

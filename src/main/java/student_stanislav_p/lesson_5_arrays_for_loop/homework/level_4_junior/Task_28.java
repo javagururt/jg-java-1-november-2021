@@ -16,7 +16,12 @@ public class Task_28 {
 
         Random random = new Random();
 
-        int arrayLength = random.nextInt(20)+1;
+        int arrayLength = 0;
+
+        do {
+            arrayLength = random.nextInt(20);
+        }
+        while (arrayLength == 0) ;
 
         System.out.println("Array length -> "+ arrayLength);
 
