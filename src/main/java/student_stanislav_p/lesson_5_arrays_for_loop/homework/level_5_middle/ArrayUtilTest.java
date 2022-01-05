@@ -79,13 +79,16 @@ public class ArrayUtilTest {
         int arrayLength = 5;
         int bound = 100;
         int expectedResultLength = 5;
-        int expectedResultMin = 3;
-        int expectedResultMax = 99;
 
         int[] testArray = {10, 20, 87, 3, 99};
 
+        int expectedResultMin = 3;
+        int expectedResultMax = 99;
+
+
 
         test.shouldCreateArray(arrayLength, bound, expectedResultLength);
+
 
         test.shouldFindMaxNumber(testArray,expectedResultMax);
 
@@ -103,20 +106,49 @@ public class ArrayUtilTest {
     public void shouldCreateArray(int arrayLength, int bound, int expectedResult) {
 
         ArrayUtil arrayUtil = new ArrayUtil();
+        System.out.println("-------------- TEST  1 -----------------");
+
+
         arrayUtil.createNewArray(arrayLength, bound);
 
         checkResults(expectedResult == arrayUtil.arrayLength, "Test #1 - shouldCreateArray" );
+
     }
+
+
+
     public void shouldFindMaxNumber(int[] testArray, int expectedResultMax){
         ArrayUtil arrayUtil = new ArrayUtil();
 
-        checkResults(expectedResultMax == arrayUtil.findMaxNumber(testArray), "Test #2 - shouldFindMax");
-    //    System.out.println("expected  - " + expectedResultMax + " but result - " + arrayUtil.findMaxNumber(testArray));
+        arrayUtil.printArrayToConsole(testArray);
+
+        int testFindMaxResult = arrayUtil.findMaxNumber(testArray);
+
+        System.out.println("-------------- TEST  2 -----------------");
+
+        System.out.println("-------------- TEST ARRAY -------------");
+
+        arrayUtil.printArrayToConsole(testArray);
+
+        System.out.println("Test maximum number -> " + testFindMaxResult);
+
+        checkResults(expectedResultMax == testFindMaxResult, "Test #2 - shouldFindMax");
     }
+
+
     public void shouldFindMinNumber(int[] testArray, int expectedResultMin){
         ArrayUtil arrayUtil = new ArrayUtil();
 
-        checkResults(expectedResultMin == arrayUtil.findMinNumber(testArray), "Test #3 - shouldFindMin");
-     //   System.out.println("expected  - " + expectedResultMin + " but result - " + arrayUtil.findMinNumber(testArray));
+        int testFindMinResult = arrayUtil.findMinNumber(testArray);
+
+        System.out.println("-------------- TEST  3 -----------------");
+
+        System.out.println("-------------- TEST ARRAY -------------");
+
+        arrayUtil.printArrayToConsole(testArray);
+
+        System.out.println("Test manimum number -> " + testFindMinResult);
+
+        checkResults(expectedResultMin == testFindMinResult, "Test #3 - shouldFindMin");
     }
 }

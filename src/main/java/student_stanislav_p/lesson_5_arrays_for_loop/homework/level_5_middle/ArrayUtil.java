@@ -104,7 +104,7 @@ class ArrayUtil {
     }
     public void printArrayToConsole(int[] newArray) {
         for (int i = 0; i < arrayLength; i++) {
-            System.out.println(newArray[i]);
+            System.out.println("Array number № "+ (i+1) + " -> "+newArray[i]);
         }
 
     }
@@ -114,7 +114,6 @@ class ArrayUtil {
         for (int i = 0; i < newArray.length; i++) {
             if(newArray[i] > maximumOfArray){
                 maximumOfArray = newArray[i];
-                System.out.println(newArray[i]);
 
             }
         }
