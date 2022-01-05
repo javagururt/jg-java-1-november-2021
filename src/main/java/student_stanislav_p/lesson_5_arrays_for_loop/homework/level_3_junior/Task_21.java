@@ -19,7 +19,7 @@ class ForLoopDefinition6 {
 class Task_21 {
 
 
-    static class ForLoopDefinition5 {
+    static class ForLoopDefinition6 {
 
         public static void main(String[] args) {
             for (int i = 0; i < 10; i++) {

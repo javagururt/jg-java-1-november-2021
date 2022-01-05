@@ -13,6 +13,7 @@ public class Task_14 {
 
 
     public static void main(String[] args) {
+
         Random random = new Random();
 
         double sum = 0;
