@@ -11,6 +11,9 @@ package student_stanislav_p.lesson_4_if_statement.level_1_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task4 {
 
     public static void main(String[] args) {

@@ -2,11 +2,14 @@ package student_eduards_puzirevskis.lesson_4_if_statement.level_1_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Написать программу, которая запрашивает у пользователя
 целое число и выводит на консоль
 положительное оно, отрицательное или равно нулю.
  */
+@CodeReview(approved = true)
 class Task_2 {
     public static void main(String[] args) {
 

@@ -2,12 +2,15 @@ package student_eduards_puzirevskis.lesson_4_if_statement.level_1_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Написать программу, которая запрашивает у
 пользователя
 целое число и выводит на консоль
 положительное оно или отрицательное.
  */
+@CodeReview(approved = true)
  class Task_1 {
     public static void main(String[] args) {
         System.out.println("Hi! Let's check something...");

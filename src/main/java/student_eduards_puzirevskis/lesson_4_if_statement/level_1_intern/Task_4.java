@@ -2,6 +2,8 @@ package student_eduards_puzirevskis.lesson_4_if_statement.level_1_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Написать программу, которая запрашивает у пользователя
 целое число и выводит на консоль чётное оно или нет.
@@ -10,6 +12,7 @@ import java.util.Scanner;
 операцию остаток от деления (%). Если остаток от деления на 2
 равен нулю то число чётное, иначе не чётное.
  */
+@CodeReview(approved = true)
 class Task_4 {
     public static void main(String[] args) {
         System.out.println("Let's check something III");

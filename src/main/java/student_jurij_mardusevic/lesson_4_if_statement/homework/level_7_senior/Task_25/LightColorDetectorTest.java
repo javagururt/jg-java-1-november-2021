@@ -1,6 +1,8 @@
 package student_jurij_mardusevic.lesson_4_if_statement.homework.level_7_senior.Task_25;
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class LightColorDetectorTest {
 
 	LightColorDetector lightColorDetector = new LightColorDetector();

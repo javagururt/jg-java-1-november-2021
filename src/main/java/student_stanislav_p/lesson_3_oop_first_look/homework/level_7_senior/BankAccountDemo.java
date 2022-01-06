@@ -1,10 +1,13 @@
 package student_stanislav_p.lesson_3_oop_first_look.homework.level_7_senior;
 
+import teacher.annotations.CodeReview;
+
 /*
 Найти логическую ошибку в коде.
 Исправить и запустить программу так, что бы она выводила
 на консоль владельца банковского счёта и количество денег.
  */
+@CodeReview(approved = true)
     class BankAccount {
 
         String owner;

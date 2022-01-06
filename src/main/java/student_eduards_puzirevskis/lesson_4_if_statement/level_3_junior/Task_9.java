@@ -2,12 +2,15 @@ package student_eduards_puzirevskis.lesson_4_if_statement.level_3_junior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Write a program that accepts three numbers from the user and prints:
 - "increasing" if the numbers are in increasing order,
 - "decreasing" if the numbers are in decreasing order,
 - "Neither increasing or decreasing order" otherwise.
  */
+@CodeReview(approved = true)
 class Task_9 {
     public static void main(String[] args) {
         System.out.println("Hi! Let's compare three numbers and decide their order.");

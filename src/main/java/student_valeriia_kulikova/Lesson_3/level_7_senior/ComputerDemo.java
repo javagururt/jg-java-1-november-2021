@@ -1,5 +1,8 @@
 package student_valeriia_kulikova.Lesson_3.level_7_senior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
  class  Computer {
     String computerName;
     int diagonal;
