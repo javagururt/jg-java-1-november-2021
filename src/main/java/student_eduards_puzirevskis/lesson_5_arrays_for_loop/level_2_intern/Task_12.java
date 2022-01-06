@@ -1,10 +1,14 @@
 package student_eduards_puzirevskis.lesson_5_arrays_for_loop.level_2_intern;
+
+import teacher.annotations.CodeReview;
+
 /*
 Напишите программу, в которой:
  - создайте массив целых чисел длиной 3,
  - заполните каждую ячейку массива случайным числом,
  - выведите значение каждой ячейки на консоль.
  */
+@CodeReview(approved = true)
 class Task_12 {
     public static void main(String[] args) {
         int[] randomArray = new int[3];

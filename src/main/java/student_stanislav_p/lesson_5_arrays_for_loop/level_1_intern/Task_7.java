@@ -15,7 +15,9 @@ class ArrayLength1 {
 
  */
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class Task_7 {
 
     static class ArrayLength1 {

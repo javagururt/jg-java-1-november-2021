@@ -1,5 +1,7 @@
 package student_stanislav_p.lesson_4_if_statement.level_7_senior;
 
+import teacher.annotations.CodeReview;
+
 /*
 class LeapYear {
 
@@ -26,6 +28,7 @@ class LeapYear {
 }
 
  */
+@CodeReview(approved = true)
 public class LeapYear {
 
     public boolean LeapYear(int year) {

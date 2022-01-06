@@ -2,6 +2,9 @@ package student_jurij_mardusevic.lesson_5_arrays_for_loop.homework.level_1_inter
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class ArrayLength1 {
 
     public static void main(String[] args) {

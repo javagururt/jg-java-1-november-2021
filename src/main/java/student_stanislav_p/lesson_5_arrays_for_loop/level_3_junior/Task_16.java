@@ -1,5 +1,8 @@
 package student_stanislav_p.lesson_5_arrays_for_loop.level_3_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
  class Task_16 {
         /*    Найдите синтаксическую ошибку в программе и исправьте её:
 

@@ -10,7 +10,9 @@ package student_stanislav_p.lesson_5_arrays_for_loop.level_4_junior;
 
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class Task_30 {
 
     public static void main(String[] args) {

@@ -1,10 +1,13 @@
 package student_rolands_gudels.lesson_5_arrays_for_loop.level_4_junior;
 
 import java.util.Random;
+
+import teacher.annotations.CodeReview;
+
 /*import java.util.Arrays;
 import java.util.OptionalInt;
 import java.util.stream.IntStream;*/
-
+@CodeReview(approved = true)
  class Task_28 {
     public static void main(String[] args) {
 /*    Напишите программу, в которой:

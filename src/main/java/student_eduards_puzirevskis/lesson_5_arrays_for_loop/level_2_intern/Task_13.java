@@ -1,10 +1,14 @@
 package student_eduards_puzirevskis.lesson_5_arrays_for_loop.level_2_intern;
+
+import teacher.annotations.CodeReview;
+
 /*
 Написашите программу, в которой:
  - создайте массив целых чисел длиной 3,
  - заполните каждую ячейку массива случайным числом,
  - посчитайте сумму всех ячеек и распечатайте ее на консоль.
  */
+@CodeReview(approved = true)
 class Task_13 {
     public static void main(String[] args) {
         int[] sumArray = new int[3];

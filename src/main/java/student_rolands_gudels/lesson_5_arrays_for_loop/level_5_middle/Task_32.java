@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson_5_arrays_for_loop.level_5_middle;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
  class Task_32 {
  /*   Создайте класс ArrayUtilTest.
     В этом классе напишите автоматический тест

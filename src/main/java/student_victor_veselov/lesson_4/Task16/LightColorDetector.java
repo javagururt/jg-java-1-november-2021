@@ -1,6 +1,8 @@
 package student_victor_veselov.lesson_4.Task16;
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class LightColorDetector {
 
     public static String detect(int wavelength) {
