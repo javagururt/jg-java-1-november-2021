@@ -4,19 +4,27 @@ class Task_22 {
     /*Создайте класс FizzBuzz.
 В классе FizzBuzz создайте метод со следующей сигнатурой: */
 
-/* class FizzBuzz {
-int number;
-    public String detect(int number) {
-        this.number = number;
+   static class FizzBuzz {
 
-
-
-        int is
-        if (number % 3 ==0) {
-            System.out.println("Fizz");
-        } else if (number % 5 ==0) {
-            System.out.println("Buzz");
+        public String detect(int number){
+            if (isDividedByThree(number) && isDividedByFive(number)) {
+                return "FizzBuzz";
+            }
+            if(isDividedByThree(number)) {
+                return "Fizz";
+            }
+            if(isDividedByFive(number)) {
+                return "Buzz";
+            } else return "" + number;
         }
+
+
+        boolean isDividedByThree(int number) {
+            return number % 3 == 0;
+        }
+
+        boolean isDividedByFive(int number) {
+            return number % 5 == 0;
         }
         // Реализуйте следующие требования:
         // - если переданное число делится на три возвращайте "Fizz"
@@ -24,9 +32,10 @@ int number;
         // - если переданное число делится на три и на пять возвращайте "FizzBuzz"
         // - иначе возвращайте само число в виде строки (подсказка: return "" +  number)
     }
-
 }
 
-Создайте класс FizzBuzzTest и напишите автоматические тесты,
-которые покрывают все возможные сценарии.*/
-}
+
+
+//Создайте класс FizzBuzzTest и напишите автоматические тесты,
+//которые покрывают все возможные сценарии.*/
+
