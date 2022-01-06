@@ -4,6 +4,7 @@ class DogDemo {
 
     public static void main(String[] args) {
         Dog myDog = new Dog();
+        Dog testDog = new Dog("Bobik", 10, false); //Ctrl + P
         String dogName = myDog.name;
         int dogAge = myDog.age;
         boolean dogHungry = myDog.hungry;
@@ -28,4 +29,5 @@ class DogDemo {
         Dog thirdDog = new Dog("Bobik");
         System.out.println(thirdDog.name);
     }
+
 }

@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson4_if_statement.level_5_middle;
 
-public class Task_16 {
+ class Task_16 {
     /*Разработать программу,
 которая работает в соответствии с требованиями, описанными ниже.
 

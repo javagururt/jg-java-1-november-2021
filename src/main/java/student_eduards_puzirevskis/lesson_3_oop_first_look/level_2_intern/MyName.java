@@ -2,6 +2,8 @@ package student_eduards_puzirevskis.lesson_3_oop_first_look.level_2_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Учимся работать со строками.
 
@@ -17,6 +19,7 @@ import java.util.Scanner;
     System.out.println(myName);
 
  */
+@CodeReview(approved = true)
 public class MyName {
     public static void main(String[] args) {
         String myName = "Eduards";

@@ -2,6 +2,9 @@ package student_dmitrijs_sinkevics.lesson_4.lvl_1_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task3 {
     public static void main(String[] args) {
         Scanner keyboard = new Scanner(System.in);

@@ -2,6 +2,8 @@ package student_eduards_puzirevskis.lesson_4_if_statement.level_1_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Написать программу, которая запрашивает у пользователя
 целое число от 1 до 7 и выводит на консоль соотметствующий
@@ -14,6 +16,7 @@ import java.util.Scanner;
 Ввод: 5
 Вывод: Friday
  */
+@CodeReview(approved = true)
 class Task_3 {
     public static void main(String[] args) {
         System.out.println("HI! Let's check day of the week!");

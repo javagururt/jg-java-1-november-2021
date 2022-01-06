@@ -2,7 +2,10 @@ package student_rolands_gudels.lesson4_if_statement.level_2_intern;
 
 import java.util.Scanner;
 
-public class Task_6 {
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+ class Task_6 {
     /*Написать программу, которая запрашивает у пользователя
 два целых числа и выводит на консоль наименьшее из них.*/
     public static void main(String[] args) {

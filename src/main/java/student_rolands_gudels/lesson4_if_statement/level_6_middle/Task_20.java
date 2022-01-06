@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson4_if_statement.level_6_middle;
 
-public class Task_20 {
+ class Task_20 {
     /*Проверьте весь ваш код и убедитесь, что для каждого тела if оператора вы используете
 правильные отступы.
 

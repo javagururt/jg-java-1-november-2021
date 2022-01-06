@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson4_if_statement.level_6_middle;
 
-public class Task_19 {
+ class Task_19 {
     /*Проверьте весь ваш код и убедитесь, что у каждого if оператора есть фигурные скобки {}
     ограничивающие его тело.
 

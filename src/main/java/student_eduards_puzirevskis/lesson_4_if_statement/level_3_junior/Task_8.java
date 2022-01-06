@@ -2,12 +2,15 @@ package student_eduards_puzirevskis.lesson_4_if_statement.level_3_junior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Write a Java program that accepts three numbers and prints:
  -"All numbers are equal" if all three numbers are equal,
  - "All numbers are different" if all three numbers are different
  - "Neither all are equal or different" otherwise.
  */
+@CodeReview(approved = true)
 class Task_8 {
     public static void main(String[] args) {
         System.out.println("Hi! Let's compare three numbers and decide, are they equal or not");

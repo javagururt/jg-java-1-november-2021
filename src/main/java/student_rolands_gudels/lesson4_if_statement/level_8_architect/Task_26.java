@@ -1,6 +1,6 @@
 package student_rolands_gudels.lesson4_if_statement.level_8_architect;
 
-public class Task_26 {
+ class Task_26 {
     /*Ваша работа красноречиво говорит о том, какой
 вы человек - эффективный, организованный и ориентированный на результат.
 

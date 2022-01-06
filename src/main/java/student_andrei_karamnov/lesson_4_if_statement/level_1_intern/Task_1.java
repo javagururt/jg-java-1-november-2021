@@ -5,6 +5,9 @@ import java.net.SocketOption;
 import java.net.StandardSocketOptions;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Task_1 {
 
 

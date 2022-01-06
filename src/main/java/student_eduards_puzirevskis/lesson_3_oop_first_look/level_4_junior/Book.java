@@ -1,4 +1,7 @@
 package student_eduards_puzirevskis.lesson_3_oop_first_look.level_4_junior;
+
+import teacher.annotations.CodeReview;
+
 /*
 Найти ошибку в коде.
 Исправить и запустить программу.
@@ -29,6 +32,7 @@ class BookDemo {
 }
 
  */
+@CodeReview(approved = true)
 class Book {
     String title;
 

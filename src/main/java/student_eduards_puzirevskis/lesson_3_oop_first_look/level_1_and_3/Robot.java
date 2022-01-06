@@ -1,4 +1,7 @@
 package student_eduards_puzirevskis.lesson_3_oop_first_look.level_1_and_3;
+
+import teacher.annotations.CodeReview;
+
 /*
 Создайте класс робот (Robot).
 
@@ -11,6 +14,7 @@ package student_eduards_puzirevskis.lesson_3_oop_first_look.level_1_and_3;
     }
 
  */
+@CodeReview(approved = true)
 class Robot {
    String  name;
     public void sayHello() {

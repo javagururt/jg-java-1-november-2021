@@ -2,7 +2,10 @@ package student_rolands_gudels.lesson4_if_statement.level_1_intern;
 
 import java.util.Scanner;
 
-public class Task_4 {
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+class Task_4 {
 
     /*Написать программу, которая запрашивает у пользователя
 целое число и выводит на консоль чётное оно или нет.

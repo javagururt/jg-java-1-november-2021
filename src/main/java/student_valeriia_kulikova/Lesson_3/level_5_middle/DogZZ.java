@@ -1,6 +1,9 @@
 package student_valeriia_kulikova.Lesson_3.level_5_middle;
 
-public class DogZZ {
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+class DogZZ {
     String dogNameZZ;
     int dogAgeZZ;
     String dogColorZZ;

@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_4_if_statement.level_5_middle;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class LightColorDetector {
     public String detect(int wavelength) {
     if (wavelength >= 360 && wavelength <=449){

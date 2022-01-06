@@ -2,6 +2,8 @@ package student_eduards_puzirevskis.lesson_4_if_statement.level_3_junior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 Написать программу, которая запрашивает у пользователя
 три целых числа и выводит на консоль наибольшее из них.
@@ -11,6 +13,7 @@ PS: перед решением этой задачи распишите на б
 Это поможет вам правильно написать программу!
 Нельзя пользоваться классом Math.
  */
+@CodeReview(approved = true)
 class Task_10 {
 
     public static void main(String[] args) {

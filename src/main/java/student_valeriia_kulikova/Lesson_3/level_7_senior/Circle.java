@@ -2,6 +2,9 @@ package student_valeriia_kulikova.Lesson_3.level_7_senior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Circle {
     double radius;
     double pi = 3.14;

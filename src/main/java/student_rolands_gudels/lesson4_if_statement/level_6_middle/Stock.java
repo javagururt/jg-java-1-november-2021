@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson4_if_statement.level_6_middle;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Stock {
     public static void main(String[] args) {
         Stock stock = new Stock("Google", 1000);
@@ -67,8 +70,9 @@ class Stock {
         } else if (this.currentPrice<this.minimalPrice){
             this.minimalPrice=this.currentPrice;
         }
-
         }
+
+
 
     void getPriceInformation() {
         System.out.println("Company = " + companyName + " , " + "Current price = " + currentPrice + " Min Price = "
