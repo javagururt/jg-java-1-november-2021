@@ -22,7 +22,7 @@ class ThreeNumbers2 {
             System.out.println("Number " + number2 + " is largest");
         } else if (number3 > number1 && number3 > number2) {
             System.out.println("Number " + number3 + " is largest");
-        } else if (number1 == number2 || number1 == number3 || number2 == number3)
+        } else if (number1 != number2 || number1 != number3 || number2 != number3)
             System.out.println("Integers must be different, try again");
 
     }

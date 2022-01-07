@@ -15,6 +15,9 @@ package student_stanislav_p.lesson_5_arrays_for_loop.level_2_intern;
 
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_15 {
 
     public static void main(String[] args) {

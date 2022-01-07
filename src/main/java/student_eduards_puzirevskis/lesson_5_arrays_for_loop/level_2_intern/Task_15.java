@@ -1,4 +1,7 @@
 package student_eduards_puzirevskis.lesson_5_arrays_for_loop.level_2_intern;
+
+import teacher.annotations.CodeReview;
+
 /*
 Напишите программу, в которой:
  - создайте массив целых чисел длиной 3,
@@ -8,6 +11,7 @@ package student_eduards_puzirevskis.lesson_5_arrays_for_loop.level_2_intern;
  - выведите значение каждой ячейки на консоль.
 
  */
+@CodeReview(approved = true)
 class Task_15 {
     public static void main(String[] args) {
         int[] myArray = new int[3];

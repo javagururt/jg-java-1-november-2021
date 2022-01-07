@@ -2,6 +2,9 @@ package student_rolands_gudels.lesson_5_arrays_for_loop.level_2_intern;
 
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Task_15 {
 
 /*    Напишите программу, в которой:

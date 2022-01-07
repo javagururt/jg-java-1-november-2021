@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson_5_arrays_for_loop.level_5_middle;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
   class ArrayUtilTest {
      public static void main(String[] args) {
         ArrayUtilTest test = new ArrayUtilTest();

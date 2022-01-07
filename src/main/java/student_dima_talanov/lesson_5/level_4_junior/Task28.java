@@ -6,6 +6,9 @@
 
 package student_dima_talanov.lesson_5.level_4_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task28 {
 
     public static void main(String[] args) {

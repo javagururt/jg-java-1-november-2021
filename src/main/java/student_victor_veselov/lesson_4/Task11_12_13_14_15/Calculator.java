@@ -1,5 +1,8 @@
 package student_victor_veselov.lesson_4.Task11_12_13_14_15;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Calculator {
 
     public int sum(int firstNumber, int secondNumber) {

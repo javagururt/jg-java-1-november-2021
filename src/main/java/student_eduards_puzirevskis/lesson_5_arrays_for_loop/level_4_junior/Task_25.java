@@ -9,6 +9,9 @@ package student_eduards_puzirevskis.lesson_5_arrays_for_loop.level_4_junior;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Task_25 {
     public static void main(String[] args) {
         System.out.println("Alright, let's create an array.");
