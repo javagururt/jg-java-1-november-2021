@@ -1,4 +1,4 @@
-package student_mihails_nikolajevs;
+package student_mihails_nikolajevs.lesson_2_var.level_1_intern_;
 /*
 Написать консольную программу, которая запрашивает у пользователя два целых числа и
 выводит на консоль результаты: сложения, вычитания, умножения и деления.
