@@ -1,4 +1,4 @@
-package student_mihails_nikolajevs;
+package student_mihails_nikolajevs.lesson_2_var.level_4_jun;
 /* Как откомпилировать код с помощью JDK компилятора javac,
         без помощи среды разработки (из консоли)?
 
