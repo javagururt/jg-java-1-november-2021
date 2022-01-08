@@ -1,4 +1,4 @@
-package student_mihails_nikolajevs;
+package student_mihails_nikolajevs.lesson_2_var.level_3_jun;
 /*Напишите программу, которая запрашивает у пользователя целое число
         и печатает на консоль таблицу умножения для этого числа до 10.
 
