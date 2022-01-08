@@ -1,4 +1,4 @@
-package student_mihails_nikolajevs;
+package student_mihails_nikolajevs.lesson_2_var.level_4_jun;
 /*
 Write a Java program to divide two numbers and print on the screen.
 Test Data :
