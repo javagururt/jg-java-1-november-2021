@@ -1,4 +1,4 @@
-package student_mihails_nikolajevs;
+package student_mihails_nikolajevs.lesson_2_var.level_2_intern_;
 
 import java.util.Scanner;
 
