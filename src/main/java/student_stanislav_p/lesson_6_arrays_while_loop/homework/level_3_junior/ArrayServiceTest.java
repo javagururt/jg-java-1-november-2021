@@ -150,6 +150,7 @@ public class ArrayServiceTest {
 
     }
 
+    //-------------------------------------------
 
     private void checkTestResult(boolean condition, String testName) {
         if (condition) {
