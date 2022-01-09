@@ -1,8 +1,8 @@
 package student_rolands_gudels.lesson_6_arrays_while_loop.level_1_intern;
 
 public class Task_3 {
-   /* Найдите ошибку в программе и исправить её:
-   class WhileDefinition3 {
+
+  static class WhileDefinition3 {
 
         public static void main(String[] args) {
             int i = 1;
@@ -12,5 +12,6 @@ public class Task_3 {
 
             }
 
-        }*/
+        }
+    }
 }
