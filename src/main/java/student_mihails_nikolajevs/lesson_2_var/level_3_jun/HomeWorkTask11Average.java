@@ -1,4 +1,4 @@
-package student_mihails_nikolajevs;
+package student_mihails_nikolajevs.lesson_2_var.level_3_jun;
 /* Напишите программу, которая запрашивает у пользователя
         три целых числа и выводит их среднее арифметическое
         (складывает все числа и делит на их количество).
