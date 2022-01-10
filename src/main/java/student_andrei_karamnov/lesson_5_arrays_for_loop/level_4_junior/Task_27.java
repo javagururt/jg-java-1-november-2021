@@ -1,9 +1,13 @@
 package student_andrei_karamnov.lesson_5_arrays_for_loop.level_4_junior;
+
+import teacher.annotations.CodeReview;
+
 /*Напишите программу, в которой:
 - создайте массив произвольной длины
 - заполните массив случайными числами
 - распечатайте на консоль все элементы массива
 - найдите наибольшее число в массиве и выведети его на консоль.*/
+@CodeReview(approved = true)
 class Task_27 {
     public static void main(String[] args) {
         int[] array = new int[5];

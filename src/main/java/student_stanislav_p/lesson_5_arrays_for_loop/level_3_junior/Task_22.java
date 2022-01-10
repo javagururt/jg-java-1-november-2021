@@ -1,5 +1,7 @@
 package student_stanislav_p.lesson_5_arrays_for_loop.level_3_junior;
 
+import teacher.annotations.CodeReview;
+
 /*
 Найдите логическую ошибку в программе и исправить её:
 
@@ -15,7 +17,7 @@ class ForLoopDefinition7 {
 
 
  */
-
+@CodeReview(approved = true)
  class Task_22 {
 
 

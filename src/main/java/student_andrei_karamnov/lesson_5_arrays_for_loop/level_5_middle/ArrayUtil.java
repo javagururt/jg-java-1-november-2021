@@ -1,7 +1,11 @@
 package student_andrei_karamnov.lesson_5_arrays_for_loop.level_5_middle;
+
+import teacher.annotations.CodeReview;
+
 /*Создайте класс ArrayUtil.
 Напишите в этом классе метод для создания
 массива целых чисел указанной длины.*/
+@CodeReview(approved = true)
 class ArrayUtil {
    int arrayLength;
 

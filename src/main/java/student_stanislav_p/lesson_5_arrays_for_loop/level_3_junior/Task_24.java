@@ -1,5 +1,7 @@
 package student_stanislav_p.lesson_5_arrays_for_loop.level_3_junior;
 
+import teacher.annotations.CodeReview;
+
 /*
 Исправьте код таким образом, что бы программа
 выводила на консоль числа от 0 до 100:
@@ -15,7 +17,7 @@ class ForLoopDefinition9 {
 }
 
  */
-
+@CodeReview(approved = true)
  class Task_24 {
 
 

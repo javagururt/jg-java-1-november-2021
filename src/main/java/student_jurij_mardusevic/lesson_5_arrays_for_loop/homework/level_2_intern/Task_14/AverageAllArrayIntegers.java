@@ -1,5 +1,8 @@
 package student_jurij_mardusevic.lesson_5_arrays_for_loop.homework.level_2_intern.Task_14;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class AverageAllArrayIntegers {
     public static void main(String[] args) {
         int[] averageOfArray = new int[3];

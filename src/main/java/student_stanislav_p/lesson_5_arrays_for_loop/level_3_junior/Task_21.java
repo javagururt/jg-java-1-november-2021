@@ -15,7 +15,9 @@ class ForLoopDefinition6 {
 
  */
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class Task_21 {
 
 

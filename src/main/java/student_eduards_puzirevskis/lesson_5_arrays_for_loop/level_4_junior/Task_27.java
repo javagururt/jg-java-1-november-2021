@@ -1,6 +1,8 @@
 package student_eduards_puzirevskis.lesson_5_arrays_for_loop.level_4_junior;
 
 
+import teacher.annotations.CodeReview;
+
 /*
 Напишите программу, в которой:
 - создайте массив произвольной длины
@@ -8,6 +10,7 @@ package student_eduards_puzirevskis.lesson_5_arrays_for_loop.level_4_junior;
 - распечатайте на консоль все элементы массива
 - найдите наибольшее число в массиве и выведети его на консоль.
  */
+@CodeReview(approved = true)
 class Task_27 {
     public static void main(String[] args) {
         System.out.println("Alright, let's create random array.");
