@@ -1,5 +1,7 @@
 package student_rolands_gudels.lesson_6_arrays_while_loop.level_3_junior;
 
+import java.util.Arrays;
+
 public class ArrayServiceTest {
     public static void main(String[] args) {
         ArrayServiceTest arrayServiceTest = new ArrayServiceTest();
@@ -139,10 +141,18 @@ public class ArrayServiceTest {
     void revertTest(){
         ArrayService arrayService = new ArrayService();
          int[] actual = arrayService.revert(revertarray);
+        /*System.out.print("actual ");
+         for (int i=0;i<(arrayService.revert(revertarray)).length;i++){
+             System.out.print((arrayService.revert(revertarray))[i]);
+         }
+        System.out.print("expected ");
+         for (int i=0;i<testarray.length;i++){
+             System.out.print(testarray[i]);
+         }*/
          int[] expected = testarray;
-         if (actual==expected) {
+         if (Arrays.equals(expected,actual)) {
              System.out.println("Revert test Passed");
-         } else {System.out.println("Revert test Failed actual was "+  actual+" expected was "+expected);
+         } else {System.out.println("Revert test Failed");
              }
          }
 
