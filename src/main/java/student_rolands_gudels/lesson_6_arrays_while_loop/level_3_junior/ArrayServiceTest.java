@@ -18,10 +18,13 @@ public class ArrayServiceTest {
         arrayServiceTest.replaceAllTest2();
         arrayServiceTest.replaceAllTest3();
         arrayServiceTest.replaceAllTest4();
+        arrayServiceTest.revertTest();
 
     }
 
     int[] numbers = {1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+    int[] revertarray ={1,2,3};
+    int[]testarray={3,2,1};
     int[] numbersForReplaceAllTest4 = {1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
     void truFalseTest1() {
         ArrayService arrayService = new ArrayService();
@@ -133,4 +136,17 @@ public class ArrayServiceTest {
         ArrayServiceTest arrayServiceTest = new ArrayServiceTest();
         arrayServiceTest.countPassedOrFailed("replaceAllTest4", 2, arrayService.replaceAll((numbersForReplaceAllTest4), 2, 666));
     }
-}
+    void revertTest(){
+        ArrayService arrayService = new ArrayService();
+         int[] actual = arrayService.revert(revertarray);
+         int[] expected = testarray;
+         if (actual==expected) {
+             System.out.println("Revert test Passed");
+         } else {System.out.println("Revert test Failed actual was "+  actual+" expected was "+expected);
+             }
+         }
+
+
+
+    }
+

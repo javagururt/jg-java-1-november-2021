@@ -46,7 +46,15 @@ public class ArrayService {
         }
         return count;
     }
-}
+    int[] revert(int[] array){
+        int[] array2 = new int[array.length];
+        for (int i=0; i< array.length;i++){
+            array2[i]= array [array.length-i-1];
+            }
+        return array2;
+        }
+    }
+
 
 
 
