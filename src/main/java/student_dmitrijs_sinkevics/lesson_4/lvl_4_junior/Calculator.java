@@ -5,20 +5,40 @@ import teacher.annotations.CodeReview;
 @CodeReview(approved = true)
 public class Calculator {
 
-    public int sum(int firstNumber, int secondNumber) { //summarise
+    public int sum(int firstNumber, int secondNumber) {
         return firstNumber + secondNumber;
-    }
+    } //summarise
 
-    public int sub(int firstNumber, int secondNumber) { //subtraction
+    public int sub(int firstNumber, int secondNumber) {
         return firstNumber - secondNumber;
-    }
+    } //subtraction
 
-    public int mul(int firstNumber, int secondNumber) { //multiplication
+    public int mul(int firstNumber, int secondNumber) {
         return firstNumber * secondNumber;
+    } //multiplication
+
+    public int div(int firstNumber, int secondNumber) {
+        return firstNumber / secondNumber;
+    } //division
+
+    public boolean isEven(int number) {
+        return number % 2 == 0;
+    } //EvenOrOdd
+
+    public int maxOfTwoNumbers(int firstNumber, int secondNumber) {
+        return Math.max(firstNumber, secondNumber);
     }
 
-    public int div(int firstNumber, int secondNumber) { //division
-        return firstNumber / secondNumber;
+    public int maxOfThreeNumbers(int firstNumber, int secondNumber, int thirdNumber) {
+        int result = 0;
+        if (firstNumber>=secondNumber && firstNumber>=thirdNumber){
+            result = firstNumber;
+        } else if (secondNumber>=firstNumber && secondNumber>=thirdNumber){
+            result = secondNumber;
+        } else if (thirdNumber>=firstNumber && thirdNumber>=secondNumber){
+            result = thirdNumber;
+        }
+        return result;
     }
 
 }

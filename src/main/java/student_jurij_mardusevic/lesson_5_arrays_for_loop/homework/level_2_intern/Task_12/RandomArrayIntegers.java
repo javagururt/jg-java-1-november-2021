@@ -1,5 +1,8 @@
 package student_jurij_mardusevic.lesson_5_arrays_for_loop.homework.level_2_intern.Task_12;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class RandomArrayIntegers {
 
     public static void main(String[] args) {

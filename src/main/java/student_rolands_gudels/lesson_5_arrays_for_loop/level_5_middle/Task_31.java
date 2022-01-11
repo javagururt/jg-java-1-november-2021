@@ -2,6 +2,9 @@ package student_rolands_gudels.lesson_5_arrays_for_loop.level_5_middle;
 
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Task_31 {
     static class ArrayUtil {
         int arrayLength;

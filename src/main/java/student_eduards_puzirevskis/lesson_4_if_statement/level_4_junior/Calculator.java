@@ -46,11 +46,7 @@ class Calculator {
         return (firstNumber*secondNumber);
     }
     public boolean isEven(int number) {
-        if (number % 2 == 1){
-            return false;
-        } else {
-            return true;
-        }
+        return number % 2 != 1;
     }
     public String maxOfTwoNumbers(int firstNumber, int secondNumber) {
         if (firstNumber>secondNumber) {

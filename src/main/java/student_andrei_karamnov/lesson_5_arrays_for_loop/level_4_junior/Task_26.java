@@ -2,11 +2,14 @@ package student_andrei_karamnov.lesson_5_arrays_for_loop.level_4_junior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*Напишите программу, в которой:
 - запросите у пользователя с консоли длину массива
 - создайте массив указанной пользователем длины
 - заполните массив случайными числами
 - распечатайте на консоль все элементы массива.*/
+@CodeReview(approved = true)
 class Task_26 {
     public static void main(String[] args) {
         System.out.println("Please enter the length of the array: ");

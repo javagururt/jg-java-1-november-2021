@@ -2,10 +2,13 @@ package student_andrei_karamnov.lesson_5_arrays_for_loop.level_5_middle;
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
 /*Создайте класс ArrayUtilTest.
 В этом классе напишите автоматический тест
 для метода int[] createArray(int arrayLength)
 из предыдущего задания.*/
+@CodeReview(approved = true)
 class ArrayUtilTest {
     public static void main(String[] args) {
         ArrayUtilTest test = new ArrayUtilTest();
