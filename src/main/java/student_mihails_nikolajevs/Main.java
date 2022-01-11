@@ -30,7 +30,7 @@ public class Main {
         содержащий скомпилированный код нашей java программы.
 */
 
-public class HomeWorkTAsk13Javac {
+public class Main {
 
     public static void main(String[] args) {
 
