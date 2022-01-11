@@ -10,7 +10,7 @@ class ArrayServiceTest {
         test.shouldReplaceFirstNumber();
         test.shouldReplaceAll();
         test.shouldReverseArray();
-
+        test.shouldSortAnArray();
     }
 
     public void shouldFindCertainNumber(){
@@ -32,7 +32,7 @@ class ArrayServiceTest {
         ArrayService test = new ArrayService();
         System.out.println("Array: " + Arrays.toString(numbers));
         for (int i = 0; i < numbers.length; i++) {
-            test.replaceFirst(numbers, numbers[0], 4 );
+            test.replaceFirst(numbers, numbers[0], 3 );
         }
         System.out.println("Replaced array: " + Arrays.toString(numbers));
         for (int i = 0; i < 1; i++) {
@@ -67,6 +67,20 @@ class ArrayServiceTest {
             boolean condition = (numbers[i] == expectedNumbers[i]);
 
             checkTestResult(condition, "shouldReversedArray TEST");
+        }
+    }
+    public void shouldSortAnArray(){
+        int[] numbers = {2, 4, 8, 9, 3, 7, 8, 9, 7, 3, 5};
+        int[] expectedNumbers = {2, 3, 3, 4, 5, 7, 7, 8, 8, 9, 9};
+        ArrayService test = new ArrayService();
+        System.out.println("Array: " + Arrays.toString(numbers));
+        test.sort(numbers);
+        System.out.println("Sorted array: " + Arrays.toString(numbers));
+        for (int i = 0; i < numbers.length ; i++) {
+            boolean condition = (numbers[i] == expectedNumbers[i]);
+
+            checkTestResult(condition, "shouldSortAnArray TEST");
+
         }
     }
 
