@@ -1,5 +1,7 @@
 package student_andrei_karamnov.lesson_6_arrays_while_loop.level_3_junior;
 
+import java.util.Arrays;
+
 class ArrayService {
     boolean contains(int[] arr, int numberToSearch) {
         for (int i = 0; i < arr.length; i++) {
@@ -53,6 +55,18 @@ class ArrayService {
                 start++;
                 end--;
             }
-
     }
-    }}
+        }
+    void sort(int[] arr){
+        int indexMin;
+        for (int i = 0; i < arr.length - 1; i++) {
+            indexMin = i;
+            for (int indexToScan = i; indexToScan < arr.length; indexToScan++) {
+                if(arr[indexMin] > arr[indexToScan]){indexMin = indexToScan;}
+            }
+            int tmp = arr[i];
+            arr[i] = arr[indexMin];
+            arr[indexMin] = tmp;
+        }
+    }
+    }

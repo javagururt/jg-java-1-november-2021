@@ -1,5 +1,7 @@
 package student_rolands_gudels.lesson_6_arrays_while_loop.level_3_junior;
 
+import java.util.Arrays;
+
 public class ArrayServiceTest {
     public static void main(String[] args) {
         ArrayServiceTest arrayServiceTest = new ArrayServiceTest();
@@ -19,6 +21,7 @@ public class ArrayServiceTest {
         arrayServiceTest.replaceAllTest3();
         arrayServiceTest.replaceAllTest4();
         arrayServiceTest.revertTest();
+        arrayServiceTest.sortTest();
 
     }
 
@@ -26,6 +29,8 @@ public class ArrayServiceTest {
     int[] revertarray ={1,2,3};
     int[]testarray={3,2,1};
     int[] numbersForReplaceAllTest4 = {1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
+    int[] needtobesorted = {5,6,9,8,7,2,3,1,4};
+    int[] sorted = {1,2,3,4,5,6,7,8,9};
     void truFalseTest1() {
         ArrayService arrayService = new ArrayService();
         ArrayServiceTest arrayServiceTest = new ArrayServiceTest();
@@ -139,11 +144,29 @@ public class ArrayServiceTest {
     void revertTest(){
         ArrayService arrayService = new ArrayService();
          int[] actual = arrayService.revert(revertarray);
+        /*System.out.print("actual ");
+         for (int i=0;i<(arrayService.revert(revertarray)).length;i++){
+             System.out.print((arrayService.revert(revertarray))[i]);
+         }
+        System.out.print("expected ");
+         for (int i=0;i<testarray.length;i++){
+             System.out.print(testarray[i]);
+         }*/
          int[] expected = testarray;
-         if (actual==expected) {
+         if (Arrays.equals(expected,actual)) {
              System.out.println("Revert test Passed");
-         } else {System.out.println("Revert test Failed actual was "+  actual+" expected was "+expected);
+         } else {System.out.println("Revert test Failed");
              }
+         }
+         void sortTest(){
+        ArrayService arrayService = new ArrayService();
+        int[] expected = sorted;
+        int[] actual = arrayService.sort(needtobesorted);
+        if (Arrays.equals(actual,expected)) {
+            System.out.println("Sort test Passed");
+        } else {
+            System.out.println("Sort test Failed");
+        }
          }
 
 
