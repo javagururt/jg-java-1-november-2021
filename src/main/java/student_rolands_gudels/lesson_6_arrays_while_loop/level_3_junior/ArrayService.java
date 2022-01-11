@@ -36,24 +36,40 @@ public class ArrayService {
         }
         return (count > 0);
     }
-    int replaceAll(int[] array, int numberToReplace, int newNumber){
+
+    int replaceAll(int[] array, int numberToReplace, int newNumber) {
         int count = 0;
         for (int i = 0; i < array.length; i++) {
-            if (array[i] == numberToReplace)  {
+            if (array[i] == numberToReplace) {
                 array[i] = newNumber;
                 count = count + 1;
             }
         }
         return count;
     }
-    int[] revert(int[] array){
+
+    int[] revert(int[] array) {
         int[] array2 = new int[array.length];
-        for (int i=0; i< array.length;i++){
-            array2[i]= array [array.length-i-1];
-            }
-        return array2;
+        for (int i = 0; i < array.length; i++) {
+            array2[i] = array[array.length - i - 1];
         }
+        return array2;
     }
+
+    int[] sort(int[] array) {
+        for (int i = array.length - 1; i > 0; i--) {
+            for (int j = 0; j < i; j++) {
+
+                if (array[j] > array[j + 1]) {
+                    int tmp = array[j];
+                    array[j] = array[j + 1];
+                    array[j + 1] = tmp;
+                }
+            }
+        }
+        return array;
+    }
+}
 
 
 
