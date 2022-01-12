@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_3.level_1_intern_;
+
+import student_andrei_karamnov.lessoncode.Hello;
+
 /*
 
 Создайте класс робот (Robot).
@@ -17,6 +20,7 @@ package student_mihails_nikolajevs.lesson_3.level_1_intern_;
 public class Robot {
 
     public Robot() {
+    }
 
 
 
@@ -24,7 +28,7 @@ public class Robot {
             System.out.println("Hello");
 
 
-        }
+
 
     }
 
