@@ -20,7 +20,7 @@ public class Task25 {
 
         System.out.print("");
         System.out.println("Array number is: ");
-        int myArray[] = new int[arrayLength];
+        int [] myArray = new int[arrayLength];
         for (int i = 0; i < arrayLength; i++) {
             myArray[i] = scanner.nextInt();
         }
