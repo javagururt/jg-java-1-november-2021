@@ -1,4 +1,4 @@
-package level_1_intern_;
+package student_mihails_nikolajevs.lesson_3.level_1_intern_;
 /*
 
 Создайте класс робот (Robot).
