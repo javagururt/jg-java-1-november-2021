@@ -19,7 +19,7 @@ public class Task26 {
         int arrayLength = scanner.nextInt();
 
         System.out.println("Array number is: ");
-        int myArray[] = new int[arrayLength];
+        int [] myArray = new int[arrayLength];
         for (int i = 0; i < arrayLength; i++) {
             myArray[i] = (int) (Math.random() * 30);
             System.out.println(myArray[i]);
