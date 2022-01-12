@@ -15,15 +15,16 @@ package level_1_intern_;
 
  */
 public class Robot {
-    String name;
+
+    public Robot() {
+
+
+
     public void sayHello() {
-        System.out.println("Hello");
+            System.out.println("Hello");
 
 
-
-
-
-
+        }
 
     }
 
