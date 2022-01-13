@@ -15,5 +15,6 @@ package student_eduards_puzirevskis.lesson_6_arrays_while_loop.level_3_junior;
          boolean replacing = arrayService.replaceNumber(numbers, arrayService.getNumberToReplace(), arrayService.getNewNumberToInsert());
          arrayService.printReplacingResults(replacing);
          arrayService.printArrayToConsole(numbers);
+
      }
 }
