@@ -9,7 +9,7 @@ public class Task_25 {
         Scanner scanner = new Scanner(System.in);
         int arrayLength = scanner.nextInt();
         int[] numbers = new int[arrayLength];
-        for (int i = 0; i < arrayLength; i++);{
+        for (int i = 0; i < arrayLength; i++){
         System.out.println("Please enter array number ");
 
            numbers[i] = scanner.nextInt();
