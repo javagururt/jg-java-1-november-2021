@@ -9,6 +9,9 @@ package student_mihails_nikolajevs.lesson_2_var.level_3_jun;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class HomeWorkTask11Average {
 
     public static void main(String[] args) {

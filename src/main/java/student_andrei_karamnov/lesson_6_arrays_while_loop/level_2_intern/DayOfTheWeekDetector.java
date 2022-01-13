@@ -2,6 +2,9 @@ package student_andrei_karamnov.lesson_6_arrays_while_loop.level_2_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class DayOfTheWeekDetector {
 
     public int getDayNumberFromUser() {
@@ -9,6 +12,7 @@ class DayOfTheWeekDetector {
         System.out.print("Input day number between 1 and 7 : ");
         return scanner.nextInt();
     }
+
     public String findDayOfTheWeek(int dayNumber) {
         return switch (dayNumber) {
             case 1 -> "Monday";

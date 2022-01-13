@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_2_var.level_7_senior_;
+
+import teacher.annotations.CodeReview;
+
 /*
 Напишите программу и продемонстрируйте в ней использование
 однострочного и многострочного коментариев.
@@ -8,6 +11,7 @@ package student_mihails_nikolajevs.lesson_2_var.level_7_senior_;
 на Английском языке.
 
  */
+@CodeReview(approved = true)
 public class UsingOfComments {
 
     public static void main(String[] args) {  // Выполнение любой программы на Java

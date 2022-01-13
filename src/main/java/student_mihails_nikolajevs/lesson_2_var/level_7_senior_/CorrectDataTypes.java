@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_2_var.level_7_senior_;
+
+import teacher.annotations.CodeReview;
+
 /*
 Исправьте ошибки компиляции в данной программе.
 
@@ -32,7 +35,7 @@ public class CorrectDataTypes {
 Диапазон типа данных long больше чем диапазон типа int.
 
  */
-
+@CodeReview(approved = true)
 public class CorrectDataTypes {
     public static void main(String[] args) {
 

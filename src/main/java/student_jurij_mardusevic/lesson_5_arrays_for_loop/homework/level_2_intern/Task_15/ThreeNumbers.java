@@ -1,5 +1,8 @@
 package student_jurij_mardusevic.lesson_5_arrays_for_loop.homework.level_2_intern.Task_15;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class ThreeNumbers {
     public static void main(String[] args) {
 

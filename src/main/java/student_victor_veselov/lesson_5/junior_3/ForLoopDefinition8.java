@@ -1,5 +1,8 @@
 package student_victor_veselov.lesson_5.junior_3;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ForLoopDefinition8 {
 
     public static void main(String[] args) {

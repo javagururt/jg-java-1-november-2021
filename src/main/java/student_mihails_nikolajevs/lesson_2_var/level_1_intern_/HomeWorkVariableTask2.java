@@ -9,9 +9,12 @@ package student_mihails_nikolajevs.lesson_2_var.level_1_intern_;
 
  */
 
-    import java.util.Scanner;
+import java.util.Scanner;
 
-        public class HomeWorkVariableTask2 {
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class HomeWorkVariableTask2 {
 
         public static void main(String[] args) {
                 double SUM;
@@ -41,9 +44,7 @@ package student_mihails_nikolajevs.lesson_2_var.level_1_intern_;
                 System.out.println("MULT= " + MULT);
 
 
-
-    }
-
+        }
 
 
 }

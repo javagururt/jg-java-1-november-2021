@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs;
+
+import teacher.annotations.CodeReview;
+
 /* Как откомпилировать код с помощью JDK компилятора javac,
         без помощи среды разработки (из консоли)?
 
@@ -29,7 +32,7 @@ public class Main {
         Эта команда вызовет компилятор, который создаст файл Main.class,
         содержащий скомпилированный код нашей java программы.
 */
-
+@CodeReview(approved = true)
 public class Main {
 
     public static void main(String[] args) {

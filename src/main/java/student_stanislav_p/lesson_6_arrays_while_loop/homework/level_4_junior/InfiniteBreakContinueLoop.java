@@ -3,6 +3,9 @@ package student_stanislav_p.lesson_6_arrays_while_loop.homework.level_4_junior;
 import java.util.Random;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class InfiniteBreakContinueLoop {
 
     public static void main(String[] args) {
@@ -19,7 +22,6 @@ public class InfiniteBreakContinueLoop {
         System.out.println("Test number # 6 - For   Continue  Loop");
 
         System.out.println("Input test number between 1 and 6 -> ");
-
 
 
         int choose=scanner.nextInt();
@@ -53,9 +55,9 @@ public class InfiniteBreakContinueLoop {
         boolean b=true;
         while (b) {
 
-           min=min+1;
-           //System.out.print(min);
-           if (min==Integer.MAX_VALUE) {min =0;};
+            min=min+1;
+            //System.out.print(min);
+            if (min==Integer.MAX_VALUE) {min =0;};
         }
 
         System.out.println("Stoped loop 1");
@@ -81,7 +83,7 @@ public class InfiniteBreakContinueLoop {
 
         for (int i = 0; !done; ) {
             if (i==100_000) {done  = true;}
-            
+
         }
 
     }
@@ -101,11 +103,11 @@ public class InfiniteBreakContinueLoop {
         System.out.println("infinite loop type 'while' with brake");
         System.out.println("press 'q' to exit -> ");
 
-                 while(true) {
-                    String str = sc.next();
-                    // выход при нажатии q
-                    if ("q".equals(str)) {break; }
-                }
+        while(true) {
+            String str = sc.next();
+            // выход при нажатии q
+            if ("q".equals(str)) {break; }
+        }
 
     }
 
@@ -137,7 +139,6 @@ public class InfiniteBreakContinueLoop {
         }
 
     }
-
 
 
 //-------------------------------------------------
@@ -207,12 +208,12 @@ public class InfiniteBreakContinueLoop {
     private void  ForLoopContinue() {
 
 
-            for (int i = 1; i <= 7; i++){
-                System.out.println(i + ": я выполянюсь перед continue!");
-                if (i > 2)
-                    continue;
-                System.out.println("     "+ i + ": я выполянюсь всего два раза ;(");
-            }
+        for (int i = 1; i <= 7; i++){
+            System.out.println(i + ": я выполянюсь перед continue!");
+            if (i > 2)
+                continue;
+            System.out.println("     "+ i + ": я выполянюсь всего два раза ;(");
+        }
 
 
     }

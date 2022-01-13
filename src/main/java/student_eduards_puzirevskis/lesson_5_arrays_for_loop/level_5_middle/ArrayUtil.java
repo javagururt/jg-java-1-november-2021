@@ -2,6 +2,8 @@ package student_eduards_puzirevskis.lesson_5_arrays_for_loop.level_5_middle;
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
 /*
 Создайте класс ArrayUtil.
 Напишите в этом классе метод для создания
@@ -15,6 +17,7 @@ class ArrayUtil {
 
 }
  */
+@CodeReview(approved = true)
 class ArrayUtil {
 
 
