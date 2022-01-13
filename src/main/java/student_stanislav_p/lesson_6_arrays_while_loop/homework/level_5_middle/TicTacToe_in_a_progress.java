@@ -1,10 +1,7 @@
 package student_stanislav_p.lesson_6_arrays_while_loop.homework.level_5_middle;
 
-import java.util.Random;
-import java.util.Scanner;
-
 public class TicTacToe_in_a_progress {
-
+/*
     String SIGN_X = "X";
     String SIGN_O = "O";
     String SIGN_EMPTY = " ";
@@ -152,5 +149,5 @@ public class TicTacToe_in_a_progress {
 
 
     }
-
+*/
 }
