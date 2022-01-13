@@ -3,7 +3,7 @@ package student_stanislav_p.lesson_6_arrays_while_loop.homework.level_5_middle;
 import java.util.Random;
 import java.util.Scanner;
 
-public class TicTacToe {
+public class TicTacToe_in_a_progress {
 
     String SIGN_X = "X";
     String SIGN_O = "O";
@@ -15,7 +15,7 @@ public class TicTacToe {
 
     public static void main(String[] args) {
 
-        TicTacToe game = new TicTacToe();
+        TicTacToe_in_a_progress game = new TicTacToe_in_a_progress();
         game.play();
     }
 
