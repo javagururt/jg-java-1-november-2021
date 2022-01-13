@@ -14,25 +14,122 @@ public class TicTacToe {
     Scanner scanner = new Scanner(System.in);
 
     public static void main(String[] args) {
-        new TicTacToe().game();
+
+        TicTacToe game = new TicTacToe();
+        game.play();
     }
 
 
     // игровая логика
 
-    void game() {
+
+
+    public void play() {
 
         boolean gameType = gameTypeChoose();
 
+        int[][] field = createField();
+        while(true) {
+            printFieldToConsole(field);
+            Move move0 = getNextMove();
+            field[move0.getX()][move0.getY()] = 0;
+            printFieldToConsole(field);
+            if (isWin(field, 0)) {
+                System.out.println("Player 0 WIN!");
+                break;
+            }
+            if (isDraw(field)) {
+                System.out.println("DRAW!");
+                break;
+            }
+
+            printFieldToConsole(field);
+            Move move1 = getNextMove();
+            field[move1.getX()][move1.getY()] = 1;
+            printFieldToConsole(field);
+            if (isWin(field, 1)) {
+                System.out.println("Player 1 WIN!");
+                break;
+            }
+            if (isDraw(field)) {
+                System.out.println("DRAW!");
+                break;
+            }
+        }
+    }
+
+    //-----------------------------------------------
+
+    public int[][] createField(){
+        int [] [] array;
+        return array;
+    }
+
+    public void Move {
+
+
+        void int getX() {
+            int x;
+
+            System.out.println("Enter X  (1..3):");
+            x = scanner.nextInt() - 1;
+        }
+
+        void int getY() {
+            int y;
+
+            System.out.println("Enter Y  (1..3):");
+            y = scanner.nextInt() - 1;
+        }
 
 
     }
+
+    public Move getNextMove() {
+        // запросите у пользователя с консоли две координаты
+        // клетки куда хочет походить игрок
+        // создайте экземпляр класса Move и передайте ему
+        // в конструктор введённые пользователем координаты
+        // верните созданный объект Move из метода.
+
+
+    }
+
 
     public boolean isWinPositionForHorizontals(int[][] field, int playerToCheck){
         int [] [] array = field;
         return true;
 
     }
+
+    public boolean isWinPositionForVerticals(int[][] field, int playerToCheck){
+        int [] [] array = field;
+        return true;
+    }
+
+    public boolean isWinPositionForDiagonals(int[][] field, int playerToCheck){
+        int [] [] array = field;
+        return true;
+    }
+
+
+    public boolean isWin(int[][] field, int playerToCheck){
+        int [] [] array = field;
+        return true;
+    }
+
+    public boolean isDraw(int[][] field){
+        int [] [] array = field;
+        return true;
+    }
+
+    public void printFieldToConsole(int[][] field) {
+        // распечатайте поле на консоль в читаемом формате
+    }
+
+    //----------------------------------------------------------------------------
+
+
 
     boolean gameTypeChoose () {
         int choose;
