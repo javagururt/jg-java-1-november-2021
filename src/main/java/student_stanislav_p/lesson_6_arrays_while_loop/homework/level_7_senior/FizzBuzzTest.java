@@ -1,7 +1,8 @@
 package student_stanislav_p.lesson_6_arrays_while_loop.homework.level_7_senior;
 
-import student_stanislav_p.lesson_4_if_statement.level_4_junior.Calculator;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class FizzBuzzTest {
 
     public static void main(String[] args) {

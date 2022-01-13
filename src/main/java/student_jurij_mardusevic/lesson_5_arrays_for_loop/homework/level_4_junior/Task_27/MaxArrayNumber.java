@@ -1,8 +1,10 @@
 package student_jurij_mardusevic.lesson_5_arrays_for_loop.homework.level_4_junior.Task_27;
 
 import java.util.Random;
-import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class MaxArrayNumber {
     public static void main(String[] args) {
 

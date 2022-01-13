@@ -1,5 +1,8 @@
 package student_victor_veselov.lesson_4.Task17;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class StockTest {
 
     public static void main(String[] args) {
@@ -27,6 +30,7 @@ public class StockTest {
             System.out.println("Name FAILED");
         }
     }
+
     void mustCreateWithPrice(){
         Stock stock = new Stock("HBO",300);
         double price = 300;
@@ -39,6 +43,7 @@ public class StockTest {
         }
 
     }
+
     void mustCreatewithMaxPrice(){
         Stock stock = new Stock("HBO",150);
         double price = 150;
@@ -50,6 +55,7 @@ public class StockTest {
             System.out.println("MaxPrice FAILED");
         }
     }
+
     void mustCreatewithMinPrice(){
         Stock stock = new Stock("HBO",50);
         double price = 50;
@@ -61,6 +67,7 @@ public class StockTest {
             System.out.println("MinPrice FAILED ");
         }
     }
+
     void mustUpdatePrice(){
         Stock stock = new Stock("HBO",300);
 

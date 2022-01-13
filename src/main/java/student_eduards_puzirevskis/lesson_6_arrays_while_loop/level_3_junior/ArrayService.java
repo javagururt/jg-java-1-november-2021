@@ -3,6 +3,9 @@ package student_eduards_puzirevskis.lesson_6_arrays_while_loop.level_3_junior;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class ArrayService {
 
     public int getOurArraySize() {
@@ -12,59 +15,59 @@ class ArrayService {
     }
 
 
-     public int[] createArray(int size) {
-      return new int[size];
-     }
+    public int[] createArray(int size) {
+        return new int[size];
+    }
 
-     public void fillArrayWithRandomNumbers(int[] numbers) {
+    public void fillArrayWithRandomNumbers(int[] numbers) {
         for (int i = 0; i < numbers.length; i++) {
-         numbers[i] = (int)(Math.random()*101)-50;
+            numbers[i] = (int)(Math.random()*101)-50;
         }
-     }
+    }
 
-     public void printArrayToConsole(int[] numbers) {
+    public void printArrayToConsole(int[] numbers) {
         System.out.println("Your array is: " + Arrays.toString(numbers));
-     }
+    }
 
-     public int whatNumberWeAreLookingFor() {
-      System.out.println("Alright. What number would you like to search in our array?");
-      Scanner scanner = new Scanner(System.in);
-         return scanner.nextInt();
-     }
+    public int whatNumberWeAreLookingFor() {
+        System.out.println("Alright. What number would you like to search in our array?");
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
+    }
 
-     public boolean findingMatchInArray(int[] numbers, int numberToFind) {
-         for (int number : numbers) {
-             if (number == numberToFind) {
-                 return true;
-             }
-         }
-         return false;
-     }
+    public boolean findingMatchInArray(int[] numbers, int numberToFind) {
+        for (int number : numbers) {
+            if (number == numberToFind) {
+                return true;
+            }
+        }
+        return false;
+    }
 
 
-     public void printSearchingResult(int numberToFind, boolean searchingResult, int countOccurrences) {
-         if (searchingResult) {
-             System.out.println("Nice. I've found your number " + numberToFind + " in array. It occurs " + countOccurrences + " time(s).");
-         } else {
-             System.out.println("Unfortunately, your number " + numberToFind + " is not found in our array.");
-         }
-     }
+    public void printSearchingResult(int numberToFind, boolean searchingResult, int countOccurrences) {
+        if (searchingResult) {
+            System.out.println("Nice. I've found your number " + numberToFind + " in array. It occurs " + countOccurrences + " time(s).");
+        } else {
+            System.out.println("Unfortunately, your number " + numberToFind + " is not found in our array.");
+        }
+    }
 
-     public int countOccurrences(int[] numbers, int numberToFind) {
+    public int countOccurrences(int[] numbers, int numberToFind) {
         int countOccurrences = 0;
-         for (int number : numbers) {
-             if (number == numberToFind) {
-                 countOccurrences++;
-             }
-         }
-         return countOccurrences;
-     }
+        for (int number : numbers) {
+            if (number == numberToFind) {
+                countOccurrences++;
+            }
+        }
+        return countOccurrences;
+    }
 
-     public int getNumberToReplace() {
-         System.out.println("Ok, which number in array you would like to replace?");
-         Scanner scanner = new Scanner(System.in);
-         return scanner.nextInt();
-     }
+    public int getNumberToReplace() {
+        System.out.println("Ok, which number in array you would like to replace?");
+        Scanner scanner = new Scanner(System.in);
+        return scanner.nextInt();
+    }
 
     public int getNewNumberToInsert() {
         System.out.println("Which integer you would like to insert?");

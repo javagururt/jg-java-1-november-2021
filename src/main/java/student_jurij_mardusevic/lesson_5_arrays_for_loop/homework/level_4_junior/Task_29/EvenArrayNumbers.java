@@ -2,38 +2,41 @@ package student_jurij_mardusevic.lesson_5_arrays_for_loop.homework.level_4_junio
 
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class EvenArrayNumbers {
     public static void main(String[] args) {
 
-    Random random = new Random();
-    int arrayLength = 0;
+        Random random = new Random();
+        int arrayLength = 0;
 
-    do {
-        arrayLength = random.nextInt(9);
-    }
-    while (arrayLength == 0) ;
+        do {
+            arrayLength = random.nextInt(9);
+        }
+        while (arrayLength == 0);
 
-    System.out.println("Длина массива: "+ arrayLength);
+        System.out.println("Длина массива: "+ arrayLength);
 
-    int[] numbers = new int[arrayLength];
-
-
-    for (int i=0; i<arrayLength; i++){
-        numbers[i]=random.nextInt(9);
-
-        System.out.println("Количество массивов: "+(i+1) + " >>> "+ numbers[i]);
+        int[] numbers = new int[arrayLength];
 
 
-    }
+        for (int i = 0; i<arrayLength; i++){
+            numbers[i]=random.nextInt(9);
 
-    System.out.println("");
-    System.out.println("Список четных элементов массива: ");
+            System.out.println("Количество массивов: "+(i+1) + " >>> "+ numbers[i]);
 
-    for (int i=0; i<arrayLength; i++){
 
-        if ((numbers[i] >0) & (numbers[i] %2 == 0))
-            System.out.println("Количество массивов: "+(i+1) + " >>> "+numbers[i]);
+        }
 
-    }
+        System.out.println("");
+        System.out.println("Список четных элементов массива: ");
+
+        for (int i=0; i<arrayLength; i++){
+
+            if ((numbers[i] >0) & (numbers[i] %2 == 0))
+                System.out.println("Количество массивов: "+(i+1) + " >>> "+numbers[i]);
+
+        }
 }
 }

@@ -1,4 +1,7 @@
 package student_andrei_karamnov.lesson_6_arrays_while_loop.level_4_junior;
+
+import teacher.annotations.CodeReview;
+
 /*Создайте класс TwoDimensionalArray и в нём напишите программу в которой:
 - создайте двумерный массив;
 - заполните двумерный массив случайными числами;
@@ -10,6 +13,7 @@ package student_andrei_karamnov.lesson_6_arrays_while_loop.level_4_junior;
 просто вызвав его. Развивайте и тренеруйте умение разбивать
 программу на методы на простых задачах, этот навык вам
 в дальнейшем поможет справиться с более сложными задачами.*/
+@CodeReview(approved = true)
 class TwoDimensionalArray {
     public static void main(String[] args) {
         

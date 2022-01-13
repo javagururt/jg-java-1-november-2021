@@ -11,9 +11,11 @@ package student_stanislav_p.lesson_6_arrays_while_loop.homework.level_4_junior;
  */
 
 
-
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class TwoDimensionalArray {
 
     int arrayLength1;
@@ -89,8 +91,6 @@ class TwoDimensionalArray {
 
         return summOfArray;
     }
-
-
 
 
 }

@@ -1,7 +1,8 @@
 package student_eduards_puzirevskis.lesson_5_arrays_for_loop.level_5_middle;
 
-import java.util.Arrays;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class ArrayUtilsDemo {
     public static void main(String[] args) {
         ArrayUtil arrayUtil = new ArrayUtil();

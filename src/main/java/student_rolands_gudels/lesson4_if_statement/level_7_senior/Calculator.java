@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson4_if_statement.level_7_senior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Calculator {
 
     public int sum(int firstNumber, int secondNumber) {

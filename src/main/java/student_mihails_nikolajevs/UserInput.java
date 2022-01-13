@@ -2,6 +2,9 @@ package student_mihails_nikolajevs;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class UserInput {
 
     public static void main(String[] args) {

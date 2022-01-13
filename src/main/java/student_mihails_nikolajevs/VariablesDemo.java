@@ -1,6 +1,9 @@
 package student_mihails_nikolajevs;
 
-class VariablesDemo{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+class VariablesDemo {
 
     public static void main(String[] args) {
         int age = 30;

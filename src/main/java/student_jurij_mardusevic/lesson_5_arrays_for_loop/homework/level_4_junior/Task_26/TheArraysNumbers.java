@@ -3,6 +3,9 @@ package student_jurij_mardusevic.lesson_5_arrays_for_loop.homework.level_4_junio
 import java.util.Random;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class TheArraysNumbers {
     public static void main(String[] args) {
 
@@ -15,7 +18,7 @@ class TheArraysNumbers {
         int[] numbers = new int[arrayLength];
 
 
-        for (int i=0; i<arrayLength; i++){
+        for (int i = 0; i<arrayLength; i++){
             numbers[i]=random.nextInt(999);
 
             System.out.println("Количество массивов: "+ (i+1) + " >>> "+numbers[i]);

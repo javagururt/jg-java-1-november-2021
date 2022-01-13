@@ -2,6 +2,9 @@ package student_julija_radchenko.lesson_5_homeworks;
 
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_15 {
     public static void main(String[] args) {
         Random randomNumber = new Random();

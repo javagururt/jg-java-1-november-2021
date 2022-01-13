@@ -1,16 +1,22 @@
 package student_rolands_gudels.lesson4_if_statement.level_7_senior;
 
-public class CalculatorTest {public static void main(String[] args) {
-    CalculatorTest calculatorTest = new CalculatorTest();
-    calculatorTest.sumTest();
-    calculatorTest.subTest();
-    calculatorTest.mulTest();
-    calculatorTest.divTest();
-    calculatorTest.isEvenTest1();
-    calculatorTest.isEvenTest2();
-}
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
 
-    static public void check(int firstNumber,int secondNumber,int result){
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "public static. Так же не используется метод check")
+public class CalculatorTest {
+    public static void main(String[] args) {
+        CalculatorTest calculatorTest = new CalculatorTest();
+        calculatorTest.sumTest();
+        calculatorTest.subTest();
+        calculatorTest.mulTest();
+        calculatorTest.divTest();
+        calculatorTest.isEvenTest1();
+        calculatorTest.isEvenTest2();
+    }
+
+    static public void check(int firstNumber, int secondNumber, int result){
         if (result == 75) {
             System.out.println("Sum test = OK");
         } else {

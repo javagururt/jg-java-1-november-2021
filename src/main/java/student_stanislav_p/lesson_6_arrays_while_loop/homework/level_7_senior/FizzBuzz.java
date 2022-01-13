@@ -1,5 +1,8 @@
 package student_stanislav_p.lesson_6_arrays_while_loop.homework.level_7_senior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class FizzBuzz {
 
     public String detect(int number) {

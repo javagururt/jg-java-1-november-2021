@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_2_var.level_7_senior_;
+
+import teacher.annotations.CodeReview;
+
 /*
 При написании Java кода для названий классов принято использовать
         нотацию под названием CamelCase (с англ. — «ВерблюжийРегистр»,
@@ -25,6 +28,7 @@ package student_mihails_nikolajevs.lesson_2_var.level_7_senior_;
 
 
  */
+@CodeReview(approved = true)
 public class RightNamesOfClasses {
 
     public static void main(String[] args) {
