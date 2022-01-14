@@ -11,16 +11,19 @@ package student_mihails_nikolajevs.lesson_2_var.level_3_jun;
          Perimeter is = 47.12388980384689
          Area is = 176.71458676442586
  */
-        // Circle perimeter formula :  L = d*π = 2*r*π.
-        // Formula for the area for the circle :  S = π × r2
+// Circle perimeter formula :  L = d*π = 2*r*π.
+// Formula for the area for the circle :  S = π × r2
 
-        import java.util.Scanner;
+import java.util.Scanner;
 
-    public class HomeWorkTask10Radius {
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class HomeWorkTask10Radius {
 
     public static void main(String[] args) {
 
-        System.out.println( "PLease Enter The Lenght of Radius -> ");
+        System.out.println("PLease Enter The Lenght of Radius -> ");
 
         Scanner input = new Scanner(System.in);
         Double radius = input.nextDouble();
@@ -34,7 +37,6 @@ package student_mihails_nikolajevs.lesson_2_var.level_3_jun;
 
         Area = radius * radius * 3.14;
         System.out.println(" Area is -> " + Area);
-
 
 
     }

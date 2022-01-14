@@ -12,7 +12,7 @@ import teacher.annotations.CodeReview;
 public class Task28 {
 
     public static void main(String[] args) {
-        int myArray[] = new int[10];
+        int [] myArray = new int[10];
         System.out.println("My array number is: ");
         for (int i = 0; i < myArray.length; i++) {
             myArray[i] = (int) (Math.random() * 30);

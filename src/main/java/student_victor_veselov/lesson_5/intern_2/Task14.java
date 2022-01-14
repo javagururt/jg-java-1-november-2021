@@ -3,6 +3,9 @@ package student_victor_veselov.lesson_5.intern_2;
 import java.util.Arrays;
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task14 {
 
 

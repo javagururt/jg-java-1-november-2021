@@ -1,5 +1,8 @@
 package student_stanislav_p.lesson_6_arrays_while_loop.homework.level_3_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ArrayService {
 
     /* public  boolean contains(int[] arr, int numberToSearch) {
@@ -33,16 +36,16 @@ public class ArrayService {
 
     boolean replaceFirst(int[] arr, int numberToReplace, int newNumber){
 
-            int count =0;
+        int count =0;
 
-            for (int i = 0; i < arr.length; i++) {
-                if ((arr [i] == numberToReplace) && (count==0)) {
-                    arr[i] = newNumber ;
-                    count= count +1;
-                }
+        for (int i = 0; i < arr.length; i++) {
+            if ((arr [i] == numberToReplace) && (count==0)) {
+                arr[i] = newNumber ;
+                count= count +1;
             }
+        }
 
-            return (count >0);
+        return (count >0);
     }
 
     int replaceAll(int[] arr, int numberToReplace, int newNumber){
@@ -64,7 +67,7 @@ public class ArrayService {
         int [] localRevertArr =  new int[arr.length];;
 
         for (int i = 0; i < arr.length; i++) {
-             localRevertArr[i] = arr [(arr.length-i-1)];
+            localRevertArr[i] = arr [(arr.length-i-1)];
         }
 
         return localRevertArr;

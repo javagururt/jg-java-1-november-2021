@@ -2,6 +2,9 @@ package student_rolands_gudels.lesson_6_arrays_while_loop.level_3_junior;
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ArrayServiceTest {
     public static void main(String[] args) {
         ArrayServiceTest arrayServiceTest = new ArrayServiceTest();
@@ -31,6 +34,7 @@ public class ArrayServiceTest {
     int[] numbersForReplaceAllTest4 = {1, 2, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13};
     int[] needtobesorted = {5,6,9,8,7,2,3,1,4};
     int[] sorted = {1,2,3,4,5,6,7,8,9};
+
     void truFalseTest1() {
         ArrayService arrayService = new ArrayService();
         ArrayServiceTest arrayServiceTest = new ArrayServiceTest();
@@ -126,24 +130,28 @@ public class ArrayServiceTest {
         ArrayServiceTest arrayServiceTest = new ArrayServiceTest();
         arrayServiceTest.countPassedOrFailed("replaceAllTest1", 1, arrayService.replaceAll((numbers), 7, 666));
     }
+
     void replaceAllTest2() {
         ArrayService arrayService = new ArrayService();
         ArrayServiceTest arrayServiceTest = new ArrayServiceTest();
         arrayServiceTest.countPassedOrFailed("replaceAllTest2", 0, arrayService.replaceAll((numbers), 888, 666));
     }
+
     void replaceAllTest3() {
         ArrayService arrayService = new ArrayService();
         ArrayServiceTest arrayServiceTest = new ArrayServiceTest();
         arrayServiceTest.countPassedOrFailed("replaceAllTest3", 0, arrayService.replaceAll((numbers), -1, 666));
     }
+
     void replaceAllTest4() {
         ArrayService arrayService = new ArrayService();
         ArrayServiceTest arrayServiceTest = new ArrayServiceTest();
         arrayServiceTest.countPassedOrFailed("replaceAllTest4", 2, arrayService.replaceAll((numbersForReplaceAllTest4), 2, 666));
     }
+
     void revertTest(){
         ArrayService arrayService = new ArrayService();
-         int[] actual = arrayService.revert(revertarray);
+        int[] actual = arrayService.revert(revertarray);
         /*System.out.print("actual ");
          for (int i=0;i<(arrayService.revert(revertarray)).length;i++){
              System.out.print((arrayService.revert(revertarray))[i]);
@@ -152,13 +160,14 @@ public class ArrayServiceTest {
          for (int i=0;i<testarray.length;i++){
              System.out.print(testarray[i]);
          }*/
-         int[] expected = testarray;
-         if (Arrays.equals(expected,actual)) {
-             System.out.println("Revert test Passed");
-         } else {System.out.println("Revert test Failed");
-             }
-         }
-         void sortTest(){
+        int[] expected = testarray;
+        if (Arrays.equals(expected,actual)) {
+            System.out.println("Revert test Passed");
+        } else {System.out.println("Revert test Failed");
+        }
+    }
+
+    void sortTest(){
         ArrayService arrayService = new ArrayService();
         int[] expected = sorted;
         int[] actual = arrayService.sort(needtobesorted);
@@ -167,9 +176,8 @@ public class ArrayServiceTest {
         } else {
             System.out.println("Sort test Failed");
         }
-         }
-
-
-
     }
+
+
+}
 

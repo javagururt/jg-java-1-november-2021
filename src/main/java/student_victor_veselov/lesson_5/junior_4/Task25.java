@@ -3,6 +3,9 @@ package student_victor_veselov.lesson_5.junior_4;
 import java.util.Arrays;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task25 {
     public static void main(String[] args) {
         Scanner inputArraySize = new Scanner(System.in);

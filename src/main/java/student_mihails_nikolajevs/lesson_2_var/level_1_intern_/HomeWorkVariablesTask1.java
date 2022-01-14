@@ -14,47 +14,47 @@ package student_mihails_nikolajevs.lesson_2_var.level_1_intern_;
 */
 
 
+import java.util.Scanner;
+
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "переменные называют в camelCase")
+public class HomeWorkVariablesTask1 {
+
+    public static void main(String[] args) {
+        int SUM;
+        int MIN;
+        int DIV;
+        int MULT;
 
 
- import java.util.Scanner;
-
-  public class HomeWorkVariablesTask1 {
-
-      public static void main(String[] args) {
-          int SUM;
-          int MIN;
-          int DIV;
-          int MULT;
+        Scanner num = new Scanner(System.in);
+        System.out.println("Please Enter First Number:");
+        int a = num.nextInt();
 
 
+        System.out.println("Please Enter Second Number:");
+        int b = num.nextInt();
+
+        SUM = a + b;
+        MIN = a - b;
+        DIV = a / b;
+        MULT = a * b;
+
+        System.out.println("SUM: " + a + " + " + b );
+        System.out.println("SUM= "  + SUM );
+        System.out.println("MIN: " + a + " - " + b );
+        System.out.println("MIN= "  + MIN);
+        System.out.println("DIV: " + a + " / " + b );
+        System.out.println("DIV= "  + DIV);
+        System.out.println("MULT: "  + a + " * " + b );
+        System.out.println("MULT: " + MULT);
 
 
-          Scanner num = new Scanner(System.in);
-          System.out.println("Please Enter First Number:");
-          int a = num.nextInt();
-
-
-          System.out.println("Please Enter Second Number:");
-          int b = num.nextInt();
-
-           SUM = a + b;
-           MIN = a - b;
-           DIV = a / b;
-           MULT = a * b;
-
-          System.out.println("SUM: " + a + " + " + b );
-          System.out.println("SUM= "  + SUM );
-          System.out.println("MIN: " + a + " - " + b );
-          System.out.println("MIN= "  + MIN);
-          System.out.println("DIV: " + a + " / " + b );
-          System.out.println("DIV= "  + DIV);
-          System.out.println("MULT: "  + a + " * " + b );
-          System.out.println("MULT: " + MULT);
-
-
-
-      }
-  }
+    }
+}
 
 
 
