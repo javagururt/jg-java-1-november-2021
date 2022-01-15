@@ -3,7 +3,7 @@ package student_stanislav_p.lesson_6_arrays_while_loop.homework.level_5_middle;
 import java.util.Random;
 import java.util.Scanner;
 
-public class TicTacToeMyGame {
+public class TicTacToeTypeOfMyGame {
 
     final char SIGN_X = 'x';
     final char SIGN_O = 'o';
@@ -13,13 +13,14 @@ public class TicTacToeMyGame {
     Scanner scanner;
 
     public static void main(String[] args) {
-        new TicTacToeMyGame().game();
+
+        new TicTacToeTypeOfMyGame().game();
     }
 
 
     // конструктор: инициализация полей
 
-    TicTacToeMyGame() {
+    TicTacToeTypeOfMyGame() {
 
         random = new Random();
         scanner = new Scanner(System.in);
@@ -101,17 +102,17 @@ public class TicTacToeMyGame {
         table[y][x] = SIGN_O;
     }
 
-    boolean checkWin(char dot) {
+    boolean checkWin(char detect) {
         for (int i = 0; i < 3; i++)
-            if ((table[i][0] == dot && table[i][1] == dot &&
-                    table[i][2] == dot) ||
-                    (table[0][i] == dot && table[1][i] == dot &&
-                            table[2][i] == dot))
+            if ((table[i][0] == detect && table[i][1] == detect &&
+                    table[i][2] == detect) ||
+                    (table[0][i] == detect && table[1][i] == detect &&
+                            table[2][i] == detect))
                 return true;
-        if ((table[0][0] == dot && table[1][1] == dot &&
-                table[2][2] == dot) ||
-                (table[2][0] == dot && table[1][1] == dot &&
-                        table[0][2] == dot))
+        if ((table[0][0] == detect && table[1][1] == detect &&
+                table[2][2] == detect) ||
+                (table[2][0] == detect && table[1][1] == detect &&
+                        table[0][2] == detect))
             return true;
         return false;
     }

@@ -1,5 +1,8 @@
 package student_victor_veselov.lesson_6.intern_1;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task2 {
 
     static class WhileDefinition2 {

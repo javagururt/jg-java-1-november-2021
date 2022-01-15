@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_2_var.level_7_senior_;
+
+import teacher.annotations.CodeReview;
+
 /*
 Исправьте ошибки компиляции в данной программе.
 
@@ -26,6 +29,7 @@ public class SumTwoNumbers {
         им не будет присвоено начальное значение.*
 
  */
+@CodeReview(approved = true)
 public class SumTwoNumbers {
 
     public static void main(String[] args) {

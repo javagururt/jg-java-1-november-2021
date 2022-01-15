@@ -1,7 +1,8 @@
 package student_andrei_karamnov.lesson_6_arrays_while_loop.level_3_junior;
 
-import java.util.Arrays;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class ArrayService {
     boolean contains(int[] arr, int numberToSearch) {
         for (int i = 0; i < arr.length; i++) {
@@ -33,6 +34,7 @@ class ArrayService {
         }
         return (count >0);
     }
+
     int replaceAll(int[] arr, int numberToReplace, int newNumber){
         int count = 0;
         for (int i = 0; i < arr.length; i++) {
@@ -43,11 +45,12 @@ class ArrayService {
         }
         return count;
     }
+
     void revert(int[] arr){
         for (int i = 0; i < arr.length / 2; i++);
         {
-        int start = 0;
-        int end = arr.length - 1;
+            int start = 0;
+            int end = arr.length - 1;
             while (start < end){
                 int temp = arr[start];
                 arr[start] = arr[end];
@@ -55,8 +58,9 @@ class ArrayService {
                 start++;
                 end--;
             }
-    }
         }
+    }
+
     void sort(int[] arr){
         int indexMin;
         for (int i = 0; i < arr.length - 1; i++) {
@@ -69,4 +73,4 @@ class ArrayService {
             arr[indexMin] = tmp;
         }
     }
-    }
+}

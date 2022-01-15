@@ -1,4 +1,7 @@
 package student_eduards_puzirevskis.lesson_5_arrays_for_loop.level_5_middle;
+
+import teacher.annotations.CodeReview;
+
 /*
 Создайте класс ArrayUtilTest.
 В этом классе напишите автоматический тест
@@ -19,6 +22,7 @@ class ArrayUtilTest {
 
 }
  */
+@CodeReview(approved = true)
 class ArrayUtilTest {
 
     public static void main(String[] args) {

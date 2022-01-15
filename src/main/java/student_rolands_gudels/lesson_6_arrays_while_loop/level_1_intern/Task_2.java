@@ -1,7 +1,10 @@
 package student_rolands_gudels.lesson_6_arrays_while_loop.level_1_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_2 {
-   static class WhileDefinition2 {
+    static class WhileDefinition2 {
 
         public static void main(String[] args) {
             int i = 1;

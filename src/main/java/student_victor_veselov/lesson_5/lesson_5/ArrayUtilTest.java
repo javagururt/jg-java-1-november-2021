@@ -1,5 +1,8 @@
 package student_victor_veselov.lesson_5.lesson_5;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ArrayUtilTest {
     public static void main(String[] args) {
         ArrayUtilTest test = new ArrayUtilTest();
@@ -31,6 +34,7 @@ public class ArrayUtilTest {
             System.out.println("Test Failed");
         }
     }
+
     public void shouldFindMinNumber(){
         ArrayUtil arrayUtil = new ArrayUtil();
         int[] array = {3,5,2,1,7};

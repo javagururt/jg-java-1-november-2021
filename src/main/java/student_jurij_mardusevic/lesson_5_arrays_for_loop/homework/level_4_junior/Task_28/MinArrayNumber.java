@@ -2,6 +2,9 @@ package student_jurij_mardusevic.lesson_5_arrays_for_loop.homework.level_4_junio
 
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class MinArrayNumber {
     public static void main(String[] args) {
 
@@ -21,7 +24,7 @@ class MinArrayNumber {
         int arrayNumbersMin=0;
         int arrayMin=1000;
 
-        for (int i=0;i<arrayLength;i++){
+        for (int i = 0; i<arrayLength; i++){
             numbers[i]=random.nextInt(999);
 
             System.out.println("Введите целое число массива: "+(i+1) + " >>> "+ numbers[i]);

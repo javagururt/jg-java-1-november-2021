@@ -1,8 +1,10 @@
 package student_victor_veselov.lesson_5.lesson_5;
 
-import java.util.Arrays;
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ArrayUtil {
 
     public static int[] createArray(int arrayLength) {
