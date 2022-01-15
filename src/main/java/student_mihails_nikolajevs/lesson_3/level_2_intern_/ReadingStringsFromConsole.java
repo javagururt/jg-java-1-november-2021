@@ -22,7 +22,7 @@ public class ReadingStringsFromConsole {
         Scanner in = new Scanner(System.in);
         System.out.print("Please Enter Your Name -> ");
         String Name = in.next();
-        
+
         System.out.println("Hello " + Name + "!");
         in.close();
     }
