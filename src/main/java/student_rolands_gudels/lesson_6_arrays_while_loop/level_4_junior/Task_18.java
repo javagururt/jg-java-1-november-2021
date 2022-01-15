@@ -1,5 +1,7 @@
 package student_rolands_gudels.lesson_6_arrays_while_loop.level_4_junior;
 
+import java.util.Scanner;
+
 public class Task_18 {
 
     public static void main(String[] args) {
@@ -16,7 +18,7 @@ public class Task_18 {
     }
 
     public static void WhileInfiniteLoopBreak(){
-
+       // {break;}
     }
 
 
@@ -30,3 +32,8 @@ public class Task_18 {
     }/*Создайте класс  и в нём напишите бесконечный
     цикл при помощи цикла for.*/
 }
+ /*Создайте класс WhileInfiniteLoopBreak и в нём продемонстрируйте
+    выход из бесконечного цикла реализованного при помощи цикла while.
+
+    Создайте класс ForInfiniteLoopBreak и в нём продемонстрируйте
+    выход из бесконечного цикла реализованного при помощи цикла for.*/
