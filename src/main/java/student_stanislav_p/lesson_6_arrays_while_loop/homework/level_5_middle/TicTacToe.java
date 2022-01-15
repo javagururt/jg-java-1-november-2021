@@ -41,6 +41,11 @@ public class TicTacToe {
                 break;
             }
 
+            if (isDraw(field)) {
+                System.out.println("DRAW!");
+                break;
+            }
+
 
             // ---------------------- move player 2 or computer -----------------------
 
