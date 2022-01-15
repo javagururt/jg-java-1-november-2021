@@ -63,24 +63,24 @@ public class RobotDemo {
 
         Robot myRobot = new Robot();
         myRobot.sayHello = "Hello";
-        myRobot.SayYourName = "My Name is Robo";
+        myRobot.sayYourName = "My Name is Robo";
 
         System.out.println( myRobot.sayHello );
-        System.out.println( myRobot.SayYourName );
+        System.out.println( myRobot.sayYourName );
 
         Robot Robot1 = new Robot();
         Robot1.sayHello = "Good Morning";
-        Robot1.SayYourName = "My name is Robo1";
+        Robot1.sayYourName = "My name is Robo1";
 
         System.out.println(Robot1.sayHello);
-        System.out.println(Robot1.SayYourName);
+        System.out.println(Robot1.sayYourName);
 
         Robot Robot2 = new Robot();
         Robot2.sayHello = "Hi";
-        Robot2.SayYourName = "My name is Robo2";
+        Robot2.sayYourName = "My name is Robo2";
 
         System.out.println(Robot2.sayHello);
-        System.out.println(Robot2.SayYourName);
+        System.out.println(Robot2.sayYourName);
 
 
     }

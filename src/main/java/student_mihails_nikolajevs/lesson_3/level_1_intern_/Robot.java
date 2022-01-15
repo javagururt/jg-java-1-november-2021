@@ -34,7 +34,7 @@ import student_andrei_karamnov.lessoncode.Hello;
 public class Robot {
 
     String sayHello;
-    String SayYourName;
+    String sayYourName;
 
     public Robot() {
     }
