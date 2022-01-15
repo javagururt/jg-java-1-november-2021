@@ -50,7 +50,7 @@ class TicTacToeTest {
         int realResult=0;
         int expectedResult = 1;
 
-        testArray[1][1] = 0
+        testArray[1][1] = 0;
 
 
 
