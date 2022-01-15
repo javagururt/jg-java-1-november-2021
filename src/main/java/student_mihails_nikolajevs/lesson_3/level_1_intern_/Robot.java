@@ -17,19 +17,35 @@ import student_andrei_karamnov.lessoncode.Hello;
 
 
  */
+/*
+
+Научите вашего робота "говорить" как его зовут.
+
+Создайте в классе Robot метод со следующей сигнатурой:
+
+    public void sayYourName() {
+        // тут напишите команду распечатки на консоли строки "My name is ROBO"
+    }
+
+
+ */
+
+
 public class Robot {
+
+    String sayHello;
+    String SayYourName;
 
     public Robot() {
     }
 
 
-
     public void sayHello() {
-            System.out.println("Hello");
-
-
-
+        System.out.println("Hello");
 
     }
 
+    public void sayYourName() {
+        System.out.println("My name is Robo");
+    }
 }
