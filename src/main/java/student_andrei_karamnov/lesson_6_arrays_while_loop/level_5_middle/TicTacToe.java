@@ -3,7 +3,7 @@ package student_andrei_karamnov.lesson_6_arrays_while_loop.level_5_middle;
 import java.util.Random;
 import java.util.Scanner;
 
-public class TicTacToe {
+class TicTacToe {
     final char FIELD_EMPTY = '.';
     final char FIELD_X = 'x';
     final char FIELD_O = 'o';
