@@ -30,7 +30,7 @@ public class PalindromeTest {
 
         for (int i = 0; i < expectedArray1.length; i++) {
             realResult1=realResult1 && (realResultArray1[i]==expectedArray1[i]);
-            System.out.println(realResultArray1[i] + "  " + expectedArray1[i]+ "  " + realResult1);
+           // System.out.println(realResultArray1[i] + "  " + expectedArray1[i]+ "  " + realResult1);
         }
 
         //System.out.println(Arrays.toString(expectedArray1));
