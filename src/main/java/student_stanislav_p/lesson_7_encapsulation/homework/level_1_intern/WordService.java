@@ -51,9 +51,7 @@ public class WordService {
     public String [] getNewTextArray(String workTextLine) {
 
 
-        String localTextLine = workTextLine;
-
-        String[] words = localTextLine.split(" ");
+        String[] words = workTextLine.split(" ");
 
         return words;
 
