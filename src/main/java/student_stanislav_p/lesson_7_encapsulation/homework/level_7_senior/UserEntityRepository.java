@@ -131,7 +131,7 @@ public class UserEntityRepository {
                 String  newSurname = enterStringData("Enter User Surname ->");
                 String  newPersonalCode = enterStringData("Enter User Personal code ->");
 
-                //addNewUser(currentBase,dataBaseCount,newID,newName,newSurname,newPersonalCode);
+                addNewUser(currentBase,dataBaseCount,newID,newName,newSurname,newPersonalCode);
 
 
         }
