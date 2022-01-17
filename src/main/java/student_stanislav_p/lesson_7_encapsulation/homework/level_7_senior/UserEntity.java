@@ -13,14 +13,14 @@ package student_stanislav_p.lesson_7_encapsulation.homework.level_7_senior;
 
 class UserEntity {
 
-    private String  userID = "";
+    private int  userID = 0;
     private String  userName = "";
     private String  userSurname = "";
     private String  userPersonalCode = "";
 
 
 
-    public UserEntity(String userID, String userName, String userSurname, String userPersonalCode) {
+    public UserEntity(int userID, String userName, String userSurname, String userPersonalCode) {
         this.userID = userID;
         this.userName = userName;
         this.userSurname = userSurname;
@@ -28,11 +28,11 @@ class UserEntity {
     }
 
 
-    public  String getUserID() {
+    public  int getUserID() {
         return userID;
     }
 
-    public void setUserID(String userID) {
+    public void setUserID(int userID) {
         this.userID = userID;
     }
 
