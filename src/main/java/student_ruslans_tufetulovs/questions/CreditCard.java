@@ -1,4 +1,4 @@
-package teacher.lesson_7_encapsulation.questions;
+package student_ruslans_tufetulovs.questions;
 
 /*
 Необходимо разработать класс "кредитная карта" CreditCard
