@@ -1,7 +1,5 @@
 package student_rolands_gudels.lesson_7_encapsulation.level_1_intern;
 
-import java.util.Scanner;
-
 class Task_1 {
     /*Учимся разбивать задачу на подзадачи.
 
@@ -14,16 +12,16 @@ class Task_1 {
     которое встречается в тексте первым.
 */
         public static void main(String[] args){
-            print();
+            System.out.println(print());
         }
 
-    private static void print() {
-            String s = " a a a b b b c c c  g g ggg";
+ static String print() {
+            String s = " a a a a a a a b b b b c c c  g g ggg";
             String word = findWord(s);
-            System.out.println(word);
-    }
+     return word;
+ }
 
-    static String findWord(String s) {
+   public static String findWord(String s) {
             String[] str = s.split("\\W+");         // массив строк без разделителей
             int[] howMuch = new int[str.length];    // каждому слову соответствует число одинаковых
             int maxCount = 0;                       // число макс кол-вал встречающихся
@@ -39,7 +37,7 @@ class Task_1 {
             return str[index];                     // здесь то самое слово под индексом
         }
 
-    }
+}
 
 /*
     Конечно эту задачу можно решить в лоб не разбивая на более
