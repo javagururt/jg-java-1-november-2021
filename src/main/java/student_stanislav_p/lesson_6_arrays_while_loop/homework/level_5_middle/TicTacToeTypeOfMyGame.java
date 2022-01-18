@@ -3,7 +3,7 @@ package student_stanislav_p.lesson_6_arrays_while_loop.homework.level_5_middle;
 import java.util.Random;
 import java.util.Scanner;
 
-public class TicTacToeMyGame {
+public class TicTacToeTypeOfMyGame {
 
     final char SIGN_X = 'x';
     final char SIGN_O = 'o';
@@ -14,13 +14,13 @@ public class TicTacToeMyGame {
 
     public static void main(String[] args) {
 
-        new TicTacToeMyGame().game();
+        new TicTacToeTypeOfMyGame().game();
     }
 
 
     // конструктор: инициализация полей
 
-    TicTacToeMyGame() {
+    TicTacToeTypeOfMyGame() {
 
         random = new Random();
         scanner = new Scanner(System.in);
