@@ -1,6 +1,8 @@
 package student_rolands_gudels.lesson_7_encapsulation.level_1_intern;
 
-public class Task_1 {
+import java.util.Scanner;
+
+class Task_1 {
     /*Учимся разбивать задачу на подзадачи.
 
     Дана строка с текстом.
@@ -10,17 +12,36 @@ public class Task_1 {
     Если несколько слов в тексте встречаются одинаково
     максимальное число раз, то возвращаем то слово,
     которое встречается в тексте первым.
+*/
+        public static void main(String[] args){
+            print();
+        }
 
-    class WordService {
+    private static void print() {
+            String s = " a a a b b b c c c  g g ggg";
+            String word = findWord(s);
+            System.out.println(word);
+    }
 
-        public String findMostFrequentWord(String text) {
-            // напишите решение тут
-            // если это необходимо то
-            // смело создавайте дополнительные методы
+    static String findWord(String s) {
+            String[] str = s.split("\\W+");         // массив строк без разделителей
+            int[] howMuch = new int[str.length];    // каждому слову соответствует число одинаковых
+            int maxCount = 0;                       // число макс кол-вал встречающихся
+            int index = 0;                          // последний индекс с макс.
+            for(int i=0; i<str.length; i++)
+                for(int j=0; j<str.length; j++)
+                    if(str[i].equals(str[j])) howMuch[i]++; // заполним массив
+            for(int i=0; i<howMuch.length; i++)
+                if(howMuch[i]>maxCount) {
+                    maxCount = howMuch[i];                  // найдем макс.
+                    index = i;                              // найдем индекс с макс.
+                }
+            return str[index];                     // здесь то самое слово под индексом
         }
 
     }
 
+/*
     Конечно эту задачу можно решить в лоб не разбивая на более
     маленькие подзадачи. В реальных проектах более сложные задачи
     в лоб решать будет гораздо сложнее. Поэтому давайте учиться
@@ -47,4 +68,3 @@ public class Task_1 {
     то подведёте всю команду в которой работаете. Что вы будете делать?
     Попросите о помощи своих коллег или будете упорно пытаться
     решить задачу самостоятельно?*/
-}
