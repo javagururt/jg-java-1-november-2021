@@ -3,15 +3,18 @@ package student_stanislav_p.lesson_6_arrays_while_loop.homework.level_3_junior;
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ArrayServiceTest {
 
     public static void main(String[] args) {
 
-       int [] listOfNumbers= { 1,2,15,4,5,7,7,8,9,8,7,7,5,4,3,2,1,5,5,7,7,9,9,9,9,9};
-       int [] listOfTestNumbers= {1,2,3,4,5,6,7,8,9};
+        int[] listOfNumbers = {1, 2, 15, 4, 5, 7, 7, 8, 9, 8, 7, 7, 5, 4, 3, 2, 1, 5, 5, 7, 7, 9, 9, 9, 9, 9};
+        int[] listOfTestNumbers = {1, 2, 3, 4, 5, 6, 7, 8, 9};
 
 
-        boolean [] listOfExpectedResults = {true,true,true,true,true,false,true,true,true};
+        boolean[] listOfExpectedResults = {true, true, true, true, true, false, true, true, true};
 
 
         int [] listOfExpectedNumbersAfterReplace = { 11,11,15,11,11,11,7,11,11,8,7,7,5,4,3,2,1,5,5,7,7,9,9,9,9,9};
@@ -46,7 +49,7 @@ public class ArrayServiceTest {
             System.out.println( " ");
             test.checkTestResult(condition1==listOfExpectedResults[i], ("Test #1 for " + listOfTestNumbers[i]));
 
-           // TEST 2
+            // TEST 2
 
             boolean condition2 = (count == expectedOfCount[i]);
             test.checkTestResult(condition2, ("Test #2 for " + listOfTestNumbers[i]));
@@ -54,23 +57,23 @@ public class ArrayServiceTest {
 
         // TEST 3
 
-            System.out.println( " ");
-            System.out.println(" ------------- Test 3 -------------");
-            System.out.println( " ");
+        System.out.println( " ");
+        System.out.println(" ------------- Test 3 -------------");
+        System.out.println( " ");
 
-            for (int i = 0; i < listOfTestNumbers.length; i++) {
+        for (int i = 0; i < listOfTestNumbers.length; i++) {
 
-              testMethod.replaceFirst(arrayForReplaceFirst, listOfTestNumbers[i], 11 );
+            testMethod.replaceFirst(arrayForReplaceFirst, listOfTestNumbers[i], 11 );
 
-             }
+        }
 
-            for (int i = 0; i < listOfTestNumbers.length; i++) {
+        for (int i = 0; i < listOfTestNumbers.length; i++) {
 
 
-                boolean condition3 = (arrayForReplaceFirst[i] == listOfExpectedNumbersAfterReplace[i]);
+            boolean condition3 = (arrayForReplaceFirst[i] == listOfExpectedNumbersAfterReplace[i]);
 
-                test.checkTestResult(condition3, ("Test #3 for " + listOfTestNumbers[i]));
-            }
+            test.checkTestResult(condition3, ("Test #3 for " + listOfTestNumbers[i]));
+        }
 
         // TEST 4
 
@@ -80,7 +83,7 @@ public class ArrayServiceTest {
         System.out.println( " ");
 
 
-            testMethod.replaceAll(arrayForReplaceAll, 9, 55 );
+        testMethod.replaceAll(arrayForReplaceAll, 9, 55 );
 
 
         System.out.println("Array: " + Arrays.toString(arrayForReplaceAll));

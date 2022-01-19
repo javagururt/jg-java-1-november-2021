@@ -1,5 +1,8 @@
 package student_eduards_puzirevskis.lesson_6_arrays_while_loop.level_1_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class NumberUtilsTest {
     public static void main(String[] args) {
         NumberUtilsTest test = new NumberUtilsTest();
@@ -16,7 +19,6 @@ class NumberUtilsTest {
             System.out.println("Should Detect Is Even Or Not TEST = FALSE. Expected result: " + expectedResult + ". But real is : " + victim);
         }
     }
-
 
 
 }

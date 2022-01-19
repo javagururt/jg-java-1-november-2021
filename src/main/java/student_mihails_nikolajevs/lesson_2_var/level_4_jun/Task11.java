@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_2_var.level_4_jun;
+
+import teacher.annotations.CodeReview;
+
 /*
 Write a Java program to print the sum of two numbers.
 
@@ -7,6 +10,7 @@ Test Data:
 Expected Output :
 110
  */
+@CodeReview(approved = true)
 public class Task11 {
 
     public static void main(String[] args) {

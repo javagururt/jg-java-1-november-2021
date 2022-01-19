@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_6_arrays_while_loop.level_1_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class NumberUtilsTest {
     public static void main(String[] args) {
         NumberUtilsTest numberUtilsTest = new NumberUtilsTest();

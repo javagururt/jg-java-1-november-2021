@@ -1,6 +1,17 @@
 package student_rolands_gudels.lesson_6_arrays_while_loop.level_4_junior;
 
+import java.util.Random;
+
 public class Task_21 {
+  /*  class woDimensionalArray{
+        int [] numbers = new int[7];
+        Random random = new Random();
+        int x = random.nextInt(10);
+      // for (int i=0;i<numbers.length;i++){
+
+        }*/
+
+    }
   /*  Создайте класс TwoDimensionalArray и в нём напишите программу в которой:
             - создайте двумерный массив;
 - заполните двумерный массив случайными числами;
@@ -12,4 +23,4 @@ public class Task_21 {
     просто вызвав его. Развивайте и тренеруйте умение разбивать
     программу на методы на простых задачах, этот навык вам
     в дальнейшем поможет справиться с более сложными задачами.*/
-}
+

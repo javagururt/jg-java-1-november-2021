@@ -12,18 +12,22 @@ package student_mihails_nikolajevs.lesson_2_var.level_3_jun;
         ...
         8 x 10 = 80*
 */
+
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class HomeWorkVariableTask9 {
 
     public static void main(String[] args) {
 
 
-        int b1=1;
-        int b2=2;
-        int b3=3;
-        int b4=4;
-        int b5=5;
+        int b1 = 1;
+        int b2 = 2;
+        int b3 = 3;
+        int b4 = 4;
+        int b5 = 5;
         int b6=6;
         int b7=7;
         int b8=8;

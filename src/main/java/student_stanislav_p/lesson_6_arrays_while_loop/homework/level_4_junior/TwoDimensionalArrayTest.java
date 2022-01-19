@@ -1,4 +1,7 @@
 package student_stanislav_p.lesson_6_arrays_while_loop.homework.level_4_junior;
+
+import teacher.annotations.CodeReview;
+
 /*
 Создайте класс TwoDimensionalArray и в нём напишите программу в которой:
 - создайте двумерный массив;
@@ -7,7 +10,7 @@ package student_stanislav_p.lesson_6_arrays_while_loop.homework.level_4_junior;
 
 }
  */
-
+@CodeReview(approved = true)
 public class TwoDimensionalArrayTest {
 
 

@@ -1,8 +1,9 @@
 package student_stanislav_p.lesson_6_arrays_while_loop.homework.level_2_intern;
 
 
-import java.util.Scanner;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorDemo {
 
 
