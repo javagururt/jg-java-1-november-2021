@@ -2,6 +2,9 @@ package student_jurij_mardusevic.lesson_7_encapsulation.homework.level_1_intern.
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class WordService {
     public static void main(String[] args) {
 
@@ -9,9 +12,9 @@ public class WordService {
 
         String workTextLine = newWordService.getText();
         String[] textArray = newWordService.getNewTextArray(workTextLine);
-        String [] newWordArray = new String [textArray.length];
+        String[] newWordArray = new String[textArray.length];
 
-        int [] newCounterWordArray=new int [textArray.length];
+        int[] newCounterWordArray = new int[textArray.length];
 
         newWordService.newWordsFromTextArray(textArray,newWordArray,newCounterWordArray);
 
@@ -34,7 +37,6 @@ public class WordService {
         return newText;
 
     }
-
 
 
     public String [] getNewTextArray(String workTextLine) {

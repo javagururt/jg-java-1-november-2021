@@ -1,6 +1,6 @@
 package student_mihails_nikolajevs.lesson_3.level_1_intern_;
 
-import student_andrei_karamnov.lessoncode.Hello;
+import teacher.annotations.CodeReview;
 
 /*
 
@@ -30,7 +30,7 @@ import student_andrei_karamnov.lessoncode.Hello;
 
  */
 
-
+@CodeReview(approved = true)
 public class Robot {
 
     String sayHello;

@@ -3,6 +3,9 @@ package student_andrei_karamnov.lesson_6_arrays_while_loop.level_5_middle;
 import java.util.Random;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class TicTacToe {
     final char FIELD_EMPTY = '.';
     final char FIELD_X = 'x';
