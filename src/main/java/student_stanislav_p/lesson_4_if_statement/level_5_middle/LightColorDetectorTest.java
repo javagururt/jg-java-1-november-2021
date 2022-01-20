@@ -19,15 +19,15 @@ import teacher.annotations.CodeReview;
 @CodeReview(approved = true)
 class LightColorDetectorTest {
     public static void main(String[] args) {
-        LightColorDetectorTest lightColorDetectorTest = new LightColorDetectorTest();
+        LightColorDetectorTest lDTest = new LightColorDetectorTest();
 
-        lightColorDetectorTest.ColorTest(379,751,"Invisible Light");
-        lightColorDetectorTest.ColorTest(380,449,"Violet");
-        lightColorDetectorTest.ColorTest(450,494,"Blue");
-        lightColorDetectorTest.ColorTest(495,569,"Green");
-        lightColorDetectorTest.ColorTest(570,589,"Yellow");
-        lightColorDetectorTest.ColorTest(590,619,"Orange");
-        lightColorDetectorTest.ColorTest(620,750,"Red");
+        lDTest.ColorTest(379,751,"Invisible Light");
+        lDTest.ColorTest(380,449,"Violet");
+        lDTest.ColorTest(450,494,"Blue");
+        lDTest.ColorTest(495,569,"Green");
+        lDTest.ColorTest(570,589,"Yellow");
+        lDTest.ColorTest(590,619,"Orange");
+        lDTest.ColorTest(620,750,"Red");
 
 
 
