@@ -1,9 +1,8 @@
 package student_andrei_karamnov.lesson_7_encapsulation.homework.level_1_intern;
 
-import java.lang.reflect.Array;
-import java.util.Arrays;
-import java.util.Locale;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class WordServiceTest {
 
     public static void main(String[] args) {
@@ -11,6 +10,7 @@ class WordServiceTest {
         test.isItWork();
 
     }
+
     void isItWork(){
         String text = "I love java and java loves me loves me";
         String expectedResult = "java";
