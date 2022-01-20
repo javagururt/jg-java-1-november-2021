@@ -1,9 +1,12 @@
 package student_rolands_gudels.lesson_7_encapsulation.level_1_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class WordServiceTest {
     public static void main(String[] args) {
         WordServiceTest wordServiceTest = new WordServiceTest();
-wordServiceTest.Check();
+        wordServiceTest.Check();
     }
 
     void Check() {

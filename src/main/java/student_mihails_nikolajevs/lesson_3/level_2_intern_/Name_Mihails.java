@@ -1,5 +1,7 @@
 package student_mihails_nikolajevs.lesson_3.level_2_intern_;
 
+import teacher.annotations.CodeReview;
+
 /*Учимся работать со строками.
 
 Тема: создание переменной типа String.
@@ -15,7 +17,7 @@ package student_mihails_nikolajevs.lesson_3.level_2_intern_;
 
 
  */
-
+@CodeReview(approved = true)
 public class Name_Mihails {
 
     public static void main(String[] args) {

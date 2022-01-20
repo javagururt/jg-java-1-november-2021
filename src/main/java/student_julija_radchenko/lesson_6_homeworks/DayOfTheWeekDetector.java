@@ -2,6 +2,9 @@ package student_julija_radchenko.lesson_6_homeworks;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetector {
 
     public int getDayNumberFromUser() {

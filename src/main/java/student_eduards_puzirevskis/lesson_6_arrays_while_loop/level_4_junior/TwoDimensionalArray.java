@@ -3,6 +3,8 @@ package student_eduards_puzirevskis.lesson_6_arrays_while_loop.level_4_junior;
 import java.util.Arrays;
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
 /*
 Создайте класс TwoDimensionalArray и в нём напишите программу в которой:
 - создайте двумерный массив;
@@ -16,6 +18,7 @@ import java.util.Random;
 программу на методы на простых задачах, этот навык вам
 в дальнейшем поможет справиться с более сложными задачами.
  */
+@CodeReview(approved = true)
  class TwoDimensionalArray {
   public static void main(String[] args) {
 

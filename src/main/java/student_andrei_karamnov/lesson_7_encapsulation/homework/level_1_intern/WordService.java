@@ -2,6 +2,8 @@ package student_andrei_karamnov.lesson_7_encapsulation.homework.level_1_intern;
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
 /*Учимся разбивать задачу на подзадачи.
 
 Дана строка с текстом.
@@ -11,6 +13,8 @@ import java.util.Arrays;
 Если несколько слов в тексте встречаются одинаково
 максимальное число раз, то возвращаем то слово,
 которое встречается в тексте первым.*/
+
+@CodeReview(approved = true)
 class WordService {
 
     public String findMostFrequentWord(String text) {
