@@ -21,6 +21,8 @@ package student_mihails_nikolajevs.lesson_3.level_1_intern_;
 
  */
 
+import teacher.annotations.CodeReview;
+
 /*
 
 В методе main(...) класса RobotDemo вызовите
@@ -54,7 +56,7 @@ robot2.sayYourName();
 в вашей программе можно создавать сколько угодно виртуальных
 обьектов и управлять ими (вызывать у них разные методы).
  */
-
+@CodeReview(approved = true)
 public class RobotDemo {
 
     

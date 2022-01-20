@@ -3,6 +3,9 @@ package student_eduards_puzirevskis.lesson_7_encapsulation.level_1_intern;
 import java.util.Arrays;
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class WordServiceTest {
     public static void main(String[] args) {
         WordServiceTest test = new WordServiceTest();

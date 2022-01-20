@@ -1,5 +1,8 @@
 package student_julija_radchenko.lesson_6_homeworks;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class NumberUtilsTest {
     public static void main(String[] args) {
         NumberUtilsTest newTest = new NumberUtilsTest();

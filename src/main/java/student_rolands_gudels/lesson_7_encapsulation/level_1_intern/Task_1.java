@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson_7_encapsulation.level_1_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Task_1 {
     /*Учимся разбивать задачу на подзадачи.
 
@@ -11,31 +14,31 @@ class Task_1 {
     максимальное число раз, то возвращаем то слово,
     которое встречается в тексте первым.
 */
-        public static void main(String[] args){
-            System.out.println(print());
-        }
+    public static void main(String[] args){
+        System.out.println(print());
+    }
 
- static String print() {
-            String s = " a a a a a a a b b b b c c c  g g ggg";
-            String word = findWord(s);
-     return word;
- }
+    static String print() {
+        String s = " a a a a a a a b b b b c c c  g g ggg";
+        String word = findWord(s);
+        return word;
+    }
 
-   public static String findWord(String s) {
-            String[] str = s.split("\\W+");         // массив строк без разделителей
-            int[] howMuch = new int[str.length];    // каждому слову соответствует число одинаковых
-            int maxCount = 0;                       // число макс кол-вал встречающихся
-            int index = 0;                          // последний индекс с макс.
-            for(int i=0; i<str.length; i++)
-                for(int j=0; j<str.length; j++)
-                    if(str[i].equals(str[j])) howMuch[i]++; // заполним массив
-            for(int i=0; i<howMuch.length; i++)
-                if(howMuch[i]>maxCount) {
-                    maxCount = howMuch[i];                  // найдем макс.
-                    index = i;                              // найдем индекс с макс.
-                }
-            return str[index];                     // здесь то самое слово под индексом
-        }
+    public static String findWord(String s) {
+        String[] str = s.split("\\W+");         // массив строк без разделителей
+        int[] howMuch = new int[str.length];    // каждому слову соответствует число одинаковых
+        int maxCount = 0;                       // число макс кол-вал встречающихся
+        int index = 0;                          // последний индекс с макс.
+        for(int i=0; i<str.length; i++)
+            for(int j=0; j<str.length; j++)
+                if(str[i].equals(str[j])) howMuch[i]++; // заполним массив
+        for(int i=0; i<howMuch.length; i++)
+            if(howMuch[i]>maxCount) {
+                maxCount = howMuch[i];                  // найдем макс.
+                index = i;                              // найдем индекс с макс.
+            }
+        return str[index];                     // здесь то самое слово под индексом
+    }
 
 }
 

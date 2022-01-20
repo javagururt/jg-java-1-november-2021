@@ -15,6 +15,10 @@ package student_mihails_nikolajevs.lesson_3.level_2_intern_;
  */
 
 import java.util.Scanner;
+
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ReadingStringsFromConsole {
 
     public static void main(String[] args) {
