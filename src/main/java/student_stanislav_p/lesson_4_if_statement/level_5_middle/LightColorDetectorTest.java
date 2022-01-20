@@ -47,7 +47,7 @@ class LightColorDetectorTest {
         if (realResult == expectedResult) {
             System.out.println("Light Color Detector Test one "+ wavelengthRange1+ " for "+ typeOfColor + " is OK");
         } else {
-            System.out.println("ight Color Detector Test one "+ wavelengthRange2+ " for "+ typeOfColor + " is Failed");
+            System.out.println("Light Color Detector Test one "+ wavelengthRange2+ " for "+ typeOfColor + " is Failed");
         }
 
         realResult = lightColorDetector.detect(wavelengthRange2);
