@@ -94,5 +94,19 @@ class ArrayService {
         }
     }
 
+    public int[] revert(int[] numbers) {
+        int[] newNumbers = new int[numbers.length];
+        for (int i = 0; i < numbers.length; i++) {
+            newNumbers[i] = numbers[numbers.length - i - 1];
+        }
+        return newNumbers;
+    }
+
+    public int[] sortFromSmallestToBiggest(int[] numbers) {
+        Arrays.sort(numbers);
+        return numbers;
+    }
+
+
 
 }
