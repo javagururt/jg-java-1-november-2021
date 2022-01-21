@@ -14,6 +14,6 @@ public class Task_13 {
         numbers [2] = a + (int) (Math.random() * b);
         System.out.println("3rd number: " + numbers [2]);
         int sumOfNumbers = Arrays.stream(numbers).sum();
-        System.out.println("SUMM OF NUMBERS: " + sumOfNumbers);
+        System.out.println("SUM OF NUMBERS: " + sumOfNumbers);
     }
 }
