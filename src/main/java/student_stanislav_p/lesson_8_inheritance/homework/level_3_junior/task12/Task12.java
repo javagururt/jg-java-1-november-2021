@@ -1,4 +1,4 @@
-package student_stanislav_p.lesson_8_inheritance.homework.level_3_junior;
+package student_stanislav_p.lesson_8_inheritance.homework.level_3_junior.task12;
 
 /*
 Исправьте код программы так, что бы он компилировался.
@@ -13,7 +13,7 @@ class LoanSystem {
 
 abstract class LoanSystem2 {
 
-     //abstract boolean canReceiveLoan(Human human);
+     abstract boolean canReceiveLoan(Human human);
 
 }
 
