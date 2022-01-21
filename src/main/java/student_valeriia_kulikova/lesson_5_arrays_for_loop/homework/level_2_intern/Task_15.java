@@ -14,10 +14,9 @@ public class Task_15 {
         }
         System.out.println("Random numbers: " + Arrays.toString(number));
 
-        number[0] = number[0] +2;
-        number[1] = number[1] +2;
-        number[2] = number[2] +2;
+        for (int i = 0; i < number.length; i++) {
+            number[i] = number[i] +2;
+        }
         System.out.println("Random + 2 = " + Arrays.toString(number));
-
     }
 }
