@@ -1,3 +1,8 @@
+package student_stanislav_p.lesson_8_inheritance.homework.level_4_junior_5_middle;
+
+
+/*
+
 Создайте класс ShapeUtilTest
 и напишите тесты для методов:
 
@@ -13,3 +18,8 @@ shape[0] = shapeUtil.createRandomCircle();
 shape[1] = shapeUtil.createRandomSquare();
 shape[2] = shapeUtil.createRandomRectangle();
 shape[3] = shapeUtil.createRandomTriangle();
+ */
+
+
+public class ShapeUtilTest {
+}

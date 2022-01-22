@@ -1,4 +1,4 @@
-package student_stanislav_p.lesson_8_inheritance.homework.level_4_junior;
+package student_stanislav_p.lesson_8_inheritance.homework.level_4_junior_5_middle;
 
 public class ShapeTest {
     public static void main(String[] args) {

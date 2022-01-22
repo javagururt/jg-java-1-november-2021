@@ -1,4 +1,4 @@
-package student_stanislav_p.lesson_8_inheritance.homework.level_4_junior;
+package student_stanislav_p.lesson_8_inheritance.homework.level_4_junior_5_middle;
 
 /*Создание иерархии класса Shape (геометрическая фигура).
 
@@ -12,8 +12,6 @@ package student_stanislav_p.lesson_8_inheritance.homework.level_4_junior;
         класс через конструктор.
 
  */
-
-import java.text.DecimalFormat;
 
 class Circle extends Shape {
 
