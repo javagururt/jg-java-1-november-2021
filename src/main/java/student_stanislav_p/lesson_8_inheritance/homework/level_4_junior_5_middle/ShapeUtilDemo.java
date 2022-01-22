@@ -30,7 +30,7 @@ public class ShapeUtilDemo {
         System.out.println("Circle radius -");
 
         System.out.println("Circles area -" + circleArea);
-        System.out.println();
+
         System.out.println("Circles perimeter - " + circlePerimeter);
     }
 
