@@ -40,16 +40,23 @@ public class ShapeUtil {
     }
 
     double calculateArea(Shape[] shapes) {
-        return 0;
+        //Этот метод расчитывает объщую площадь геометрических фигур из массива.
+        double sum = 0;
+        for (int i = 0; i < shapes.length; i++) {
+           Shape shape = shapes[i];
+            sum = shape.calculateArea() + sum;
+        }
+        return sum;
     }
-    //Этот метод расчитывает объщую площадь геометрических фигур из массива.
-
     double calculatePerimeter(Shape[] shapes) {
-        return 0;
+        // Этот метод расчитывает общий периметр геометрических фигур из массива.
+        double sum = 0;
+        for (int i = 0; i < shapes.length; i++) {
+            Shape shape = shapes[i];
+            sum = shape.calculatePerimeter() + sum;
+        }
+        return sum;
     }
-
-    // Этот метод расчитывает общий периметр геометрических фигур из массива.
-
 
     double calculateArea(Shape shape) {
         return shape.calculateArea();
