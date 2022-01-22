@@ -4,11 +4,11 @@ public class Circle extends Shape {
 
     private double radius;
 
-
     public Circle(double radius, String title) {
         super(title);
         this.radius = radius;
     }
+
 
     @Override
     double calculatedArea() {

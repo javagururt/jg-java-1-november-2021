@@ -4,6 +4,7 @@ public class Rectangle extends Shape {
     double sideA;
     double sideB;
 
+
     public Rectangle(String title, double sideA, double sideB) {
         super(title);
         this.sideA = sideA;

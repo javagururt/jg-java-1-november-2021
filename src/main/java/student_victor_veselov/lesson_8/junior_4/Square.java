@@ -4,7 +4,8 @@ public class Square extends Shape {
 
     int squareSide;
 
-    public Square(int squareSide,String title) {
+
+    public Square(int squareSide, String title) {
         super(title);
         this.squareSide = squareSide;
     }

@@ -8,8 +8,9 @@ public class ShapeUtilDemo {
         double circleArea = shapeUtil.calculatedArea(circle);
         double circlePerimeter = shapeUtil.calculatedPerimeter(circle);
 
-        System.out.println("Circles area = " + circleArea);
+
+        System.out.println("Circles area - " + circleArea);
         System.out.println();
-        System.out.println("Circles perimeter = " + circlePerimeter);
+        System.out.println("Circles perimeter - " + circlePerimeter);
     }
 }
