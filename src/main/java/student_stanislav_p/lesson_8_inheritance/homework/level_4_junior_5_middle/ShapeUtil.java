@@ -5,19 +5,38 @@ import java.util.Random;
 public class ShapeUtil {
 
     Circle createRandomCircle() {
-        return null;
+
+        Random random = new Random();
+
+        int radius = random.nextInt();
+        Circle circle = new Circle("Circle", radius);
+        return circle;
     }
 
     Square createRandomSquare() {
-        return null;
+        Random random = new Random();
+
+        int side = random.nextInt();
+        Square square = new Square("Square",side);
+        return square;
     }
 
     Rectangle createRandomRectangle() {
-        return null;
+        Random random = new Random();
+
+        int side1 = random.nextInt();
+        int side2 = random.nextInt();
+
+        Rectangle rectangle = new Rectangle("Rectangle(",side1,side2);
+        return rectangle;
     }
 
     Triangle createRandomTriangle() {
-        return null;
+        Random random = new Random();
+
+        int side = random.nextInt();
+        Triangle triangle = new Triangle("Triangle",side);
+        return triangle;
     }
 
     double calculateArea(Shape[] shapes) {
