@@ -26,9 +26,12 @@ public class ShapeUtilDemo {
         double circleArea = shapeUtil.calculateArea(circle);
         double circlePerimeter = shapeUtil.calculatePerimeter(circle);
 
-        System.out.println("Circles area = " + circleArea);
+
+        System.out.println("Circle radius -");
+
+        System.out.println("Circles area -" + circleArea);
         System.out.println();
-        System.out.println("Circles perimeter = " + circlePerimeter);
+        System.out.println("Circles perimeter - " + circlePerimeter);
     }
 
 
