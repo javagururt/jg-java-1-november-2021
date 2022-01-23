@@ -19,5 +19,28 @@ package student_stanislav_p.lesson_8_inheritance.homework.level_4_junior_5_middl
 
 public class ShapeUtilDemo {
 
+    public static void main(String[] args) {
+
+        int bound = 100;
+
+        ShapeUtil shapeUtil = new ShapeUtil();
+        Square square = shapeUtil.createRandomSquare(bound);
+        double squareArea = shapeUtil.calculateArea(square);
+        double squarePerimeter = shapeUtil.calculatePerimeter(square);
+
+
+        System.out.println("Circle radius -> " + square.getSide());
+
+        System.out.println("Circles area -> " + mr(squareArea));
+
+        System.out.println("Circles perimeter -> " + mr(squarePerimeter));
+    }
+
+     static double mr(double result) {
+
+        return (double)Math.round(result * 1000d) / 1000d;
+
+    }
+
 
 }

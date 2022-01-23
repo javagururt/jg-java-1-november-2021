@@ -4,33 +4,59 @@ import java.util.Random;
 
 public class ShapeUtil {
 
-    Circle createRandomCircle() {
-        return null;
+    Circle createRandomCircle(int bound) {
+
+        Random random = new Random();
+
+        int radius = random.nextInt(bound);
+        Circle circle = new Circle("Circle", radius);
+        return circle;
     }
 
-    Square createRandomSquare() {
-        return null;
+    Square createRandomSquare(int bound) {
+        Random random = new Random();
+
+        int side = random.nextInt(bound);
+        Square square = new Square("Square",side);
+        return square;
     }
 
-    Rectangle createRandomRectangle() {
-        return null;
+    Rectangle createRandomRectangle(int bound) {
+        Random random = new Random();
+
+        int side1 = random.nextInt(bound);
+        int side2 = random.nextInt(bound);
+
+        Rectangle rectangle = new Rectangle("Rectangle",side1,side2);
+        return rectangle;
     }
 
-    Triangle createRandomTriangle() {
-        return null;
+    Triangle createRandomTriangle(int bound) {
+        Random random = new Random();
+
+        int side = random.nextInt(bound);
+        Triangle triangle = new Triangle("Triangle",side);
+        return triangle;
     }
 
     double calculateArea(Shape[] shapes) {
-        return 0;
+        //Этот метод расчитывает объщую площадь геометрических фигур из массива.
+        double sum = 0;
+        for (int i = 0; i < shapes.length; i++) {
+           Shape shape = shapes[i];
+            sum = shape.calculateArea() + sum;
+        }
+        return sum;
     }
-    //Этот метод расчитывает объщую площадь геометрических фигур из массива.
-
     double calculatePerimeter(Shape[] shapes) {
-        return 0;
+        // Этот метод расчитывает общий периметр геометрических фигур из массива.
+        double sum = 0;
+        for (int i = 0; i < shapes.length; i++) {
+            Shape shape = shapes[i];
+            sum = shape.calculatePerimeter() + sum;
+        }
+        return sum;
     }
-
-    // Этот метод расчитывает общий периметр геометрических фигур из массива.
-
 
     double calculateArea(Shape shape) {
         return shape.calculateArea();
@@ -41,17 +67,17 @@ public class ShapeUtil {
     }
 
 
-    Shape createRandomShape() {
+    Shape createRandomShape(int bound) {
         Random rnd = new Random();
-        int randomNumber = rnd.nextInt(4);
+        int randomNumber = rnd.nextInt(bound);
         if (randomNumber == 0) {
-            return createRandomCircle();
+            return createRandomCircle(bound);
         } else if (randomNumber == 1) {
-            return createRandomSquare();
+            return createRandomSquare(bound);
         } else if (randomNumber == 2) {
-            return createRandomRectangle();
+            return createRandomRectangle(bound);
         } else {
-            return createRandomTriangle();
+            return createRandomTriangle(bound);
         }
     }
 

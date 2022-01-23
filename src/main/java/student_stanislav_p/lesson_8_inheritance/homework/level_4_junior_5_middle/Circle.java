@@ -16,11 +16,16 @@ package student_stanislav_p.lesson_8_inheritance.homework.level_4_junior_5_middl
 class Circle extends Shape {
 
     private double radius;
+
     private double pi=3.14159265358979323846264;
 
     Circle(String title, double radius) {
         super(title);
         this.radius = radius;
+    }
+
+    public double getRadius() {
+        return radius;
     }
 
     @Override
