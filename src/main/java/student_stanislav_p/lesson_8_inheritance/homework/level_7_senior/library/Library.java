@@ -18,6 +18,36 @@ package student_stanislav_p.lesson_8_inheritance.homework.level_7_senior.library
 
 
 Структура классов:
+
+Автор - список (индекс, имя автора)  ->
+
+Книга - список (индекс книги, автор (индекс из списка авторов), год издания) ->
+
+Каталог - список (индекс каталога, книга (индекс из списка книг), зарезервирована (да/нет), в наличии (да/нет), дата возврата, индекс читателя)
+
+Список выданных книг - список (индекс книги из каталога, индекс читателя из списка, дата возврата)
+
+-----
+
+Читатели - список (индекс читателя, персональный код, дата последней активности)
+
+-----
+
+Библиотека:
+
+- добавить автора в список (класс Автор)
+- добавить книгу в список (класс Книга)
+- добавить книгу в каталог (возможно несколько раз поскольку книга может быть не в одном экземплояре) (класс Каталог)
+- добавить читателя в список (класс Читатель)
+- зарезервировать книгу в катаоге для читателя (класс каталог)
+- выдать книгу для читателя и отметить дату возврата (класс каталог, класс читатель, класс список выданных книг)
+- выписать штраф читателю (класс список выданных книг, класс спислк читателей)
+
+
+
+
+
+
 ========================================================
 
 
@@ -40,28 +70,17 @@ class Author {
 
 
 
-    private void addBook(Book tempBook){
+    private void addBook(Book tempBook){}
 
-    }
-
-    private Book AddNewBook(){
-
-        // checkAuthor();
-        // inputNewBook();
+    private Book AddNewBook(){}
 
 
-        Author tempAuthor = author(0,"");
-        String tempTitle="";
-        int tempYear=0;
-        int tempPages=0;
+    private void showBooks(){    }
 
 
-        return new Book(tempAuthor, tempTitle, tempYear, tempPages);
-    }
-
-    private void showBooks(){
-    }
 }
+
+class Readers
 
 public class Library {
     private int catalogNumber;
@@ -69,6 +88,10 @@ public class Library {
     private Catalog[] listOfTheBook;
 
     Catalog mainCatalog = new Catalog();
+
+    private void menu(){}
+
+    private
 
 
 
