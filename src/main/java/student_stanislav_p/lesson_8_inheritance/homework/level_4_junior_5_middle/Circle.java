@@ -17,15 +17,15 @@ class Circle extends Shape {
 
     private double radius;
 
-    public double getRadius() {
-        return radius;
-    }
-
     private double pi=3.14159265358979323846264;
 
     Circle(String title, double radius) {
         super(title);
         this.radius = radius;
+    }
+
+    public double getRadius() {
+        return radius;
     }
 
     @Override

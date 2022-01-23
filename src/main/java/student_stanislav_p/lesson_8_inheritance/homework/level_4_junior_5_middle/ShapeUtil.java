@@ -4,37 +4,37 @@ import java.util.Random;
 
 public class ShapeUtil {
 
-    Circle createRandomCircle() {
+    Circle createRandomCircle(int bound) {
 
         Random random = new Random();
 
-        int radius = random.nextInt();
+        int radius = random.nextInt(bound);
         Circle circle = new Circle("Circle", radius);
         return circle;
     }
 
-    Square createRandomSquare() {
+    Square createRandomSquare(int bound) {
         Random random = new Random();
 
-        int side = random.nextInt();
+        int side = random.nextInt(bound);
         Square square = new Square("Square",side);
         return square;
     }
 
-    Rectangle createRandomRectangle() {
+    Rectangle createRandomRectangle(int bound) {
         Random random = new Random();
 
-        int side1 = random.nextInt();
-        int side2 = random.nextInt();
+        int side1 = random.nextInt(bound);
+        int side2 = random.nextInt(bound);
 
         Rectangle rectangle = new Rectangle("Rectangle(",side1,side2);
         return rectangle;
     }
 
-    Triangle createRandomTriangle() {
+    Triangle createRandomTriangle(int bound) {
         Random random = new Random();
 
-        int side = random.nextInt();
+        int side = random.nextInt(bound);
         Triangle triangle = new Triangle("Triangle",side);
         return triangle;
     }
@@ -67,17 +67,17 @@ public class ShapeUtil {
     }
 
 
-    Shape createRandomShape() {
+    Shape createRandomShape(int bound) {
         Random rnd = new Random();
-        int randomNumber = rnd.nextInt(4);
+        int randomNumber = rnd.nextInt(bound);
         if (randomNumber == 0) {
-            return createRandomCircle();
+            return createRandomCircle(bound);
         } else if (randomNumber == 1) {
-            return createRandomSquare();
+            return createRandomSquare(bound);
         } else if (randomNumber == 2) {
-            return createRandomRectangle();
+            return createRandomRectangle(bound);
         } else {
-            return createRandomTriangle();
+            return createRandomTriangle(bound);
         }
     }
 
