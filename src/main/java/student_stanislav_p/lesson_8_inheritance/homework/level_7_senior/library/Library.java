@@ -1,4 +1,4 @@
-package student_stanislav_p.lesson_8_inheritance.homework.level_7_senior;
+package student_stanislav_p.lesson_8_inheritance.homework.level_7_senior.library;
 /*
 
 Разработать доменную модель для электронной системы управления библиотекой.
@@ -14,8 +14,10 @@ package student_stanislav_p.lesson_8_inheritance.homework.level_7_senior;
 
 
 public class Library {
-    private String [] author;
-    private String [] book;
+    private int catalogNumber;
+    private int authorIndex;
+    private String [] nameOfTheBook;
+
 
 
 
