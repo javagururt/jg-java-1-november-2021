@@ -25,6 +25,8 @@ public class ShapeUtilTest {
 
     public static void main(String[] args) {
 
+        ShapeUtilTest sut = new ShapeUtilTest();
+
         ShapeUtil shapeUtil = new ShapeUtil();
         Shape[] shapes = new Shape[4];
 
@@ -37,8 +39,19 @@ public class ShapeUtilTest {
 
         for (int i = 0; i < 4; i++) {
 
-          printShapesParameter(shapes, i);
+          sut.printShapesParameter(shapes, i);
         }
+
+        double expectedSumArea = sut.mr(shapes[0].calculateArea()+shapes[1].calculateArea()+shapes[2].calculateArea()+shapes[3].calculateArea());
+        double expectedSumPerimeter = sut.mr(shapes[0].calculatePerimeter()+shapes[1].calculatePerimeter()+shapes[2].calculatePerimeter()+shapes[3].calculatePerimeter());
+
+        double realSumArea = sut.mr(shapeUtil.calculateArea(shapes));
+        double realSumPerimeter = sut.mr(shapeUtil.calculatePerimeter(shapes));
+
+        sut.checkTestResult(realSumArea==expectedSumArea, "Test 1 Sum of areas - ");
+
+        sut.checkTestResult(realSumPerimeter==expectedSumPerimeter, "Test 2 Sum of perimeters - ");
+
 
     }
 
@@ -66,7 +79,7 @@ public class ShapeUtilTest {
 
     }
 
-   static void printShapesParameter(Shape[] shapes, int i) {
+   private void printShapesParameter(Shape[] shapes, int i) {
 
         System.out.println(" Фигура № "+(i+1)+" -  "+shapes[i].getTitle());
 
