@@ -15,10 +15,13 @@ class Square extends Shape {
 
     private double side;
 
-
     Square(String title, double side) {
         super(title);
         this.side = side;
+    }
+
+    public double getSide() {
+        return side;
     }
 
     @Override

@@ -27,7 +27,7 @@ public class ShapeUtil {
         int side1 = random.nextInt(bound);
         int side2 = random.nextInt(bound);
 
-        Rectangle rectangle = new Rectangle("Rectangle(",side1,side2);
+        Rectangle rectangle = new Rectangle("Rectangle",side1,side2);
         return rectangle;
     }
 

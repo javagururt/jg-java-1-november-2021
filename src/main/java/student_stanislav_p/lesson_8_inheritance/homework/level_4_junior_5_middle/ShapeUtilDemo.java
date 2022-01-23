@@ -24,16 +24,16 @@ public class ShapeUtilDemo {
         int bound = 100;
 
         ShapeUtil shapeUtil = new ShapeUtil();
-        Shape circle = shapeUtil.createRandomCircle(bound);
-        double circleArea = shapeUtil.calculateArea(circle);
-        double circlePerimeter = shapeUtil.calculatePerimeter(circle);
+        Square square = shapeUtil.createRandomSquare(bound);
+        double squareArea = shapeUtil.calculateArea(square);
+        double squarePerimeter = shapeUtil.calculatePerimeter(square);
 
 
-        System.out.println("Circle radius -> ");
+        System.out.println("Circle radius -> " + square.getSide());
 
-        System.out.println("Circles area -> " + mr(circleArea));
+        System.out.println("Circles area -> " + mr(squareArea));
 
-        System.out.println("Circles perimeter -> " + mr(circlePerimeter));
+        System.out.println("Circles perimeter -> " + mr(squarePerimeter));
     }
 
      static double mr(double result) {
