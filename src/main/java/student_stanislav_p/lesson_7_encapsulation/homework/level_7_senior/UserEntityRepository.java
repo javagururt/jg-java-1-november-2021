@@ -19,7 +19,6 @@ package student_stanislav_p.lesson_7_encapsulation.homework.level_7_senior;
  */
 
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class UserEntityRepository {
@@ -37,14 +36,23 @@ public class UserEntityRepository {
         UserEntityRepository dataBase = new UserEntityRepository();
 
 
-        UserEntity currentBase[] = new UserEntity[1];
+        int dataBaseCount =  0;
 
-        currentBase[0]= new UserEntity("ID1", "Name1", "Surname1", "Personal Code1");
+        UserEntity[] currentBase = new UserEntity[dataBaseCount+1];
 
+
+        currentBase[dataBaseCount]= new UserEntity(0, "Name", "Surname", "Personal Code");
+
+
+        System.out.println("count - " + dataBaseCount+ " "+ currentBase[dataBaseCount].getUserID() +
+                currentBase[dataBaseCount].getUserName() +
+                currentBase[dataBaseCount].getUserSurname() +
+                currentBase[dataBaseCount].getUserPersonalCode()
+        );
 
         while (operationType!=7){
             operationType= dataBase.operationTypeChoose();
-            doOperationType(operationType);
+            doOperationType(operationType,dataBaseCount, currentBase);
 
         }
 
@@ -89,30 +97,131 @@ public class UserEntityRepository {
 
     // ------------------------------------------------
 
-    private static void doOperationType(int operationType){
+    private static void doOperationType(int operationType, int dataBaseCount, UserEntity[] currentBase ){
 
         switch (operationType) {
-            case 1: doAddingUser();
-            case 2: doGettingUserByID();
-            case 3: doGettingUsersByName();
-            case 4: doGettingAllUsers();
-            case 5: doUserEditing();
-            case 6: doDeletingUser();
+            case 1: doAddingUser(dataBaseCount, currentBase);
+            case 2: doGettingUserByID(dataBaseCount);
+            case 3: doGettingUsersByName(dataBaseCount);
+            case 4: doGettingAllUsers(dataBaseCount,currentBase);
+            case 5: doUserEditing(dataBaseCount);
+            case 6: doDeletingUser(dataBaseCount);
 
         }
     }
 
-    private static void doAddingUser(){}
+    private static void doAddingUser(int dataBaseCount, UserEntity[] currentBase ){
 
-    private static void doGettingUserByID(){}
+        Scanner scanner = new Scanner(System.in);
 
-    private static void doGettingUsersByName(){}
 
-    private static void doGettingAllUsers(){}
+        System.out.println("Adding/saving a new user.");
+        int newID = enterIntData("Enter ID ->");
 
-    private static void doUserEditing(){}
+        boolean checkResult = checkNewID(newID,dataBaseCount, currentBase);
 
-    private static void doDeletingUser(){}
+        System.out.println("check result - "+ checkResult);
 
+        if (!checkResult) {
+            System.out.println("This ID is already exist.");
+        }
+            else{
+
+                String  newName = enterStringData("Enter User Name ->");
+                String  newSurname = enterStringData("Enter User Surname ->");
+                String  newPersonalCode = enterStringData("Enter User Personal code ->");
+
+                addNewUser(currentBase,dataBaseCount,newID,newName,newSurname,newPersonalCode);
+
+
+        }
+
+        System.out.println(newID + "  ");
+
+    }
+
+    private static void doGettingUserByID(int dataBaseCount ){}
+
+    private static void doGettingUsersByName(int dataBaseCount ){}
+
+    private static void doGettingAllUsers(int dataBaseCount, UserEntity[] currentBase){
+
+        System.out.println("Getting all users.");
+
+        for (int i = 0; i < dataBaseCount; i++) {
+
+            System.out.println("count - " + i+ " "+ currentBase[i].getUserID() +
+                    currentBase[i].getUserName() +
+                    currentBase[i].getUserSurname() +
+                    currentBase[i].getUserPersonalCode()
+            );
+        }
+    }
+
+    private static void doUserEditing(int dataBaseCount ){}
+
+    private static void doDeletingUser(int dataBaseCount ){}
+
+
+
+    //----------------------------------------------------------------------------------------
+
+
+
+    private static boolean checkNewID(int newID, int dataBaseCount, UserEntity[] currentBase) {
+
+
+        for (int i = 0; i < dataBaseCount; i++) {
+
+            System.out.println("count - " + i+ " "+ currentBase[i].getUserID() +
+                    currentBase[i].getUserName() +
+                    currentBase[i].getUserSurname() +
+                    currentBase[i].getUserPersonalCode()
+            );
+
+            if (currentBase[i].getUserID() == newID) {
+
+                System.out.println("This ID is already exist.");
+
+                return false;
+            }
+        }
+        return true;
+    };
+
+
+    private static int enterIntData(String msgText){
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.println(msgText);
+        return scanner.nextInt();
+    }
+
+    private static String  enterStringData(String msgText){
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println(msgText);
+        return scanner.nextLine();
+    }
+
+    private static  UserEntity[] addNewUser(UserEntity[] currentBase, int countDataBase, int newID, String newName, String newSurname, String newPCode){
+
+        int dataBaseCount = countDataBase+1;
+
+        UserEntity localBase = currentBase[dataBaseCount+1];
+
+        localBase.setUserID(newID);
+        localBase.setUserName(newName);
+        localBase.setUserSurname(newSurname);
+        localBase.setUserPersonalCode(newPCode);
+
+        return new UserEntity[]{localBase};
+
+
+
+
+    }
 
 }

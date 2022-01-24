@@ -16,8 +16,9 @@ int[] copyInRange(int[] in, int numberFrom, int numberTo)
 Все тестовые сценарии должны отрабатывать без ошибок.
  */
 
-import java.util.Arrays;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class ArrayCopy {
 
     int numberFrom;
@@ -33,32 +34,31 @@ class ArrayCopy {
 
     int[] copyInRange(int[] in, int numberFrom, int numberTo) {
 
-            int arrayControlTrigger;
+        int arrayControlTrigger;
 
-            if (numberFrom<=numberTo) arrayControlTrigger=1; else arrayControlTrigger=0;
+        if (numberFrom<=numberTo) arrayControlTrigger=1; else arrayControlTrigger=0;
 
-            int count = 0;
+        int count = 0;
 
-            for (int i = 0; i < in.length; i++) {
-                if ((numberFrom <= in[i]) && (in[i] <= numberTo)) count++;
+        for (int i = 0; i < in.length; i++) {
+            if ((numberFrom <= in[i]) && (in[i] <= numberTo)) count++;
+        }
+
+        if (arrayControlTrigger*count == 0) count = 1;
+
+        int[] rangeArray = new int[count];
+
+        count = 0;
+
+        for (int i = 0; i < in.length; i++) {
+            if ((numberFrom <= in[i]) && (in[i] <= numberTo)) {
+                rangeArray[count] = in[i];
+                count++;
             }
-
-            if (arrayControlTrigger*count == 0) count = 1;
-
-            int[] rangeArray = new int[count];
-
-            count = 0;
-
-            for (int i = 0; i < in.length; i++) {
-                if ((numberFrom <= in[i]) && (in[i] <= numberTo)) {
-                    rangeArray[count] = in[i];
-                    count++;
-                }
-            }
+        }
 
 
-
-            return rangeArray;
+        return rangeArray;
 
 
     }
