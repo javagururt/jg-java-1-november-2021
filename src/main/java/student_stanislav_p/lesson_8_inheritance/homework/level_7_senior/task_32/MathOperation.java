@@ -4,4 +4,5 @@ abstract class MathOperation {
 
 	public abstract double calculate();
 
+
 }
