@@ -33,7 +33,7 @@ public class Task_6 {
         public static void main(String[] args) {
             // продемонстрируйте создание инстанции класса Porsche911
             Porsche911 newCar = new Porsche911(266,1998);
-            System.out.println("Top speed "+ newCar.topSpeed + "release year " +newCar.releaseYear);
+            System.out.println("Top speed "+ newCar.topSpeed + " release year " +newCar.releaseYear);
         }
 
   //  }

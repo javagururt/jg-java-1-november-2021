@@ -7,4 +7,23 @@ public class Task_17 {
     Реализуйте в нём абстрактные методы из класса
     Shape: calculateArea() и calculatePerimeter().
     Напишите тесты для класса Square.*/
+     protected static class Square extends Task_15.Shape{
+        private double side = 4;
+
+        Square(String title) {
+            super(title);
+        }
+
+        @Override
+       double calculateArea() {
+            double squareArea = side*side;
+            return squareArea;
+        }
+
+        @Override
+        double calculatePerimeter() {
+            double squarePerimeter = 4 * side;
+            return squarePerimeter;
+        }
+    }
 }
