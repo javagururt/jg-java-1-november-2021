@@ -8,16 +8,24 @@ class WordServiceTest {
     public static void main(String[] args) {
         WordServiceTest test = new WordServiceTest();
         test.isItWork();
+        WordService demo = new WordService();
+        String text = "I love java and java loves me loves me";
+        demo.findMostFrequentWord(text);
 
     }
 
     void isItWork(){
-        String text = "I love java and java loves me loves me";
-        String expectedResult = "java";
+        String text1 = "I love java and java loves me loves me";
+        String text2 = "hello world world hello goodbye night world good good day";
+        String expectedResult1 = "java";
+        String expectedResult2 = "world";
         WordService test = new WordService();
-        String realResult = test.findMostFrequentWord(text);
-        boolean condition = (expectedResult.equals(realResult));
-        checkTestResult(condition,"findMostFrequentWord TEST");
+        String realResult1 = test.findMostFrequentWord(text1);
+        String realResult2 = test.findMostFrequentWord(text2);
+        boolean condition1 = (expectedResult1.equals(realResult1));
+        boolean condition2 = (expectedResult2.equals(realResult2));
+        checkTestResult(condition1,"findMostFrequentWord TEST1");
+        checkTestResult(condition2,"findMostFrequentWord TEST2");
     }
 
     private void checkTestResult(boolean condition, String testName) {
