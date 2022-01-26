@@ -17,6 +17,7 @@ public class PowerCalculatorTest {
         passedOrFailed("powerCalculator TEST4", power.power(-3, -3), -0.037);
         passedOrFailed("powerCalculator TEST5", power.power(7, 6), 117649);
         passedOrFailed("powerCalculator TEST5", power.power(5, 9), 1953125);
+        passedOrFailed("powerCalculator TEST1", power.power(3, 0), 1);
     }
 
     void passedOrFailed(String testName, double actual, double expected) {

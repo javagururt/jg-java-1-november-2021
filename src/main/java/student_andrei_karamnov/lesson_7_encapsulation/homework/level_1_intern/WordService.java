@@ -21,12 +21,15 @@ class WordService {
         String[] words = text.split(" ");
         Arrays.sort(words);
         int max = 0;
-        int count = 1;
+        int count = 0;
         String word = words[0];
         String curr = words[0];
+        System.out.println(Arrays.toString(words));
         for (int i = 1; i < words.length; i++) {
+            System.out.println("round:" + i + "current word is:" + curr);
             if (words[i].equals(curr)) {
                 count++;
+
             } else {
                 count = 1;
                 curr = words[i];
@@ -36,6 +39,7 @@ class WordService {
                 word = words[i];
             }
         }
+        System.out.println(max + word);
         return word;
 
     }
