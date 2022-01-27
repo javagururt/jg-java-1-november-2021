@@ -1,10 +1,13 @@
 package student_eduards_puzirevskis.lesson_8_inheritance.level_2_intern.task_6;
 
- class Car {
+import teacher.annotations.CodeReview;
 
-     private int releaseYear;
+@CodeReview(approved = true)
+class Car {
 
-     public Car(int releaseYear) {
-         this.releaseYear = releaseYear;
-     }
+    private int releaseYear;
+
+    public Car(int releaseYear) {
+        this.releaseYear = releaseYear;
+    }
 }

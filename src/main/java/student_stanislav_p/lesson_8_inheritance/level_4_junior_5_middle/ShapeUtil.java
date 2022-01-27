@@ -2,6 +2,9 @@ package student_stanislav_p.lesson_8_inheritance.level_4_junior_5_middle;
 
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ShapeUtil {
 
     Circle createRandomCircle(int bound) {
@@ -43,11 +46,12 @@ public class ShapeUtil {
         //Этот метод расчитывает объщую площадь геометрических фигур из массива.
         double sum = 0;
         for (int i = 0; i < shapes.length; i++) {
-           Shape shape = shapes[i];
+            Shape shape = shapes[i];
             sum = shape.calculateArea() + sum;
         }
         return sum;
     }
+
     double calculatePerimeter(Shape[] shapes) {
         // Этот метод расчитывает общий периметр геометрических фигур из массива.
         double sum = 0;

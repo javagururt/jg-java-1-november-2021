@@ -1,12 +1,15 @@
 package student_andrei_karamnov.lesson_8_inheritance.level_4_junior;
 
-class Square extends Shape{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+class Square extends Shape {
 
     private double length;
 
-    public Square(double side){
-       super("Square");
-       this.length = side;
+    public Square(double side) {
+        super("Square");
+        this.length = side;
     }
 
     @Override

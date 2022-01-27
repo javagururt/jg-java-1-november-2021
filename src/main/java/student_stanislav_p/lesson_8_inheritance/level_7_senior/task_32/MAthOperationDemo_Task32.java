@@ -8,74 +8,76 @@ package student_stanislav_p.lesson_8_inheritance.level_7_senior.task_32;
  */
 
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class MAthOperationDemo_Task32 {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
 
-		MAthOperationDemo_Task32 mod = new MAthOperationDemo_Task32();
+        MAthOperationDemo_Task32 mod = new MAthOperationDemo_Task32();
 
-		// build and calculate: 10 - 5
-		Argument arg1 = new Argument(10);
-		Argument arg2 = new Argument(5);
-		MathOperation subtraction = new Subtraction(arg1, arg2);
+        // build and calculate: 10 - 5
+        Argument arg1 = new Argument(10);
+        Argument arg2 = new Argument(5);
+        MathOperation subtraction = new Subtraction(arg1, arg2);
 
-		double realResultLeftSide = subtraction.calculate();
+        double realResultLeftSide = subtraction.calculate();
 
-		double expectedResultLeftSide = 5;
-
-
-		System.out.println("Left side Subtraction result = " + realResultLeftSide);
+        double expectedResultLeftSide = 5;
 
 
-		// build and calculate:  10 / 2
+        System.out.println("Left side Subtraction result = " + realResultLeftSide);
 
 
-		Divide divide = new Divide(new Argument(10), new Argument(2));
-
-		double realResultRightSide = divide.calculate();
-
-		double expectedResultRightSide = 5;
-
-		System.out.println("Right side divide result = " + realResultRightSide);
+        // build and calculate:  10 / 2
 
 
-		// build and calculate:  (10 - 5) * (20 / 5)
+        Divide divide = new Divide(new Argument(10), new Argument(2));
 
-		Multiply multiply = new Multiply(subtraction, divide);
+        double realResultRightSide = divide.calculate();
 
-		double realResultFinal = multiply.calculate();
+        double expectedResultRightSide = 5;
 
-		double expectedResultFinal = 25;
+        System.out.println("Right side divide result = " + realResultRightSide);
 
 
-		System.out.println("Final result = " + multiply.calculate());
+        // build and calculate:  (10 - 5) * (20 / 5)
 
-		System.out.println("================== TEST RESULT ==============");
+        Multiply multiply = new Multiply(subtraction, divide);
 
-		mod.checkTestResult(realResultLeftSide==expectedResultLeftSide, "Test 1. Calculation result left side - ");
-		mod.checkTestResult(realResultRightSide==expectedResultRightSide, "Test 2. Calculation result right side - ");
-		mod.checkTestResult(realResultFinal==expectedResultFinal, "Test 3. Calculation final result  - ");
+        double realResultFinal = multiply.calculate();
 
-	}
+        double expectedResultFinal = 25;
 
-	//-------------------------------------------
 
-	private void checkTestResult(boolean condition, String testName) {
-		if (condition) {
-			System.out.println(testName + " = OK!");
-		} else {
-			System.out.println(testName + " = FAIL!");
-		}
-	}
+        System.out.println("Final result = " + multiply.calculate());
 
-	//-------------------------------------------
+        System.out.println("================== TEST RESULT ==============");
 
-	private void printTestResult(String nameResult, double result1) {
+        mod.checkTestResult(realResultLeftSide == expectedResultLeftSide, "Test 1. Calculation result left side - ");
+        mod.checkTestResult(realResultRightSide == expectedResultRightSide, "Test 2. Calculation result right side - ");
+        mod.checkTestResult(realResultFinal == expectedResultFinal, "Test 3. Calculation final result  - ");
 
-		System.out.println(nameResult+result1);
+    }
 
-	}
+    //-------------------------------------------
+
+    private void checkTestResult(boolean condition, String testName) {
+        if (condition) {
+            System.out.println(testName + " = OK!");
+        } else {
+            System.out.println(testName + " = FAIL!");
+        }
+    }
+
+    //-------------------------------------------
+
+    private void printTestResult(String nameResult, double result1) {
+
+        System.out.println(nameResult + result1);
+
+    }
 
 
 }

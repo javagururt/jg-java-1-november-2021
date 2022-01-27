@@ -1,6 +1,8 @@
 package student_stanislav_p.lesson_8_inheritance.level_7_senior.library;
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class Book {
     private String author;
     private String title;

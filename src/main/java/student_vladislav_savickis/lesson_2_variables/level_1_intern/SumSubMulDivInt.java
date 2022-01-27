@@ -2,6 +2,9 @@ package student_vladislav_savickis.lesson_2_variables.level_1_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class SumSubMulDivInt {
     public static void main(String[] args) {
         int firstNumber;

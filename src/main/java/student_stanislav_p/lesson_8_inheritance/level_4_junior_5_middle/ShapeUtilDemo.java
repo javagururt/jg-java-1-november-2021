@@ -16,7 +16,9 @@ package student_stanislav_p.lesson_8_inheritance.level_4_junior_5_middle;
 
  */
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class ShapeUtilDemo {
 
     public static void main(String[] args) {
@@ -36,9 +38,9 @@ public class ShapeUtilDemo {
         System.out.println("Circles perimeter -> " + mr(squarePerimeter));
     }
 
-     static double mr(double result) {
+    static double mr(double result) {
 
-        return (double)Math.round(result * 1000d) / 1000d;
+        return (double) Math.round(result * 1000d) / 1000d;
 
     }
 

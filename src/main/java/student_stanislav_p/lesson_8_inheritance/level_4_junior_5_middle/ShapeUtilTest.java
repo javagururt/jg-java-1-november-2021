@@ -20,7 +20,9 @@ shape[2] = shapeUtil.createRandomRectangle();
 shape[3] = shapeUtil.createRandomTriangle();
  */
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class ShapeUtilTest {
 
     public static void main(String[] args) {
@@ -39,7 +41,7 @@ public class ShapeUtilTest {
 
         for (int i = 0; i < 4; i++) {
 
-          sut.printShapesParameter(shapes, i);
+            sut.printShapesParameter(shapes, i);
         }
 
         double expectedSumArea = sut.mr(shapes[0].calculateArea()+shapes[1].calculateArea()+shapes[2].calculateArea()+shapes[3].calculateArea());
@@ -79,23 +81,21 @@ public class ShapeUtilTest {
 
     }
 
-   private void printShapesParameter(Shape[] shapes, int i) {
+    private void printShapesParameter(Shape[] shapes, int i) {
 
-        System.out.println(" Фигура № "+(i+1)+" -  "+shapes[i].getTitle());
+        System.out.println(" Фигура № " + (i + 1) + " -  " + shapes[i].getTitle());
 
-        System.out.println("Площадь " + shapes[i].getTitle() + " № "+(i+1) +" равна "+ shapes[i].calculateArea());
+        System.out.println("Площадь " + shapes[i].getTitle() + " № " + (i + 1) + " равна " + shapes[i].calculateArea());
 
-        System.out.println("Периметр " + shapes[i].getTitle() + " № "+(i+1) +" равен "+ shapes[i].calculatePerimeter());
+        System.out.println("Периметр " + shapes[i].getTitle() + " № " + (i + 1) + " равен " + shapes[i].calculatePerimeter());
 
-    switch (shapes[i].getTitle()){
-        case   "Circle":
-            System.out.println("Радиус -> "); // а как вытащить через getter???
-            break;
+        switch (shapes[i].getTitle()) {
+            case "Circle":
+                System.out.println("Радиус -> "); // а как вытащить через getter???
+                break;
+        }
+
     }
-
-    }
-
-
 
 
 }

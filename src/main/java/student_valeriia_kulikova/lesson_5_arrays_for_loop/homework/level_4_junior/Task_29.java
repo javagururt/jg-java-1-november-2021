@@ -3,11 +3,14 @@ package student_valeriia_kulikova.lesson_5_arrays_for_loop.homework.level_4_juni
 import java.util.Arrays;
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
 /*Напишите программу, в которой:
 - создайте массив произвольной длины
 - заполните массив случайными числами
 - распечатайте на консоль все элементы массива
 - найдите все чётные числа в массиве и выведети их на консоль.*/
+@CodeReview(approved = true)
 public class Task_29 {
     public static void main(String[] args) {
 

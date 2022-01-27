@@ -11,7 +11,9 @@ package student_stanislav_p.lesson_8_inheritance.level_2_intern;
 
  */
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class ComputerPlayer extends Player {
 
     ComputerPlayer(String name) {

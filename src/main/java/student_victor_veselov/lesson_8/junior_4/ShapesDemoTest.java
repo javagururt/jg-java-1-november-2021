@@ -1,5 +1,8 @@
 package student_victor_veselov.lesson_8.junior_4;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ShapesDemoTest {
     public static void main(String[] args) {
         ShapesDemoTest shapesDemoTest = new ShapesDemoTest();
@@ -20,6 +23,7 @@ public class ShapesDemoTest {
             System.out.println("Circle Area Test Failed");
         }
     }
+
     void perimeterTest(){
         double trueResult = 50.24;
         Circle circle = new Circle(8,"Circle");

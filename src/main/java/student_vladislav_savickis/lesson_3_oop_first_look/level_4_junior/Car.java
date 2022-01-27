@@ -1,5 +1,8 @@
 package student_vladislav_savickis.lesson_3_oop_first_look.level_4_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Car {
     String model;
 

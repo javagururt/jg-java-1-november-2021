@@ -1,5 +1,7 @@
 package student_stanislav_p.lesson_8_inheritance.level_2_intern;
 
+import teacher.annotations.CodeReview;
+
 /*
 Как вызвать конструктор родительского класса?
 
@@ -32,7 +34,7 @@ class Porsche911Demo {
 
 }
  */
-
+@CodeReview(approved = true)
 class Car {
 
     protected int releaseYear;

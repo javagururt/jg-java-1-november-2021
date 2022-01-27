@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_8_inheritance.level_3_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_13 {
     public static void main(String[] args) {
         Dog dog = new Dog("Jack", 3, "Husky");
@@ -9,7 +12,8 @@ public class Task_13 {
         cat.display();
     }
 }
-abstract class Animal{
+
+abstract class Animal {
 
     private String name;
     private int age;

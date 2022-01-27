@@ -1,11 +1,14 @@
 package student_vladislav_savickis.lesson_3_oop_first_look.level_5_middle;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Dog {
     String name;
     int age;
     String color;
 
-    Dog(String dogName, int dogAge, String dogColor){
+    Dog(String dogName, int dogAge, String dogColor) {
         this.name = dogName;
         this.age = dogAge;
         this.color = dogColor;

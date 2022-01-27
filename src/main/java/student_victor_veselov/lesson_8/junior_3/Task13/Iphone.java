@@ -1,6 +1,9 @@
 package student_victor_veselov.lesson_8.junior_3.Task13;
 
-public class Iphone extends Phone{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class Iphone extends Phone {
 
     @Override
     public void phoneTurnOn() {

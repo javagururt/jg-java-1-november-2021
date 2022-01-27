@@ -1,4 +1,7 @@
 package student_stanislav_p.lesson_8_inheritance.level_1_intern;
+
+import teacher.annotations.CodeReview;
+
 /*
 Нужно ли в классе создавать дефолтный конструктор
 (конструктор по умолчанию)
@@ -11,7 +14,7 @@ package student_stanislav_p.lesson_8_inheritance.level_1_intern;
 код являющийся ответом на поставленный вопрос.
 
  */
-
+@CodeReview(approved = true)
 public class DefaultConstructorV2Demo {
 
     public static void main(String[] args) {

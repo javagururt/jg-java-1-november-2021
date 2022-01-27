@@ -1,10 +1,13 @@
 package student_eduards_puzirevskis.lesson_8_inheritance.level_2_intern.task_7_and_8;
 
- class ComputerPlayerDemo {
+import teacher.annotations.CodeReview;
 
-     public static void main(String[] args) {
+@CodeReview(approved = true)
+class ComputerPlayerDemo {
 
-         ComputerPlayer computerPlayer = new ComputerPlayer("Eduards");
+    public static void main(String[] args) {
 
-     }
+        ComputerPlayer computerPlayer = new ComputerPlayer("Eduards");
+
+    }
 }

@@ -1,5 +1,8 @@
 package student_stanislav_p.lesson_8_inheritance.level_1_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class DefaultConstructor {
     double width;
     double height;

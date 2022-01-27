@@ -1,6 +1,8 @@
 package student_andrei_karamnov.lesson_8_inheritance.level_6_middle;
 
 import java.util.Arrays;
+
+import teacher.annotations.CodeReview;
 /*Узнать в интернете, что такое varargs.
 Придумайте пример кода, в котором продемонстрируйте
 использование varargs.*/
@@ -8,7 +10,7 @@ import java.util.Arrays;
 /* Varargs — или Variable Arguments(аргументы переменной длины) — это технология,
 которая позволяет создавать методы с произвольным количеством аргументов.
 */
-
+@CodeReview(approved = true)
 class VarargsDemoCode {
     public static void main(String... sss) {
         int[] a = new int[79];

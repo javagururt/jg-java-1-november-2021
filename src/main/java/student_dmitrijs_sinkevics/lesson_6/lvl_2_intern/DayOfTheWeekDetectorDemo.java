@@ -1,5 +1,8 @@
 package student_dmitrijs_sinkevics.lesson_6.lvl_2_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorDemo {
 
     public static void main(String[] args) {

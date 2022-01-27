@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson_8_inheritance.level_4_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_16 {
  /*   Создание иерархии класса Shape (геометрическая фигура).
 

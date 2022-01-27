@@ -1,22 +1,25 @@
 package student_eduards_puzirevskis.lesson_8_inheritance.level_1_intern;
 
- class DefaultConstructorV2 {
+import teacher.annotations.CodeReview;
 
-  int age;
+@CodeReview(approved = true)
+class DefaultConstructorV2 {
 
-  public void showYourAge() {
-   age = 0;
-  }
+    int age;
 
-  public void showYourAge(int yourAge) {
-   age = yourAge;
-  }
+    public void showYourAge() {
+        age = 0;
+    }
 
-  public int getAge() {
-   return age;
-  }
+    public void showYourAge(int yourAge) {
+        age = yourAge;
+    }
 
-  public void setAge(int age) {
-   this.age = age;
-  }
- }
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+}

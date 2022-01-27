@@ -3,6 +3,9 @@ package student_stanislav_p.lesson_8_inheritance.level_7_senior.library.v2;
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Books {
 
     private int bookIndex;
@@ -10,9 +13,9 @@ class Books {
     private String bookName;
     private String bookDateOfPublication;
 
-    public Books(int bookIndex,  String bookName, String bookDateOfPublication) {
+    public Books(int bookIndex, String bookName, String bookDateOfPublication) {
         this.bookIndex = bookIndex;
-       // this.bookAuthor = bookAuthor;
+        // this.bookAuthor = bookAuthor;
         this.bookName = bookName;
         this.bookDateOfPublication = bookDateOfPublication;
     }

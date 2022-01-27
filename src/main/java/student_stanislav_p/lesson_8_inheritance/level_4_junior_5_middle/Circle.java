@@ -1,5 +1,7 @@
 package student_stanislav_p.lesson_8_inheritance.level_4_junior_5_middle;
 
+import teacher.annotations.CodeReview;
+
 /*Создание иерархии класса Shape (геометрическая фигура).
 
         Создайте наследника класс Shape - класс Circle.
@@ -12,7 +14,7 @@ package student_stanislav_p.lesson_8_inheritance.level_4_junior_5_middle;
         класс через конструктор.
 
  */
-
+@CodeReview(approved = true)
 class Circle extends Shape {
 
     private double radius;

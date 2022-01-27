@@ -21,7 +21,9 @@ abstract class Shape {
 для подсчёта периметра.
  */
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 abstract class Shape {
 
     private String title;

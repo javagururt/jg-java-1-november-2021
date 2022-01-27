@@ -2,11 +2,14 @@ package student_valeriia_kulikova.lesson_5_arrays_for_loop.homework.level_2_inte
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_10 {
 
     static class ArrayOfNumbers {
         public static void main(String[] args) {
-            int [] arrayOfNumbers = new int [3];
+            int[] arrayOfNumbers = new int[3];
             arrayOfNumbers[0] = 15;
             arrayOfNumbers[1] = 22;
             arrayOfNumbers[2] = 40;

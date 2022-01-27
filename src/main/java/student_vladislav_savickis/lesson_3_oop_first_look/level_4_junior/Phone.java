@@ -1,15 +1,18 @@
 package student_vladislav_savickis.lesson_3_oop_first_look.level_4_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Phone {
     String model;
 
-        Phone(String newModel) {
-            this.model = newModel;
-        }
+    Phone(String newModel) {
+        this.model = newModel;
+    }
 
-        String getModel() {
-            return this.model;
-        }
+    String getModel() {
+        return this.model;
+    }
 }
 
     class PhoneDemo {

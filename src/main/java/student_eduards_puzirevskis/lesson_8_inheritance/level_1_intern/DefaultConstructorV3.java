@@ -1,25 +1,28 @@
 package student_eduards_puzirevskis.lesson_8_inheritance.level_1_intern;
 
- class DefaultConstructorV3 {
+import teacher.annotations.CodeReview;
 
-     private String fullName;
-     private int age;
-     private boolean male;
-     private boolean female;
+@CodeReview(approved = true)
+class DefaultConstructorV3 {
 
-     public String getFullName() {
-         return fullName;
-     }
+    private String fullName;
+    private int age;
+    private boolean male;
+    private boolean female;
 
-     public int getAge() {
-         return age;
-     }
+    public String getFullName() {
+        return fullName;
+    }
 
-     public boolean getMale() {
-         return male;
-     }
+    public int getAge() {
+        return age;
+    }
 
-     public boolean getFemale() {
-         return female;
-     }
- }
+    public boolean getMale() {
+        return male;
+    }
+
+    public boolean getFemale() {
+        return female;
+    }
+}

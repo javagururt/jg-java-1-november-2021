@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson_8_inheritance.level_2_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_5 {
     //Что такое множественное наследование в программировании?
 
@@ -20,7 +23,7 @@ public class Task_5 {
 
     }
 
-  //  PS: вносить изменения можно только в объявление класса Child.
-  //  Класс Child должен явно наследоваться от одного или двух классов
-   //         (Mother и Father). Правильных решений у этой задачи два, выбирайте любое.*/
+    //  PS: вносить изменения можно только в объявление класса Child.
+    //  Класс Child должен явно наследоваться от одного или двух классов
+    //         (Mother и Father). Правильных решений у этой задачи два, выбирайте любое.*/
 }

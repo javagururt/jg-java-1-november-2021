@@ -1,4 +1,8 @@
 package student_andrei_karamnov.lesson_7_encapsulation.homework.level_6_middle;
+
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
 /*Необходимо разработать класс "кредитная карта" CreditCard
 с учетом инкапсуляции, которая обладает следующими характеристиками:
 
@@ -33,6 +37,8 @@ package student_andrei_karamnov.lesson_7_encapsulation.homework.level_6_middle;
 
 Написать тестовые сценарии для класса CreditCard в классе CreditCardTest.
 Все тестовые сценарии должны отрабатывать без ошибок.*/
+@CodeReview(approved = false)
+@CodeReviewComment(comment = "неверное использование статики, в случае 2+ объектов программа будет работать некорректно.")
 class CreditCard {
     static long cardNumber;
     static long cardPinCode;

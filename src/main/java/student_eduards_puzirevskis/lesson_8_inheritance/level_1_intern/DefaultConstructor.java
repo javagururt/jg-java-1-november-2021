@@ -1,8 +1,11 @@
 package student_eduards_puzirevskis.lesson_8_inheritance.level_1_intern;
 
- class DefaultConstructor {
+import teacher.annotations.CodeReview;
 
-  public void showExampleOfDefaultConstructor() {
+@CodeReview(approved = true)
+class DefaultConstructor {
 
-  }
+    public void showExampleOfDefaultConstructor() {
+
+    }
 }
