@@ -10,19 +10,27 @@ public class Task_16 {
 
             PS: подсказка - необходимые значения для
     расчёта площади и периметра подавайте к
-    класс через конструктор.
+    класс через конструктор. */
 
-    class Circle extends Shape {
+    class Circle extends Task_15.Shape {
 
         private double radius;
 
         Circle(double radius) {
+            super(title);
             this.radius = radius;
         }
 
-        // implement here calculateArea()
+        @Override
+        double calculateArea() {
+            double circleArea = 3.14*(radius*radius);
+            return circleArea;
+        }
 
-        // implement here calculatePerimeter()
-
-    }*/
+        @Override
+        double calculatePerimeter() {
+            double circlePerimeter = 2 * 3.14 * radius;
+            return circlePerimeter;
+        }
+    }
 }
