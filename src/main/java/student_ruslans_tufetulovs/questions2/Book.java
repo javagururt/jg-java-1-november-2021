@@ -3,21 +3,21 @@ package student_ruslans_tufetulovs.questions2;
 
 import java.util.Arrays;
 
-class Books {
+class Book {
 
     private int bookIndex;
-    //private Author[] bookAuthor;
+    private Author bookAuthor;
     private String bookName;
     private String bookDateOfPublication;
 
-    public Books(int bookIndex,  String bookName, String bookDateOfPublication) {
+    private Author[] listAuthors = new Author[0];
+
+    public Book(int bookIndex, String bookName, String bookDateOfPublication) {
         this.bookIndex = bookIndex;
-       // this.bookAuthor = bookAuthor;
+        // this.bookAuthor = bookAuthor;
         this.bookName = bookName;
         this.bookDateOfPublication = bookDateOfPublication;
     }
-
-    private Author[] listAuthors = new Author[0];
 
     public void add(Author str) {
         // database.length == 0  create new DB min size 1
@@ -51,29 +51,28 @@ class Books {
         return Arrays.copyOf(listAuthors, listAuthors.length);
     }
 
+    public int getBookIndex() {
+        return bookIndex;
+    }
 
     //=========================================
     public void setBookIndex(int bookIndex) {
         this.bookIndex = bookIndex;
     }
 
-    public void setBookName(String bookName) {
-        this.bookName = bookName;
-    }
-
-    public void setBookDateOfPublication(String bookDateOfPublication) {
-        this.bookDateOfPublication = bookDateOfPublication;
-    }
-
-    public int getBookIndex() {
-        return bookIndex;
-    }
-
     public String getBookName() {
         return bookName;
     }
 
+    public void setBookName(String bookName) {
+        this.bookName = bookName;
+    }
+
     public String getBookDateOfPublication() {
         return bookDateOfPublication;
+    }
+
+    public void setBookDateOfPublication(String bookDateOfPublication) {
+        this.bookDateOfPublication = bookDateOfPublication;
     }
 }

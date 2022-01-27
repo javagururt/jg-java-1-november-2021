@@ -4,13 +4,13 @@ import java.util.Arrays;
 
 class BookAdd {
 
-    private Books[] listOfBooks = new Books[0];
+    private Book[] listOfBooks = new Book[0];
 
-    public void add(Books str) {
+    public void add(Book str) {
         // database.length == 0  create new DB min size 1
-        Books[] newDatabase = new Books[listOfBooks.length + 1];
+        Book[] newDatabase = new Book[listOfBooks.length + 1];
         for (int i = 0; i < listOfBooks.length; i++) {
-            newDatabase[i] =listOfBooks[i];
+            newDatabase[i] = listOfBooks[i];
         }
         newDatabase[listOfBooks.length] = str;
 
@@ -27,14 +27,14 @@ class BookAdd {
     public void changeName(int userId, String name) {
         for (int i = 0; i < listOfBooks.length; i++) {
             if (listOfBooks[i].getBookIndex() == userId) {
-                Books book = listOfBooks[i];
+                Book book = listOfBooks[i];
                 book.setBookName(name);
                 return;
             }
         }
     }
 
-    public Books[] getDatabase() {
+    public Book[] getDatabase() {
         return Arrays.copyOf(listOfBooks, listOfBooks.length);
     }
 }

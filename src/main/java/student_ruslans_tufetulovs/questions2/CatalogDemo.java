@@ -6,7 +6,7 @@ public class CatalogDemo {
 
         public static void main(String[] args) {
 
-            Books listOfBook = new Books(0,"","");
+            Book listOfBook = new Book(0, "", "");
 
             listOfBook.add(new Author(1, "Ruslan1"));
             listOfBook.add(new Author(2, "Ruslan2"));
