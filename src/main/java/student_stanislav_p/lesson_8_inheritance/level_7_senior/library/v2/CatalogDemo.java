@@ -6,7 +6,9 @@ public class CatalogDemo {
 
 
         public static void main(String[] args) {
-            Books listOfBook = new Books();
+
+            Books listOfBook = new Books(0,"","");
+
             listOfBook.add(new Author(1, "Ruslan1"));
             listOfBook.add(new Author(2, "Ruslan2"));
             listOfBook.add(new Author(3, "Ruslan3"));
@@ -20,6 +22,8 @@ public class CatalogDemo {
             listOfBook.changeName(2, "Petr");
             System.out.println("=====");
             listOfBook.printInformation();
+
+
 
         }
 
