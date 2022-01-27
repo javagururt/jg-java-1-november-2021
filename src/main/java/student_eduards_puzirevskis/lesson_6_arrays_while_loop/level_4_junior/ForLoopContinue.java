@@ -1,8 +1,12 @@
 package student_eduards_puzirevskis.lesson_6_arrays_while_loop.level_4_junior;
+
+import teacher.annotations.CodeReview;
+
 /*
 Создайте класс ForLoopContinue и в нём продемонстрируйте
 как досрочно закончить текущую итерацию цикла for.
  */
+@CodeReview(approved = true)
 public class ForLoopContinue {
 
     public static void main(String[] args) {

@@ -2,6 +2,9 @@ package student_eduards_puzirevskis.lesson_6_arrays_while_loop.level_5_middle;
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class TicTacToe {
 
  public int[][] createNewField() {
@@ -137,7 +140,6 @@ class TicTacToe {
   }
   return false;
  }
-
 
 
 }

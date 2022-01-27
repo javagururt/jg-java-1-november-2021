@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_3.level_2_intern_;
+
+import teacher.annotations.CodeReview;
+
 /*
 
 Учимся работать со строками.
@@ -14,7 +17,7 @@ package student_mihails_nikolajevs.lesson_3.level_2_intern_;
     String userName = "Viktor";
     String greeting = "Hi " + userName + "!";
  */
-
+@CodeReview(approved = true)
 public class ConcatenateOfStrings {
 
     public static void main(String[] args) {

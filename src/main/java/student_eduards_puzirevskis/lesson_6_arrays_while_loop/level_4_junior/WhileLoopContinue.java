@@ -1,11 +1,15 @@
 package student_eduards_puzirevskis.lesson_6_arrays_while_loop.level_4_junior;
+
+import teacher.annotations.CodeReview;
+
 /*
 Создайте класс WhileLoopContinue и в нём продемонстрируйте
 как досрочно закончить текущую итерацию цикла while.
  */
- class WhileLoopContinue {
+@CodeReview(approved = true)
+class WhileLoopContinue {
 
-     public static void main(String[] args) {
+    public static void main(String[] args) {
 
          int counter = 0;
          while (counter < 100) {
