@@ -1,5 +1,7 @@
 package student_stanislav_p.lesson_8_inheritance.level_1_intern;
 
+import teacher.annotations.CodeReview;
+
 /*
 Какие значения принимают свойства класса по умолчанию
 (ссылки на объекты и примитивные типы данных)
@@ -19,7 +21,7 @@ class DefaultConstructorV3 {
 }
 
  */
-
+@CodeReview(approved = true)
 public class DefaultConstructorV3 {
 
     private String fullName;

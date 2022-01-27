@@ -2,6 +2,9 @@ package student_stanislav_p.lesson_8_inheritance.level_7_senior.library.v2;
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class BookAdd {
 
     private Books[] listOfBooks = new Books[0];
@@ -10,7 +13,7 @@ class BookAdd {
         // database.length == 0  create new DB min size 1
         Books[] newDatabase = new Books[listOfBooks.length + 1];
         for (int i = 0; i < listOfBooks.length; i++) {
-            newDatabase[i] =listOfBooks[i];
+            newDatabase[i] = listOfBooks[i];
         }
         newDatabase[listOfBooks.length] = str;
 

@@ -3,6 +3,9 @@ package student_valeriia_kulikova.lesson_5_arrays_for_loop.homework.level_2_inte
 import java.util.Arrays;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_11 {
     /*Напишите программу, в которой:
  - создайте массив целых чисел длиной 3,
@@ -11,7 +14,7 @@ public class Task_11 {
 */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        int [] number = new int[3];
+        int[] number = new int[3];
         System.out.println("Enter FIRST number, please: ");
         number [0] = scanner.nextInt();
         System.out.println("Enter SECOND number, please: ");

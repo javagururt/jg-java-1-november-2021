@@ -5,16 +5,18 @@ package student_rolands_gudels.lesson_8_inheritance.level_2_intern;
 
    // Дополните пример кода создав конструктор в классе Porsche911:
 
+import teacher.annotations.CodeReview;
 
-   class Car {
+@CodeReview(approved = true)
+class Car {
 
-        protected int releaseYear;
+    protected int releaseYear;
 
-        public Car(int releaseYear) {
-            this.releaseYear = releaseYear;
-        }
-
+    public Car(int releaseYear) {
+        this.releaseYear = releaseYear;
     }
+
+}
 
     class Porsche911 extends Car {
 

@@ -1,8 +1,11 @@
 package student_stanislav_p.lesson_8_inheritance.level_7_senior.task_32;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 abstract class MathOperation {
 
-	public abstract double calculate();
+    public abstract double calculate();
 
 
 }

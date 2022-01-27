@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson_8_inheritance.level_2_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_8 {
 /*    Внесите изменения в код программы так,
     чтобы можно было создать экземпляр класса ComputerPlayer.
@@ -20,7 +23,7 @@ public class Task_8 {
 
     }
 
- class ComputerPlayer extends Player{
+    class ComputerPlayer extends Player {
 
         ComputerPlayer(String name) {
             super(name);

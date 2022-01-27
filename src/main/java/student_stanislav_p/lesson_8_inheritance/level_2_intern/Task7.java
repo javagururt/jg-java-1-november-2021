@@ -23,16 +23,17 @@ class HumanPlayer extends Player {
 }
  */
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
+class HumanPlayer extends Player {
 
-    class HumanPlayer extends Player {
-
-        HumanPlayer(String name) {
-            super(name);
-
-        }
+    HumanPlayer(String name) {
+        super(name);
 
     }
+
+}
 
 public class Task7 {
 

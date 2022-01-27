@@ -1,8 +1,11 @@
 package student_dmitrijs_sinkevics.lesson_6.lvl_2_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorTest {
-    public static void main(String[] args){
-        DayOfTheWeekDetectorTest test=new DayOfTheWeekDetectorTest();
+    public static void main(String[] args) {
+        DayOfTheWeekDetectorTest test = new DayOfTheWeekDetectorTest();
         test.findDayOfTheWeekTestMonday();
         test.findDayOfTheWeekTestTuesday();
         test.findDayOfTheWeekTestWednesday();
@@ -13,6 +16,7 @@ public class DayOfTheWeekDetectorTest {
         test.findDayOfTheWeekTestWrongNumber();
 
     }
+
     public void findDayOfTheWeekTestMonday(){
         int dayNumber=1;
         String expectedResult="Monday";
@@ -23,6 +27,7 @@ public class DayOfTheWeekDetectorTest {
         else
             System.out.println("Monday test is fail");
     }
+
     public void findDayOfTheWeekTestTuesday(){
         int dayNumber=2;
         String expectedResult="Tuesday";
@@ -33,6 +38,7 @@ public class DayOfTheWeekDetectorTest {
         else
             System.out.println("Tuesday test is fail");
     }
+
     public void findDayOfTheWeekTestWednesday(){
         int dayNumber=3;
         String expectedResult="Wednesday";
@@ -43,6 +49,7 @@ public class DayOfTheWeekDetectorTest {
         else
             System.out.println("Wednesday test is fail");
     }
+
     public void findDayOfTheWeekTestThursday(){
         int dayNumber=4;
         String expectedResult="Thursday";
@@ -53,6 +60,7 @@ public class DayOfTheWeekDetectorTest {
         else
             System.out.println("Thursday test is fail");
     }
+
     public void findDayOfTheWeekTestFriday(){
         int dayNumber=5;
         String expectedResult="Friday";
@@ -63,6 +71,7 @@ public class DayOfTheWeekDetectorTest {
         else
             System.out.println("Friday test is fail");
     }
+
     public void findDayOfTheWeekTestSaturday(){
         int dayNumber=6;
         String expectedResult="Saturday";
@@ -73,6 +82,7 @@ public class DayOfTheWeekDetectorTest {
         else
             System.out.println("Saturday test is fail");
     }
+
     public void findDayOfTheWeekTestSunday(){
         int dayNumber=7;
         String expectedResult="Sunday";
@@ -83,6 +93,7 @@ public class DayOfTheWeekDetectorTest {
         else
             System.out.println("Sunday test is fail");
     }
+
     public void findDayOfTheWeekTestWrongNumber(){
         int dayNumber=8;
         String expectedResult="Not correct day number";

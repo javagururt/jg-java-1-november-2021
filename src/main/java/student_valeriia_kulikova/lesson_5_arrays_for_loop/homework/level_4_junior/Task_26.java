@@ -4,11 +4,14 @@ import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*Напишите программу, в которой:
 - запросите у пользователя с консоли длину массива
 - создайте массив указанной пользователем длины
 - заполните массив случайными числами
 - распечатайте на консоль все элементы массива.*/
+@CodeReview(approved = true)
 public class Task_26 {
     public static void main(String[] args) {
 

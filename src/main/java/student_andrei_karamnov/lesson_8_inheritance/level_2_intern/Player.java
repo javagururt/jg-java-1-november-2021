@@ -1,15 +1,20 @@
 package student_andrei_karamnov.lesson_8_inheritance.level_2_intern;
-    class Player {
 
-        protected String name;
+import teacher.annotations.CodeReview;
 
-        Player(String name) {
-            this.name = name;
-        }
+@CodeReview(approved = true)
+class Player {
+
+    protected String name;
+
+    Player(String name) {
+        this.name = name;
     }
-    class ComputerPlayer extends Player{
+}
 
-        protected String userName;
+class ComputerPlayer extends Player {
+
+    protected String userName;
 
     public ComputerPlayer(String name, String userNAme) {
         super(name);
@@ -17,7 +22,7 @@ package student_andrei_karamnov.lesson_8_inheritance.level_2_intern;
     }
 }
 
-class ComputerPlayerDemo{
+class ComputerPlayerDemo {
         public static void main(String[] args) {
             ComputerPlayer user = new ComputerPlayer("Andrei", "Unreal");
             System.out.println("Player username: " + user.userName);

@@ -1,4 +1,7 @@
 package student_valeriia_kulikova.lesson_5_arrays_for_loop.homework.level_3_junior;
+
+import teacher.annotations.CodeReview;
+
 /*Найдите синтаксическую ошибку в программе и исправьте её:
 class ForLoopDefinition1 {
     public static void main(String[] args) {
@@ -8,6 +11,7 @@ class ForLoopDefinition1 {
     }
 }
 */
+@CodeReview(approved = true)
 public class Task_16 {
     static class ForLoopDefinition1 {
         public static void main(String[] args) {

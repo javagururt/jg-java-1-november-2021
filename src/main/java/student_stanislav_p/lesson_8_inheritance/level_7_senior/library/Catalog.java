@@ -4,19 +4,22 @@ package student_stanislav_p.lesson_8_inheritance.level_7_senior.library;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Catalog {
     static final int MAXNUMBER = 10;
 
-    static Book library [] = new Book[MAXNUMBER];
+    static Book library[] = new Book[MAXNUMBER];
     static int currentNumber = 0;
 
-    public static void main(String args []){
-        for(;menu(););
+    public static void main(String args[]) {
+        for (; menu(); ) ;
 
     }
 //------------------------------------------------
 
-    static boolean menu(){
+    static boolean menu() {
         Scanner sc = new Scanner(System.in);
         int decision;
         System.out.print("\nMenu:\n" +
@@ -25,13 +28,12 @@ public class Catalog {
                 "2 - Show books.\n" +
                 "Your decision: "
         );
-        try{
+        try {
             decision = sc.nextInt();
-            if(decision < 0 || decision > 2){
+            if (decision < 0 || decision > 2) {
                 throw new InputMismatchException();
             }
-        }
-        catch(InputMismatchException exc){
+        } catch (InputMismatchException exc) {
             System.out.println("\nBad data.");
             return true;
         }
@@ -41,16 +43,14 @@ public class Catalog {
                 return false;
             }
             case 1:{
-                try{
-                    if(MAXNUMBER == currentNumber ){
+                try {
+                    if (MAXNUMBER == currentNumber) {
                         throw new RuntimeException();
                     }
                     addBook(inputBook(sc));
-                }
-                catch(InputMismatchException exc){
+                } catch (InputMismatchException exc) {
                     System.out.println("\nBad data.");
-                }
-                catch (RuntimeException exc){
+                } catch (RuntimeException exc) {
                     System.out.println("\nThe library is full.");
                 }
                 break;
@@ -85,12 +85,11 @@ public class Catalog {
     }
 
     static void showBooks(){
-        if(0 == currentNumber){
+        if (0 == currentNumber) {
             System.out.println("\nThere are no books in library.");
-        }
-        else{
+        } else {
             System.out.println("\nList of books:");
-            for(int i = 0; i < currentNumber; ++i){
+            for (int i = 0; i < currentNumber; ++i) {
                 System.out.println(library[i]);
             }
         }

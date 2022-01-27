@@ -1,6 +1,9 @@
 package student_victor_veselov.lesson_8.junior_4;
 
-public class Triangle extends Shape{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class Triangle extends Shape {
     double sideA;
 
 

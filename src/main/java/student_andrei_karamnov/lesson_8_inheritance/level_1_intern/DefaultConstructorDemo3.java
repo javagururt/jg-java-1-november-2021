@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_8_inheritance.level_1_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class DefaultConstructorDemo3 {
     public static void main(String[] args) {
         DefaultConstructorV3 defaultConstructorV3 = new DefaultConstructorV3();

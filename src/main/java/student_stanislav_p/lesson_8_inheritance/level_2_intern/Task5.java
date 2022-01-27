@@ -25,7 +25,9 @@ PS: вносить изменения можно только в объявле�
 (Mother и Father). Правильных решений у этой задачи два, выбирайте любое.
  */
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class Task5 {
 
     class Mother {

@@ -1,6 +1,8 @@
 package student_stanislav_p.lesson_8_inheritance.level_2_intern;
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class Player {
 
     private String name;
@@ -12,7 +14,6 @@ class Player {
     public String getName() {
         return name;
     }
-
 
 
 }

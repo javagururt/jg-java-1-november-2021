@@ -1,5 +1,10 @@
 package student_andrei_karamnov.lesson_7_encapsulation.homework.level_6_middle;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "если переменная не используетс, то ее лучше удалить")
 class Palindrome {
     private String text;
     private char[] textToArray;
@@ -35,9 +40,9 @@ class Palindrome {
         return changedText;
     }
 
-    private String reversedText(String reversedChangedText){
-         StringBuffer reversedText = new StringBuffer(reversedChangedText).reverse();
-         return reversedText.toString();
+    private String reversedText(String reversedChangedText) {
+        StringBuffer reversedText = new StringBuffer(reversedChangedText).reverse();
+        return reversedText.toString();
     }
 
     private boolean determinePalindrome(String text){
@@ -48,5 +53,5 @@ class Palindrome {
         fillTextToArray(changedReversedText);
         checkResult = (fillTextToArray(changedReversedText).equals(fillTextToArray(changedText)));
         return checkResult;
-            }
+    }
 }

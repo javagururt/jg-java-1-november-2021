@@ -1,13 +1,18 @@
 package student_andrei_karamnov.lesson_8_inheritance.level_3_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_14 {
 
 }
+
 abstract class Car {
 
     abstract void accelerate();
 
 }
+
 class ElectricCar extends Car {
 
     private int batteryCharge;

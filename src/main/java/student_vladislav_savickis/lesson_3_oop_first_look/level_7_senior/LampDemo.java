@@ -1,5 +1,8 @@
 package student_vladislav_savickis.lesson_3_oop_first_look.level_7_senior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class LampDemo {
     public static void main(String[] args) {
         Lamp lamp = new Lamp(false, 1000, "Sony");

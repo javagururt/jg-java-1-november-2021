@@ -1,20 +1,24 @@
 package student_andrei_karamnov.lesson_7_encapsulation.homework.level_6_middle;
 
-class Palindrome2 {
+import teacher.annotations.CodeReview;
 
-private String text;
+@CodeReview(approved = true)
+class Palindrome2 {
+    //лишняя переменная
+    private String text;
 
     public Palindrome2(String text) {
         this.text = text;
     }
 
-    boolean isPalindrome(String text){
-        boolean result = true;
+    boolean isPalindrome(String text) {
+        boolean result = true; // лишняя переменная
         String changedText = modifiedText(text);
         result = checkIsPalindrome(changedText);
         return result;
     }
-    private String modifiedText(String sourceText){
+
+    private String modifiedText(String sourceText) {
         String st = sourceText.toLowerCase();
 
         StringBuilder resultText = new StringBuilder(st.length());
@@ -26,6 +30,7 @@ private String text;
         }
         return resultText.toString();
     }
+
     private boolean checkIsPalindrome(String text){
         if(text.length() == 1 || text.length() == 0)
             return true; //base
@@ -33,5 +38,5 @@ private String text;
             return isPalindrome(text.substring(1, text.length() - 1)); //recursive method
         return false;
     }
-    }
+}
 

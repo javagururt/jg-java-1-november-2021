@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson_8_inheritance.level_2_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_7 {
    /* Исправьте код программы так, что бы он компилировался.
     Изменения можно вносить только в код конструктора класса HumanPlayer.*/

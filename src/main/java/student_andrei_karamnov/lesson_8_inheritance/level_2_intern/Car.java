@@ -1,24 +1,28 @@
 package student_andrei_karamnov.lesson_8_inheritance.level_2_intern;
 
-    class Car {
+import teacher.annotations.CodeReview;
 
-        protected int releaseYear;
+@CodeReview(approved = true)
+class Car {
 
-        public Car(int releaseYear) {
-            this.releaseYear = releaseYear;
-        }
+    protected int releaseYear;
+
+    public Car(int releaseYear) {
+        this.releaseYear = releaseYear;
     }
-    class Porsche911 extends Car {
+}
 
-        protected int topSpeed;
+class Porsche911 extends Car {
 
-        public Porsche911(int releaseYear, int topSpeed) {
-            super(releaseYear);
-            this.topSpeed = topSpeed;
-        }
+    protected int topSpeed;
+
+    public Porsche911(int releaseYear, int topSpeed) {
+        super(releaseYear);
+        this.topSpeed = topSpeed;
     }
+}
 
-    class Task_6 {
+class Task_6 {
 
         public static void main(String[] args) {
             Porsche911 porsche911 = new Porsche911(2021, 330);

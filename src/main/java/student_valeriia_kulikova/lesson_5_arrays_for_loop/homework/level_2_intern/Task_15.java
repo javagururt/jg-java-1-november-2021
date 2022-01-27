@@ -3,9 +3,12 @@ package student_valeriia_kulikova.lesson_5_arrays_for_loop.homework.level_2_inte
 import java.util.Arrays;
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_15 {
     public static void main(String[] args) {
-        int [] number = new int [3];
+        int[] number = new int[3];
 
         Random random = new Random();
 

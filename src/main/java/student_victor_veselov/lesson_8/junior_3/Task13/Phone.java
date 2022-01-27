@@ -1,5 +1,8 @@
 package student_victor_veselov.lesson_8.junior_3.Task13;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public abstract class Phone {
 
     private String phoneName;
@@ -7,6 +10,7 @@ public abstract class Phone {
     private int phonePrice;
 
     public abstract void phoneTurnOn();
+
     public abstract void phoneTurnOff();
 
     public String getPhoneName() {

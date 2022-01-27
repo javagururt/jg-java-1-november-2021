@@ -3,6 +3,9 @@ package student_dmitrijs_sinkevics.lesson_6.lvl_2_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetector {
 
     public int getDayNumberFromUser() {
@@ -12,9 +15,9 @@ public class DayOfTheWeekDetector {
     }
 
     public String findDayOfTheWeek(int dayNumber) {
-        if (dayNumber==1)
+        if (dayNumber == 1)
             return "Monday";
-        if (dayNumber==2)
+        if (dayNumber == 2)
             return "Tuesday";
         if (dayNumber==3)
             return "Wednesday";

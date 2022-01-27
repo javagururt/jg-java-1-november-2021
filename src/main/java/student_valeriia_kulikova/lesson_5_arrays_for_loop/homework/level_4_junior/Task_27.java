@@ -2,13 +2,15 @@ package student_valeriia_kulikova.lesson_5_arrays_for_loop.homework.level_4_juni
 
 import java.util.Arrays;
 import java.util.Random;
-import java.util.Scanner;
+
+import teacher.annotations.CodeReview;
 
 /*Напишите программу, в которой:
 - создайте массив произвольной длины
 - заполните массив случайными числами
 - распечатайте на консоль все элементы массива
 - найдите наибольшее число в массиве и выведети его на консоль.*/
+@CodeReview(approved = true)
 public class Task_27 {
     public static void main(String[] args) {
 

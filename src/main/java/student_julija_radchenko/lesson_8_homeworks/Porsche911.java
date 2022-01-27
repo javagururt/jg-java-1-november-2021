@@ -1,6 +1,9 @@
 package student_julija_radchenko.lesson_8_homeworks;
 
-public class Porsche911 extends Car{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class Porsche911 extends Car {
 
     private int topSpeed;
 

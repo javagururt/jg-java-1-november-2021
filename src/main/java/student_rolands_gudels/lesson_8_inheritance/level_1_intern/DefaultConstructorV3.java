@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson_8_inheritance.level_1_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DefaultConstructorV3 {
     private String fullName;
     private int age;
@@ -17,6 +20,7 @@ public class DefaultConstructorV3 {
     public String getFullName() {
         return fullName;
     }
+
     public boolean getMale(){
         return male;
     }

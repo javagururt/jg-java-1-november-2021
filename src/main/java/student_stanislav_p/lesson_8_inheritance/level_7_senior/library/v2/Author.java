@@ -1,5 +1,8 @@
 package student_stanislav_p.lesson_8_inheritance.level_7_senior.library.v2;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Author {
 
     private int authorIndex;

@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson_8_inheritance.level_3_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_14 {
  /*   Исправьте код программы так, что бы он компилировался.
     Класс Car менять нельзя.
@@ -16,6 +19,7 @@ public class Task_14 {
     class ElectricCar extends Car {
 
         private int batteryCharge;
+
         @Override
         void accelerate() {
 
