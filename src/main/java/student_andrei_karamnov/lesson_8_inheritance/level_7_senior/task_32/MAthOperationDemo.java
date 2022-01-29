@@ -36,6 +36,7 @@ class MAthOperationDemo {
 		MathOperation subtractionTest2 = new Subtraction(new Argument(10), new Argument(5));
 		Divide divide2 = new Divide(new Argument(20), new Argument(5));
 		Multiply multiply2 = new Multiply(subtractionTest2, divide2);
+
 		System.out.println("Final result of (10 - 5) * (20 / 5) is: = " + multiply2.calculate());
 
 	}
