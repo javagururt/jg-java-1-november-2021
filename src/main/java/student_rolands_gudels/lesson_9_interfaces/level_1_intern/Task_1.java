@@ -1,9 +1,8 @@
 package student_rolands_gudels.lesson_9_interfaces.level_1_intern;
 
 public class Task_1 {
-   /* Дан класс:
 
-    class JavaStarLoginServiceImpl {
+    class JavaStarLoginServiceImpl implements JavaStarLoginService {
 
         public boolean canLogin(String login, String password) {
             return (login != null)
@@ -14,6 +13,6 @@ public class Task_1 {
 
     }
 
-    Создать интерфейс для данного класса под названием JavaStarLoginService.
+ /*    Создать интерфейс для данного класса под названием JavaStarLoginService.
     Сделать так, чтобы класс JavaStarLoginServiceImpl имплементировал созданный вами интерфейс.*/
 }

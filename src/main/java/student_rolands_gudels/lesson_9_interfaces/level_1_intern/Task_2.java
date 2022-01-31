@@ -1,26 +1,29 @@
 package student_rolands_gudels.lesson_9_interfaces.level_1_intern;
 
+
+import java.util.Arrays;
+import java.util.OptionalInt;
+import java.util.Random;
+
 public class Task_2 {
- /*   Дан класс:
+      class ArrayUtilImpl implements ArrayUtil {
 
-    class ArrayUtilImpl {
-
-        public int[] createArray(int arrayLength) {
+          @Override public int[] createArray(int arrayLength) {
             return new int[arrayLength];
         }
 
-        public void fillArrayWithRandomNumbers(int[] array) {
+       @Override public void fillArrayWithRandomNumbers(int[] array) {
             for (int count = 0; count < array.length; count++) {
                 int rndValue = new Random().nextInt(11);
                 array[count] = rndValue;
             }
         }
 
-        public void printArrayToConsole(int[] array) {
+          @Override public void printArrayToConsole(int[] array) {
             System.out.println(Arrays.toString(array));
         }
 
-        public int findMaxNumber(int[] array) {
+          @Override public int findMaxNumber(int[] array) {
             int maxValue = -1;
             OptionalInt max = Arrays.stream(array).max();
             if(max.isPresent()) {
@@ -29,7 +32,7 @@ public class Task_2 {
             return maxValue;
         }
 
-        public int findMinNumber(int[] array) {
+          @Override public int findMinNumber(int[] array) {
             int minValue = -1;
             OptionalInt min = Arrays.stream(array).min();
             if(min.isPresent()) {
@@ -40,9 +43,10 @@ public class Task_2 {
 
     }
 
-    Создать для этого класса интерфейс ArrayUtil.
+   /* Создать для этого класса интерфейс ArrayUtil.
     Сделать так, чтобы класс ArrayUtilImpl имплементировал созданный вами интерфейс.
     Не забудьте про аннотицию @Override. Её очень желательно "вешать" на методы,
     которые вляются реализацией методов объявленных в интерфейсе.
 */
+
 }
