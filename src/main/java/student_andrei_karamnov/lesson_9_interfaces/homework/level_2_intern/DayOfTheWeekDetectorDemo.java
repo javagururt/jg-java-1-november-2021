@@ -1,12 +1,11 @@
 package student_andrei_karamnov.lesson_9_interfaces.homework.level_2_intern;
 
-import java.util.Objects;
-
 class DayOfTheWeekDetectorDemo {
     public static void main(String[] args) {
-        DayOfTheWeekDetectorDemo demo = new DayOfTheWeekDetectorDemo(Objects::toString);
-        demo.run(4); // Как в конструктор можно подать любую из трёх имплементаций интерфейса ???
-
+        DayOfTheWeekDetectorDemo demo = new DayOfTheWeekDetectorDemo(new DayOfTheWeekDetectorIfVersion());
+        System.out.println(demo.dayOfTheWeekDetector.detectDayName(6)); // если можно так, тогда зачем делать метод run() ?
+        System.out.println(demo.run(new DayOfTheWeekDetectorSwitchVersion(), 7)); //если run делать как void то не получается его применить
+        System.out.println(demo.run(new DayOfTheWeekDetectorArrayVersion(), 6));
 
         DayOfTheWeekDetectorIfVersion detectorIfVersion = new DayOfTheWeekDetectorIfVersion();
         System.out.println(detectorIfVersion.detectDayName(4));
@@ -15,14 +14,14 @@ class DayOfTheWeekDetectorDemo {
         DayOfTheWeekDetectorArrayVersion dayOfTheWeekDetectorArrayVersion = new DayOfTheWeekDetectorArrayVersion();
         System.out.println(dayOfTheWeekDetectorArrayVersion.detectDayName(4));
     }
-
     DayOfTheWeekDetector dayOfTheWeekDetector;
 
     public DayOfTheWeekDetectorDemo(DayOfTheWeekDetector day) {
-    this.dayOfTheWeekDetector = day;
+        this.dayOfTheWeekDetector = day;
+
+    }
+    private static String run(DayOfTheWeekDetector d, int number) {
+        return d.detectDayName(number);
     }
 
-    public void run(int number){
-        dayOfTheWeekDetector.detectDayName(number);
-    }
 }

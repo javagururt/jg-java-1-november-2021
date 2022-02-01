@@ -4,4 +4,5 @@ public interface DayOfTheWeekDetector {
 
     public String detectDayName(int number);
 
+
 }
