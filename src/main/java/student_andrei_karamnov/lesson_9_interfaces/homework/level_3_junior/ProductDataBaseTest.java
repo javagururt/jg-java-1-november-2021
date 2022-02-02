@@ -42,16 +42,6 @@ class ProductDataBaseTest {
 
     }
 
-    void checkResult2(String testName, Product[] actual, Product[] expected){
-        System.out.println("Actual result: " + actual);
-        System.out.println("Expected result: " + expected);
-        if (actual.equals(expected)){
-            System.out.println(testName + " is OK");
-        }else {
-            System.out.println(testName + " FAILED");
-        }
-    }
-
     void checkResult1(String testName, Product actual, Product expected){
         System.out.println("Actual result: " + actual.getTitle());
         System.out.println("Expected result: " + expected.getTitle());
