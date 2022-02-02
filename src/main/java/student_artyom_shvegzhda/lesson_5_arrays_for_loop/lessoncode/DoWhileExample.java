@@ -1,6 +1,6 @@
 package student_artyom_shvegzhda.lesson_5_arrays_for_loop.lessoncode;
 
-import teacher.lesson_5_arrays_for_loop.lessoncode.UserInputService;
+//import teacher.lesson_5_arrays_for_loop.lessoncode.UserInputService;
 
 import java.util.Scanner;
 

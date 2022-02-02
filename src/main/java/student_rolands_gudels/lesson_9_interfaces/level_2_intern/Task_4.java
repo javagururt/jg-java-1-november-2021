@@ -7,9 +7,9 @@ public class Task_4 {
 
     Дан класс: */
 
-    class DayOfTheWeekDetectorIfVersion implements DayOfTheWeekDetector, DetectDayNameArra {
+   public static class DayOfTheWeekDetectorIfVersion implements DayOfTheWeekDetector, DetectDayNameArra {
 
-        public String detectDayName(int number) {
+        @Override public String detectDayName(int number) {
              if (number == 1) {
                  return "Monday";
              } else if (number == 2) {
@@ -53,14 +53,14 @@ public class Task_4 {
 
         @Override public String detectDayNameArra(int number) {
             String[] numbers = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
-            for (int i = 0; i < numbers.length; i++){
+            //for (int i = 0; i < numbers.length; i++){
                 return numbers[number];}
-            return numbers[number];
+           // return numbers[number];
         }
            // return null;
 
     }
-}
+
 
    /* Создайте для этого класса интерфейс DayOfTheWeekDetector.
     Сделайте так, чтобы класс DayOfTheWeekDetectorIfVersion реализовывал
