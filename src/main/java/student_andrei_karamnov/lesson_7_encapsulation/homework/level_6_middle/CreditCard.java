@@ -40,11 +40,11 @@ import teacher.annotations.CodeReviewComment;
 @CodeReview(approved = false)
 @CodeReviewComment(comment = "неверное использование статики, в случае 2+ объектов программа будет работать некорректно.")
 class CreditCard {
-    static long cardNumber;
-    static long cardPinCode;
-    static double cardBalance;
-    static double creditCardLimit;
-    static double cardLoanDebt;
+    private long cardNumber;
+    private long cardPinCode;
+    private double cardBalance;
+    private double creditCardLimit;
+    private double cardLoanDebt;
 
     public CreditCard(long cardNumber, long cardPinCode, double cardCreditLimit) {
         this.cardNumber = cardNumber;
@@ -83,29 +83,40 @@ class CreditCard {
         }
     }
 
-    private double getCardBalance() {
+    double getCardBalance() {
         return cardBalance;
     }
 
-    private double getCardCreditLimit() {
+    double getCardCreditLimit() {
         return creditCardLimit;
     }
 
-    private double getCardLoanDebt() {
+    double getCardLoanDebt() {
         return cardLoanDebt;
     }
 
-    private void setCardNumber(long cardNumber) {
+    void setCardNumber(long cardNumber) {
         this.cardNumber = cardNumber;
     }
 
-    private void setCardPinCode(long cardPinCode) {
+    void setCardPinCode(long cardPinCode) {
         this.cardPinCode = cardPinCode;
     }
 
-    private void setCardCreditLimit(double cardCreditLimit) {
+    void setCardCreditLimit(double cardCreditLimit) {
         this.creditCardLimit = cardCreditLimit;
     }
 
+    long getCardNumber() {
+        return cardNumber;
     }
+
+    long getCardPinCode() {
+        return cardPinCode;
+    }
+
+    double getCreditCardLimit() {
+        return creditCardLimit;
+    }
+}
 

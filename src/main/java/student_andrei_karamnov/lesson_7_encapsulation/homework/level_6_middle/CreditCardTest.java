@@ -19,60 +19,60 @@ class CreditCardTest {
 
         CreditCard myCard = new CreditCard(expectedCardNumber, expectedCardPinCode, expectedCreditCardLimit);
 
-        realResult = test.checkResultLong(expectedCardNumber, myCard.cardNumber);
-        realResult = realResult&&test.checkResultLong(expectedCardPinCode, myCard.cardPinCode);
-        realResult = realResult&&test.checkResultDouble(expectedCardBalance, myCard.cardBalance);
-        realResult = realResult&&test.checkResultDouble(expectedCreditCardLimit, myCard.creditCardLimit);
-        realResult = realResult&&test.checkResultDouble(expectedCardLoanDebt, myCard.cardLoanDebt);
+        realResult = test.checkResultLong(expectedCardNumber, myCard.getCardNumber());
+        realResult = realResult&&test.checkResultLong(expectedCardPinCode, myCard.getCardPinCode());
+        realResult = realResult&&test.checkResultDouble(expectedCardBalance, myCard.getCardBalance());
+        realResult = realResult&&test.checkResultDouble(expectedCreditCardLimit, myCard.getCreditCardLimit());
+        realResult = realResult&&test.checkResultDouble(expectedCardLoanDebt, myCard.getCardLoanDebt());
 
         test.passOrFail("Card Information TEST1", realResult, expectedResult);
         System.out.println("");
-        test.printCardInformation(myCard.cardNumber, myCard.cardPinCode, myCard.cardBalance, myCard.creditCardLimit, myCard.cardLoanDebt);
+        test.printCardInformation(myCard.getCardNumber(), myCard.getCardPinCode(), myCard.getCardBalance(), myCard.getCreditCardLimit(), myCard.getCardLoanDebt());
         System.out.println("");
 
-        realResult = myCard.cardDepositOperation(myCard.cardPinCode, depositAmount);
+        realResult = myCard.cardDepositOperation(myCard.getCardPinCode(), depositAmount);
         expectedCardBalance = 5000;
         expectedCardLoanDebt = 0;
-        realResult = realResult&&test.checkResultDouble(myCard.cardBalance, expectedCardBalance);
-        realResult = realResult&&test.checkResultDouble(myCard.cardLoanDebt, expectedCardLoanDebt);
+        realResult = realResult&&test.checkResultDouble(myCard.getCardBalance(), expectedCardBalance);
+        realResult = realResult&&test.checkResultDouble(myCard.getCardLoanDebt(), expectedCardLoanDebt);
 
         test.passOrFail("Card Deposit Operation TEST2", realResult, expectedResult);
         System.out.println("");
-        test.printCardInformation(myCard.cardNumber, myCard.cardPinCode, myCard.cardBalance, myCard.creditCardLimit, myCard.cardLoanDebt);
+        test.printCardInformation(myCard.getCardNumber(), myCard.getCardPinCode(), myCard.getCardBalance(), myCard.getCreditCardLimit(), myCard.getCardLoanDebt());
         System.out.println("");
 
-        realResult = myCard.cardWithdrawOperation(myCard.cardPinCode, withdrawAmount);
+        realResult = myCard.cardWithdrawOperation(myCard.getCardPinCode(), withdrawAmount);
         expectedCardBalance = 2000;
         expectedCardLoanDebt = 0;
-        realResult = realResult&&test.checkResultDouble(myCard.cardBalance, expectedCardBalance);
-        realResult = realResult&&test.checkResultDouble(myCard.cardLoanDebt, expectedCardLoanDebt);
+        realResult = realResult&&test.checkResultDouble(myCard.getCardBalance(), expectedCardBalance);
+        realResult = realResult&&test.checkResultDouble(myCard.getCardLoanDebt(), expectedCardLoanDebt);
 
         test.passOrFail("Card Withdraw Operation TEST3", realResult, expectedResult);
         System.out.println("");
-        test.printCardInformation(myCard.cardNumber, myCard.cardPinCode, myCard.cardBalance, myCard.creditCardLimit, myCard.cardLoanDebt);
+        test.printCardInformation(myCard.getCardNumber(), myCard.getCardPinCode(), myCard.getCardBalance(), myCard.getCreditCardLimit(), myCard.getCardLoanDebt());
         System.out.println("");
 
-        realResult = myCard.cardWithdrawOperation(myCard.cardPinCode, withdrawAmount);
+        realResult = myCard.cardWithdrawOperation(myCard.getCardPinCode(), withdrawAmount);
         expectedCardBalance = 0;
         expectedCardLoanDebt = -1000;
-        realResult = realResult&&test.checkResultDouble(myCard.cardBalance, expectedCardBalance);
-        realResult = realResult&&test.checkResultDouble(myCard.cardLoanDebt, expectedCardLoanDebt);
+        realResult = realResult&&test.checkResultDouble(myCard.getCardBalance(), expectedCardBalance);
+        realResult = realResult&&test.checkResultDouble(myCard.getCardLoanDebt(), expectedCardLoanDebt);
 
         test.passOrFail("Card Withdraw Operation TEST4", realResult, expectedResult);
         System.out.println("");
-        test.printCardInformation(myCard.cardNumber, myCard.cardPinCode, myCard.cardBalance, myCard.creditCardLimit, myCard.cardLoanDebt);
+        test.printCardInformation(myCard.getCardNumber(), myCard.getCardPinCode(), myCard.getCardBalance(), myCard.getCreditCardLimit(), myCard.getCardLoanDebt());
         System.out.println("");
 
-        realResult = myCard.cardDepositOperation(myCard.cardPinCode, depositAmount);
-        realResult = realResult&&myCard.cardWithdrawOperation(myCard.cardPinCode, withdrawAmount);
+        realResult = myCard.cardDepositOperation(myCard.getCardPinCode(), depositAmount);
+        realResult = realResult&&myCard.cardWithdrawOperation(myCard.getCardPinCode(), withdrawAmount);
         expectedCardBalance = 3000;
         expectedCardLoanDebt = 0;
-        realResult = realResult&&test.checkResultDouble(myCard.cardBalance, expectedCardBalance);
-        realResult = realResult&&test.checkResultDouble(myCard.cardLoanDebt, expectedCardLoanDebt);
+        realResult = realResult&&test.checkResultDouble(myCard.getCardBalance(), expectedCardBalance);
+        realResult = realResult&&test.checkResultDouble(myCard.getCardLoanDebt(), expectedCardLoanDebt);
 
         test.passOrFail("Card Withdraw Operation TEST5", realResult, expectedResult);
         System.out.println("");
-        test.printCardInformation(myCard.cardNumber, myCard.cardPinCode, myCard.cardBalance, myCard.creditCardLimit, myCard.cardLoanDebt);
+        test.printCardInformation(myCard.getCardNumber(), myCard.getCardPinCode(), myCard.getCardBalance(), myCard.getCreditCardLimit(), myCard.getCardLoanDebt());
         System.out.println("");
 
     }
