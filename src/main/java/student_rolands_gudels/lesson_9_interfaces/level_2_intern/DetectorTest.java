@@ -18,6 +18,26 @@ public class DetectorTest {
             System.out.println("Tf test Failed + actual was " + actual + " but expected was " + expected);
         }
     }
+    public void switTest() {
+        Task_4.DayOfTheWeekDetectorIfVersion dayOfTheWeekDetectorIfVersion = new Task_4.DayOfTheWeekDetectorIfVersion();
+        String actual = dayOfTheWeekDetectorIfVersion.detectDayNameSwit(2);
+        String expected = "Tuesday";
+        if (Objects.equals(actual, expected)) {
+            System.out.println("Switch test Passed");
+        } else {
+            System.out.println("Switch test Failed + actual was " + actual + " but expected was " + expected);
+        }
+    }
+    public void ArraTest() {
+        Task_4.DayOfTheWeekDetectorIfVersion dayOfTheWeekDetectorIfVersion = new Task_4.DayOfTheWeekDetectorIfVersion();
+        String actual = dayOfTheWeekDetectorIfVersion.detectDayNameArra(2);
+        String expected = "Tuesday";
+        if (Objects.equals(actual, expected)) {
+            System.out.println("Array test Passed");
+        } else {
+            System.out.println("Array test Failed + actual was " + actual + " but expected was " + expected);
+        }
+    }
 }
 
 
