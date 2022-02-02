@@ -9,7 +9,7 @@ public class Task_4 {
 
    public static class DayOfTheWeekDetectorIfVersion implements DayOfTheWeekDetector, DetectDayNameArra {
 
-        public String detectDayName(int number) {
+        @Override public String detectDayName(int number) {
              if (number == 1) {
                  return "Monday";
              } else if (number == 2) {
