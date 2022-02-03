@@ -6,7 +6,7 @@ import teacher.lesson_10_junit.lessoncode.shoppinglist.domain.Product;
 
 public class ValidationService {
 
-    //name length 3-15
+    //name length 3-10
     //name must not be null
     //price > 0
     //price not null
