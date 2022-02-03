@@ -1,4 +1,4 @@
-package student_eduards_puzirevskis.lesson_7_encapsulation.level_1_intern;
+package student_eduards_puzirevskis.lesson_7_encapsulation.level_1_2_3_4;
 
 import teacher.annotations.CodeReview;
 

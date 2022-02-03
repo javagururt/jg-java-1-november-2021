@@ -1,4 +1,4 @@
-package student_eduards_puzirevskis.lesson_6_arrays_while_loop.level_5_middle;
+package student_eduards_puzirevskis.lesson_6_arrays_while_loop.level_5_6;
 
 import java.util.Arrays;
 
@@ -149,9 +149,9 @@ class TicTacToeTest {
         int[][] newFieldFirst = {{0,0,0},{0,0,0},{0,0,0}};
         int[][] newFieldSecond= {{0,0,0},{0,0,0},{0,0,0}};
         int[][] newFieldThird = {{0,0,0},{0,0,0},{0,0,0}};
-        boolean realResultFirst = newGame.isWinPosition(newFieldFirst,0);
-        boolean realResultSecond = newGame.isWinPosition(newFieldSecond, 0);
-        boolean realResultThird = newGame.isWinPosition(newFieldThird, 0);
+        boolean realResultFirst = newGame.isWin(newFieldFirst,0);
+        boolean realResultSecond = newGame.isWin(newFieldSecond, 0);
+        boolean realResultThird = newGame.isWin(newFieldThird, 0);
         checkTestResult(realResultFirst, "Should Detect Win Position For First Player Test P.I.");
         checkTestResult(realResultSecond, "Should Detect Win Position For First Player Test P.II.");
         checkTestResult(realResultThird, "Should Detect Win Position For First Player Test P.III.");
@@ -162,9 +162,9 @@ class TicTacToeTest {
         int[][] newFieldFirst = {{1,1,1},{1,1,1},{1,1,1}};
         int[][] newFieldSecond= {{1,1,1},{1,1,1},{1,1,1}};
         int[][] newFieldThird = {{1,1,1},{1,1,1},{1,1,1}};
-        boolean realResultFirst = newGame.isWinPosition(newFieldFirst,1);
-        boolean realResultSecond = newGame.isWinPosition(newFieldSecond, 1);
-        boolean realResultThird = newGame.isWinPosition(newFieldThird, 1);
+        boolean realResultFirst = newGame.isWin(newFieldFirst,1);
+        boolean realResultSecond = newGame.isWin(newFieldSecond, 1);
+        boolean realResultThird = newGame.isWin(newFieldThird, 1);
         checkTestResult(realResultFirst, "Should Detect Win Position For Second Player Test P.I.");
         checkTestResult(realResultSecond, "Should Detect Win Position For Second Player Test P.II.");
         checkTestResult(realResultThird, "Should Detect Win Position For Second Player Test P.III.");
@@ -175,9 +175,9 @@ class TicTacToeTest {
         int[][] newFieldFirst = {{-1,-1,-1},{-1,-1,-1},{-1,-1,-1}};
         int[][] newFieldSecond= {{-1,-1,-1},{-1,-1,-1},{-1,-1,-1}};
         int[][] newFieldThird = {{-1,-1,-1},{-1,-1,-1},{-1,-1,-1}};
-        boolean realResultFirst = newGame.isWinPosition(newFieldFirst,0);
-        boolean realResultSecond = newGame.isWinPosition(newFieldSecond, 1);
-        boolean realResultThird = newGame.isWinPosition(newFieldThird, 2);
+        boolean realResultFirst = newGame.isWin(newFieldFirst,0);
+        boolean realResultSecond = newGame.isWin(newFieldSecond, 1);
+        boolean realResultThird = newGame.isWin(newFieldThird, 2);
         checkTestResult(!realResultFirst, "Should Not Detect Win Position For Any Player Test P.I.");
         checkTestResult(!realResultSecond, "Should Not Detect Win Position For Any Player Test P.II.");
         checkTestResult(!realResultThird, "Should Not Detect Win Position For Any Player Test P.III.");
@@ -188,9 +188,9 @@ class TicTacToeTest {
         int[][] newFieldFirst = {{1,1,0},{0,1,1},{1,0,0}};
         int[][] newFieldSecond= {{0,0,1},{1,1,0},{0,1,1}};
         int[][] newFieldThird = {{0,1,0},{1,0,1},{1,0,1}};
-        boolean realResultFirst = newGame.isDrawPosition(newFieldFirst);
-        boolean realResultSecond = newGame.isDrawPosition(newFieldSecond);
-        boolean realResultThird = newGame.isDrawPosition(newFieldThird);
+        boolean realResultFirst = newGame.isDraw(newFieldFirst);
+        boolean realResultSecond = newGame.isDraw(newFieldSecond);
+        boolean realResultThird = newGame.isDraw(newFieldThird);
         checkTestResult(realResultFirst, "Should detect Draw Position Test P.I.");
         checkTestResult(realResultSecond, "Should detect Draw Position Test P.II.");
         checkTestResult(realResultThird, "Should detect Draw Position Test P.III.");
@@ -199,7 +199,7 @@ class TicTacToeTest {
     private void shouldCreateNewField() {
         TicTacToe newGame = new TicTacToe();
         int[][] expectedResult = {{-1,-1,-1},{-1,-1,-1},{-1,-1,-1}};
-        int[][] realResult = newGame.createNewField();
+        int[][] realResult = newGame.createField();
         checkTestResult(Arrays.deepEquals(expectedResult, realResult),"Should Create New Field Test");
     }
 
