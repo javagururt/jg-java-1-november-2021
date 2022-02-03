@@ -1,13 +1,14 @@
-package student_eduards_puzirevskis.lesson_6_arrays_while_loop.level_5_middle;
+package student_eduards_puzirevskis.lesson_6_arrays_while_loop.level_5_6;
 
 import java.util.Arrays;
+import java.util.Scanner;
 
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
 class TicTacToe {
 
- public int[][] createNewField() {
+ public int[][] createField() {
   int[][] field = new int[3][3];
   for (int[] ints : field) {
    Arrays.fill(ints, -1);
@@ -16,7 +17,7 @@ class TicTacToe {
  }
 
 
- public void printField(int[][] field) {
+ public void printFieldToConsole(int[][] field) {
   System.out.println("");
   for (int i = 0; i < field[0].length; i++) {
    System.out.print(" " + field[0][i] + " ");
@@ -108,14 +109,18 @@ class TicTacToe {
 
  }
 
- public boolean isWinPosition(int[][] field, int playerToCheck) {
+ public boolean isWin(int[][] field, int playerToCheck) {
   switch (playerToCheck) {
    case 0:
-    if (isWinPositionForHorizontals(field, 0) || isWinPositionForVerticals(field, 0) || isWinPositionForDiagonals(field, 0)) {
+    if (isWinPositionForHorizontals(field, 0) ||
+            isWinPositionForVerticals(field, 0) ||
+            isWinPositionForDiagonals(field, 0)) {
      return true;
     }
    case 1:
-    if (isWinPositionForHorizontals(field, 1) || isWinPositionForVerticals(field, 1) || isWinPositionForDiagonals(field, 1)) {
+    if (isWinPositionForHorizontals(field, 1) ||
+            isWinPositionForVerticals(field, 1) ||
+            isWinPositionForDiagonals(field, 1)) {
      return true;
     }
    default:
@@ -126,19 +131,56 @@ class TicTacToe {
  public boolean fieldIsFull(int[][] field) {
   for (int i = 0; i < field.length; i++) {
    for (int j = 0; j < field[i].length; j++) {
-    if (field[i][j] != -1) {
-     return true;
+    if (field[i][j] == -1) {
+     return false;
     }
    }
   }
-  return false;
+  return true;
  }
 
- public boolean isDrawPosition(int[][] field) {
-  if (fieldIsFull(field) && !isWinPosition(field,0) && !isWinPosition(field, 1)) {
-   return true;
+ public boolean isDraw(int[][] field) {
+  return fieldIsFull(field) && (!isWin(field, 0) && !isWin(field, 1));
+ }
+
+ public Move getNextMove() {
+  System.out.println("Type number of raw");
+  Scanner scanner = new Scanner(System.in);
+  int x = scanner.nextInt();
+  System.out.println("Type number of column");
+  int y = scanner.nextInt();
+  return new Move(x, y);
+ }
+
+ public void play() {
+  int[][] field = createField();
+  while(!fieldIsFull(field)) {
+   printFieldToConsole(field);
+   Move move0 = getNextMove();
+   field[move0.getX()][move0.getY()] = 0;
+   printFieldToConsole(field);
+   if (isWin(field, 0)) {
+    System.out.println("Player 0 WIN!");
+    break;
+   }
+   if (isDraw(field)) {
+    System.out.println("DRAW!");
+    break;
+   }
+
+   printFieldToConsole(field);
+   Move move1 = getNextMove();
+   field[move1.getX()][move1.getY()] = 1;
+   printFieldToConsole(field);
+   if (isWin(field, 1)) {
+    System.out.println("Player 1 WIN!");
+    break;
+   }
+   if (isDraw(field)) {
+    System.out.println("DRAW!");
+    break;
+   }
   }
-  return false;
  }
 
 

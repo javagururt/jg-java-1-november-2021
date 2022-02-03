@@ -1,4 +1,4 @@
-package student_eduards_puzirevskis.lesson_5_arrays_for_loop.level_5_middle;
+package student_eduards_puzirevskis.lesson_5_arrays_for_loop.level_5_6_7;
 
 import java.util.Arrays;
 
