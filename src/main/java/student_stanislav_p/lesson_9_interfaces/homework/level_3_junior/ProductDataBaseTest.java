@@ -75,22 +75,24 @@ class ProductDataBaseTest {
     //-----------------------------------------------------
 
     void checkResult(String testName, Product actual, Product expected){
-        System.out.println("Actual result: " + actual.getTitle());
-        System.out.println("Expected result: " + expected.getTitle());
+
         if (actual.equals(expected)){
             System.out.println(testName + " is OK");
         }else {
             System.out.println(testName + " FAILED");
+            System.out.println("Actual result: " + actual.getTitle());
+            System.out.println("Expected result: " + expected.getTitle());
         }
         System.out.println("===============================");
     }
     void checkResultOptional(String testName, Optional<Product> actual, Product expected){
-        System.out.println("Actual result: " + actual.get().getTitle());
-        System.out.println("Expected result: " + expected.getTitle());
+
         if (actual.get().getTitle().equals(expected.getTitle())){
             System.out.println(testName + " is OK");
         }else {
             System.out.println(testName + " FAILED");
+            System.out.println("Actual result: " + actual.get().getTitle());
+            System.out.println("Expected result: " + expected.getTitle());
         }
         System.out.println("===============================");
     }

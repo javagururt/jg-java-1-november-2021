@@ -15,6 +15,7 @@ class InMemoryDatabase implements ProductDatabase {
     public void save(Product product) {
 
         Product[] newDatabase = new Product[database.length + 1];
+
         for (int i = 0; i < database.length; i++) {
             newDatabase[i] = database[i];
         }
@@ -23,7 +24,7 @@ class InMemoryDatabase implements ProductDatabase {
     }
 
     @Override
-    public Product findByTitle(Product[]database, String productTitle) {
+    public Product findByTitle(Product[] database, String productTitle) {
         for (int i = 0; i < database.length; i++) {
             if(database[i].getTitle().equals(productTitle)){
 
