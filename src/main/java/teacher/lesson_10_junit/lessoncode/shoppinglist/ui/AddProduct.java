@@ -5,6 +5,7 @@ import java.util.Scanner;
 
 import teacher.lesson_10_junit.lessoncode.shoppinglist.businesslogic.ProductService;
 import teacher.lesson_10_junit.lessoncode.shoppinglist.domain.Product;
+import teacher.lesson_10_junit.lessoncode.shoppinglist.dto.AddProductResult;
 
 public class AddProduct implements MenuCommand {
 
@@ -27,7 +28,8 @@ public class AddProduct implements MenuCommand {
         product.setName(name);
         product.setPrice(price);
 
-        service.addProduct(product);
+        AddProductResult result = service.addProduct(product);
+        System.out.println(result);
     }
 
     @Override
