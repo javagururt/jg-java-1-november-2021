@@ -12,18 +12,21 @@ public class TemperatureConverterTest {
         test.celsiusConverterTest(new CelsiusConverter());
 
     }
-    void fahrenheitConverterTest(TemperatureConverter converter){
-        double realResult = 32;
-        checkResult("Fahrenheit converter TEST: ", converter.convert(0), realResult);
-    }
-    void kelvinConverterTest(TemperatureConverter converter){
-        double realResult = 273.15;
-        checkResult("Kelvin converter TEST: ", converter.convert(0), realResult);
-    }
     void celsiusConverterTest(TemperatureConverter converter){
         double realResult = 0;
-        checkResult("Celsius converter TEST: ", converter.convert(0), realResult);
+        checkResult("TEST №1 (Celsius): ", converter.convert(0), realResult);
     }
+
+    void fahrenheitConverterTest(TemperatureConverter converter){
+        double realResult = 32;
+        checkResult("TEST №2 (Fahrenheit): ", converter.convert(0), realResult);
+    }
+
+    void kelvinConverterTest(TemperatureConverter converter){
+        double realResult = 273.15;
+        checkResult("TEST №3 (Kelvin): ", converter.convert(0), realResult);
+    }
+
 
     void checkResult(String testName, double actual, double expected){
 
