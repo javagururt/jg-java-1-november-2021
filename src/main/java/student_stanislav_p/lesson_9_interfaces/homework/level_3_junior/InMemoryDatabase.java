@@ -1,4 +1,4 @@
-package student_stanislav_p.lesson_9_interfaces.homework.level_3_junior.Task_7;
+package student_stanislav_p.lesson_9_interfaces.homework.level_3_junior;
 
 class InMemoryDatabase implements ProductDatabase {
     private Product[] database;
