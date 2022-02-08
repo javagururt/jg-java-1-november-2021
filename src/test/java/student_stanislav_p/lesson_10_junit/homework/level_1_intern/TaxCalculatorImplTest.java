@@ -7,7 +7,7 @@ import java.math.BigDecimal;
 import static org.junit.Assert.assertEquals;
 
 
-class TaxCalculatorImplTest {
+public class TaxCalculatorImplTest {
 
     private TaxCalculator taxCalculator = new TaxCalculatorImpl();
 
@@ -30,6 +30,13 @@ class TaxCalculatorImplTest {
         var income = new BigDecimal(20000);
         var taxToPay = taxCalculator.calculateTax(income);
         assertEquals(taxToPay, new BigDecimal("5000.00"));
+    }
+
+    @Test
+    public void shouldPay25PercentTaxWhenIncomeEqualTo30000() {
+        var income = new BigDecimal(30000);
+        var taxToPay = taxCalculator.calculateTax(income);
+        assertEquals(taxToPay, new BigDecimal("9000.00"));
     }
 
 }
