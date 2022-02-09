@@ -1,6 +1,7 @@
 package teacher.lesson_10_junit.lessoncode.shoppinglist;
 
 import teacher.lesson_10_junit.lessoncode.shoppinglist.businesslogic.ProductService;
+import teacher.lesson_10_junit.lessoncode.shoppinglist.businesslogic.ValidationServiceV2;
 import teacher.lesson_10_junit.lessoncode.shoppinglist.database.ProductRepository;
 import teacher.lesson_10_junit.lessoncode.shoppinglist.database.ProductRepositoryArrayImpl;
 import teacher.lesson_10_junit.lessoncode.shoppinglist.ui.AddProduct;
@@ -13,6 +14,7 @@ class ShoppingListApplication {
 
     public static void main(String[] args) {
         ProductRepository productRepository = new ProductRepositoryArrayImpl();
+        ValidationServiceV2 validationService = new ValidationServiceV2();
 
         ProductService service = new ProductService(productRepository, validationService);
 
