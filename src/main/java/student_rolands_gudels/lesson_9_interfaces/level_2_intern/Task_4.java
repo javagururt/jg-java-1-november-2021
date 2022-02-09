@@ -54,7 +54,7 @@ public class Task_4 {
         @Override public String detectDayNameArra(int number) {
             String[] numbers = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"};
             //for (int i = 0; i < numbers.length; i++){
-                return numbers[number];}
+                return numbers[number-1];}
            // return numbers[number];
         }
            // return null;
