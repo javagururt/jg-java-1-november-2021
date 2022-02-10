@@ -2,6 +2,9 @@ package student_andrei_karamnov.lesson_7_encapsulation.homework.level_6_middle;
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class ArrayCopyTest {
     public static void main(String[] args) {
         ArrayCopyTest test = new ArrayCopyTest();
@@ -10,7 +13,8 @@ class ArrayCopyTest {
         test.arrayCopyRangeTest2();
 
     }
-    void arrayCopyRangeTest1(){
+
+    void arrayCopyRangeTest1() {
         boolean realResult;
         boolean expectedResult = true;
         int[] testArray1 = {3, 7, 2, 11, 5, 13, 17};
@@ -27,6 +31,7 @@ class ArrayCopyTest {
         System.out.println("Expected copy range array: " + Arrays.toString(expectedResultArray1));
         checkTestResult(realResult, expectedResult, "Array copy range TEST 1");
     }
+
     void arrayCopyRangeTest2(){
         boolean realResult;
         boolean expectedResult = true;
@@ -53,6 +58,7 @@ class ArrayCopyTest {
             System.out.println(testName + " = FAIL!");
         }
     }
+
     static boolean checkResultArray(int[] realArray, int[] expectedArray) {
         boolean result = true;
         if (realArray.length != expectedArray.length) {

@@ -1,6 +1,7 @@
 package student_andrei_karamnov.lesson_7_encapsulation.homework.level_6_middle;
 
-import java.util.Arrays;
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
 
 /*Разработать класс с методом, который копирует числа в заданном диапазоне
 из одного массива в другой:
@@ -15,6 +16,8 @@ int[] copyInRange(int[] in, int numberFrom, int numberTo)
 
 Написать тестовые сценарии для класса ArrayCopy в классе ArrayCopyTest.
 Все тестовые сценарии должны отрабатывать без ошибок.*/
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "переменные которые не используются должны быть удалены")
 class ArrayCopy {
 private int[] in;
 private int numberFrom;

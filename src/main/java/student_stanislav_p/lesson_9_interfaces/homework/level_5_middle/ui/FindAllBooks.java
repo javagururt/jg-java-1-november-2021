@@ -2,7 +2,9 @@ package student_stanislav_p.lesson_9_interfaces.homework.level_5_middle.ui;
 
 import student_stanislav_p.lesson_9_interfaces.homework.level_5_middle.businesslogic.BookService;
 import student_stanislav_p.lesson_9_interfaces.homework.level_5_middle.domain.Book;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class FindAllBooks implements MenuCommand {
 
     private final BookService service;

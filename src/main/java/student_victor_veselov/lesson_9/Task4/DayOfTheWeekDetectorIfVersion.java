@@ -1,5 +1,8 @@
 package student_victor_veselov.lesson_9.Task4;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class DayOfTheWeekDetectorIfVersion implements DayOfTheWeekDetector {
 
     @Override
@@ -22,6 +25,7 @@ class DayOfTheWeekDetectorIfVersion implements DayOfTheWeekDetector {
             return "Please input a valid number between 1 and 7";
         }
     }
+
     @Override
     public String detectByDayName(int dayNumbers) {
         switch (dayNumbers) {

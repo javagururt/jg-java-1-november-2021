@@ -1,8 +1,10 @@
 package student_stanislav_p.lesson_9_interfaces.homework.level_3_junior.Task_6_Function_Interface;
 
-    @FunctionalInterface
+import teacher.annotations.CodeReview;
 
-    interface CheckCar{
-        public boolean test(Car car);
+@FunctionalInterface
+@CodeReview(approved = true)
+interface CheckCar {
+    public boolean test(Car car);
 
 }

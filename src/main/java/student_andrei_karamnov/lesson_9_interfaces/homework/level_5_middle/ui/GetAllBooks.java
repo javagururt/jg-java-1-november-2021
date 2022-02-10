@@ -2,7 +2,9 @@ package student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.ui;
 
 import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.businesslogic.BookService;
 import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.domain.Book;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class GetAllBooks implements MenuCommand{
 
     private final BookService service;

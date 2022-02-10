@@ -1,6 +1,9 @@
 package student_julija_radchenko.lesson_9_homeworks.Task_4;
 
-public class DayOfTheWeekDetectorIfVersion implements DayOfTheWeekDetector{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class DayOfTheWeekDetectorIfVersion implements DayOfTheWeekDetector {
     @Override
     public String detectDayName(int number) {
         if (number == 1) {

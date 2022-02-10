@@ -4,12 +4,17 @@ import java.util.Arrays;
 import java.util.OptionalInt;
 import java.util.Random;
 
-public class ArrayUtilImpl implements ArrayUtil{
-    @Override public int[] createArray(int arrayLength) {
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class ArrayUtilImpl implements ArrayUtil {
+    @Override
+    public int[] createArray(int arrayLength) {
         return new int[arrayLength];
     }
 
-    @Override public void fillArrayWithRandomNumbers(int[] array) {
+    @Override
+    public void fillArrayWithRandomNumbers(int[] array) {
         for (int count = 0; count < array.length; count++) {
             int rndValue = new Random().nextInt(11);
             array[count] = rndValue;

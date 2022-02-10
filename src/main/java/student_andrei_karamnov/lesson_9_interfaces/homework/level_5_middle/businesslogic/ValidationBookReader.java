@@ -1,18 +1,17 @@
 package student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.businesslogic;
+
 import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.domain.Book;
+import teacher.annotations.CodeReview;
 
-import java.util.Arrays;
-
+@CodeReview(approved = true)
 public class ValidationBookReader {
 
 
-
-
-    public boolean validate(Book book){
-       String title = book.getTitle();
-       String author = book.getAuthor();
-       if (isNotValidTitle(title)){
-           return false;
+    public boolean validate(Book book) {
+        String title = book.getTitle();
+        String author = book.getAuthor();
+        if (isNotValidTitle(title)) {
+            return false;
        }
        if (isNotValidAuthor(author)){
            return false;

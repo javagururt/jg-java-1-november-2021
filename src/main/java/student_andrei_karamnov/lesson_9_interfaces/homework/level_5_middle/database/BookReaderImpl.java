@@ -1,10 +1,12 @@
 package student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.database;
 
-import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.domain.Book;
-
 import java.util.Arrays;
 
-public class BookReaderImpl implements BookReader{
+import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.domain.Book;
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class BookReaderImpl implements BookReader {
     public static void main(String[] args) {
         BookReaderImpl demo = new BookReaderImpl();
         Book book1 = new Book();
@@ -18,6 +20,7 @@ public class BookReaderImpl implements BookReader{
         demo.addBook(book3);
         System.out.println(Arrays.toString(demo.getDatabase()));
     }
+
     private Book[] database;
 
     public BookReaderImpl() {

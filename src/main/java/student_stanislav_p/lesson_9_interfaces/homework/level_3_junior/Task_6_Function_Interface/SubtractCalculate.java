@@ -1,5 +1,8 @@
 package student_stanislav_p.lesson_9_interfaces.homework.level_3_junior.Task_6_Function_Interface;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class SubtractCalculate implements FunctionalInterface1 {
 
     public static void main(String[] args) {

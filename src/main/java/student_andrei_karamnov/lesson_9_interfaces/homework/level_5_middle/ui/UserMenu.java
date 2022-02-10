@@ -2,9 +2,12 @@ package student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.ui;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class UserMenu {
 
-            private final MenuCommand[] commands;
+    private final MenuCommand[] commands;
 
     public UserMenu(MenuCommand[] commands) {
         this.commands = commands;

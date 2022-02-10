@@ -1,5 +1,7 @@
 package student_stanislav_p.lesson_9_interfaces.homework.level_1_intern;
 
+import teacher.annotations.CodeReview;
+
 /*
 
    Создаём интерфейс для структуры данных список.
@@ -32,7 +34,7 @@ package student_stanislav_p.lesson_9_interfaces.homework.level_1_intern;
 
 
     */
-
+@CodeReview(approved = true)
 public interface MyList {
 
         void addElementEndList();

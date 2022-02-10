@@ -1,6 +1,9 @@
 package student_eduards_puzirevskis.lesson_4_if_statement.level_7_senior;
 
 import java.util.Scanner;
+
+import teacher.annotations.CodeReview;
+
 /*
 // return true - если год високосный
     // return false - если год обычный
@@ -13,6 +16,7 @@ import java.util.Scanner;
         // Иначе год обычный.
     }
  */
+@CodeReview(approved = true)
 class LeapYear {
      public static void main(String[] args) {
          LeapYear leapYear = new LeapYear();

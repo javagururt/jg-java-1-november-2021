@@ -1,6 +1,8 @@
 package student_eduards_puzirevskis.lesson_4_if_statement.level_7_senior;
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class CalculatorTest {
     public static void main(String[] args) {
         CalculatorTest calculatorTest = new CalculatorTest();
@@ -130,6 +132,7 @@ class CalculatorTest {
         String realResult = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
         checkTestResult(realResult.equals(expectedResult), "Max of three numbers Test one ");
     }
+
     public void maxOfThreeNumbersTestTwo() {
         int firstNumber = 6;
         int secondNumber = 8;
@@ -139,6 +142,7 @@ class CalculatorTest {
         String realResult = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
         checkTestResult(realResult.equals(expectedResult), "Max of three numbers Test two ");
     }
+
     public void maxOfThreeNumbersTestThree() {
         int firstNumber = 4;
         int secondNumber = 6;
@@ -148,6 +152,7 @@ class CalculatorTest {
         String realResult = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
         checkTestResult(realResult.equals(expectedResult), "Max of three numbers Test three ");
     }
+
     public void maxOfThreeNumbersTestFour() {
         int firstNumber = 6;
         int secondNumber = 6;
@@ -157,6 +162,7 @@ class CalculatorTest {
         String realResult = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
         checkTestResult(realResult.equals(expectedResult), "Max of three numbers Test four ");
     }
+
     public void maxOfThreeNumbersTestFive() {
         int firstNumber = 6;
         int secondNumber = 4;
@@ -167,6 +173,7 @@ class CalculatorTest {
         checkTestResult(realResult.equals(expectedResult), "Max of three numbers Test five ");
 
     }
+
     public void maxOfThreeNumbersTestSix() {
         int firstNumber = 4;
         int secondNumber = 6;
@@ -176,6 +183,7 @@ class CalculatorTest {
         String realResult = calculator.maxOfThreeNumbers(firstNumber, secondNumber, thirdNumber);
         checkTestResult(realResult.equals(expectedResult), "Max of three numbers Test six ");
     }
+
     public void maxOfThreeNumbersTestSeven() {
         int firstNumber = 6;
         int secondNumber = 6;

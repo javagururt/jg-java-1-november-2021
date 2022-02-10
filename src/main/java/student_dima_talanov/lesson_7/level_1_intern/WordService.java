@@ -1,7 +1,9 @@
 package student_dima_talanov.lesson_7.level_1_intern;
 
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class WordService {
 
     public static void main(String[] args) {
@@ -24,27 +26,27 @@ public class WordService {
                 + "And art thou changed? pronounce this sentence then, \n"
                 + "Women may fall, when there's no strength in men. \n";
 
-            System.out.println(mostFrequentWord(str1));
-        }
-
-        static String mostFrequentWord(String newString) {
-            String[] myWords = newString.split(" ");
-            int count = 0;
-            String frequentWord = "";
-
-            for (int i = myWords.length - 1; i >= 0; i--) {
-                int currentWordCount = 0;
-                for (String word : myWords) {
-                    if (myWords[i].equals(word))
-                        currentWordCount++;
-                }
-
-                if (currentWordCount >= count){
-                    frequentWord = myWords[i];
-                    count = currentWordCount;
-                }
-            }
-            return frequentWord;
-        }
+        System.out.println(mostFrequentWord(str1));
     }
+
+    static String mostFrequentWord(String newString) {
+        String[] myWords = newString.split(" ");
+        int count = 0;
+        String frequentWord = "";
+
+        for (int i = myWords.length - 1; i >= 0; i--) {
+            int currentWordCount = 0;
+            for (String word : myWords) {
+                if (myWords[i].equals(word))
+                    currentWordCount++;
+            }
+
+            if (currentWordCount >= count){
+                frequentWord = myWords[i];
+                count = currentWordCount;
+            }
+        }
+        return frequentWord;
+    }
+}
 

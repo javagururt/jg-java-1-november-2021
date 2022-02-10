@@ -4,8 +4,15 @@ import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.busin
 import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.businesslogic.ValidationBookReader;
 import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.database.BookReader;
 import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.database.BookReaderImpl;
-import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.ui.*;
+import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.ui.AddBook;
+import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.ui.DeleteBook;
+import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.ui.ExitMenuCommand;
+import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.ui.GetAllBooks;
+import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.ui.MenuCommand;
+import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.ui.UserMenu;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class BookReaderApplication {
     public static void main(String[] args) {
         BookReader bookReader = new BookReaderImpl();
