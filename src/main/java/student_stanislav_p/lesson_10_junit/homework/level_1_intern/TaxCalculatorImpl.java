@@ -2,10 +2,13 @@ package student_stanislav_p.lesson_10_junit.homework.level_1_intern;
 
 import java.math.BigDecimal;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class TaxCalculatorImpl implements TaxCalculator {
 
     @Override
-    public BigDecimal calculateTax (BigDecimal income) {
+    public BigDecimal calculateTax(BigDecimal income) {
 
 
         BigDecimal tax = BigDecimal.valueOf(0.00);
@@ -16,11 +19,10 @@ public class TaxCalculatorImpl implements TaxCalculator {
         int resultOfCompare = income.compareTo(range_20000);
 
 
-       if (resultOfCompare==1) {
-           tax = sumBD(taxForRange_20000, multBD(BigDecimal.valueOf(0.40),subBD(income,range_20000)));
+        if (resultOfCompare==1) {
+            tax = sumBD(taxForRange_20000, multBD(BigDecimal.valueOf(0.40),subBD(income,range_20000)));
 
-       } else
-       {tax =  income.multiply(BigDecimal.valueOf(0.25));}
+        } else {tax =  income.multiply(BigDecimal.valueOf(0.25));}
 
         return tax.setScale(2);
     };

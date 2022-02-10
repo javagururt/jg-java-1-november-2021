@@ -1,6 +1,9 @@
 package student_eduards_puzirevskis.lesson_4_if_statement.level_7_senior;
 
 import java.util.Scanner;
+
+import teacher.annotations.CodeReview;
+
 /*
 // Реализуйте следующие требования:
         // - если переданное число делится на три возвращайте "Fizz"
@@ -8,6 +11,7 @@ import java.util.Scanner;
         // - если переданное число делится на три и на пять возвращайте "FizzBuzz"
         // - иначе возвращайте само число в виде строки (подсказка: return "" +  number)
  */
+@CodeReview(approved = true)
 class FizzBuzz {
 
     public static void main(String[] args) {

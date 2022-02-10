@@ -1,5 +1,8 @@
 package student_valeriia_kulikova.lesson_6_arrays_while_loop.homework.level_1_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_3 {
     static class WhileDefinition3 {
 
@@ -7,7 +10,8 @@ public class Task_3 {
             int i = 1;
             while (i <= 100) {
                 System.out.println(i);
-                i++;}
+                i++;
             }
         }
+    }
 }

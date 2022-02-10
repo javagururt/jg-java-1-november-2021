@@ -1,6 +1,9 @@
 package student_andrei_karamnov.lesson_9_interfaces.homework.level_3_junior;
 
-class ExampleSubtractionCalculate implements FunctionalInterfaceExample{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+class ExampleSubtractionCalculate implements FunctionalInterfaceExample {
 
     public static void main(String[] args) {
         ExampleSubtractionCalculate demo = new ExampleSubtractionCalculate();

@@ -4,14 +4,16 @@ import java.util.Arrays;
 import java.util.OptionalInt;
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
 /*Дан класс:
 
 Создать для этого класса интерфейс ArrayUtil.
 Сделать так, чтобы класс ArrayUtilImpl имплементировал созданный вами интерфейс.
 Не забудьте про аннотицию @Override. Её очень желательно "вешать" на методы,
 которые вляются реализацией методов объявленных в интерфейсе.*/
-
-public class ArrayUtilImpl implements ArrayUtil{
+@CodeReview(approved = true)
+public class ArrayUtilImpl implements ArrayUtil {
     @Override
     public int[] createArray(int arrayLength) {
         return new int[arrayLength];

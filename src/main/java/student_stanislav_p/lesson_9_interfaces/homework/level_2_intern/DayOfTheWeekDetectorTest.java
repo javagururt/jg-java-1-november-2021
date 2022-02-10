@@ -1,7 +1,8 @@
 package student_stanislav_p.lesson_9_interfaces.homework.level_2_intern;
 
-import java.util.Scanner;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorTest {
 
 
@@ -18,7 +19,6 @@ public class DayOfTheWeekDetectorTest {
         doTest(testRun,1,"Monday", testName + " #2");
         doTest(testRun,7,"Sunday", testName + " #3");
         doTest(testRun,8,"Please input a valid number between 1 and 7", testName + " #4");
-
 
 
         testRun = new DayOfTheWeekDetectorDemo(new DayOfTheWeekDetectorIfVersion());
@@ -41,7 +41,6 @@ public class DayOfTheWeekDetectorTest {
         doTest(testRun,8,"Please input a valid number between 1 and 7", testName + " #4");
 
 
-
     }
 
     static void doTest (DayOfTheWeekDetectorDemo testRun, int dayNumber, String expectedResult, String nameTest){
@@ -53,7 +52,6 @@ public class DayOfTheWeekDetectorTest {
         checkTestResult(checkResult,nameTest);
 
     }
-
 
 
     static void checkTestResult(boolean condition, String testName) {
