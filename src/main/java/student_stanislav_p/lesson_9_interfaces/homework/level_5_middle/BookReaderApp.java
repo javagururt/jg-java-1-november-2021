@@ -6,7 +6,7 @@ import student_stanislav_p.lesson_9_interfaces.homework.level_5_middle.database.
 import student_stanislav_p.lesson_9_interfaces.homework.level_5_middle.database.BookReaderImpl;
 import student_stanislav_p.lesson_9_interfaces.homework.level_5_middle.ui.*;
 
-public class BookReaderApplication {
+public class BookReaderApp {
     public static void main(String[] args) {
         BookReader bookReader = new BookReaderImpl();
         ValidationBookReader validationBookReader = new ValidationBookReader();
