@@ -2,13 +2,16 @@ package student_valeriia_kulikova.lesson_6_arrays_while_loop.homework.level_3_ju
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ArrayServiceTest {
     public static void main(String[] args) {
 
-        int [] arr = {1,3,5,7,9,5};
+        int[] arr = {1, 3, 5, 7, 9, 5};
         int searchNumber = 5;
         int numberToReplace = 5;
-        int [] arr2 = {1,3,25,7,9,5};
+        int[] arr2 = {1, 3, 25, 7, 9, 5};
 
 
         ArrayService aService1 = new ArrayService();
@@ -29,8 +32,7 @@ public class ArrayServiceTest {
 
         int[] test3 = aService1.replaceFirst(arr, numberToReplace, 25);
 
-        if (Arrays.equals(test3,arr2)) {System.out.println("Test 3 is OK");}
-        else {
+        if (Arrays.equals(test3,arr2)) {System.out.println("Test 3 is OK");} else {
             System.out.println("Test 3 is FAIL.");
         }
 

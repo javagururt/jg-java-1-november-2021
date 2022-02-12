@@ -1,7 +1,8 @@
 package student_valeriia_kulikova.lesson_6_arrays_while_loop.homework.level_4_junior;
 
-import java.util.Arrays;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class TwoDimensionalArrayTest {
     public static void main(String[] args) {
 
@@ -17,13 +18,13 @@ public class TwoDimensionalArrayTest {
 
         System.out.println("Second step - array filling.");
 
-       int [][] testArray2 = array.fillArray(testArray1);
+        int [][] testArray2 = array.fillArray(testArray1);
 
 
         System.out.println("Third step - sum calculation.");
 
         int testArray3 = array.sumOfArray(testArray2);
-       System.out.println("Sum of array: " + testArray3);
+        System.out.println("Sum of array: " + testArray3);
 
     }
 }

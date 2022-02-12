@@ -1,10 +1,14 @@
 package student_valeriia_kulikova.lesson_6_arrays_while_loop.homework.level_4_junior;
 
+
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class TwoDimensionalArray {
 
-    public int [][]  createArray () {
+    public int[][] createArray() {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Please, enter a number from 1 to 10:");

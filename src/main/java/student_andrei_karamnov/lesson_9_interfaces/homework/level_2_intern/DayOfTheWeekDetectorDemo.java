@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_9_interfaces.homework.level_2_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class DayOfTheWeekDetectorDemo {
     public static void main(String[] args) {
         DayOfTheWeekDetectorDemo demo = new DayOfTheWeekDetectorDemo(new DayOfTheWeekDetectorIfVersion());
@@ -14,12 +17,14 @@ class DayOfTheWeekDetectorDemo {
         DayOfTheWeekDetectorArrayVersion dayOfTheWeekDetectorArrayVersion = new DayOfTheWeekDetectorArrayVersion();
         System.out.println(dayOfTheWeekDetectorArrayVersion.detectDayName(4));
     }
+
     DayOfTheWeekDetector dayOfTheWeekDetector;
 
     public DayOfTheWeekDetectorDemo(DayOfTheWeekDetector day) {
         this.dayOfTheWeekDetector = day;
 
     }
+
     private static String run(DayOfTheWeekDetector d, int number) {
         return d.detectDayName(number);
     }

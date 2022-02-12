@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_9_interfaces.homework.level_3_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class ExampleSumCalculate implements FunctionalInterfaceExample {
     public static void main(String[] args) {
         ExampleSumCalculate demo = new ExampleSumCalculate();

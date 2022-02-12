@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_9_interfaces.homework.level_2_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class DayOfTheWeekDetectorTest {
     public static void main(String[] args) {
         DayOfTheWeekDetectorTest test = new DayOfTheWeekDetectorTest();
@@ -8,13 +11,14 @@ class DayOfTheWeekDetectorTest {
         test.detectDayByIfTest();
     }
 
-    void detectDayByArrayTest(){
+    void detectDayByArrayTest() {
         DayOfTheWeekDetectorArrayVersion arrayVersion = new DayOfTheWeekDetectorArrayVersion();
         String expectedResult = "Wednesday";
         String expectedResult2 = "Saturday";
         passOrFail("dayDetectByArray TEST 1: ", arrayVersion.detectDayName(3), expectedResult);
         passOrFail("dayDetectByArray TEST 2: ", arrayVersion.detectDayName(6), expectedResult2);
     }
+
     void detectDayBySwitchTest(){
         DayOfTheWeekDetectorSwitchVersion switchVersion = new DayOfTheWeekDetectorSwitchVersion();
         String expectedResult = "Tuesday";
@@ -22,6 +26,7 @@ class DayOfTheWeekDetectorTest {
         passOrFail("detectDayBySwitch TEST 1: ", switchVersion.detectDayName(2), expectedResult);
         passOrFail("detectDayBySwitch TEST 2: ", switchVersion.detectDayName(5), expectedResult2);
     }
+
     void detectDayByIfTest(){
         DayOfTheWeekDetectorIfVersion ifVersion = new DayOfTheWeekDetectorIfVersion();
         String expectedResult = "Thursday";

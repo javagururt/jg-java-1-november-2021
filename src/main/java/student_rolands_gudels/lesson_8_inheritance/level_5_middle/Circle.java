@@ -1,14 +1,21 @@
 package student_rolands_gudels.lesson_8_inheritance.level_5_middle;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Circle extends Shape {
     private double radius;
     private double pi = 3.14;
 
-    Circle(String title, double radius){
+    Circle(String title, double radius) {
         super(title);
         this.radius = radius;
     }
-public double getRadius(){return radius;}
+
+    public double getRadius() {
+        return radius;
+    }
+
     @Override
     double calculateArea() {
         return 0;

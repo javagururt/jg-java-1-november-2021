@@ -2,6 +2,9 @@ package student_valeriia_kulikova.lesson_6_arrays_while_loop.homework.level_2_in
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetector {
     public int getDayNumberFromUser() {
         Scanner scanner = new Scanner(System.in);

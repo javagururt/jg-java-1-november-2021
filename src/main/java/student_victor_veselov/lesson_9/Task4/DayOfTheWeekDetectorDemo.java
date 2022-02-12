@@ -2,10 +2,14 @@ package student_victor_veselov.lesson_9.Task4;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorDemo implements DayOfTheWeekDetector {
     Scanner scanner = new Scanner(System.in);
     int number = scanner.nextInt();
-    public String detectDayName(int number){
+
+    public String detectDayName(int number) {
         if (number == 1) {
             return "Monday";
         } else if (number == 2) {
