@@ -1,9 +1,8 @@
 package student_stanislav_p.lesson_10_junit.homework.level_3_junior.GOL;
 
-import junit.framework.TestCase;
 import org.junit.Test;
 
-import java.util.Arrays;
+import student_stanislav_p.lesson_10_junit.homework.level_3_junior.GOL.v2.logic.GameOfLifeNextGenerationCalculator;
 
 import static org.junit.Assert.assertArrayEquals;
 
