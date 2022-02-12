@@ -1,4 +1,4 @@
-package student_stanislav_p.lesson_10_junit.homework.level_3_junior.GOL.v1;
+package student_stanislav_p.lesson_10_junit.homework.level_3_4_junior.GOL.v1;
 
 public class GameOfLifeDemo {
     public static void main(String[] args) {

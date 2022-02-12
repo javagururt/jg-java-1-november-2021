@@ -1,4 +1,4 @@
-package student_stanislav_p.lesson_10_junit.homework.level_3_junior.GOL.v2.UI;
+package student_stanislav_p.lesson_10_junit.homework.level_3_4_junior.GOL.v2.UI;
 
 public class GameOfLifeConsoleUI {
     public void show(boolean[][] generationField){

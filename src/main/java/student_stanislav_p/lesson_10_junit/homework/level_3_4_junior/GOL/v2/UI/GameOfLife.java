@@ -1,19 +1,26 @@
-Генерация следующего поколения в игре Conway's Game of Life
-(https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life).
+package student_stanislav_p.lesson_10_junit.homework.level_3_4_junior.GOL.v2.UI;
 
-Создайте класс GameOfLife и запустите игру!
+import student_stanislav_p.lesson_10_junit.homework.level_3_4_junior.GOL.v2.logic.GameOfLifeNextGenerationCalculator;
 
-class GameOfLife {
+import java.util.concurrent.TimeUnit;
+
+public class GameOfLife {
     private GameOfLifeConsoleUI ui = new GameOfLifeConsoleUI();
     private GameOfLifeRandomFieldGenerator generator = new GameOfLifeRandomFieldGenerator();
     private GameOfLifeNextGenerationCalculator calculator = new GameOfLifeNextGenerationCalculator();
 
     public void run() {
-        boolean[][] field = generator.generate(10, 10);
+        boolean[][] field = generator.generate(20, 20);
+        int counter =0;
+
         while(true) {
-            ui.show(filed);
-            sleepForSeconds(5);
+            System.out.println("Generation №"+counter);
+
+            ui.show(field);
+            sleepForSeconds(3);
             field = calculator.calculate(field);
+            counter++;
+            cls();
         }
     }
 
@@ -24,6 +31,12 @@ class GameOfLife {
             System.out.println("Exception occurred!");
             System.exit(1);
         }
+    }
+
+    private void cls(){
+      for (int i = 0; i < 300; i++) {
+        System.out.println();
+      }
     }
 
 }
