@@ -1,8 +1,7 @@
 package student_stanislav_p.lesson_10_junit.homework.level_3_junior.GOL;
 
-import java.util.ArrayList;
-
 class GameOfLifeNextGenerationCalculator {
+
     public boolean[][] calculate(boolean[][] currentGeneration) {
 
         int aliveNeighbours = 0;
@@ -14,30 +13,47 @@ class GameOfLifeNextGenerationCalculator {
 
                 aliveNeighbours = aliveNeighboursCalculation(currentGeneration, i, j);
 
-                if (aliveNeighbours < 2) {
+                if ((aliveNeighbours < 2) || (aliveNeighbours > 3))  {
                     newGeneration [i] [j] = false;
-                }
-
-
+                } else { newGeneration [i] [j] = true;};
             }
-
         }
 
-
-
-
-        return newGeneration; // реализацию напишем тут чуть позже
+        return newGeneration;
     }
 
     int aliveNeighboursCalculation(boolean [][] currentGeneration, int i, int j) {
-        int aliveNeighbours =0;
-        //List <ArrayList>
 
-        if (((i-1)>=0) && ((j-1)>=0)) {
+        int [] [] arrayCoord = {
+                {i-1,j-1},
+                {i-1,j},
+                {i-1,j+1},
+                {i,j-1},
+                {i,j},
+                {i,j+1},
+                {i+1,j-1},
+                {i+1,j},
+                {i+1,j+1},
+        };
+
+        int aliveNeighbours =0;
+
+        for (int k = 0; k < 9; k++) {
+
+           if (isValid(currentGeneration,arrayCoord[k][0],arrayCoord[k][1])) {if (currentGeneration[i-1][j-1]) {
+                   aliveNeighbours++;}
+           }
 
         }
 
+        return aliveNeighbours;
+    }
 
-        return 2;
+    boolean isValid (boolean [][] currentGeneration, int x, int y){
+        boolean validationResult = true;
+
+        validationResult= validationResult&&(x>=0)&&(y>=0)&&(x<=currentGeneration.length)&&(y<=currentGeneration[0].length);
+
+        return validationResult;
     }
 }
