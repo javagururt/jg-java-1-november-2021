@@ -37,12 +37,11 @@ public class BookDatabaseImpl implements BookDatabase {
 
     @Override
     public Optional<Book> findById(Long bookId) { // Task9
-        for (int i = 0; i < database.size(); i++) {
-            Book book = database.get(i);
-            if (bookId.equals(database.get(i).getId())) {
+        for (Book book : database) {
+            if (bookId.equals(book.getId())) {
                 return Optional.of(book);
             }
         }
-        return null;
+        return Optional.empty();
     }
 }
