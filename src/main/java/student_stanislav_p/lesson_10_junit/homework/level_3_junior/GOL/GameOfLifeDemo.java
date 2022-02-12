@@ -23,9 +23,9 @@ public class GameOfLifeDemo {
     static void printField(boolean [] [] generationField) {
         for (int i = 0; i < generationField.length; i++) {
             for (int j = 0; j < generationField[0].length; j++) {
-                System.out.print(generationField[i][j] + " ");
-            }
-            System.out.println();
+
+                if (generationField[i][j]) { System.out.print("X");} else {System.out.print(".");}
+            System.out.println();}
 
         }
     }
