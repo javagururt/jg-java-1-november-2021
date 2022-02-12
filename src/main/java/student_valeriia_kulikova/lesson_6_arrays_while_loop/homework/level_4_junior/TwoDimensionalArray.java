@@ -1,7 +1,5 @@
 package student_valeriia_kulikova.lesson_6_arrays_while_loop.homework.level_4_junior;
 
-
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class TwoDimensionalArray {
