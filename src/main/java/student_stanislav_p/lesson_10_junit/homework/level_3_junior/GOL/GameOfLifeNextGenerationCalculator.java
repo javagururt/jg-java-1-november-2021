@@ -1,5 +1,7 @@
 package student_stanislav_p.lesson_10_junit.homework.level_3_junior.GOL;
 
+import java.util.Scanner;
+
 class GameOfLifeNextGenerationCalculator {
 
     public boolean[][] calculate(boolean[][] currentGeneration) {
@@ -13,10 +15,13 @@ class GameOfLifeNextGenerationCalculator {
 
                 aliveNeighbours = aliveNeighboursCalculation(currentGeneration, i, j);
 
+                System.out.print(aliveNeighbours+" ");
+
                 if ((aliveNeighbours < 2) || (aliveNeighbours > 3))  {
                     newGeneration [i] [j] = false;
                 } else { newGeneration [i] [j] = true;};
             }
+            System.out.println();
         }
 
         return newGeneration;
@@ -29,7 +34,6 @@ class GameOfLifeNextGenerationCalculator {
                 {i-1,j},
                 {i-1,j+1},
                 {i,j-1},
-                {i,j},
                 {i,j+1},
                 {i+1,j-1},
                 {i+1,j},
@@ -37,13 +41,14 @@ class GameOfLifeNextGenerationCalculator {
         };
 
 
-
-
         int aliveNeighbours =0;
 
-        for (int k = 0; k < 9; k++) {
+        for (int k = 0; k < 8; k++) {
 
-           if (isValid(currentGeneration,arrayCoord[k][0],arrayCoord[k][1])) {if (currentGeneration[arrayCoord[k][0]][arrayCoord[k][1]]) {
+
+           if (isValid(currentGeneration,arrayCoord[k][0],arrayCoord[k][1])) {
+
+              if (currentGeneration[arrayCoord[k][0]][arrayCoord[k][1]]) {
                    aliveNeighbours++;}
            }
 
@@ -55,7 +60,7 @@ class GameOfLifeNextGenerationCalculator {
     boolean isValid (boolean [][] currentGeneration, int x, int y){
         boolean validationResult = true;
 
-        validationResult= validationResult&&(x>=0)&&(y>=0)&&(x<=currentGeneration.length)&&(y<=currentGeneration[0].length);
+        validationResult= validationResult&&(x>=0)&&(y>=0)&&(x<currentGeneration.length)&&(y<currentGeneration[0].length);
 
         return validationResult;
     }
