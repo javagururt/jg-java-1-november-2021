@@ -15,6 +15,23 @@ public class BookApplication {
         System.out.println(bookDatabase.database.get(0));
         System.out.println(bookDatabase.database.get(1));
         System.out.println(bookDatabase.database.get(2));
+        System.out.println();
+
+        System.out.println("==============================================");
+        System.out.println("Size of db : " + bookDatabase.database.size() + " Element/s..");
+        System.out.println("----------------------------------------------");
+        //bookDatabase.delete(1L);
+        System.out.println("----------------------------------------------");
+        System.out.println("Size of db : " + bookDatabase.database.size() + " Element/s..");
+        System.out.println("==============================================");
+        System.out.println("----------------------------------------------");
+        //bookDatabase.delete(bookLee);
+        System.out.println("Size of db : " + bookDatabase.database.size() + " Element/s..");
+        System.out.println("------------------------------------------------");
+        bookDatabase.findById(1L);
+
+
+
 
 
 
