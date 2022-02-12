@@ -36,11 +36,14 @@ class GameOfLifeNextGenerationCalculator {
                 {i+1,j+1},
         };
 
+
+
+
         int aliveNeighbours =0;
 
         for (int k = 0; k < 9; k++) {
 
-           if (isValid(currentGeneration,arrayCoord[k][0],arrayCoord[k][1])) {if (currentGeneration[i-1][j-1]) {
+           if (isValid(currentGeneration,arrayCoord[k][0],arrayCoord[k][1])) {if (currentGeneration[arrayCoord[k][0]][arrayCoord[k][1]]) {
                    aliveNeighbours++;}
            }
 
