@@ -8,20 +8,19 @@ class GameOfLifeNextGenerationCalculator {
 
         int aliveNeighbours = 0;
 
-        boolean [][] newGeneration = currentGeneration;
+        boolean [][] newGeneration = new boolean[currentGeneration.length][currentGeneration[0].length];
 
         for (int i = 0; i < currentGeneration.length; i++) {
             for (int j = 0; j < currentGeneration[0].length; j++) {
 
                 aliveNeighbours = aliveNeighboursCalculation(currentGeneration, i, j);
 
-                System.out.print(aliveNeighbours+" ");
 
                 if ((aliveNeighbours < 2) || (aliveNeighbours > 3))  {
                     newGeneration [i] [j] = false;
                 } else { newGeneration [i] [j] = true;};
             }
-            System.out.println();
+
         }
 
         return newGeneration;
