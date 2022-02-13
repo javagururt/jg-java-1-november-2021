@@ -6,25 +6,25 @@ import java.util.List;
 public class BookListContainsDemo {
     public static void main(String[] args) {
 
-        List<Book> books = new ArrayList<>();
+        List<Book_level_1> books = new ArrayList<>();
 
-        Book newBook1 = new Book("Author1", "Book1");
-        Book newBook2 = new Book("Author2", "Book2");
+        Book_level_1 newBook1 = new Book_level_1("Author1", "Book1");
+        Book_level_1 newBook2 = new Book_level_1("Author2", "Book2");
 
         books.add(newBook1);
         books.add(newBook2);
 
-        for (Book listOfBook : books) {
+        for (Book_level_1 listOfBook : books) {
             System.out.println(listOfBook);
         }
         System.out.println();
 
-        Book bookInTheList = new Book("Author1", "Book1");
+        Book_level_1 bookInTheList = new Book_level_1("Author1", "Book1");
         books.add(bookInTheList);
         boolean containsBook = books.contains(bookInTheList);
         System.out.println("Is book in the list? -"+containsBook);
 
-        Book bookNotInTheList = new Book("Author3", "Book3");
+        Book_level_1 bookNotInTheList = new Book_level_1("Author3", "Book3");
         boolean notContainsBook = books.contains(bookNotInTheList);
         System.out.println("Is book in the list? -"+notContainsBook);
 

@@ -1,10 +1,10 @@
 package student_stanislav_p.lesson_11_collections.homework.level_1_intern.Task5;
 
-public class Book {
+public class Book_level_1 {
     private String title;
     private String author;
 
-    Book(String author, String title) {
+    Book_level_1(String author, String title) {
         this.author = author;
         this.title = title;
     }
