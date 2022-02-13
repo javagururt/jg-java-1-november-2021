@@ -6,9 +6,7 @@ import java.util.List;
 
     /**
      * В данной программе демострируется использование двух классов
-     * ArrayList и LinkedList. Заметим, что мы не используем строки ввида:
-     *                     ArrayList<Integer> list = new ArrayList<>().
-     * Вместо этого я создаю интерфейсные ссылки.
+     * ArrayList и LinkedList.
      * */
 
 
@@ -30,9 +28,6 @@ import java.util.List;
             System.out.println();
         }
 
-        /**
-         * Точка входа программы
-         * */
         public static void main(String[] args) {
             /*Первый список*/
             List<Integer> list1 = new ArrayList<>();
