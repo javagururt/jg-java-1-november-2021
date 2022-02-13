@@ -7,7 +7,7 @@ import student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.domai
 
 import static org.junit.Assert.*;
 
-public class ValidationBookReaderTest {
+public class ValidationBookReaderTestLevel1 {
 
 
 private ValidationBookReader victim = new ValidationBookReader();
