@@ -6,7 +6,7 @@ public class Book {
     private int id;
     private String title;
     private String author;
-    private static int count = 0;
+    private static int count = 1;
 
 
 
