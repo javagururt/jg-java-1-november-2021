@@ -9,10 +9,10 @@ public class PowerCalculator {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter the number, please: ");
         int number = scanner.nextInt();
-        System.out.println("Enter the number of degree, please: ");
+        System.out.println("Enter the number, please: ");
         int number2 = scanner.nextInt();
         int calculator = (int) Math.pow(number,number2);
-        System.out.println("The number " + number + " of degree " + number2 + " = " + calculator);
+        System.out.println( " = " + calculator);
     }
 
     public int Calculate () {
@@ -25,7 +25,7 @@ public class PowerCalculator {
         for (int i = 1; i <= number2; i++) {
             calculateNumbers = calculateNumbers * number;
         }
-        System.out.println("The number " + number + " of degree " + number2 + " = " + calculateNumbers);
+        System.out.println( " = " + calculateNumbers);
         return number;
 
 
