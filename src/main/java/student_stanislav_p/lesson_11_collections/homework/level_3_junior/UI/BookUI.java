@@ -4,6 +4,8 @@ import student_stanislav_p.lesson_11_collections.homework.level_3_junior.Reposit
 import student_stanislav_p.lesson_11_collections.homework.level_3_junior.Service.BookDatabaseImpl;
 import student_stanislav_p.lesson_11_collections.homework.level_3_junior.Service.BookService;
 
+import java.util.Optional;
+
 public class BookUI {
 
         public void run() {
@@ -38,7 +40,11 @@ public class BookUI {
                 System.out.println();
 
 
-                bookDatabase.findById(2);
+                Optional<Book> findedBook = bookDatabase.findById(2);
+                printDB.printBook(findedBook.get());
+
+
+
 
         }
 
