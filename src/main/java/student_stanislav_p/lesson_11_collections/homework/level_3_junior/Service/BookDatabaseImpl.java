@@ -52,4 +52,59 @@ public class BookDatabaseImpl implements BookDatabase {
         }
         return Optional.empty();
     }
+
+    // ---------------  Task10 ---------
+    @Override
+    public List<Book> findByAuthor(String author) {
+
+        List <Book> bookListByAuthor = new ArrayList<>();
+
+        for (Book book : database) {
+            if (author.equals(book.getAuthor())) {
+                bookListByAuthor.add(book);
+            }
+        }
+        return bookListByAuthor;
+    }
+
+    // ---------------  Task11 ---------
+    @Override
+    public List<Book> findByTitle(String title) {
+
+        List <Book> bookListByTitle = new ArrayList<>();
+
+        for (Book book : database) {
+            if (title.equals(book.getTitle())) {
+                bookListByTitle.add(book);
+            }
+        }
+        return bookListByTitle;
+    }
+
+    // ---------------  Task12 ---------
+    @Override
+    public int countAllBooks() {
+
+        return database.size();
+    }
+
+    // ---------------  Task13 ---------
+    @Override
+    public void deleteByAuthor(String author) {
+        for (int i = 0; i < database.size(); i++) {
+            if (author.equals(database.get(i).getAuthor())) ;
+            database.remove(i);
+        }
+    }
+
+    // ---------------  Task14 ---------
+    @Override
+    public void deleteByTitle(String title) {
+        for (int i = 0; i < database.size(); i++) {
+            if (title.equals(database.get(i).getTitle())) ;
+            database.remove(i);
+        }
+    }
+
+
 }
