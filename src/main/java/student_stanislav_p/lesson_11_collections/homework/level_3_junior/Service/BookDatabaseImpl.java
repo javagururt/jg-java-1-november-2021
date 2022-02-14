@@ -92,8 +92,10 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public void deleteByAuthor(String author) {
         for (int i = 0; i < database.size(); i++) {
-            if (author.equals(database.get(i).getAuthor())) ;
-            database.remove(i);
+            if (author.equals(database.get(i).getAuthor())) {
+                database.remove(i);
+
+            }
         }
     }
 
@@ -101,8 +103,10 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public void deleteByTitle(String title) {
         for (int i = 0; i < database.size(); i++) {
-            if (title.equals(database.get(i).getTitle())) ;
-            database.remove(i);
+            if (title.equals(database.get(i).getTitle())) {
+                database.remove(i);
+
+            }
         }
     }
 
