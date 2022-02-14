@@ -1,17 +1,16 @@
 package student_valeriia_kulikova.lesson_6_arrays_while_loop.homework.level_3_junior;
 
-import java.util.Arrays;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class ArrayService {
 
-    boolean contains(int[] arr, int numberToSearch)
-    {
+    boolean contains(int[] arr, int numberToSearch) {
         boolean number = false;
         for (int i = 0; i < arr.length; i++) {
             if (numberToSearch != arr[i]) {
                 number = false;
-            }
-            else {
+            } else {
                 number = true;
                 break;
             }
@@ -36,7 +35,7 @@ public class ArrayService {
         for (int i = 0; i < arr.length; i++) {
             if (numberToReplace == arr[i]) {arr[i]= newNumber;
 
-            break;}
+                break;}
         }
         return arr;
     }
@@ -48,6 +47,7 @@ public class ArrayService {
         }
         return arr;
     }
+
     int [] reverseArray (int [] arr) {
         int [] newArray5 = new int[arr.length];
         for (int i = 0; i < arr.length; i++) {
@@ -58,8 +58,8 @@ public class ArrayService {
 
     int [] sortingArray (int [] arr) {
         for (int i = 0; i < arr.length; i++) {
-        int min = arr [i];
-        int min_i = i;
+            int min = arr [i];
+            int min_i = i;
             for (int j = i+1; j < arr.length; j++) {
                 if (arr[j] < min) {
                     min = arr[j];
@@ -73,7 +73,7 @@ public class ArrayService {
         }
         return arr;
     }
-    }
+}
 
 
 

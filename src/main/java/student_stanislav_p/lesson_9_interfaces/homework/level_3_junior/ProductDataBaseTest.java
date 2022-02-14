@@ -2,6 +2,9 @@ package student_stanislav_p.lesson_9_interfaces.homework.level_3_junior;
 
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class ProductDataBaseTest {
 
 
@@ -32,6 +35,7 @@ class ProductDataBaseTest {
         checkResult("TEST 2 (find title): ", data.findByTitle(products, "FIAT"), expectedResult2);
 
     }
+
     //-----------------------------------------------------
     void findProductByTitleInArrayTest2(){
 
@@ -52,6 +56,7 @@ class ProductDataBaseTest {
 
 
     }
+
     //-----------------------------------------------------
     void findProductByTitleInArrayTest3(){
 
@@ -85,6 +90,7 @@ class ProductDataBaseTest {
         }
         System.out.println("===============================");
     }
+
     void checkResultOptional(String testName, Optional<Product> actual, Product expected){
 
         if (actual.get().getTitle().equals(expected.getTitle())){

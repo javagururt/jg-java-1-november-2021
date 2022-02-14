@@ -1,5 +1,8 @@
 package student_julija_radchenko.lesson_9_homeworks.Task_4;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorSwitchVersion implements DayOfTheWeekDetector {
 
     @Override
@@ -25,7 +28,6 @@ public class DayOfTheWeekDetectorSwitchVersion implements DayOfTheWeekDetector {
 
         }
     }
-
 
 
 }

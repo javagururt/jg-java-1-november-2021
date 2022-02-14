@@ -1,5 +1,8 @@
 package student_stanislav_p.lesson_9_interfaces.homework.level_4_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class TemperatureConverterTest {
     public static void main(String[] args) {
 
@@ -12,6 +15,7 @@ public class TemperatureConverterTest {
         test.celsiusConverterTest(new CelsiusConverter());
 
     }
+
     void celsiusConverterTest(TemperatureConverter converter){
         double realResult = 0;
         checkResult("TEST №1 (Celsius): ", converter.convert(0), realResult);

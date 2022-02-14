@@ -2,7 +2,10 @@ package student_andrei_karamnov.lesson_9_interfaces.homework.level_3_junior;
 
 import java.util.Optional;
 
-public class InMemoryDatabaseOption implements ProductDatabaseOption{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class InMemoryDatabaseOption implements ProductDatabaseOption {
     private Product[] database;
 
     public InMemoryDatabaseOption() {
@@ -12,6 +15,7 @@ public class InMemoryDatabaseOption implements ProductDatabaseOption{
     public Product[] getDatabase() {
         return database;
     }
+
     @Override
     public void save2(Product product){
         Product[] newDatabase = new Product[database.length + 1];
@@ -32,5 +36,5 @@ public class InMemoryDatabaseOption implements ProductDatabaseOption{
         }
         return Optional.ofNullable(null);
     }
-    }
+}
 

@@ -1,11 +1,14 @@
 package student_andrei_karamnov.lesson_7_encapsulation.homework.level_7_senior;
+
+import teacher.annotations.CodeReview;
+
 /*Создать класс UserEntity с учетом, что вы уже знаете, что такое инкапсюляция.
 У класса UserEntity должны быть поля:
   - id
   - имя
   - фамилия
   - персональный код*/
-
+@CodeReview(approved = true)
 class UserEntity {
     private long userID;
     private String userName;
