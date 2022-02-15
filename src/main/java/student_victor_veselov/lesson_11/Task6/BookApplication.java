@@ -1,5 +1,9 @@
 package student_victor_veselov.lesson_11.Task6;
 
+import student_victor_veselov.lesson_11.Task6.Model.Book;
+import student_victor_veselov.lesson_11.Task6.Repository.BookDatabaseImpl;
+import student_victor_veselov.lesson_11.Task6.Service.BookService;
+
 public class BookApplication {
     public static void main(String[] args) {
         BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
