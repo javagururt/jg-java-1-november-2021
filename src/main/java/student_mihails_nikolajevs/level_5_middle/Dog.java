@@ -21,7 +21,7 @@ public class Dog {
     String name;
     String voice;
 
-    public Dog(String name){
+    public Dog(String name) {
         this.name = name;
     }
 
