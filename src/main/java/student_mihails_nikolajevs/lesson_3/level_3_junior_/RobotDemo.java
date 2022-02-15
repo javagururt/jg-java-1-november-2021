@@ -4,19 +4,27 @@ import java.util.Scanner;
 
 public class RobotDemo {
 
-    public static void main(String[] args) {
-
-        Robot myRobot1 = new Robot();
-        String robotName = myRobot1.name;
+    public static void main(String[] args){
 
 
-        myRobot1.name = "Robo";
+        Robot myRobot1 = new Robot("Rider");
+        myRobot1.sayHello();
+        myRobot1.sayYourName();
+
+        Robot myRobot2 = new Robot("John");
+        myRobot2.sayHello();
+        myRobot2.sayYourName();
+
+        myRobot1.name = "Ryder";
         System.out.println(myRobot1.name);
 
-        Robot myRobot2 = new Robot();
-        myRobot2.name = "Harry";
-
+        myRobot2.name = "John";
         System.out.println(myRobot2.name);
     }
 
+
+
 }
+
+
+

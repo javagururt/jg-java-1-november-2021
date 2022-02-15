@@ -27,17 +27,22 @@ class Robot {
 
 public class Robot {
 
+    String name;
+
+    public Robot() {
+    }
+
+    public Robot(String robotName) {
+        this.name = robotName;
+
+    }
+    void sayHello(){
+        System.out.println("Good Morning " + this.name);
+    }
+
+    void sayYourName() {
+       System.out.println("My name is " + this.name);
+    }
 
 
-     String name;
-
-     public Robot(){
-
-       }
-         public Robot(String robotName){
-             this.name = robotName;
-
-             }
-
-     }
-
+}
