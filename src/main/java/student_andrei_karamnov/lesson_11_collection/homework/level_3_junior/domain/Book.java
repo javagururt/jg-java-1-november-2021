@@ -1,11 +1,12 @@
-package student_andrei_karamnov.lesson_11_collection.homework.level_2_intern;
+package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain;
 
 import java.util.Objects;
 
-class Book {
+public class Book {
     private Long id;
     private String title;
     private String author;
+    private int yearOfIssue;
 
     Book(String author, String title) {
         this.author = author;
@@ -27,6 +28,12 @@ class Book {
     public String getAuthor() {
         return this.author;
     }
+
+    public int getYearOfIssue() {
+        return yearOfIssue;
+    }
+
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
