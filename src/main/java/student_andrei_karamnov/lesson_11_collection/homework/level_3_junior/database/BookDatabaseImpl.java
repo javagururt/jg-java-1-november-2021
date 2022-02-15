@@ -1,4 +1,6 @@
-package student_andrei_karamnov.lesson_11_collection.homework.level_2_intern;
+package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database;
+
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -95,5 +97,19 @@ public class BookDatabaseImpl implements BookDatabase{
                 database.remove(i);
             }
         }
+    }
+
+    @Override
+    public List<Book> find(SearchCriteria searchCriteria) {
+
+        List<Book> searchCriteriaList = new ArrayList<>();
+        for (Book book : database){
+            if (searchCriteria.equals(book.getTitle()) ||
+                    searchCriteria.equals(book.getAuthor()) ||
+                    searchCriteria.equals(book.getYearOfIssue())){
+                searchCriteriaList.add(book);
+            }
+        }
+        return searchCriteriaList;
     }
 }

@@ -1,10 +1,11 @@
-package student_andrei_karamnov.lesson_11_collection.homework.level_2_intern;
+package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database;
+
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface BookDatabase {
-
 
     Long save(Book book);
 
@@ -23,4 +24,6 @@ public interface BookDatabase {
     void deleteByAuthor(String author);
 
     void deleteByTitle(String title);
+
+    List<Book> find(SearchCriteria searchCriteria);
 }
