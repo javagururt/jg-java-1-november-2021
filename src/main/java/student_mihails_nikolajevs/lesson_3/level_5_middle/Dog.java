@@ -1,4 +1,4 @@
-package student_mihails_nikolajevs.level_5_middle;
+package student_mihails_nikolajevs.lesson_3.level_5_middle;
 /*
 Тема: создание класса Dog.
 
@@ -21,7 +21,7 @@ public class Dog {
     String name;
     String voice;
 
-    public Dog(String name) {
+    public Dog(String name)  {
         this.name = name;
     }
 
