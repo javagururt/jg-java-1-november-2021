@@ -1,8 +1,8 @@
-package student_victor_veselov.lesson_11.Task6;
+package student_victor_veselov.lesson_11.Task6.Model;
 
 import java.util.Objects;
 
-class Book {
+public class Book {
     private Long id;
     private String title;
     private String author;
@@ -10,7 +10,7 @@ class Book {
 
 
 
-    Book(String author, String title) {
+    public Book(String author, String title) {
         this.author = author;
         this.title = title;
         this.id = Long.valueOf(count++);

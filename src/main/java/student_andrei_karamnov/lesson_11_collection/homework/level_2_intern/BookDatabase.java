@@ -1,9 +1,10 @@
-package student_victor_veselov.lesson_11.Task6;
+package student_andrei_karamnov.lesson_11_collection.homework.level_2_intern;
 
 import java.util.List;
 import java.util.Optional;
 
 public interface BookDatabase {
+
 
     Long save(Book book);
 
@@ -22,5 +23,4 @@ public interface BookDatabase {
     void deleteByAuthor(String author);
 
     void deleteByTitle(String title);
-
 }
