@@ -1,5 +1,6 @@
-package student_stanislav_p.lesson_11_collections.homework.level_3_junior.Repository;
+package student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository;
 
+import java.util.List;
 import java.util.Objects;
 
 public class Book {
@@ -54,4 +55,10 @@ public class Book {
                 ", author='" + author + '\'' +
                 '}';
     }
+
+   // @Override
+   // List<Book> find(SearchCriteria searchCriteria){
+   //     List <Book> findBook = null;
+   //     return findBook;
+   // }
 }
