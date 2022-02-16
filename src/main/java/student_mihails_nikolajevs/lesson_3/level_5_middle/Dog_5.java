@@ -28,7 +28,6 @@ PS: создайте в классе Dog метод:
 public class Dog_5 {
 
     String color;
-    String colorChange;
 
     public void voice(){
 
