@@ -2,7 +2,7 @@ package student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Serv
 
 import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.Book;
 import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.BookDatabase;
-import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.SearchCriteria;
+import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.SearchCriteria.SearchCriteria;
 
 import java.util.ArrayList;
 
