@@ -13,6 +13,6 @@ public class AuthorSearchCriteria implements SearchCriteria {
 
     @Override
     public boolean match(Book book) {
-        return false;
+        return book.getAuthor().equals(authorToSearch);
     }
 }

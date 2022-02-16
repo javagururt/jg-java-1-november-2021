@@ -9,7 +9,7 @@ public class BankAccountDemo {
         int moneyAmount = bankAccount.getMoneyAmount();
         System.out.println("Owner first name = " + ownerFirstName);
         System.out.println("Owner last name = " + ownerLastName);
-        System.out.println("Money amount = " + moneyAmount);
+        System.out.println("Money amount  =  " + moneyAmount);
     }
 
 }
