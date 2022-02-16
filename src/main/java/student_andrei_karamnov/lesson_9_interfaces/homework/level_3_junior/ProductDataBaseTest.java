@@ -1,8 +1,10 @@
 package student_andrei_karamnov.lesson_9_interfaces.homework.level_3_junior;
 
-import java.util.Arrays;
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class ProductDataBaseTest {
 
 
@@ -12,7 +14,7 @@ class ProductDataBaseTest {
 
     }
 
-    void findProductByTitleInArrayTest(){
+    void findProductByTitleInArrayTest() {
 
         Product product1 = new Product("Orange");
         Product product2 = new Product("Apple");
@@ -62,6 +64,7 @@ class ProductDataBaseTest {
             System.out.println(testName + " FAILED");
         }
     }
+
     void checkResult2(String testName, Optional<Product> actual, Product expected){
         System.out.println("Actual result: " + actual.get().getTitle());
         System.out.println("Expected result: " + expected.getTitle());

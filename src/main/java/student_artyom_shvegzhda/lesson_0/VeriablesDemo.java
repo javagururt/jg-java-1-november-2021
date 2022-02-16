@@ -1,5 +1,8 @@
 package student_artyom_shvegzhda.lesson_0;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class VeriablesDemo {
 
     public static void main(String[] args) {
@@ -11,7 +14,6 @@ public class VeriablesDemo {
 
         boolean thirsty = true;
         System.out.println(thirsty);
-
 
 
     }

@@ -1,20 +1,23 @@
 package student_eduards_puzirevskis.lesson_6_arrays_while_loop.level_5_6;
 
- class Move {
+import teacher.annotations.CodeReview;
 
-     private int x;
-     private int y;
+@CodeReview(approved = true)
+class Move {
 
-     public Move(int x, int y) {
-         this.x = x;
-         this.y = y;
-     }
+    private int x;
+    private int y;
 
-     public int getX() {
-         return x;
-     }
+    public Move(int x, int y) {
+        this.x = x;
+        this.y = y;
+    }
 
-     public int getY() {
-         return y;
-     }
- }
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+}

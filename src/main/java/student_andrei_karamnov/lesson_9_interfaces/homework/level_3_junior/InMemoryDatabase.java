@@ -1,7 +1,8 @@
 package student_andrei_karamnov.lesson_9_interfaces.homework.level_3_junior;
 
-import java.util.Arrays;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class InMemoryDatabase implements ProductDatabase{
     private Product[] database;
 

@@ -9,9 +9,9 @@ public class Dog {
     String dogVoice;
 
     Dog(String dogName, String dogVoice) {
-    this.dogName = dogName;
-    this.dogVoice = dogVoice;}
-
+        this.dogName = dogName;
+        this.dogVoice = dogVoice;
+    }
 
     String getDogName() {return this.dogName;}
     String getDogVoice() {return this.dogVoice;}{
