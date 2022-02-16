@@ -19,14 +19,14 @@ package student_mihails_nikolajevs.lesson_3.level_5_middle;
 public class Dog {
 
     String name;
-    String voice;
 
     public Dog(String name)  {
         this.name = name;
     }
 
-    public String getVoice() {
-        return voice;
+    public void voice() {
+
+        System.out.println(this.name);
     }
 }
 
