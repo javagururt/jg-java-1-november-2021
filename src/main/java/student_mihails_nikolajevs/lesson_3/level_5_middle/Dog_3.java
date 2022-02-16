@@ -35,7 +35,7 @@ public class Dog_3 {
     }
 
     void voice(){
-        System.out.println("Dog Age " + ageNow);
+        System.out.println("Dog Age are " + ageNow + " !");
         System.out.println("Woof!!! Woof!!!");
 
         ageIncrease++;
