@@ -10,15 +10,96 @@ package student_stanislav_p.lesson_11_collections.homework.level_2_3_junior;
  */
 
 
+import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.Book;
 import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.SearchCriteria;
-import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Service.AndSearchCriteria;
-import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Service.AuthorSearchCriteria;
-import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Service.TitleSearchCriteria;
+import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Service.*;
+import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.UI.InputBook;
+import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.UI.PrintDB;
 
 public class SearchCriteriaDemo {
 
-    SearchCriteria authorSearchCriteria = new AuthorSearchCriteria("Kuper");
-    SearchCriteria titleSearchCriteria = new TitleSearchCriteria("Zveroboi");
-    SearchCriteria searchCriteria = new AndSearchCriteria(authorSearchCriteria, titleSearchCriteria);
+    public static void main(String[] args) {
 
+        BookDatabaseImpl bookDatabase = new BookDatabaseImpl();
+        BookService service = new BookService(bookDatabase);
+        InputBook inputBook = new InputBook();
+        PrintDB printDB = new PrintDB();
+
+        //--------------- Creating books ------------
+
+
+        Book newBook1 = inputBook.newBook(1);
+        Book newBook2 = inputBook.newBook(2);
+        Book newBook3 = inputBook.newBook(3);
+        Book newBook4 = inputBook.newBook(4);
+        Book newBook5 = inputBook.newBook(5);
+
+        // ------ save book, print all database, print numbers of records --------
+
+        System.out.println();
+        service.saveBook(newBook1);
+
+        bookDatabase.database.get(0).setYearOfIssue(1990);
+        printDB.printDB(bookDatabase);
+        printDB.printRecordsNumbers(bookDatabase);
+
+        System.out.println();
+        service.saveBook(newBook2);
+
+        bookDatabase.database.get(1).setYearOfIssue(1890);
+        printDB.printDB(bookDatabase);
+        printDB.printRecordsNumbers(bookDatabase);
+
+        System.out.println();
+        service.saveBook(newBook3);
+
+        bookDatabase.database.get(2).setYearOfIssue(1970);
+        printDB.printDB(bookDatabase);
+        printDB.printRecordsNumbers(bookDatabase);
+
+        System.out.println();
+        service.saveBook(newBook4);
+
+        bookDatabase.database.get(3).setYearOfIssue(2000);
+        printDB.printDB(bookDatabase);
+        printDB.printRecordsNumbers(bookDatabase);
+
+        System.out.println();
+        service.saveBook(newBook5);
+
+        bookDatabase.database.get(4).setYearOfIssue(2010);
+        printDB.printDB(bookDatabase);
+        printDB.printRecordsNumbers(bookDatabase);
+
+        System.out.println();
+
+        Book newBook6 = new Book(("Kuper"), "Zveroboi");
+
+        service.saveBook(newBook6);
+
+        bookDatabase.database.get(5).setYearOfIssue(1890);
+
+
+        printDB.printDB(bookDatabase);
+        printDB.printRecordsNumbers(bookDatabase);
+
+        System.out.println();
+
+        SearchCriteria authorSearchCriteria = new AuthorSearchCriteria("Kuper");
+        SearchCriteria titleSearchCriteria = new TitleSearchCriteria("Zveroboi");
+        SearchCriteria yearOfIssueSearchCriteria = new YearOfIssueSearchCriteria("1890");
+
+
+        SearchCriteria searchCriteria = new AndSearchCriteria(authorSearchCriteria, titleSearchCriteria);
+        SearchCriteria searchCriteria2 = new AndSearchCriteria(authorSearchCriteria, yearOfIssueSearchCriteria);
+        SearchCriteria searchCriteria3 = new OrSearchCriteria(authorSearchCriteria, titleSearchCriteria);
+        SearchCriteria searchCriteria4 = new OrSearchCriteria(authorSearchCriteria, yearOfIssueSearchCriteria);
+        SearchCriteria searchCriteria5 = new OrSearchCriteria(titleSearchCriteria, yearOfIssueSearchCriteria);
+
+
+
+
+        printDB.printSearchCriteria(searchCriteria.match(bookDatabase.database.get(5))," Author and title search ");
+
+    }
 }

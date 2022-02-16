@@ -3,6 +3,8 @@ package student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Serv
 import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.Book;
 import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.SearchCriteria;
 
+import java.util.Objects;
+
 public class AndSearchCriteria implements SearchCriteria {
 
     private SearchCriteria leftCondition;
@@ -14,11 +16,21 @@ public class AndSearchCriteria implements SearchCriteria {
         this.rightCondition = rightCondition;
     }
 
+    @Override
     public boolean match(Book book) {
-        // допишите реализацию метода
-        // return true - если книга удовлетворяет и левому и правому условию
-        // иначе return false
-        return true;
+        if (Objects.equals(leftCondition, book.getTitle()) &&
+                Objects.equals(rightCondition, book.getAuthor())){
+            return true;
+        }
+        if (Objects.equals(leftCondition, book.getTitle()) &&
+                Objects.equals(rightCondition, book.getYearOfIssue())){
+            return true;
+        }
+        if (Objects.equals(leftCondition, book.getAuthor()) &&
+                Objects.equals(rightCondition, book.getYearOfIssue())){
+            return true;
+        }
+        return false;
     }
 
 }

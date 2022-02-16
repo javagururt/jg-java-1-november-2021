@@ -7,9 +7,10 @@ public class Book {
     private int id;
     private String title;
     private String author;
-    private int yearOfIssue;
-    private static int count = 1;
 
+    private int yearOfIssue;
+
+    private static int count = 1;
 
 
     public Book(String author, String title) {
@@ -34,6 +35,14 @@ public class Book {
         return this.author;
     }
 
+    public int getYearOfIssue() {
+        return yearOfIssue;
+    }
+
+    public void setYearOfIssue(int yearOfIssue) {
+        this.yearOfIssue = yearOfIssue;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -53,12 +62,8 @@ public class Book {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
+                ", year='" + yearOfIssue+ '\'' +
                 '}';
     }
 
-   // @Override
-   // List<Book> find(SearchCriteria searchCriteria){
-   //     List <Book> findBook = null;
-   //     return findBook;
-   // }
 }

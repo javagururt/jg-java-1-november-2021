@@ -3,7 +3,9 @@ package student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Serv
 import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.Book;
 import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.SearchCriteria;
 
-class YearOfIssueSearchCriteria implements SearchCriteria {
+import java.util.Objects;
+
+public class YearOfIssueSearchCriteria implements SearchCriteria {
 
     private String yearOfIssueToSearch;
 
@@ -11,12 +13,12 @@ class YearOfIssueSearchCriteria implements SearchCriteria {
         this.yearOfIssueToSearch = yearOfIssueToSearch;
     }
 
+    @Override
     public boolean match(Book book) {
-        // допишите реализацию метода
-        // return true - если год выпуска книги совпадает с this.yearOfIssueToSearch
-        // иначе return false
-        // добавьте в класс Book новое свойство - yearOfIssue - год выпуска
-        return true;
+        if (Objects.equals(yearOfIssueToSearch, book.getYearOfIssue())){
+            return true;
+        }
+        return false;
     }
 
 }
