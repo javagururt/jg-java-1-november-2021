@@ -7,8 +7,21 @@ public class Book {
     private String title;
     private String author;
     private static int count = 0;
+    private String yearOfIssue;
 
+    public String getYearOfIssue() {
+        return yearOfIssue;
+    }
 
+    public void setYearOfIssue(String yearOfIssue) {
+        this.yearOfIssue = yearOfIssue;
+    }
+
+    public Book(String title, String author, String yearOfIssue) {
+        this.title = title;
+        this.author = author;
+        this.yearOfIssue = yearOfIssue;
+    }
 
     public Book(String author, String title) {
         this.author = author;
