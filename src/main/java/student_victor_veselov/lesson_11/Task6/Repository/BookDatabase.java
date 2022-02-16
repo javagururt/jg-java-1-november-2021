@@ -1,4 +1,6 @@
-package student_victor_veselov.lesson_11.Task6;
+package student_victor_veselov.lesson_11.Task6.Repository;
+
+import student_victor_veselov.lesson_11.Task6.Model.Book;
 
 import java.util.List;
 import java.util.Optional;
