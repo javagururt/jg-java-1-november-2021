@@ -1,7 +1,8 @@
-package student_stanislav_p.lesson_11_collections.homework.level_3_junior.Service;
+package student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Service;
 
-import student_stanislav_p.lesson_11_collections.homework.level_3_junior.Repository.Book;
-import student_stanislav_p.lesson_11_collections.homework.level_3_junior.Repository.BookDatabase;
+import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.Book;
+import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.BookDatabase;
+import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.SearchCriteria;
 
 import java.util.ArrayList;
 
@@ -108,6 +109,21 @@ public class BookDatabaseImpl implements BookDatabase {
 
             }
         }
+    }
+
+    // ---------------  Task22 ---------
+    @Override
+    public List<Book> find(SearchCriteria searchCriteria) {
+
+        List<Book> searchCriteriaList = new ArrayList<>();
+        for (Book book : database){
+            if (searchCriteria.equals(book.getTitle()) ||
+                    searchCriteria.equals(book.getAuthor()) ||
+                    searchCriteria.equals(book.getYearOfIssue())){
+                searchCriteriaList.add(book);
+            }
+        }
+        return searchCriteriaList;
     }
 
 

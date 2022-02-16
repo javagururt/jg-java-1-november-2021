@@ -1,8 +1,8 @@
-package student_stanislav_p.lesson_11_collections.homework.level_3_junior.UI;
+package student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.UI;
 
-import student_stanislav_p.lesson_11_collections.homework.level_3_junior.Repository.Book;
-import student_stanislav_p.lesson_11_collections.homework.level_3_junior.Service.BookDatabaseImpl;
-import student_stanislav_p.lesson_11_collections.homework.level_3_junior.Service.BookService;
+import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.Book;
+import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Service.BookDatabaseImpl;
+import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Service.BookService;
 
 import java.util.List;
 import java.util.Optional;

@@ -15,6 +15,6 @@ public class AndSearchCriteria implements SearchCriteria {
 
     @Override
     public boolean match(Book book) {
-        return false;
+        return leftCondition.match(book) && rightCondition.match(book);
     }
 }
