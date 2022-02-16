@@ -38,46 +38,25 @@ public class SearchCriteriaDemo {
 
         System.out.println();
         service.saveBook(newBook1);
-
         bookDatabase.database.get(0).setYearOfIssue(1990);
-        printDB.printDB(bookDatabase);
-        printDB.printRecordsNumbers(bookDatabase);
-
-        System.out.println();
         service.saveBook(newBook2);
-
         bookDatabase.database.get(1).setYearOfIssue(1890);
-        printDB.printDB(bookDatabase);
-        printDB.printRecordsNumbers(bookDatabase);
-
-        System.out.println();
         service.saveBook(newBook3);
-
         bookDatabase.database.get(2).setYearOfIssue(1970);
-        printDB.printDB(bookDatabase);
-        printDB.printRecordsNumbers(bookDatabase);
-
-        System.out.println();
         service.saveBook(newBook4);
-
         bookDatabase.database.get(3).setYearOfIssue(2000);
-        printDB.printDB(bookDatabase);
-        printDB.printRecordsNumbers(bookDatabase);
-
-        System.out.println();
         service.saveBook(newBook5);
-
         bookDatabase.database.get(4).setYearOfIssue(2010);
-        printDB.printDB(bookDatabase);
-        printDB.printRecordsNumbers(bookDatabase);
-
-        System.out.println();
 
         Book newBook6 = new Book(("Kuper"), "Zveroboi");
 
         service.saveBook(newBook6);
 
         bookDatabase.database.get(5).setYearOfIssue(1890);
+
+        Book newBook7 = inputBook.newBook(7);
+        service.saveBook(newBook7);
+        bookDatabase.database.get(6).setYearOfIssue(2010);
 
 
         printDB.printDB(bookDatabase);
@@ -96,10 +75,10 @@ public class SearchCriteriaDemo {
         SearchCriteria searchCriteria4 = new OrSearchCriteria(authorSearchCriteria, yearOfIssueSearchCriteria);
         SearchCriteria searchCriteria5 = new OrSearchCriteria(titleSearchCriteria, yearOfIssueSearchCriteria);
 
+        searchCriteria.match(bookDatabase.database.get(5));
 
 
-
-        printDB.printSearchCriteria(searchCriteria.match(bookDatabase.database.get(5))," Author and title search ");
+        //printDB.printSearchCriteria(searchCriteria.match(bookDatabase.database.get(5))," Author and title search ");
 
     }
 }
