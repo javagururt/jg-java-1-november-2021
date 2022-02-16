@@ -4,12 +4,8 @@ public class Dog_2Demo {
 
     public static void main(String[] args) {
 
-
-
         Dog_2 dog = new Dog_2("Teddy", 3);
         dog.voice();
-
-
 
     }
 

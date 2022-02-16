@@ -33,7 +33,6 @@ public class Dog_2 {
             System.out.println("Dog name is " + this.name);
             System.out.println("Dog age  " + this.age);
 
-
         }
     }
 
