@@ -1,4 +1,4 @@
-package student_mihails_nikolajevs.lesson_3.level_7_senoir_;
+package student_mihails_nikolajevs.lesson_3.level_7_senior_;
 /*
 Найти логическую ошибку в коде.
 Исправить и запустить программу так, что бы она выводила

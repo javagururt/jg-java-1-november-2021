@@ -1,4 +1,4 @@
-package student_mihails_nikolajevs.lesson_3.level_7_senoir_;
+package student_mihails_nikolajevs.lesson_3.level_7_senior_;
 
 class BankAccountDemo {
 
