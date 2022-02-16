@@ -5,7 +5,7 @@ import student_victor_veselov.lesson_11.Task6.Repository.SearchCriteria;
 
 public class TitleSearchCriteria implements SearchCriteria {
 
-    private final String titleToSearch;
+    private String titleToSearch;
 
     public TitleSearchCriteria(String titleToSearch) {
         this.titleToSearch = titleToSearch;
@@ -13,9 +13,6 @@ public class TitleSearchCriteria implements SearchCriteria {
 
     @Override
     public boolean match(Book book) {
-        if (book.equals(titleToSearch)){
-            System.out.println(true);
-        }
-        return false;
+        return book.getTitle().equals(titleToSearch);
     }
 }
