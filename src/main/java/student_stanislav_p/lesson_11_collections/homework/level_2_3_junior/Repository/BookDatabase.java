@@ -5,6 +5,7 @@ import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Searc
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 public interface BookDatabase {
 
@@ -27,5 +28,16 @@ public interface BookDatabase {
     void deleteByTitle(String title);
 
     List<Book> find(SearchCriteria searchCriteria);
+
+    /*Set<String> findUniqueAuthors();
+
+    Set<String> findUniqueTitles();
+
+    Set<Book> findUniqueBooks();
+
+    boolean contains(Book book);*/
+
+
+
 
 }

@@ -210,7 +210,7 @@ public class UserEntityRepository {
 
         int dataBaseCount = countDataBase+1;
 
-        UserEntity localBase = currentBase[dataBaseCount+1];
+        UserEntity localBase = currentBase[dataBaseCount];
 
         localBase.setUserID(newID);
         localBase.setUserName(newName);
