@@ -15,15 +15,11 @@ public class UniqueWordFinderTest {
         UniqueWordFinder newFinder = new UniqueWordFinder();
 
 
-        HashSet<String> myHashSet = new HashSet<String>();
+        HashSet<String> myHashSet = new HashSet<>();
 
         myHashSet= (HashSet<String>) newFinder.find(testText);
 
-        Iterator iterator = myHashSet.iterator();
-
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
-        }
+            System.out.println(myHashSet);
 
     }
 }

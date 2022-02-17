@@ -4,10 +4,7 @@ import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repos
 import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.BookDatabase;
 import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.SearchCriteria.SearchCriteria;
 
-import java.util.ArrayList;
-
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class BookDatabaseImpl implements BookDatabase {
 
@@ -124,6 +121,39 @@ public class BookDatabaseImpl implements BookDatabase {
             }
         }
         return searchCriteriaList;
+    }
+
+
+    // ---------------  Task23 ---------
+    @Override
+    public Set <String> findUniqueAuthors(){
+        Set <String> listUniqueAuthors = new HashSet<>();
+        return listUniqueAuthors;
+    }
+
+
+    // ---------------  Task24 ---------
+    @Override
+    public Set<String> findUniqueTitles(){
+        Set <String> listUniqueTitles = new HashSet<>();
+        return listUniqueTitles;
+    }
+
+
+
+    // ---------------  Task25 ---------
+    @Override
+    public Set<Book> findUniqueBooks(){
+        Set <Book> listUniqueBooks = new HashSet<>();
+        return listUniqueBooks;
+    }
+
+
+    // ---------------  Task26 ---------
+    @Override
+    public boolean contains(Book book){
+        boolean isContains=true;
+        return isContains;
     }
 
 

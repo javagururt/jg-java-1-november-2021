@@ -18,21 +18,8 @@ public class AndSearchCriteria implements SearchCriteria {
 
     @Override
     public boolean match(Book book) {
-        System.out.println(leftCondition+"\n "+rightCondition+"\n "+book.getTitle()+"\n "+book.getAuthor()+"\n "+book.getYearOfIssue());
 
-        if (Objects.equals(leftCondition, book.getTitle()) &&
-                Objects.equals(rightCondition, book.getAuthor())){
-            return true;
-        }
-        if (Objects.equals(leftCondition, book.getTitle()) &&
-                Objects.equals(rightCondition, book.getYearOfIssue())){
-            return true;
-        }
-        if (Objects.equals(leftCondition, book.getAuthor()) &&
-                Objects.equals(rightCondition, book.getYearOfIssue())){
-            return true;
-        }
-        return false;
+        return leftCondition.match(book) && rightCondition.match(book);
     }
 
 }
