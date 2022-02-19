@@ -18,11 +18,11 @@ public class BookDatabaseImpl implements BookDatabase {
 
     // ---------------  Task7 ----------
     @Override
-    public boolean delete(int bookId) {
+    public boolean deleteById(int bookId) {
         for (int i = 0; i < database.size(); i++) {
             if (bookId==database.get(i).getId()) {
                 database.remove(i);
-                System.out.println(true);
+                return true;
             }
         }
         return false;
