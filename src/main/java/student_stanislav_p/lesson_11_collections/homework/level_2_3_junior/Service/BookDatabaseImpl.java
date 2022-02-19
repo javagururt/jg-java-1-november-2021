@@ -79,6 +79,15 @@ public class BookDatabaseImpl implements BookDatabase {
         return bookListByTitle;
     }
 
+    @Override
+    public List<Book> findAllBook() {
+        List <Book> bookListAllBook = new ArrayList<>();
+
+        for (Book book : database) bookListAllBook.add(book);
+
+        return bookListAllBook;
+    }
+
     // ---------------  Task12 ---------
     @Override
     public int countAllBooks() {

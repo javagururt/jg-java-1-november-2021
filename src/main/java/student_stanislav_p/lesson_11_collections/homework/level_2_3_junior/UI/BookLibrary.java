@@ -20,6 +20,8 @@ public class BookLibrary {
         menuNumberToActionMap.put(3, new FindByAuthorUIAction(bookDatabase));
         menuNumberToActionMap.put(4, new FindByTitleUIAction(bookDatabase));
         menuNumberToActionMap.put(5, new DeleteByIdUIAction(bookDatabase));
+        menuNumberToActionMap.put(6, new PrintAllDB(bookDatabase));
+
     }
 
     public void run() {
@@ -58,6 +60,8 @@ public class BookLibrary {
         System.out.println("3. Find book by Author");
         System.out.println("4. Find book by Title");
         System.out.println("5. Delete book by ID");
+        System.out.println("6. Print all books");
+
         System.out.println("0. Exit");
 
 
