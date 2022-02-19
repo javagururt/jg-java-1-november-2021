@@ -11,7 +11,7 @@ public interface BookDatabase {
 
     Long save(Book book);
 
-    boolean delete(int bookId);
+    boolean deleteById(int bookId);
 
     boolean delete(Book book);
 
