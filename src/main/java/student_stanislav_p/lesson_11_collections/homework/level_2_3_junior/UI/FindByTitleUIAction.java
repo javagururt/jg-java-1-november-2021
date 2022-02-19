@@ -1,6 +1,11 @@
 package student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.UI;
 
+import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.Book;
 import student_stanislav_p.lesson_11_collections.homework.level_2_3_junior.Repository.BookDatabase;
+
+import java.util.List;
+import java.util.Objects;
+import java.util.Scanner;
 
 class FindByTitleUIAction implements UIAction {
 
@@ -11,9 +16,22 @@ class FindByTitleUIAction implements UIAction {
     }
 
     public void execute() {
-        // запросите все данные о книге с консоли у пользолвателя
-        // создайте экземпляр класса Book (не указывая поле id, его присвоит сама база данных)
-        // сохраните его в базу данных: bookDatabase.save(book);
+        Scanner sc = new Scanner(System.in);
+
+
+        String title = " ";
+
+
+            System.out.println("Enter title ->");
+            title = sc.nextLine();
+
+            System.out.println();
+
+
+        List<Book> listByAuthor = bookDatabase.findByTitle(title);
+
+        System.out.println(listByAuthor);
+
     }
 
 }

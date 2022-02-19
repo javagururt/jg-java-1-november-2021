@@ -43,7 +43,7 @@ class PrintAllDB implements UIAction {
 
         for (int i = 0; i < book.size(); i++) {
 
-            System.out.println("Find book by ID :" + book.get(i).getId() + " Author is - " + book.get(i).getAuthor() + " Title is - " + book.get(i).getTitle() + "Year - " + book.get(i).getYearOfIssue());
+            System.out.println("Find book by ID :" + book.get(i).getId() + " Author is - " + book.get(i).getAuthor() + " Title is - " + book.get(i).getTitle() + "  Year - " + book.get(i).getYearOfIssue());
         }
     }
 
