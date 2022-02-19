@@ -15,7 +15,8 @@ public class AuthorSearchCriteria implements SearchCriteria {
 
     @Override
     public boolean match(Book book) {
-        if (Objects.equals(authorToSearch, book.getAuthor())){
+        String author = book.getAuthor();
+        if (author.equals(authorToSearch)){
             return true;
         }
         return false;

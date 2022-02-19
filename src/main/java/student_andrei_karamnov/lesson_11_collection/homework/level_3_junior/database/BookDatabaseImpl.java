@@ -143,4 +143,8 @@ public class BookDatabaseImpl implements BookDatabase{
     public boolean contains(Book book) {
         return database.contains(book);
     }
+    @Override
+    public List<Book> getDatabase() {
+        return database;
+    }
 }
