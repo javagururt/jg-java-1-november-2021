@@ -1,24 +1,28 @@
-package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain;
+package student_stanislav_p.lesson_11_collections.homework.level_2_3_5_6_junior_middle.Repository;
 
 import java.util.Objects;
 
 public class Book {
-    private Long id;
+    private int id;
     private String title;
     private String author;
-    private String yearOfIssue;
 
-    public Book(String author, String title, String yearOfIssue) {
+    private int yearOfIssue;
+
+    private static int count = 1;
+
+
+    public Book(String author, String title) {
         this.author = author;
         this.title = title;
-        this.yearOfIssue = yearOfIssue;
+        this.id = count++;
     }
 
-    public void setId(Long id) {
+    public void setId(int id) {
         this.id = id;
     }
 
-    public Long getId() {
+    public int getId() {
         return this.id;
     }
 
@@ -30,17 +34,20 @@ public class Book {
         return this.author;
     }
 
-    public String getYearOfIssue() {
+    public int getYearOfIssue() {
         return yearOfIssue;
     }
 
+    public void setYearOfIssue(int yearOfIssue) {
+        this.yearOfIssue = yearOfIssue;
+    }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Book book = (Book) o;
-        return id.equals(book.id) && title.equals(book.title) && author.equals(book.author);
+        return (id==book.id) && title.equals(book.title) && author.equals(book.author);
     }
 
     @Override
@@ -54,7 +61,8 @@ public class Book {
                 "id=" + id +
                 ", title='" + title + '\'' +
                 ", author='" + author + '\'' +
-                ", yearOfIssue='" + yearOfIssue + '\'' +
+                ", year='" + yearOfIssue+ '\'' +
                 '}';
     }
+
 }

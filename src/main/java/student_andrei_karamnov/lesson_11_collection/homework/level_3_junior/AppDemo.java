@@ -5,11 +5,16 @@ public class AppDemo {
 
     public static void main(String[] args) {
     UniqueWordFinder finder = new UniqueWordFinder();
-    String text = "I have a little shadow that goes in and out with me,\n" +
-            "And what can be the use of him is more than I can see\n" +
-            "He is very, very like me from the heels up to the head;\n" +
-            "And I see him jump before me, when I jump into my bed";
-    finder.find(text);
+    String text = "java, guru, find, some, guru, java, words, fantastic, amazing, java, python, javascript, c++,\n" +
+            "java, guru, find, some, guru, java, words, fantastic, amazing, java, python, javascript, c++,\n" +
+            "java, guru, find, some, guru, java, words, fantastic, amazing, java, python, javascript, c++,\n";
+        System.out.println(finder.textUpgrade(text));
+
+
+        System.out.println("-------------------------------------------");
+
+    finder.find(text);   // Хоть почти все дубликаты и отсеились,
+                        // почему все-равно слово java дублируется?
 
     }
 }
