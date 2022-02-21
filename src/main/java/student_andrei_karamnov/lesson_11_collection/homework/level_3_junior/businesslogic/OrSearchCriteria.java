@@ -17,6 +17,8 @@ public class OrSearchCriteria implements SearchCriteria {
 
     @Override
     public boolean match(Book book) {
+        return leftCondition.match(book) || rightCondition.match(book);
+        /*
         if (Objects.equals(leftCondition, book.getTitle()) ||
                 Objects.equals(rightCondition, book.getAuthor())){
             return true;
@@ -29,6 +31,6 @@ public class OrSearchCriteria implements SearchCriteria {
                 Objects.equals(rightCondition, book.getYearOfIssue())){
             return true;
         }
-        return false;
+        return false;*/
     }
 }

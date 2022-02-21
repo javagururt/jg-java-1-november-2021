@@ -15,7 +15,8 @@ public class TitleSearchCriteria implements SearchCriteria {
 
     @Override
     public boolean match(Book book) {
-        if (Objects.equals(titleToSearch, book.getTitle())){
+        String title = book.getTitle();
+        if (title.equals(titleToSearch)){
             return true;
         }
         return false;

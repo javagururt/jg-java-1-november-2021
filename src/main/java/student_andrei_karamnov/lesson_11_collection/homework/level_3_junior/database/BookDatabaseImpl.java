@@ -2,9 +2,7 @@ package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.dat
 
 import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class BookDatabaseImpl implements BookDatabase{
 
@@ -111,5 +109,42 @@ public class BookDatabaseImpl implements BookDatabase{
             }
         }
         return searchCriteriaList;
+    }
+
+    @Override
+    public Set<String> findUniqueAuthors() {
+
+        Set<String> uniqueAuthors = new HashSet<>();
+        for (Book book : database){
+            uniqueAuthors.add(book.getAuthor());
+        }
+        return uniqueAuthors;
+    }
+
+    @Override
+    public Set<String> findUniqueTitles() {
+        Set<String> uniqueTitles = new HashSet<>();
+        for (Book book : database){
+            uniqueTitles.add(book.getTitle());
+        }
+        return uniqueTitles;
+    }
+
+    @Override
+    public Set<Book> findUniqueBooks() {
+        Set<Book> uniqueBooks = new HashSet<>();
+        for (Book book : database){
+            uniqueBooks.add(book);
+        }
+        return uniqueBooks;
+    }
+
+    @Override
+    public boolean contains(Book book) {
+        return database.contains(book);
+    }
+    @Override
+    public List<Book> getDatabase() {
+        return database;
     }
 }
