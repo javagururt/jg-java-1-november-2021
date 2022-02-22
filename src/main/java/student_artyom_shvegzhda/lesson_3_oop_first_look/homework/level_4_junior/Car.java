@@ -1,6 +1,4 @@
-Найти ошибку в коде.
-Исправить и запустить программу.
-Менять можно только класс Car.
+package student_artyom_shvegzhda.lesson_3_oop_first_look.homework.level_4_junior;
 
 class Car {
 
@@ -10,8 +8,8 @@ class Car {
         this.model = newModel;
     }
 
-    String getModel {
-        return this.model
+    String getModel() {
+        return this.model;
     }
 
 }
@@ -25,5 +23,3 @@ class CarDemo {
     }
 
 }
-
-
