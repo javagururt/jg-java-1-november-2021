@@ -137,6 +137,11 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public Set <String> findUniqueAuthors(){
         Set <String> listUniqueAuthors = new HashSet<>();
+
+        for (Book book : database){
+            listUniqueAuthors.add(book.getAuthor());
+        }
+
         return listUniqueAuthors;
     }
 
@@ -145,6 +150,9 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public Set<String> findUniqueTitles(){
         Set <String> listUniqueTitles = new HashSet<>();
+        for (Book book : database){
+            listUniqueTitles.add(book.getTitle());
+        }
         return listUniqueTitles;
     }
 
@@ -154,14 +162,20 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public Set<Book> findUniqueBooks(){
         Set <Book> listUniqueBooks = new HashSet<>();
+        for (Book book : database){
+            listUniqueBooks.add(book);
+        }
         return listUniqueBooks;
     }
 
 
     // ---------------  Task26 ---------
     @Override
-    public boolean contains(Book book){
+    public boolean contains(Book bookSearch){
         boolean isContains=true;
+        for (Book book : database){
+            if (bookSearch.equals(book)) { isContains=true;}
+         else {isContains=false;}}
         return isContains;
     }
 
@@ -169,6 +183,7 @@ public class BookDatabaseImpl implements BookDatabase {
 
     @Override
     public Map<String, List<Book>> getAuthorToBooksMap() {
+
         return null;
     }
 
