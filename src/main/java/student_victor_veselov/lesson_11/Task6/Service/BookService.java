@@ -2,7 +2,9 @@ package student_victor_veselov.lesson_11.Task6.Service;
 
 import student_victor_veselov.lesson_11.Task6.Model.Book;
 import student_victor_veselov.lesson_11.Task6.Repository.BookDatabase;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class BookService {
 
 
@@ -11,6 +13,7 @@ public class BookService {
     public BookService(BookDatabase bookDatabase) {
         this.bookDatabase = bookDatabase;
     }
+
     public void saveBook(Book book){
         bookDatabase.save(book);
     }

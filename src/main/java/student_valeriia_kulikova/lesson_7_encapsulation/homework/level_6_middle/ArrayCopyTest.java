@@ -2,6 +2,9 @@ package student_valeriia_kulikova.lesson_7_encapsulation.homework.level_6_middle
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ArrayCopyTest {
     public static void main(String[] args) {
         int[] testArray = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0};
@@ -35,5 +38,5 @@ public class ArrayCopyTest {
             System.out.println("Test 3 is OK.");
         }
     }
-    }
+}
 

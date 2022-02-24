@@ -1,22 +1,25 @@
 package student_dmitrijs_sinkevics.lesson_9.lvl_2_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorTest {
     public static void main(String[] args) {
-        DayOfTheWeekDetectorTest test=new DayOfTheWeekDetectorTest();
+        DayOfTheWeekDetectorTest test = new DayOfTheWeekDetectorTest();
         test.ifTest();
         test.switchTest();
         test.arrayTest();
     }
 
-    public void ifTest(){
-        int number=5;
+    public void ifTest() {
+        int number = 5;
         String expectedResult="Friday";
         DayOfTheWeekDetectorIfVersion ifVersion=new DayOfTheWeekDetectorIfVersion();
         String realResult=ifVersion.detectDayName(5);
         if (realResult.equals(expectedResult))
-        System.out.println("ifTest is OK");
+            System.out.println("ifTest is OK");
         else
-        System.out.println("ifTest is FAIL");
+            System.out.println("ifTest is FAIL");
     }
 
     public void switchTest(){

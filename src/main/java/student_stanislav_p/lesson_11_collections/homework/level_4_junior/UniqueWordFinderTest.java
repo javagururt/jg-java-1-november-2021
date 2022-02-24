@@ -1,8 +1,10 @@
 package student_stanislav_p.lesson_11_collections.homework.level_4_junior;
 
 import java.util.HashSet;
-import java.util.Iterator;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class UniqueWordFinderTest {
     public static void main(String[] args) {
 
@@ -19,7 +21,7 @@ public class UniqueWordFinderTest {
 
         myHashSet= (HashSet<String>) newFinder.find(testText);
 
-            System.out.println(myHashSet);
+        System.out.println(myHashSet);
 
     }
 }

@@ -1,5 +1,8 @@
 package student_stanislav_p.lesson_11_collections.homework.level_1_intern.Task5;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Book_level_1 {
     private String title;
     private String author;

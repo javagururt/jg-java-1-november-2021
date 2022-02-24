@@ -3,6 +3,9 @@ package student_julija_radchenko.lesson_11_homeworks;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class BookListContainsDemo {
     public static void main(String[] args) {
 

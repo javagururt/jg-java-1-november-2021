@@ -2,6 +2,9 @@ package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.dom
 
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Book {
     private Long id;
     private String title;

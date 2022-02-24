@@ -2,6 +2,9 @@ package student_artyom_shvegzhda.lesson_2_variables.homework.level_1_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_1 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

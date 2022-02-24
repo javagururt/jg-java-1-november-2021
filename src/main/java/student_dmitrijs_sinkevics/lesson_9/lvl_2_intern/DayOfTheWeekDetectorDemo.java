@@ -2,16 +2,19 @@ package student_dmitrijs_sinkevics.lesson_9.lvl_2_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorDemo {
 
     DayOfTheWeekDetector dayOfTheWeekDetector;
 
-    public DayOfTheWeekDetectorDemo(DayOfTheWeekDetector dayOfTheWeekDetector){
-        this.dayOfTheWeekDetector=dayOfTheWeekDetector;
+    public DayOfTheWeekDetectorDemo(DayOfTheWeekDetector dayOfTheWeekDetector) {
+        this.dayOfTheWeekDetector = dayOfTheWeekDetector;
     }
 
     public static void main(String[] args) {
-        DayOfTheWeekDetectorDemo detectorVersion=new DayOfTheWeekDetectorDemo(new DayOfTheWeekDetectorIfVersion());
+        DayOfTheWeekDetectorDemo detectorVersion = new DayOfTheWeekDetectorDemo(new DayOfTheWeekDetectorIfVersion());
         detectorVersion.runIfVersion();
         detectorVersion = new DayOfTheWeekDetectorDemo(new DayOfTheWeekDetectorSwitchVersion());
         detectorVersion.runSwitchVersion();
@@ -42,6 +45,6 @@ public class DayOfTheWeekDetectorDemo {
 
     }
 
-    }
+}
 
 

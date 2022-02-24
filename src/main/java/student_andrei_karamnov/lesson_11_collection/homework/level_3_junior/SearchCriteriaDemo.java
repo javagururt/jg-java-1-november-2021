@@ -1,11 +1,17 @@
 package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior;
 
-import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.businesslogic.*;
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.businesslogic.AndSearchCriteria;
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.businesslogic.AuthorSearchCriteria;
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.businesslogic.OrSearchCriteria;
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.businesslogic.TitleSearchCriteria;
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.businesslogic.YearOfIssueSearchCriteria;
 import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.BookDatabase;
 import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.BookDatabaseImpl;
 import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.SearchCriteria;
 import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class SearchCriteriaDemo {
     /*Продолжаем разработку интерфейса BookDatabase.
 

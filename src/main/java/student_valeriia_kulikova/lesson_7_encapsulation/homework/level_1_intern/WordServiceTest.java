@@ -2,16 +2,19 @@ package student_valeriia_kulikova.lesson_7_encapsulation.homework.level_1_intern
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class WordServiceTest {
     public static void main(String[] args) {
-        String [] testArray = new String [4];
+        String[] testArray = new String[4];
         testArray[0] = "one";
         testArray[1] = "two";
         testArray[2] = "three";
         testArray[3] = "one";
 
         WordService test1 = new WordService();
-        String [] test2 = test1.wordArray("one two three one");
+        String[] test2 = test1.wordArray("one two three one");
         System.out.println("Test Array: " + Arrays.toString(testArray));
         System.out.println("Test test2: " + Arrays.toString(test2));
 

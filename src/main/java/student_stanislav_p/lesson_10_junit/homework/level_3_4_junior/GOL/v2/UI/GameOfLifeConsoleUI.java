@@ -1,7 +1,10 @@
 package student_stanislav_p.lesson_10_junit.homework.level_3_4_junior.GOL.v2.UI;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class GameOfLifeConsoleUI {
-    public void show(boolean[][] generationField){
+    public void show(boolean[][] generationField) {
 
 
         for (int i = 0; i < generationField.length; i++) {

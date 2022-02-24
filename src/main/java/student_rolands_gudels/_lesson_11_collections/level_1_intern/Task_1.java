@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_1 {
-   /* Какие реализации интерфейса java.util.List вы знаете?
-    Напишите программу, которая демонстрирует создание разных списков.
-    PS: чем они отличаются друг от друга?*/
+    /* Какие реализации интерфейса java.util.List вы знаете?
+     Напишите программу, которая демонстрирует создание разных списков.
+     PS: чем они отличаются друг от друга?*/
 //----------------------------------------------------------------------------------
    /* ArrayList - это список на основе массива. LinkedList - связанный список
     ArrayList следует использовать, когда в приоритете доступ по индексу, так
@@ -22,10 +25,10 @@ public class Task_1 {
     перебором с начала или конца (смотря что ближе) до нужного элемента. Дополнительные
     затраты на хранение связки между элементами.на основе элементов и связи между ними.
 */
-   public static void main(String[] args) {
-       // Первый список
-       List<Integer> list1 = new ArrayList<>();
+    public static void main(String[] args) {
+        // Первый список
+        List<Integer> list1 = new ArrayList<>();
 
-       List<Integer> list2 = new LinkedList<>();
-   }
+        List<Integer> list2 = new LinkedList<>();
+    }
 }

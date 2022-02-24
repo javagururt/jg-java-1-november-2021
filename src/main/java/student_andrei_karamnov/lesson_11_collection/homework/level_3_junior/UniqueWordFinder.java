@@ -1,11 +1,17 @@
 package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior;
 
-import java.util.*;
+import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Locale;
+import java.util.Set;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class UniqueWordFinder {
 
 
-    Set<String> find(String text){
+    Set<String> find(String text) {
         String newText = textUpgrade(text);
         Set<String> uniqueWords = new HashSet<>(Arrays.asList(newText.split(" ")));
         System.out.println(uniqueWords);

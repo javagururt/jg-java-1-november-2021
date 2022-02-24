@@ -1,10 +1,18 @@
 package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database;
 
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Optional;
+import java.util.Set;
+
 import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
 
-import java.util.*;
-
-public class BookDatabaseImpl implements BookDatabase{
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "сравнения нужно делать через equals")
+public class BookDatabaseImpl implements BookDatabase {
 
     private List<Book> database = new ArrayList<>();
 

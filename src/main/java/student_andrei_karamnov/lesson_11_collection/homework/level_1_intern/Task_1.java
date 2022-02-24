@@ -5,6 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Task_1 {
 
     public static void main(String[] args) {

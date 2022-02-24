@@ -3,14 +3,17 @@ package student_stanislav_p.lesson_11_collections.homework.level_4_junior;
 import java.util.HashSet;
 import java.util.Set;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class UniqueWordFinder {
 
-    Set<String> find(String text){
-        HashSet<String > myHashSet = new HashSet<String>();
+    Set<String> find(String text) {
+        HashSet<String> myHashSet = new HashSet<String>();
 
         String newText = modifyText(text);
 
-        String [] textArray = newText.split(" ");
+        String[] textArray = newText.split(" ");
 
         for (int i = 0; i < textArray.length; i++) {
 

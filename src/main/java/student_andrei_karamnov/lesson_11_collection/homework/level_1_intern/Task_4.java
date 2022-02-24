@@ -3,9 +3,12 @@ package student_andrei_karamnov.lesson_11_collection.homework.level_1_intern;
 import java.util.LinkedList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
 /*Могут ли реализации интерфейса java.util.List хранить одинаковые
 элементы (дубликаты)? Напишите код программы, который демонстрирует
 ответ на этот вопрос.*/
+@CodeReview(approved = true)
 class Task_4 {
     public static void main(String[] args) {
         List<Integer> list1 = new LinkedList<>();
