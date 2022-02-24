@@ -4,12 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
 /*Продемонстрируйте как:
 - добавить в список элемент (в начало и в конец)
 - узнать длину списка
 - удалить элемент из списка (по интексу и без)
 - узнать пустой список или нет
 - обойти список и вывести на консоль каждый элемент.*/
+@CodeReview(approved = true)
 class IntegerListDemo {
     public static void main(String[] args) {
         List<Integer> integerList = new ArrayList<>();

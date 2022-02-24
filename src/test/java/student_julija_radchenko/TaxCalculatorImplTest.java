@@ -1,11 +1,12 @@
-package java.student_julija_radchenko;
+package student_julija_radchenko;
 
 
 import org.junit.Test;
-import student_julija_radchenko.lesson_10_homeworks.TaxCalculator;
-import student_julija_radchenko.lesson_10_homeworks.TaxCalculatorImpl;
 
 import java.math.BigDecimal;
+
+import student_julija_radchenko.lesson_10_homeworks.TaxCalculator;
+import student_julija_radchenko.lesson_10_homeworks.TaxCalculatorImpl;
 
 import static org.junit.Assert.assertEquals;
 

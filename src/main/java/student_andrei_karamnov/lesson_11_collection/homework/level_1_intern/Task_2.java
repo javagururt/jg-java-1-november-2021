@@ -3,6 +3,8 @@ package student_andrei_karamnov.lesson_11_collection.homework.level_1_intern;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
 /*Что может хранить java.util.List: примитивные типы данных или ссылки на объекты,
 или то и другое?
 
@@ -10,6 +12,7 @@ import java.util.List;
 
 Напишите программу, в которой кодом продемонстрируйте ответ на вопрос.
 */
+@CodeReview(approved = true)
 class Task_2 {
     public static void main(String[] args) {
         List<Integer> primitiveList = new ArrayList<>();  //Integer is a primitive data type

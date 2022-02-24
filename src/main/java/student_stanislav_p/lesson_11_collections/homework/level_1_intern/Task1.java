@@ -4,17 +4,18 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
+/**
+ * В данной программе демострируется использование двух классов ArrayList и LinkedList.
+ */
+
+@CodeReview(approved = true)
+public class Task1 {
+
     /**
-     * В данной программе демострируется использование двух классов
-     * ArrayList и LinkedList.
+     * Максимальное количество элементов в списках
      * */
-
-
-    public class Task1 {
-
-        /**
-         * Максимальное количество элементов в списках
-         * */
         private static final int MAX_COUNT_ELEMENTS = 10;
 
         /**

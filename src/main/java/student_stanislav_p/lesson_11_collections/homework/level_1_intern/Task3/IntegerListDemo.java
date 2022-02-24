@@ -13,16 +13,19 @@ package student_stanislav_p.lesson_11_collections.homework.level_1_intern.Task3;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class IntegerListDemo {
     public static void main(String[] args) {
         List<Integer> integers = new ArrayList<>();
         integers.add(1);
         integers.add(2);
-        System.out.println("Array (list)  range is " +" "+integers.size());
+        System.out.println("Array (list)  range is " + " " + integers.size());
         System.out.println("Now we are clearing array - ");
         integers.clear();
-        System.out.println("Array (list)  range is" +" "+integers.size());
-        System.out.println("Check list for empty - " + " " +integers.isEmpty());
+        System.out.println("Array (list)  range is" + " " + integers.size());
+        System.out.println("Check list for empty - " + " " + integers.isEmpty());
         integers.add(1);
         integers.add(5);
         integers.add(9);

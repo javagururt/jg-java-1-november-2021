@@ -2,9 +2,9 @@ package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.bus
 
 import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.SearchCriteria;
 import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
+import teacher.annotations.CodeReview;
 
-import java.util.Objects;
-
+@CodeReview(approved = true)
 public class AndSearchCriteria implements SearchCriteria {
 
     private SearchCriteria leftCondition;
@@ -17,6 +17,8 @@ public class AndSearchCriteria implements SearchCriteria {
 
     @Override
     public boolean match(Book book) {
+        return leftCondition.match(book) && rightCondition.match(book);
+        /*
         if (Objects.equals(leftCondition, book.getTitle()) &&
                 Objects.equals(rightCondition, book.getAuthor())){
             return true;
@@ -29,6 +31,6 @@ public class AndSearchCriteria implements SearchCriteria {
                 Objects.equals(rightCondition, book.getYearOfIssue())){
             return true;
         }
-        return false;
+        return false;*/
     }
 }

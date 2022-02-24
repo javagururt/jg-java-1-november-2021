@@ -1,11 +1,13 @@
 package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database;
 
-import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
-
 import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public interface BookDatabase {
 
     Long save(Book book);
@@ -35,4 +37,6 @@ public interface BookDatabase {
     Set<Book> findUniqueBooks();
 
     boolean contains(Book book);
+
+    List<Book> getDatabase();
 }

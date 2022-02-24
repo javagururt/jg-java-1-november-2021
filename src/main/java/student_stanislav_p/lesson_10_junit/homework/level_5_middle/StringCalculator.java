@@ -5,8 +5,9 @@ package student_stanislav_p.lesson_10_junit.homework.level_5_middle;
 Пример входной строки: “” or “1” or “1,2”. Для пустой строки сумма равна 0.
  */
 
-import java.util.Scanner;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class StringCalculator {
     int add(String numbers){
 
@@ -49,7 +50,6 @@ public class StringCalculator {
 
         return numbersArray;
     }
-
 
 
     String requestRegex(String numbers) {

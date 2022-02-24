@@ -2,9 +2,9 @@ package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.bus
 
 import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.SearchCriteria;
 import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
+import teacher.annotations.CodeReview;
 
-import java.util.Objects;
-
+@CodeReview(approved = true)
 public class YearOfIssueSearchCriteria implements SearchCriteria {
 
     private String yearOfIssueToSearch;
@@ -15,7 +15,8 @@ public class YearOfIssueSearchCriteria implements SearchCriteria {
 
     @Override
     public boolean match(Book book) {
-        if (Objects.equals(yearOfIssueToSearch, book.getYearOfIssue())){
+        String yearOfIssue = book.getYearOfIssue();
+        if (yearOfIssue.equals(yearOfIssueToSearch)){
             return true;
         }
         return false;

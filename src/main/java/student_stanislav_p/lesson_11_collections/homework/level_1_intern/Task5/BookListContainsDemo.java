@@ -3,6 +3,9 @@ package student_stanislav_p.lesson_11_collections.homework.level_1_intern.Task5;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class BookListContainsDemo {
     public static void main(String[] args) {
 
@@ -27,9 +30,6 @@ public class BookListContainsDemo {
         Book_level_1 bookNotInTheList = new Book_level_1("Author3", "Book3");
         boolean notContainsBook = books.contains(bookNotInTheList);
         System.out.println("Is book in the list? -"+notContainsBook);
-
-
-
 
 
     }

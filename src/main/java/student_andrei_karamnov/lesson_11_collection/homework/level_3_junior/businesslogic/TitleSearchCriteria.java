@@ -2,9 +2,9 @@ package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.bus
 
 import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.SearchCriteria;
 import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
+import teacher.annotations.CodeReview;
 
-import java.util.Objects;
-
+@CodeReview(approved = true)
 public class TitleSearchCriteria implements SearchCriteria {
 
     private String titleToSearch;
@@ -15,7 +15,8 @@ public class TitleSearchCriteria implements SearchCriteria {
 
     @Override
     public boolean match(Book book) {
-        if (Objects.equals(titleToSearch, book.getTitle())){
+        String title = book.getTitle();
+        if (title.equals(titleToSearch)){
             return true;
         }
         return false;

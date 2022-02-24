@@ -1,4 +1,8 @@
 package student_andrei_karamnov.lesson_11_collection.homework.level_1_intern;
+
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
 /*Создайте класс BookListContainsDemo в котором продемонстрируйте как
 делают проверку есть ли в списке книга или её нет с помощью метода
 contains(). Если для правильной работы метода contains() требуется
@@ -19,6 +23,8 @@ boolean containsBook = books.contains(bookInTheList); // должно быть t
 
 Book bookNotInTheList = new Book("A3", "B3");
 boolean notContainsBook = books.contains(bookNotInTheList); // должно быть false*/
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "лучше сгенерировать equals, чем писать самому")
 public class Book {
     private String title;
     private String author;

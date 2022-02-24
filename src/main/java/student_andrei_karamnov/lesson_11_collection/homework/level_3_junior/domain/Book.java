@@ -2,15 +2,19 @@ package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.dom
 
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Book {
     private Long id;
     private String title;
     private String author;
-    private int yearOfIssue;
+    private String yearOfIssue;
 
-    Book(String author, String title) {
+    public Book(String author, String title, String yearOfIssue) {
         this.author = author;
         this.title = title;
+        this.yearOfIssue = yearOfIssue;
     }
 
     public void setId(Long id) {
@@ -29,7 +33,7 @@ public class Book {
         return this.author;
     }
 
-    public int getYearOfIssue() {
+    public String getYearOfIssue() {
         return yearOfIssue;
     }
 
@@ -45,5 +49,15 @@ public class Book {
     @Override
     public int hashCode() {
         return Objects.hash(id, title, author);
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "id=" + id +
+                ", title='" + title + '\'' +
+                ", author='" + author + '\'' +
+                ", yearOfIssue='" + yearOfIssue + '\'' +
+                '}';
     }
 }

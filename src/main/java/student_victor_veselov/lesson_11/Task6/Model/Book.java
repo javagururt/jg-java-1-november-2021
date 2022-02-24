@@ -2,6 +2,9 @@ package student_victor_veselov.lesson_11.Task6.Model;
 
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Book {
     private Long id;
     private String title;

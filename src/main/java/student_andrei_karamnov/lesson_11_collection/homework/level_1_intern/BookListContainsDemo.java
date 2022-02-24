@@ -3,6 +3,9 @@ package student_andrei_karamnov.lesson_11_collection.homework.level_1_intern;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class BookListContainsDemo {
     public static void main(String[] args) {
         List<Book> books = new ArrayList<>();

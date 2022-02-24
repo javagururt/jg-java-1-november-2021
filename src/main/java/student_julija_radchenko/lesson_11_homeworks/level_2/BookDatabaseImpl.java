@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class BookDatabaseImpl implements BookDatabase {
     List<Book> bookList = new ArrayList<>();
     private Long startId = 1L;
@@ -52,8 +55,8 @@ public class BookDatabaseImpl implements BookDatabase {
             if (book.getAuthor().equals(author)) {
                 booksByAuthor.add(book);
             }
-            }return booksByAuthor;
-        }
+        }return booksByAuthor;
+    }
 
     @Override
     public List<Book> findByTitle(String title) {
@@ -86,8 +89,8 @@ public class BookDatabaseImpl implements BookDatabase {
             if(bookInList.equals(book)) {
                 return true;
             }
-            }return false;
-        }
+        }return false;
+    }
 
 
     private boolean isBookIdInBooksList(Long bookId) {
@@ -96,15 +99,15 @@ public class BookDatabaseImpl implements BookDatabase {
                 return true;
             }
         }return false;
-        }
+    }
 private int getBookIndexInListById (Long bookId){
-        int bookIndexInList = 0;
-        for (int i =0; i< bookList.size();i++) {
-            if (bookList.get(i).getId().equals(bookId)) {
-                bookIndexInList = i;
-            }
-        }return bookIndexInList;
+    int bookIndexInList = 0;
+    for (int i =0; i< bookList.size(); i++) {
+        if (bookList.get(i).getId().equals(bookId)) {
+            bookIndexInList = i;
         }
+    }return bookIndexInList;
+}
 
 }
 

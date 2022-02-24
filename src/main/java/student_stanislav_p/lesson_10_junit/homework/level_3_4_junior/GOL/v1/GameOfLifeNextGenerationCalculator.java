@@ -1,12 +1,15 @@
 package student_stanislav_p.lesson_10_junit.homework.level_3_4_junior.GOL.v1;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class GameOfLifeNextGenerationCalculator {
 
     public boolean[][] calculate(boolean[][] currentGeneration) {
 
         int aliveNeighbours = 0;
 
-        boolean [][] newGeneration = new boolean[currentGeneration.length][currentGeneration[0].length];
+        boolean[][] newGeneration = new boolean[currentGeneration.length][currentGeneration[0].length];
 
         for (int i = 0; i < currentGeneration.length; i++) {
             for (int j = 0; j < currentGeneration[0].length; j++) {
@@ -43,11 +46,11 @@ class GameOfLifeNextGenerationCalculator {
         for (int k = 0; k < 8; k++) {
 
 
-           if (isValid(currentGeneration,arrayCoord[k][0],arrayCoord[k][1])) {
+            if (isValid(currentGeneration,arrayCoord[k][0],arrayCoord[k][1])) {
 
-              if (currentGeneration[arrayCoord[k][0]][arrayCoord[k][1]]) {
-                   aliveNeighbours++;}
-           }
+                if (currentGeneration[arrayCoord[k][0]][arrayCoord[k][1]]) {
+                    aliveNeighbours++;}
+            }
 
         }
 

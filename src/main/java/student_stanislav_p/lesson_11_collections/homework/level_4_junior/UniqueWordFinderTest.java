@@ -1,8 +1,10 @@
 package student_stanislav_p.lesson_11_collections.homework.level_4_junior;
 
 import java.util.HashSet;
-import java.util.Iterator;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class UniqueWordFinderTest {
     public static void main(String[] args) {
 
@@ -15,15 +17,11 @@ public class UniqueWordFinderTest {
         UniqueWordFinder newFinder = new UniqueWordFinder();
 
 
-        HashSet<String> myHashSet = new HashSet<String>();
+        HashSet<String> myHashSet = new HashSet<>();
 
         myHashSet= (HashSet<String>) newFinder.find(testText);
 
-        Iterator iterator = myHashSet.iterator();
-
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
-        }
+        System.out.println(myHashSet);
 
     }
 }
