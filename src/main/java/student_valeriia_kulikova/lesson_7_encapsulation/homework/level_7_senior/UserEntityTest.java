@@ -16,7 +16,12 @@ public class UserEntityTest {
         userArray = user.addPerson(userArray,"UserName6","UserUser6",14534531631827L);
 
 
-        System.out.println(Arrays.toString(userArray));
+        UserEntity test2result = user.returnUserEntityByID(5,userArray);
+        System.out.println(test2result);
+
+        UserEntity test3result = user.returnUserEntityByName("Valeriia", userArray);
+        System.out.println(test3result);
+
 
     }
 }
