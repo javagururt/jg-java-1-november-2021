@@ -1,6 +1,7 @@
 package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
@@ -12,7 +13,7 @@ public interface BookDatabase {
 
     Long save(Book book);
 
-    boolean delete(Long bookId);
+    boolean deleteById(Long bookId);
 
     boolean delete(Book book);
 
@@ -39,4 +40,8 @@ public interface BookDatabase {
     boolean contains(Book book);
 
     List<Book> getDatabase();
+
+    Map<String, List<Book>> getAuthorToBooksMap();
+
+    Map<String, Integer> getEachAuthorBookCount();
 }
