@@ -1,11 +1,6 @@
 package student_stanislav_p.lesson_11_collections.homework.level_2_3_5_6_junior_middle.Service;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 
 import student_stanislav_p.lesson_11_collections.homework.level_2_3_5_6_junior_middle.Repository.Book;
 import student_stanislav_p.lesson_11_collections.homework.level_2_3_5_6_junior_middle.Repository.BookDatabase;
@@ -191,21 +186,23 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public Map<String, List<Book>> getAuthorToBooksMap() {
 
-        Set <String> listAuthors = findUniqueAuthors();
+        Map<String, List<Book>> authorsToBookMap = new HashMap<>();
 
-        List <Book> bookList=null;
+        for (Book book : database) {
+            String author = book.getAuthor();
 
-        Map <String, List<Book>> mapAuthorToBooks = null;
-
-        for (int i = 0; i < listAuthors.size(); i++) {
-            for (Book book : database){
-                if (listAuthors.contains(book.getAuthor())) { bookList.add(book);}
+            if (authorsToBookMap.containsKey(author)) {
+                List<Book> books = authorsToBookMap.get(author);
+                books.add(book);
+                authorsToBookMap.put(author, books);
+            } else {
+                List<Book> books = new ArrayList<>();
+                books.add(book);
+                authorsToBookMap.put(author, books);
             }
 
-
         }
-
-        return null;
+        return authorsToBookMap;
     }
 
     // ---------------  Task29 ---------

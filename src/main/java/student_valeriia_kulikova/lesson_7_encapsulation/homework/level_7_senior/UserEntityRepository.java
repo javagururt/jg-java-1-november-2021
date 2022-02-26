@@ -18,7 +18,6 @@ public class UserEntityRepository {
         copyOldArrayToNewArray(userArray,newArray);
 
         newArray [newArray.length-1] = new UserEntity();
-
         newArray [newArray.length-1].setName(userName);
         newArray [newArray.length-1].setSurname(userSurname);
         newArray [newArray.length-1].setPersonalID(userPersonalCode);
@@ -33,5 +32,29 @@ public class UserEntityRepository {
             newarray[i] = oldarray[i];
 
         }
+    }
+
+    public UserEntity returnUserEntityByID (int numberOfID, UserEntity [] array) {
+        UserEntity foundUser = new UserEntity();
+        for (int i = 0; i < array.length; i++) {
+            if (numberOfID == array[i].getId()) {
+                foundUser = array[i];
+            }
+
+        }
+
+        return foundUser;
+    }
+
+    public UserEntity returnUserEntityByName (String name, UserEntity [] array) {
+        UserEntity foundUser = new UserEntity();
+        for (int i = 0; i < array.length; i++) {
+            if (name == array[i].getName()) {
+                foundUser = array[i];
+            }
+
+        }
+
+        return foundUser;
     }
 }
