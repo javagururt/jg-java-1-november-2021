@@ -1,5 +1,8 @@
 package student_jurij_mardusevic.lesson_7_encapsulation.homework.level_1_intern.Task_1_2_3;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class WordServiceTest {
 
     public static void main(String[] args) {

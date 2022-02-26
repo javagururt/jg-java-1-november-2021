@@ -20,7 +20,7 @@ import teacher.annotations.CodeReview;
 @CodeReview(approved = true)
 public class ConcatenateOfStrings {
 
-    public static void main(String[] args) {
+    public static void main (String[] args) {
 
         String userName = "Mihails";
         String greeting = "Hi " + userName + "!";

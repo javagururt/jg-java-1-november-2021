@@ -2,6 +2,9 @@ package student_rolands_gudels.lesson_9_interfaces.level_2_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorDemo implements DayOfTheWeekDetector {
     String findDayOfTheWeek() {
         return null;

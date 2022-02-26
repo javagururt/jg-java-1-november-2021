@@ -2,6 +2,9 @@ package student_stanislav_p.lesson_9_interfaces.homework.level_2_intern;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorDemo {
 
     DayOfTheWeekDetector typeOfInterface;

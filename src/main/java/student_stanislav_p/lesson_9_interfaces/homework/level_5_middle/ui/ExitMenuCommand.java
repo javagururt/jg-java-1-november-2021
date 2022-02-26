@@ -1,5 +1,8 @@
 package student_stanislav_p.lesson_9_interfaces.homework.level_5_middle.ui;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ExitMenuCommand implements MenuCommand {
     @Override
     public void executeCommand() {

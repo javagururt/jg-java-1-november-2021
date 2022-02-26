@@ -1,6 +1,9 @@
 package student_andrei_karamnov.lesson_9_interfaces.homework.level_5_middle.ui;
 
-public class ExitMenuCommand implements MenuCommand{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class ExitMenuCommand implements MenuCommand {
     @Override
     public void executeCommand() {
         System.out.println("Goodbye");

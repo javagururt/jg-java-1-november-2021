@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_9_interfaces.homework.level_4_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class TemperatureConverterTest {
     public static void main(String[] args) {
         TemperatureConverterTest test = new TemperatureConverterTest();
@@ -10,14 +13,17 @@ public class TemperatureConverterTest {
         test.celsiusConverterTest(new CelsiusConverter());
 
     }
+
     void fahrenheitConverterTest(TemperatureConverter converter){
         double realResult = 77;
         checkResult("Fahrenheit converter TEST: ", converter.convert(25), realResult);
     }
+
     void kelvinConverterTest(TemperatureConverter converter){
         double realResult = 298.15;
         checkResult("Kelvin converter TEST: ", converter.convert(25), realResult);
     }
+
     void celsiusConverterTest(TemperatureConverter converter){
         double realResult = 25;
         checkResult("Celsius converter TEST: ", converter.convert(25), realResult);

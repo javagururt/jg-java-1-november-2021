@@ -1,5 +1,8 @@
 package student_rolands_gudels.lesson_9_interfaces.level_1_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_3 {
  /*   Создаём интерфейс для структуры данных список.
 

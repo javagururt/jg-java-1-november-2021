@@ -1,5 +1,8 @@
 package student_stanislav_p.lesson_9_interfaces.homework.level_5_middle.domain;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Book {
 
     private String title;
@@ -21,6 +24,7 @@ public class Book {
     public void setAuthor(String author) {
         this.author = author;
     }
+
     @Override
     public String toString(){
         return "Book Title: "

@@ -21,16 +21,19 @@ package student_stanislav_p.lesson_7_encapsulation.level_7_senior;
 
 import java.util.Scanner;
 
-public class UserEntityRepository {
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
 
+@CodeReview(approved = false)
+@CodeReviewComment(comment = "разделите на классы. Иначе очень сложно разбираться в коде")
+public class UserEntityRepository {
 
 
     public static void main(String[] args) {
 
-        int operationType=0;
+        int operationType = 0;
 
         Scanner scanner = new Scanner(System.in);
-
 
 
         UserEntityRepository dataBase = new UserEntityRepository();
@@ -59,7 +62,6 @@ public class UserEntityRepository {
     }
 
     //----------------------------------------------------------------------------
-
 
 
     int operationTypeChoose () {
@@ -124,14 +126,13 @@ public class UserEntityRepository {
 
         if (!checkResult) {
             System.out.println("This ID is already exist.");
-        }
-            else{
+        } else{
 
-                String  newName = enterStringData("Enter User Name ->");
-                String  newSurname = enterStringData("Enter User Surname ->");
-                String  newPersonalCode = enterStringData("Enter User Personal code ->");
+            String  newName = enterStringData("Enter User Name ->");
+            String  newSurname = enterStringData("Enter User Surname ->");
+            String  newPersonalCode = enterStringData("Enter User Personal code ->");
 
-                addNewUser(currentBase,dataBaseCount,newID,newName,newSurname,newPersonalCode);
+            addNewUser(currentBase,dataBaseCount,newID,newName,newSurname,newPersonalCode);
 
 
         }
@@ -163,9 +164,7 @@ public class UserEntityRepository {
     private static void doDeletingUser(int dataBaseCount ){}
 
 
-
     //----------------------------------------------------------------------------------------
-
 
 
     private static boolean checkNewID(int newID, int dataBaseCount, UserEntity[] currentBase) {
@@ -210,7 +209,7 @@ public class UserEntityRepository {
 
         int dataBaseCount = countDataBase+1;
 
-        UserEntity localBase = currentBase[dataBaseCount+1];
+        UserEntity localBase = currentBase[dataBaseCount];
 
         localBase.setUserID(newID);
         localBase.setUserName(newName);
@@ -218,8 +217,6 @@ public class UserEntityRepository {
         localBase.setUserPersonalCode(newPCode);
 
         return new UserEntity[]{localBase};
-
-
 
 
     }

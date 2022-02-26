@@ -1,6 +1,8 @@
 package student_stanislav_p.lesson_9_interfaces.homework.level_3_junior.Task_6_Function_Interface;
 
 
+import teacher.annotations.CodeReview;
+
 /**
  *
  *      * Applies this function to the given arguments.
@@ -8,7 +10,6 @@ package student_stanislav_p.lesson_9_interfaces.homework.level_3_junior.Task_6_F
  *      * @param t the first function argument
  *      * @param u the second function argument
  *      * @return the function result
-
  *
  *  Функциональный интерфейс — это интерфейс,
  *  который содержит ровно один абстрактный метод,
@@ -19,7 +20,7 @@ package student_stanislav_p.lesson_9_interfaces.homework.level_3_junior.Task_6_F
  * Когда параметром метода является функциональный интерфейс,
  * при вызове этого метода одним из аргументов должен быть блок кода.
  **/
-
+@CodeReview(approved = true)
 public class CarExampleTest {
 
         private static void printTest(Car car, CheckCar check){

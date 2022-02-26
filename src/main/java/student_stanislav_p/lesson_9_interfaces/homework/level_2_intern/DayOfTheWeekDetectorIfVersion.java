@@ -1,6 +1,8 @@
 package student_stanislav_p.lesson_9_interfaces.homework.level_2_intern;
 
 
+import teacher.annotations.CodeReview;
+
 /*Несколько имплементаций одного интерфейса.
 
 Одну и ту же задачу можно решить разными способами.
@@ -20,6 +22,7 @@ package student_stanislav_p.lesson_9_interfaces.homework.level_2_intern;
 Протестируйте все имплементации.
 
 */
+@CodeReview(approved = true)
 class DayOfTheWeekDetectorIfVersion implements DayOfTheWeekDetector {
 
     @Override

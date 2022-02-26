@@ -6,7 +6,10 @@ package student_andrei_karamnov.lesson_9_interfaces.homework.level_3_junior;
 Придумайте и реализуйте его в виде программного кода.
 В коментарии в коде напишите ответ на вопрос.*/
 
+import teacher.annotations.CodeReview;
+
 @FunctionalInterface
+@CodeReview(approved = true)
 public interface FunctionalInterfaceExample<A, B> {
     /**
      * Applies this function to the given arguments.

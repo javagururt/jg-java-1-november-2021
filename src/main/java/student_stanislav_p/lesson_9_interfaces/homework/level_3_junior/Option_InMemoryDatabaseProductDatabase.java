@@ -2,6 +2,9 @@ package student_stanislav_p.lesson_9_interfaces.homework.level_3_junior;
 
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Option_InMemoryDatabaseProductDatabase implements Option_ProductDatabase {
     private Product[] database;
 
@@ -33,5 +36,5 @@ public class Option_InMemoryDatabaseProductDatabase implements Option_ProductDat
         }
         return Optional.ofNullable(null);
     }
-    }
+}
 

@@ -1,11 +1,13 @@
 package student_valeriia_kulikova.lesson_5_arrays_for_loop.homework.level_5_middle;
 
 import java.util.Arrays;
-import java.util.Random;
+
+import teacher.annotations.CodeReview;
 
 /*Создайте класс ArrayUtil.
 Напишите в этом классе метод для создания
 массива целых чисел указанной длины.*/
+@CodeReview(approved = true)
 public class ArrayUtil {
 
     public int[] createArray(int arrayLength) {
