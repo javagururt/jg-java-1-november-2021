@@ -1,10 +1,6 @@
 package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 
 import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
 import teacher.annotations.CodeReview;
@@ -27,9 +23,9 @@ public class BookDatabaseImpl implements BookDatabase {
     }
 
     @Override
-    public boolean delete(Long bookId) {
+    public boolean deleteById(Long bookId) {
         for (int i = 0; i < database.size(); i++) {
-            if(bookId == database.get(i).getId()){
+            if (bookId == database.get(i).getId()) {
                 database.remove(i);
                 return true;
             }
@@ -40,7 +36,7 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public boolean delete(Book book) {
         for (int i = 0; i < database.size(); i++) {
-            if(book.equals(database.get(i))){
+            if (book.equals(database.get(i))) {
                 database.remove(i);
                 return true;
             }
@@ -51,7 +47,7 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public Optional<Book> findById(Long bookId) {
         for (Book book : database) {
-            if (bookId == book.getId()){
+            if (bookId == book.getId()) {
                 return Optional.of(book);
             }
         }
@@ -63,7 +59,7 @@ public class BookDatabaseImpl implements BookDatabase {
 
         List<Book> authorList = new ArrayList<>();
         for (Book book : database) {
-            if(author.equals(book.getAuthor())){
+            if (author.equals(book.getAuthor())) {
                 authorList.add(book);
             }
         }
@@ -74,8 +70,8 @@ public class BookDatabaseImpl implements BookDatabase {
     public List<Book> findByTitle(String title) {
 
         List<Book> titleList = new ArrayList<>();
-        for (Book book : database){
-            if(title.equals(book.getTitle())){
+        for (Book book : database) {
+            if (title.equals(book.getTitle())) {
                 titleList.add(book);
             }
         }
@@ -90,7 +86,7 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public void deleteByAuthor(String author) {
         for (int i = 0; i < database.size(); i++) {
-            if (author.equals(database.get(i).getAuthor())){
+            if (author.equals(database.get(i).getAuthor())) {
                 database.remove(i);
             }
         }
@@ -99,7 +95,7 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public void deleteByTitle(String title) {
         for (int i = 0; i < database.size(); i++) {
-            if (title.equals(database.get(i).getTitle())){
+            if (title.equals(database.get(i).getTitle())) {
                 database.remove(i);
             }
         }
@@ -109,10 +105,10 @@ public class BookDatabaseImpl implements BookDatabase {
     public List<Book> find(SearchCriteria searchCriteria) {
 
         List<Book> searchCriteriaList = new ArrayList<>();
-        for (Book book : database){
+        for (Book book : database) {
             if (searchCriteria.equals(book.getTitle()) ||
                     searchCriteria.equals(book.getAuthor()) ||
-                    searchCriteria.equals(book.getYearOfIssue())){
+                    searchCriteria.equals(book.getYearOfIssue())) {
                 searchCriteriaList.add(book);
             }
         }
@@ -123,7 +119,7 @@ public class BookDatabaseImpl implements BookDatabase {
     public Set<String> findUniqueAuthors() {
 
         Set<String> uniqueAuthors = new HashSet<>();
-        for (Book book : database){
+        for (Book book : database) {
             uniqueAuthors.add(book.getAuthor());
         }
         return uniqueAuthors;
@@ -132,7 +128,7 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public Set<String> findUniqueTitles() {
         Set<String> uniqueTitles = new HashSet<>();
-        for (Book book : database){
+        for (Book book : database) {
             uniqueTitles.add(book.getTitle());
         }
         return uniqueTitles;
@@ -141,7 +137,7 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public Set<Book> findUniqueBooks() {
         Set<Book> uniqueBooks = new HashSet<>();
-        for (Book book : database){
+        for (Book book : database) {
             uniqueBooks.add(book);
         }
         return uniqueBooks;
@@ -151,8 +147,47 @@ public class BookDatabaseImpl implements BookDatabase {
     public boolean contains(Book book) {
         return database.contains(book);
     }
+
     @Override
     public List<Book> getDatabase() {
         return database;
+    }
+
+    @Override
+    public Map<String, List<Book>> getAuthorToBooksMap() {
+
+        Map<String, List<Book>> authorBooks = new HashMap<>();
+
+        for (Book book : database) {
+            String author = book.getAuthor();
+
+            if (authorBooks.containsKey(author)) {
+                List<Book> books = authorBooks.get(author);  //если уже есть такой автор в базе
+                books.add(book);
+                authorBooks.put(author, books);
+            } else {
+                List<Book> books = new ArrayList<>();  //если автора нет, создаем новый список книг автора
+                books.add(book);
+                authorBooks.put(author, books);
+            }
+        }
+        return authorBooks;
+    }
+
+    @Override
+    public Map<String, Integer> getEachAuthorBookCount() {
+        Map<String, Integer> authorBooks = new HashMap<>();
+
+        for (Book book : database) {
+            int counter = 1;
+            String author = book.getAuthor();
+
+            if (authorBooks.containsKey(author)) {
+                authorBooks.put(author, counter + 1);
+            }else {
+                authorBooks.put(author, counter);
+            }
+        }
+        return authorBooks;
     }
 }
