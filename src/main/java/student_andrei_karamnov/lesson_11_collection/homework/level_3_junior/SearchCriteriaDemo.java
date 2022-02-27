@@ -25,11 +25,16 @@ public class SearchCriteriaDemo {
     public static void main(String[] args) {
         BookDatabase bookDatabase = new BookDatabaseImpl();
 
-        Book book1 = new Book("Pushkin", "Dubrovskiy", "1841");
-        Book book2 = new Book("Tolstoy", "Voina i Mir", "1867");
-        Book book3 = new Book("Luts", "Vesna", "1912");
-        Book book4 = new Book("Kuper", "Zveroboi", "1890");
-        Book book5 = new Book("Sholohov", "Tihij Don", "1928");
+        Book book1 = new Book("Pushkin", "Dubrovskiy");
+        book1.setYearOfIssue("1841");
+        Book book2 = new Book("Tolstoy", "Voina i Mir");
+        book2.setYearOfIssue("1867");
+        Book book3 = new Book("Luts", "Vesna");
+        book3.setYearOfIssue("1912");
+        Book book4 = new Book("Kuper", "Zveroboi");
+        book4.setYearOfIssue("1890");
+        Book book5 = new Book("Sholohov", "Tihij Don");
+        book5.setYearOfIssue("1928");
         bookDatabase.save(book1);
         bookDatabase.save(book2);
         bookDatabase.save(book3);
