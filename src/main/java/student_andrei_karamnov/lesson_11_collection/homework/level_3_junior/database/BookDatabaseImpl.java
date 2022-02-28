@@ -25,7 +25,7 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public boolean deleteById(Long bookId) {
         for (int i = 0; i < database.size(); i++) {
-            if (bookId == database.get(i).getId()) {
+            if (bookId.equals(database.get(i).getId())) {
                 database.remove(i);
                 return true;
             }
@@ -47,7 +47,7 @@ public class BookDatabaseImpl implements BookDatabase {
     @Override
     public Optional<Book> findById(Long bookId) {
         for (Book book : database) {
-            if (bookId == book.getId()) {
+            if (bookId.equals(book.getId())) {
                 return Optional.of(book);
             }
         }
