@@ -6,4 +6,4 @@
 
 3. Error
 
-4. Throwable
+4. Throwable  - !!! Базовым классом для всех исключений является класс Throwable.
