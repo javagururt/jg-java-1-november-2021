@@ -37,9 +37,9 @@ public class LightColorDetectorTest {
         realResult = lightColorDetector.detect(waveLength2);
 
         if (realResult == expectedResult) {
-            System.out.println("First Light Color Detector Test " + b + " which is " + color + " is OK ");
+            System.out.println("Second Light Color Detector Test " + b + " which is " + color + " is OK ");
         } else {
-            System.out.println("First Light Color Detector Test " + b + " which is " + color + " is Failed ");
+            System.out.println("Second Light Color Detector Test " + b + " which is " + color + " is Failed ");
         }
 
     }
