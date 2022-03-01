@@ -10,9 +10,9 @@ public class CalculatorTest {
         calculatorTest.multiTest();
         calculatorTest.divTest();
         calculatorTest.isEvenTest();
-        calculatorTest.maxOfTwoNumbersTest();
-
-
+        calculatorTest.maxOfTwoNumbersTestA();
+        calculatorTest.maxOfTwoNumbersTestB();
+        calculatorTest.maxOfTwoNumbersTestC();
     }
 
     public void sumTest (){
@@ -86,7 +86,21 @@ public class CalculatorTest {
             System.out.println("isEvenTEST is FAIL.");
         }
     }
-    public void maxOfTwoNumbersTest () {
+    public void maxOfTwoNumbersTestA () {
+        int firstNumber = 10;
+        int secondNumber = 5;
+        int expectedResult = 10;
+
+        Calculator calculator = new Calculator();
+        int realResult = calculator.maxOfTwoNumbers(firstNumber,secondNumber);
+        if (realResult == expectedResult) {
+            System.out.println(" maxOfTwoNumbersTestA = OK. ");
+        } else {
+            System.out.println(" maxOfTwoNumbersTestA = FAIL. ");
+        }
+    }
+
+    public void maxOfTwoNumbersTestB () {
         int firstNumber = 10;
         int secondNumber = 20;
         int expectedResult = 20;
@@ -94,10 +108,24 @@ public class CalculatorTest {
         Calculator calculator = new Calculator();
         int realResult = calculator.maxOfTwoNumbers(firstNumber,secondNumber);
         if (realResult == expectedResult) {
-            System.out.println(" maxOfTwoNumbersTest = OK. ");
+            System.out.println(" maxOfTwoNumbersTestB = OK. ");
         } else {
-            System.out.println(" maxOfTwoNumbersTest = FAIL. ");
+            System.out.println(" maxOfTwoNumbersTestB = FAIL. ");
         }
     }
 
+
+    public void maxOfTwoNumbersTestC () {
+        int firstNumber = 30;
+        int secondNumber = 30;
+        int expectedResult = 30;
+
+        Calculator calculator = new Calculator();
+        int realResult = calculator.maxOfTwoNumbers(firstNumber,secondNumber);
+        if (realResult == expectedResult) {
+            System.out.println(" maxOfTwoNumbersTestC = OK. ");
+        } else {
+            System.out.println(" maxOfTwoNumbersTestC = FAIL. ");
+        }
+    }
 }
