@@ -7,3 +7,6 @@
 3. Error
 
 4. Throwable
+
+Самый главный класс это Throwable. От него наследуются две ветви классов (Error, Exception).
+А от Error и Exception наследуются уже все остальные.
