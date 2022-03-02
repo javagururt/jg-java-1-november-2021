@@ -15,6 +15,8 @@ class BankApiImplTest {
         BankApi api = new BankApiImpl(clients);
 
         List<Role> roles = new ArrayList();
+
+        System.out.println(roles);
         UserCredentials credentials = new UserCredentials(roles);
 
         try {
@@ -22,10 +24,11 @@ class BankApiImplTest {
             System.out.println("TEST FAIL"); // потому что если мы дошли до этой строки,
             // значит что метод findByUid() не кинул ошибку, а он был должен сделать это
             // так как в credentials нет нужной роли
-        } catch(AccessDeniedException e) {
+        } catch (AccessDeniedException e) {
             System.out.println("TEST OK");
         }
 
     }
-
 }
+
+
