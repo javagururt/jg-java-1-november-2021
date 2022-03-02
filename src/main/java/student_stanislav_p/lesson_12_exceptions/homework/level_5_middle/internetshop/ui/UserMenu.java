@@ -39,6 +39,8 @@ public class UserMenu {
                 System.out.println("3) Enter product description: ");
                 String description = sc.nextLine();
 
+                System.out.println("Your entered:");
+
                 Product product = new Product(title,price,description);
 
                 productService.add(product);
