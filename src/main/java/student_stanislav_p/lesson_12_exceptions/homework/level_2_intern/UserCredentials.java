@@ -1,6 +1,6 @@
 package student_stanislav_p.lesson_12_exceptions.homework.level_2_intern;
 
-import java.util.Collection;
+
 import java.util.List;
 
 public class UserCredentials {
@@ -15,9 +15,9 @@ public class UserCredentials {
         return roles;
     }
 
-    // создайте конструктор класса, в котором вы получаете список ролей
-
-    // создайте get() метод для свойства
+    public boolean hasRole(Role role) {
+        return roles.contains(role);
+    }
 
 }
 
