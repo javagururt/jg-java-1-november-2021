@@ -12,6 +12,6 @@ public class ProductService {
 
     public void add(Product product) {
         validationService.validate(product);
-        System.out.println("SUCCESS");
+        System.out.println("VALIDATION SUCCESS");
     }
 }
