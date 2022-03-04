@@ -6,7 +6,7 @@ import java.util.List;
 
 class ProductValidatorImplTest {
 
-  /*  private ProductValidator validator = new ProductValidatorImpl(ProductTitleValidationRule titleValidationRule,
+  /*private ProductValidator validator = new ProductValidatorImpl(ProductTitleValidationRule titleValidationRule,
             ProductPriceValidationRule priceValidationRule,
             ProductDescriptionValidationRule descriptionValidationRul);
 
