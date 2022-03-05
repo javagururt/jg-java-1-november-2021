@@ -20,9 +20,7 @@ class WordService {
     }
  */
 
-import java.util.Arrays;
-
-class WorldService {
+class WordService {
 
     public static void main(String[] args) {
 
