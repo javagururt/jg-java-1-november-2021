@@ -1,7 +1,10 @@
 package student_eduards_puzirevskis.lesson_9_interfaces.level_2_intern;
 
- interface DayOfTheWeekDetector {
+import teacher.annotations.CodeReview;
 
-  public String detectDayName(int number);
+@CodeReview(approved = true)
+interface DayOfTheWeekDetector {
+
+    public String detectDayName(int number);
 
 }

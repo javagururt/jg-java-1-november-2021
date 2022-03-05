@@ -1,12 +1,14 @@
 package student_eduards_puzirevskis.lesson_9_interfaces.level_3_junior.task_7;
 
+import teacher.annotations.CodeReview;
+
 //@FunctionalInterface
+@CodeReview(approved = true)
+interface ProductDatabase {
 
- interface ProductDatabase {
+    void save(Product product);
 
-  void save(Product product);
-
-  Product findByTitle(String productTitle);
+    Product findByTitle(String productTitle);
 
   /*
   Данный интерфейс не является функциональным, т.к содержит 2 абстрактных метода.

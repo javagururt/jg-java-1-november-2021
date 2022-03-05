@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_12_exceptions.homework.level_1_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ExceptionDemo {
     public static void main(String[] args) {
         try {

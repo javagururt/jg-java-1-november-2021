@@ -1,21 +1,24 @@
 package student_eduards_puzirevskis.lesson_8_inheritance.level_4_junior;
 
- class Square extends Shape {
+import teacher.annotations.CodeReview;
 
-     private double side;
+@CodeReview(approved = true)
+class Square extends Shape {
 
-     public Square(String title, double side) {
-         super(title);
-         this.side = side;
-     }
+    private double side;
 
-     @Override
-     double calculateArea() {
-         return side*side;
-     }
+    public Square(String title, double side) {
+        super(title);
+        this.side = side;
+    }
 
-     @Override
-     double calculatePerimeter() {
-         return side*4;
-     }
- }
+    @Override
+    double calculateArea() {
+        return side*side;
+    }
+
+    @Override
+    double calculatePerimeter() {
+        return side*4;
+    }
+}

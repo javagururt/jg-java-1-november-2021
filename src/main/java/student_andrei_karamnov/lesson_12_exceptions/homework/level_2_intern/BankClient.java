@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_12_exceptions.homework.level_2_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class BankClient {
 
     private String uid;      // уникальный идентификатор клиета

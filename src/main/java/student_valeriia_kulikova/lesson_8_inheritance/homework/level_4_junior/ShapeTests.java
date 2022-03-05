@@ -1,5 +1,8 @@
 package student_valeriia_kulikova.lesson_8_inheritance.homework.level_4_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ShapeTests {
     public static void main(String[] args) {
         Circle circle = new Circle("Circle", 2);
@@ -22,7 +25,7 @@ public class ShapeTests {
         double expectedResultSquarePerimetr = 40;
         boolean testSquareArea = (expectedResultSquareArea == square.calculateArea());
         if (testSquareArea) {
-        System.out.println("Square.Test 1 is OK ");
+            System.out.println("Square.Test 1 is OK ");
         } else {
             System.out.println("Square.Test 1 is FALSE");
         }

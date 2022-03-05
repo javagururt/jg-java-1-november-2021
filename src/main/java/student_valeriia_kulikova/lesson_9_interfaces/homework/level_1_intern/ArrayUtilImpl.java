@@ -4,11 +4,15 @@ import java.util.Arrays;
 import java.util.OptionalInt;
 import java.util.Random;
 
-public class ArrayUtilImpl implements  ArrayUtil{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class ArrayUtilImpl implements ArrayUtil {
     @Override
     public int[] createArray(int arrayLength) {
         return new int[arrayLength];
     }
+
     @Override
     public void fillArrayWithRandomNumbers(int[] array) {
         for (int count = 0; count < array.length; count++) {
@@ -16,10 +20,12 @@ public class ArrayUtilImpl implements  ArrayUtil{
             array[count] = rndValue;
         }
     }
+
     @Override
     public void printArrayToConsole(int[] array) {
         System.out.println(Arrays.toString(array));
     }
+
     @Override
     public int findMaxNumber(int[] array) {
         int maxValue = -1;
@@ -29,6 +35,7 @@ public class ArrayUtilImpl implements  ArrayUtil{
         }
         return maxValue;
     }
+
     @Override
     public int findMinNumber(int[] array) {
         int minValue = -1;

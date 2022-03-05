@@ -1,6 +1,9 @@
 package student_valeriia_kulikova.lesson_8_inheritance.homework.level_2_intern;
 
-class Porshe911 extends Car{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+class Porshe911 extends Car {
 
     private int topSpeed;
 

@@ -1,5 +1,8 @@
 package student_valeriia_kulikova.lesson_9_interfaces.homework.level_2_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorTest {
     public static void main(String[] args) {
 
@@ -12,7 +15,7 @@ public class DayOfTheWeekDetectorTest {
     }
 
 
-        public void test1(){
+    public void test1(){
         DayOfTheWeekDetectorArray dayOfTheWeekDetectorArray = new DayOfTheWeekDetectorArray();
         String result = "Monday";
         boolean testResult1 = (result == dayOfTheWeekDetectorArray.detectDayName(1));

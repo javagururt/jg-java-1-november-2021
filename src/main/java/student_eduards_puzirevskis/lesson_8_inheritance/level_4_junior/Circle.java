@@ -1,21 +1,24 @@
 package student_eduards_puzirevskis.lesson_8_inheritance.level_4_junior;
 
- class Circle extends Shape {
+import teacher.annotations.CodeReview;
 
-     private double radius;
+@CodeReview(approved = true)
+class Circle extends Shape {
 
-     public Circle(String title, double radius) {
-         super(title);
-         this.radius = radius;
-     }
+    private double radius;
 
-     @Override
-     double calculateArea() {
-         return radius*radius*Math.PI;
-     }
+    public Circle(String title, double radius) {
+        super(title);
+        this.radius = radius;
+    }
 
-     @Override
-     double calculatePerimeter() {
-         return 2*radius*Math.PI;
-     }
- }
+    @Override
+    double calculateArea() {
+        return radius*radius*Math.PI;
+    }
+
+    @Override
+    double calculatePerimeter() {
+        return 2*radius*Math.PI;
+    }
+}

@@ -1,18 +1,21 @@
 package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.UI;
 
-import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.BookDatabase;
-import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
-
 import java.util.Optional;
 import java.util.Scanner;
 
-class FindByIdUIAction implements UIAction{
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.BookDatabase;
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+class FindByIdUIAction implements UIAction {
 
     private BookDatabase bookDatabase;
 
     public FindByIdUIAction(BookDatabase bookDatabase) {
         this.bookDatabase = bookDatabase;
     }
+
     // запросите id книги с консоли у пользолвателя
     // поиск книги в базе данных: Optional<Book> bookOpt = bookDatabase.findById(id);
     // вывелите на консоль результаты поиска

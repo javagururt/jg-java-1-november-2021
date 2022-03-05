@@ -3,12 +3,17 @@ package student_andrei_karamnov.lesson_12_exceptions.homework.level_2_intern;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
 class BankApiImplTest {
     public static void main(String[] args) {
         BankApiImplTest test = new BankApiImplTest();
         test.shouldThrowExceptionWhenCredentialsNotHaveAppropriateRole();
     }
 
+    @CodeReviewComment(comment = "не забывайте указывать generics в arrayList - new ArrayList<>()")
     public void shouldThrowExceptionWhenCredentialsNotHaveAppropriateRole() {
         List<BankClient> clients = new ArrayList();
         BankApi api = new BankApiImpl(clients);
