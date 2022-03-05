@@ -11,10 +11,10 @@ class BankApiImplTest {
     }
 
     public void shouldThrowExceptionWhenCredentialsNotHaveAppropriateRole() {
-        List<BankClient> clients = new ArrayList<>();
+        List<BankClient> clients = new ArrayList();
         BankApi api = new BankApiImpl(clients);
 
-        List<Role> roles = new ArrayList<>();
+        List<Role> roles = new ArrayList();
         roles.add(Role.CAN_SEARCH_CLIENTS);
 
         System.out.println(roles);
@@ -22,9 +22,8 @@ class BankApiImplTest {
 
         try {
             api.findByUid(credentials, "1234");
-            System.out.println("TEST FAIL"); // потому что если мы дошли до этой строки,
-            // значит что метод findByUid() не кинул ошибку, а он был должен сделать это
-            // так как в credentials нет нужной роли
+            System.out.println("TEST FAIL");
+
         } catch (AccessDeniedException e) {
             System.out.println("TEST OK");
         }

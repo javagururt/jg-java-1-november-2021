@@ -4,6 +4,7 @@ import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internet
 import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.ProductService;
 import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.validation.ValidationException;
 
+import java.util.Objects;
 import java.util.Scanner;
 
 public class UserMenu {
@@ -28,7 +29,7 @@ public class UserMenu {
                 String title = sc.nextLine();
 
                 System.out.println(title);
-                if (title=="exit") {
+                if (Objects.equals(title, "exit")) {
                     exit=true;
                     break;
                 }
@@ -36,8 +37,10 @@ public class UserMenu {
                 System.out.println("2) Enter product price: ");
                 int price = sc.nextInt();
 
-                System.out.println("3) Enter product description: ");
                 String description = sc.nextLine();
+
+                System.out.println("3) Enter product description: ");
+                description = sc.nextLine();
 
                 System.out.println("Your entered:");
 
