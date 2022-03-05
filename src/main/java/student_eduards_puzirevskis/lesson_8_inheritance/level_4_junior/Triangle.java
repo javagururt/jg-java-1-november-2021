@@ -1,21 +1,24 @@
 package student_eduards_puzirevskis.lesson_8_inheritance.level_4_junior;
 
- class Triangle extends Shape {
+import teacher.annotations.CodeReview;
 
-     private double sideLength;
+@CodeReview(approved = true)
+class Triangle extends Shape {
 
-     public Triangle(String title, double sideLength) {
-         super(title);
-         this.sideLength = sideLength;
-     }
+    private double sideLength;
 
-     @Override
-     double calculateArea() {
-         return (sideLength*sideLength*Math.sqrt(3))/4;
-     }
+    public Triangle(String title, double sideLength) {
+        super(title);
+        this.sideLength = sideLength;
+    }
 
-     @Override
-     double calculatePerimeter() {
-         return sideLength*3;
-     }
- }
+    @Override
+    double calculateArea() {
+        return (sideLength*sideLength*Math.sqrt(3))/4;
+    }
+
+    @Override
+    double calculatePerimeter() {
+        return sideLength*3;
+    }
+}

@@ -23,8 +23,10 @@ public class UserCredentials {
 
 enum Role {
 
-    CAN_SEARCH_CLIENTS  // эта роль должна быть у клиента, для того
+    CAN_SEARCH_CLIENTS,  // эта роль должна быть у клиента, для того
     // что бы он имел возможность делать поиск клиентов
     // в базе данных банка
+    CAN_SEARCH_SENSITIVE_DATA,
+    ADMIN
 
 }

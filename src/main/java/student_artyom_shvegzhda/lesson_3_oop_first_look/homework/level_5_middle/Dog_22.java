@@ -1,7 +1,9 @@
 package student_artyom_shvegzhda.lesson_3_oop_first_look.homework.level_5_middle;
 
-//import java.util.Scanner;
+import teacher.annotations.CodeReview;
 
+//import java.util.Scanner;
+@CodeReview(approved = true)
 class Dog_22 {
     String dogName;
     int dogAge;

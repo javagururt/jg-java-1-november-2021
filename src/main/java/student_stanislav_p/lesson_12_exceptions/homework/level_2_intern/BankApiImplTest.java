@@ -11,10 +11,11 @@ class BankApiImplTest {
     }
 
     public void shouldThrowExceptionWhenCredentialsNotHaveAppropriateRole() {
-        List<BankClient> clients = new ArrayList();
+        List<BankClient> clients = new ArrayList<>();
         BankApi api = new BankApiImpl(clients);
 
-        List<Role> roles = new ArrayList();
+        List<Role> roles = new ArrayList<>();
+        roles.add(Role.CAN_SEARCH_CLIENTS);
 
         System.out.println(roles);
         UserCredentials credentials = new UserCredentials(roles);

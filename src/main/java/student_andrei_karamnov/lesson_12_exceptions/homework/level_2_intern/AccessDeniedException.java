@@ -1,8 +1,11 @@
 package student_andrei_karamnov.lesson_12_exceptions.homework.level_2_intern;
 
-public class AccessDeniedException extends Exception{
+import teacher.annotations.CodeReview;
 
-    public AccessDeniedException (String message){
+@CodeReview(approved = true)
+public class AccessDeniedException extends Exception {
+
+    public AccessDeniedException(String message) {
         super(message);
     }
     /*Почему класс AccessDeniedException в нашем случае

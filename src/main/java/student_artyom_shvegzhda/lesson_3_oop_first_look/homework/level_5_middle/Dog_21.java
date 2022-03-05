@@ -1,5 +1,8 @@
 package student_artyom_shvegzhda.lesson_3_oop_first_look.homework.level_5_middle;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Dog_21 {
     String dogName;
     int dogAge;
@@ -10,6 +13,7 @@ public class Dog_21 {
         this.dogAge = dogAge;
         this.dogColor = dogColor;
     }
+
     public void voice(){
         System.out.println(dogAge + " " + dogName + " " + dogColor);
     }

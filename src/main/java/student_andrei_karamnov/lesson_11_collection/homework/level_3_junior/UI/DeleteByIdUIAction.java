@@ -1,10 +1,12 @@
 package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.UI;
 
-import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.BookDatabase;
-
 import java.util.Scanner;
 
-class DeleteByIdUIAction implements UIAction{
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.BookDatabase;
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+class DeleteByIdUIAction implements UIAction {
 
     BookDatabase bookDatabase;
 

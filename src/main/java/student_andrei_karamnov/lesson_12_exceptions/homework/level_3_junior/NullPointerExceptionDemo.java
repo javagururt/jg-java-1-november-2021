@@ -1,5 +1,8 @@
 package student_andrei_karamnov.lesson_12_exceptions.homework.level_3_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class NullPointerExceptionDemo {
 
 /*Создайте класс NullPointerExceptionDemo

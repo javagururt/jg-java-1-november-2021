@@ -2,6 +2,9 @@ package student_andrei_karamnov.lesson_12_exceptions.homework.level_2_intern;
 
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class UserCredentials {
 
     private List<Role> roles;

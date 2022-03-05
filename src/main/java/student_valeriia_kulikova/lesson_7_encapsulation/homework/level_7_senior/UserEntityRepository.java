@@ -1,8 +1,12 @@
 package student_valeriia_kulikova.lesson_7_encapsulation.homework.level_7_senior;
 
-import java.sql.SQLOutput;
-import java.util.Arrays;
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
 
+@CodeReview(approved = false)
+@CodeReviewComment(comment = "репозиторий отвечает за хранение данных. А у вас получается, что данные хранятся в тесте." +
+        "Лучше вынести массив на уровень класса и работать с ним, а не передавать из метода в метод и т.д." +
+        "Обратите внимание, что ссылочные типы нужно сравнивать при помощи метода equals, а не через ==")
 public class UserEntityRepository {
 
     public UserEntity [] create () {

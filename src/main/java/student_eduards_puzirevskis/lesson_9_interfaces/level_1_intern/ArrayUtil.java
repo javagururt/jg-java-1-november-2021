@@ -1,15 +1,18 @@
 package student_eduards_puzirevskis.lesson_9_interfaces.level_1_intern;
 
- interface ArrayUtil {
+import teacher.annotations.CodeReview;
 
-     int[] createArray(int arrayLength);
+@CodeReview(approved = true)
+interface ArrayUtil {
 
-     void fillArrayWithRandomNumbers(int[] array);
+    int[] createArray(int arrayLength);
 
-     void printArrayToConsole(int[] array);
+    void fillArrayWithRandomNumbers(int[] array);
 
-     int findMaxNumber(int[] array);
+    void printArrayToConsole(int[] array);
 
-     int findMinNumber(int[] array);
+    int findMaxNumber(int[] array);
+
+    int findMinNumber(int[] array);
 
 }

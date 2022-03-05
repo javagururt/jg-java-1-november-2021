@@ -1,24 +1,27 @@
 package student_eduards_puzirevskis.lesson_8_inheritance.level_4_junior;
 
- class Rectangle extends Shape {
+import teacher.annotations.CodeReview;
 
-     private double firstSide;
-     private double secondSide;
+@CodeReview(approved = true)
+class Rectangle extends Shape {
 
-     public Rectangle(String title, double firstSide, double secondSide) {
-         super(title);
-         this.firstSide = firstSide;
-         this.secondSide = secondSide;
-     }
+    private double firstSide;
+    private double secondSide;
+
+    public Rectangle(String title, double firstSide, double secondSide) {
+        super(title);
+        this.firstSide = firstSide;
+        this.secondSide = secondSide;
+    }
 
 
-     @Override
-     double calculateArea() {
-         return firstSide*secondSide;
-     }
+    @Override
+    double calculateArea() {
+        return firstSide*secondSide;
+    }
 
-     @Override
-     double calculatePerimeter() {
-         return firstSide*2 + secondSide*2;
-     }
- }
+    @Override
+    double calculatePerimeter() {
+        return firstSide*2 + secondSide*2;
+    }
+}
