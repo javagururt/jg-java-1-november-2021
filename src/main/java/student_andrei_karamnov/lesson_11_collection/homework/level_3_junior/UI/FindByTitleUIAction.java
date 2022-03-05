@@ -1,12 +1,14 @@
 package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.UI;
 
-import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.BookDatabase;
-import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
-
 import java.util.List;
 import java.util.Scanner;
 
-class FindByTitleUIAction implements  UIAction{
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.BookDatabase;
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+class FindByTitleUIAction implements UIAction {
 
     private BookDatabase bookDatabase;
 

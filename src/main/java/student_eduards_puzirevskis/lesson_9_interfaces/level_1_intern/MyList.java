@@ -1,6 +1,9 @@
 package student_eduards_puzirevskis.lesson_9_interfaces.level_1_intern;
 
- interface MyList {
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+interface MyList {
      /*
      public void addToArray(int index, smthg to add);
      метод, который должен добавлять элемент в массив в нужную ячейку, не удаляя ее содержимое, если что-то

@@ -1,22 +1,25 @@
 package student_eduards_puzirevskis.lesson_9_interfaces.level_3_junior.task_6;
 
- @FunctionalInterface
-  interface FunctionalInterfaceExample {
+import teacher.annotations.CodeReview;
 
-     void method();
+@CodeReview(approved = true)
+@FunctionalInterface
+interface FunctionalInterfaceExample {
 
-     default int defaultMethod() {
-         return 0;
-     }
+    void method();
 
-     /*
-     Функциональный интерфейс это интерфейс у которого только один абстрактный метод.
-     Функциональный интерфейс может содержать любое количество методов по умолчанию или статических методов.
-     Аннотация @FunctionalInterface сгенерит ошибку, если интерфейс не является функциональным.
-     /*
+    default int defaultMethod() {
+        return 0;
+    }
 
-      */
-     int hashCode();
+    /*
+    Функциональный интерфейс это интерфейс у которого только один абстрактный метод.
+    Функциональный интерфейс может содержать любое количество методов по умолчанию или статических методов.
+    Аннотация @FunctionalInterface сгенерит ошибку, если интерфейс не является функциональным.
+    /*
+
+     */
+    int hashCode();
       /*
      Так же функциональный интерфейс может иметь методы класса Object
       */

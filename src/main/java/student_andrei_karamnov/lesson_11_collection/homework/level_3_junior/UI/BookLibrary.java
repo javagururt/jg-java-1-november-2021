@@ -1,12 +1,14 @@
 package student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.UI;
 
-import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.BookDatabase;
-import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.BookDatabaseImpl;
-
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.BookDatabase;
+import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.database.BookDatabaseImpl;
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class BookLibrary {
     private Map<Integer, UIAction> menuNumberToActionMap;
 

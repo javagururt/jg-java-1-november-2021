@@ -1,6 +1,9 @@
 package student_eduards_puzirevskis.lesson_8_inheritance.level_3_junior;
 
- class Task_10 {
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+class Task_10 {
 /*
   Что такое абстрактный класс?
   Можно ли создать экземпляр абстрактного класса

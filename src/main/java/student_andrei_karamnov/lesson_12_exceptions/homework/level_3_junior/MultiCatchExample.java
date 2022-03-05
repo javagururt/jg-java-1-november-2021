@@ -2,6 +2,9 @@ package student_andrei_karamnov.lesson_12_exceptions.homework.level_3_junior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class MultiCatchExample {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);

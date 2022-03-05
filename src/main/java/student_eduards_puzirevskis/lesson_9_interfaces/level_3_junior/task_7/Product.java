@@ -1,13 +1,16 @@
 package student_eduards_puzirevskis.lesson_9_interfaces.level_3_junior.task_7;
 
- class Product {
-  private String title;
+import teacher.annotations.CodeReview;
 
-  public Product(String title) {
-   this.title = title;
-  }
+@CodeReview(approved = true)
+class Product {
+    private String title;
 
-  public String getTitle() {
-   return this.title;
-  }
+    public Product(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return this.title;
+    }
 }

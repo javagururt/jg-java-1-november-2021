@@ -1,5 +1,12 @@
 package student_valeriia_kulikova.lesson_7_encapsulation.homework.level_7_senior;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "лучше оставить дефолтные значение. Так как например пустая строка это не null." +
+        " В этом случае нужно делать доп проверки на null и на пустую строку")
+
 public class UserEntity {
     private int id = 0;
     private String name = "";
@@ -8,7 +15,7 @@ public class UserEntity {
 
     @Override
     public String toString() {
-        return "\n"+"UserEntity{" +
+        return "\n" + "UserEntity{" +
                 "id=" + id +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
