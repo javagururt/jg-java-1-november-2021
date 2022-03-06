@@ -1,4 +1,4 @@
-package student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop;
+package student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.product;
 
 
 import java.util.Objects;
