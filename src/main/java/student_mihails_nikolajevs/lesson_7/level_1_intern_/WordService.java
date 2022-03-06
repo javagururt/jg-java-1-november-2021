@@ -27,7 +27,7 @@ class WordService {
         System.out.println(print());
     }
 
-    static String print(){
+    static String print() {
 
     String s = " H o w  M u c h is T h e Fish Fish Fish!!!";
     String word = findWords(s);
