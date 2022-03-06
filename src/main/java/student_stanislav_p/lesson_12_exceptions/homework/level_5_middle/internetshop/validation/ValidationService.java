@@ -1,8 +1,9 @@
 package student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.validation;
 
-import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.Product;
+import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.product.Product;
 
 public class ValidationService {
+
 
     public void validate(Product product) {
         if (product.getTitle() == null) {

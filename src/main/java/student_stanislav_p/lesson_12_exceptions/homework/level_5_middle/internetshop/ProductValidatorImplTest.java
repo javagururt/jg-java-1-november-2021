@@ -1,14 +1,18 @@
 package student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop;
 
+import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.product.Product;
 import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.validation.*;
 
 import java.util.List;
 
 class ProductValidatorImplTest {
 
-  /*private ProductValidator validator = new ProductValidatorImpl(ProductTitleValidationRule titleValidationRule,
-            ProductPriceValidationRule priceValidationRule,
-            ProductDescriptionValidationRule descriptionValidationRul);
+    private ProductTitleValidationRule titleValidationRule = new ProductTitleValidationRule();
+    private ProductPriceValidationRule priceValidationRule = new ProductPriceValidationRule();
+    private ProductDescriptionValidationRule descriptionValidationRule = new ProductDescriptionValidationRule();
+    private ProductValidator validator = new ProductValidatorImpl(titleValidationRule, priceValidationRule, descriptionValidationRule);
+
+
 
     public static void main(String[] args) {
         ProductValidatorImplTest test = new ProductValidatorImplTest();
@@ -46,6 +50,6 @@ class ProductValidatorImplTest {
         }
     }
 
-   */
+
 
 }
