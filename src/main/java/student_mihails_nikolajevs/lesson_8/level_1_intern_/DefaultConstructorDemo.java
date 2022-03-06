@@ -1,6 +1,6 @@
-package student_mihails_nikolajevs.lesson_8;
+package student_mihails_nikolajevs.lesson_8.level_1_intern_;
 
-import java.util.Scanner;
+import student_mihails_nikolajevs.lesson_8.level_1_intern_.DefaultConstructor;
 
 class DefaultConstructorDemo {
 

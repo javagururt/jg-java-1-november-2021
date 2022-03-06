@@ -1,4 +1,4 @@
-package student_mihails_nikolajevs.lesson_8;
+package student_mihails_nikolajevs.lesson_8.level_1_intern_;
 /*
 Нужно ли в классе создавать дефолтный конструктор
 (конструктор по умолчанию)
