@@ -14,16 +14,16 @@ public class ProductTitleValidationRule implements FieldValidationRule {
          **/
 
         if (product.getTitle() == null){
-            throw new ValidationException("RULE-1", "Product name is null", "title");
+            throw new ValidationException("RULE №1", "Title can not be empty", "title");
         }
         if (product.getTitle().length() < 3){
-            throw new ValidationException("RULE-2", "Title must me longer than 3 characters", "title");
+            throw new ValidationException("RULE №2", "Title must me longer than 3 characters", "title");
         }
         if (product.getDescription().length() > 100){
-            throw new ValidationException("RULE-3", "Description couldn't be longer than 100 characters", "title");
+            throw new ValidationException("RULE №3", "Description couldn't be longer than 100 characters", "title");
         }
         if (!product.getTitle().matches("[a-zA-Z].*") && product.getDescription().matches("[a-zA-Z].*")){
-            throw new ValidationException("RULE-4", "Title and description must be in Latin", "title");
+            throw new ValidationException("RULE №4", "Title and description must be in Latin", "title");
         }
     }
 

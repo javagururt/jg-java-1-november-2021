@@ -22,6 +22,15 @@ public class ProductValidatorImpl implements ProductValidator {
 
 
         @Override
+        public String toString() {
+                return "ProductValidatorImpl{" +
+                        "titleValidationRule=" + titleValidationRule +
+                        ", priceValidationRule=" + priceValidationRule +
+                        ", descriptionValidationRule=" + descriptionValidationRule +
+                        '}';
+        }
+
+        @Override
         public List<ValidationException> validate(Product product) {
                 List<ValidationException> exceptions = new ArrayList<>();
                 try {

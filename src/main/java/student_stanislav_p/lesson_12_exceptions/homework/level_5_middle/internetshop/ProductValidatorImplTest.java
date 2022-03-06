@@ -18,16 +18,13 @@ class ProductValidatorImplTest {
         ProductValidatorImplTest test = new ProductValidatorImplTest();
         test.rule1_v1();
         test.rule1_v2();
-        // тесты на остальные правила допишите по аналогии
-        // тестов будет много! напишите их все!
-        // они пишутся легко, и если вы напишите их все то ваше решение будет полностью протестировано!
-    }
+         }
 
     public void rule1_v1() {
         Product product = new Product(null, 1, "description");
         List<ValidationException> exceptions = validator.validate(product);
         checkResult(exceptions.size() == 1, "rule1");
-        checkResult(exceptions.get(0).getRuleName().equals("RULE-1"), "rule1");
+        checkResult(exceptions.get(0).getRuleName().equals("RULE №1"), "rule1");
         checkResult(exceptions.get(0).getFieldName().equals("title"), "rule1");
         checkResult(exceptions.get(0).getDescription().equals("Title can not be empty"), "rule1");
     }
@@ -35,8 +32,10 @@ class ProductValidatorImplTest {
     public void rule1_v2() {
         Product product = new Product("", 1, "description");
         List<ValidationException> exceptions = validator.validate(product);
+        System.out.println(exceptions.toString());
+
         checkResult(exceptions.size() == 1, "rule1");
-        checkResult(exceptions.get(0).getRuleName().equals("RULE-1"), "rule1");
+        checkResult(exceptions.get(0).getRuleName().equals("RULE №1"), "rule1");
         checkResult(exceptions.get(0).getFieldName().equals("title"), "rule1");
         checkResult(exceptions.get(0).getDescription().equals("Title can not be empty"), "rule1");
     }

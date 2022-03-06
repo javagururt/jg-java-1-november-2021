@@ -24,6 +24,15 @@ public class ValidationException extends RuntimeException {
         return description;
     }
 
+    @Override
+    public String toString() {
+        return "ValidationException{" +
+                "ruleName='" + ruleName + '\'' +
+                ", description='" + description + '\'' +
+                ", fieldName='" + fieldName + '\'' +
+                '}';
+    }
+
     public String getFieldName() {
         return fieldName;
     }
