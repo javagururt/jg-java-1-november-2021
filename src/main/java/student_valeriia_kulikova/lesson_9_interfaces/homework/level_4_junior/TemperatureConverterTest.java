@@ -21,10 +21,7 @@ public class TemperatureConverterTest {
 
     }
 
-     double celsiusConverterTest (double celsiusTemperature) {
-
-        return type.convert(celsiusTemperature);
-    }
+    double celsiusConverterTest (double celsiusTemperature) { return type.convert(celsiusTemperature);}
 
     double fahrenheitConverterTest ( double celsiusTemperature) {
         return type.convert(celsiusTemperature);
