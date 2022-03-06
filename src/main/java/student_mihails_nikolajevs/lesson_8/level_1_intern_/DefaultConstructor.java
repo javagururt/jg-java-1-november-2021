@@ -1,4 +1,4 @@
-package student_mihails_nikolajevs.lesson_8;
+package student_mihails_nikolajevs.lesson_8.level_1_intern_;
 /*
 то такое дефолтный конструктор
 или как его еще называют конструктор по умолчанию?
