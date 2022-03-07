@@ -28,7 +28,7 @@ public class ValidationService {
         }
 
         if (product.getDescription().length() > 2000) {
-            throw new ValidationException("RULE №9", "Title and description must be in Latin", "description"");
+            throw new ValidationException("RULE №9", "Title and description must be in Latin", "description");
         }
     }
 }
