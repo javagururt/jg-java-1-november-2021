@@ -16,11 +16,11 @@ class ProductValidatorImplTest {
 
     public static void main(String[] args) {
         ProductValidatorImplTest test = new ProductValidatorImplTest();
-        test.rule1_v1();
-        test.rule1_v2();
+        test.rule1();
+        test.rule2();
          }
 
-    public void rule1_v1() {
+    public void rule1() {
         Product product = new Product(null, 1, "description");
         List<ValidationException> exceptions = validator.validate(product);
         checkResult(exceptions.size() == 1, "rule1");
@@ -29,15 +29,15 @@ class ProductValidatorImplTest {
         checkResult(exceptions.get(0).getDescription().equals("Title can not be empty"), "rule1");
     }
 
-    public void rule1_v2() {
+    public void rule2() {
         Product product = new Product("", 1, "description");
         List<ValidationException> exceptions = validator.validate(product);
         System.out.println(exceptions.toString());
 
-        checkResult(exceptions.size() == 1, "rule1");
-        checkResult(exceptions.get(0).getRuleName().equals("RULE №1"), "rule1");
-        checkResult(exceptions.get(0).getFieldName().equals("title"), "rule1");
-        checkResult(exceptions.get(0).getDescription().equals("Title can not be empty"), "rule1");
+        checkResult(exceptions.size() == 1, "rule2");
+        checkResult(exceptions.get(0).getRuleName().equals("RULE №2"), "rule2");
+        checkResult(exceptions.get(0).getFieldName().equals("title"), "rule2");
+        checkResult(exceptions.get(0).getDescription().equals("Title must me longer than 3 characters"), "rule2");
     }
 
 
