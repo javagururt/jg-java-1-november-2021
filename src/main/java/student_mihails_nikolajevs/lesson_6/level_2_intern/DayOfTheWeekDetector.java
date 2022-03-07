@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class DayOfTheWeekDetector {
 
-     public int getDayNumberFromUser() {
+
+    public int getDayNumberFromUser() {
          Scanner scanner = new Scanner(System.in);
          System.out.print("Please Enter Day Number Between 1 and 7 : ");
          return scanner.nextInt();
