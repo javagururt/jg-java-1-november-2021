@@ -18,7 +18,10 @@ class ProductValidatorImplTest {
         ProductValidatorImplTest test = new ProductValidatorImplTest();
         test.rule1();
         test.rule2();
-         }
+        test.rule3();
+        test.rule4();
+
+    }
 
     public void rule1() {
         Product product = new Product(null, 1, "description");
@@ -40,6 +43,27 @@ class ProductValidatorImplTest {
         checkResult(exceptions.get(0).getDescription().equals("Title must me longer than 3 characters"), "rule2");
     }
 
+    public void rule3() {
+        Product product = new Product("AbcdefghijklmnopqrstuvwxyzAbcdefghijklmnopqrstuvwxyzAbcdefghijklmnopqrstuvwxyzAbcdefghijklmnopqrstuvwxyz", 1, "description");
+        List<ValidationException> exceptions = validator.validate(product);
+        System.out.println(exceptions.toString());
+
+        checkResult(exceptions.size() == 1, "rule3");
+        checkResult(exceptions.get(0).getRuleName().equals("RULE №3"), "rule3");
+        checkResult(exceptions.get(0).getFieldName().equals("title"), "rule3");
+        checkResult(exceptions.get(0).getDescription().equals("Title couldn't be longer than 100 characters"), "rule3");
+    }
+
+    public void rule4() {
+        Product product = new Product("Abcdабв", 1, "description");
+        List<ValidationException> exceptions = validator.validate(product);
+        System.out.println(exceptions.toString());
+
+        checkResult(exceptions.size() == 1, "rule4");
+        checkResult(exceptions.get(0).getRuleName().equals("RULE №4"), "rule4");
+        checkResult(exceptions.get(0).getFieldName().equals("title"), "rule4");
+        checkResult(exceptions.get(0).getDescription().equals("Title must be in Latin"), "rule4");
+    }
 
     private void checkResult(boolean condition, String testName) {
         if (condition) {
