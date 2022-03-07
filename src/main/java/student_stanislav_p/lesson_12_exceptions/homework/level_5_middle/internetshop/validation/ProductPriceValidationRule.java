@@ -10,6 +10,14 @@ public class ProductPriceValidationRule implements FieldValidationRule {
         - RULE-5: не должна быть пустой
         - RULE-6: должна быть больше 0
          **/
+
+        if (product.getPrice() == null){
+            throw new ValidationException("RULE №5", "Price can not be empty", "price");
+        }
+        if (product.getPrice() <= 0){
+            throw new ValidationException("RULE №6", "Price must me bigger than 0", "price");
+        }
+
     }
 
 }

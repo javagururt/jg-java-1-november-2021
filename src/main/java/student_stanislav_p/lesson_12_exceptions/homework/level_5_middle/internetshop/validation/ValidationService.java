@@ -7,28 +7,28 @@ public class ValidationService {
 
     public void validate(Product product) {
         if (product.getTitle() == null) {
-            throw new ValidationException("Product title is null");
+            throw new ValidationException("Rule №1","Product title is null","title");
         }
         if (product.getTitle().length() < 3) {
-            throw new ValidationException("Product title length less than 3");
+            throw new ValidationException("RULE №2", "Title must me longer than 3 characters", "title");
         }
         if (product.getTitle().length() > 100) {
-            throw new ValidationException("Product title more than 100 symbols");
+            throw new ValidationException("RULE №3", "Description couldn't be longer than 100 characters", "title");
         }
         
         if (product.getPrice() == null) {
-            throw new ValidationException("Product price is null");
+            throw new ValidationException("RULE №5", "Price can not be empty", "price");
         }
         if (product.getPrice() <= 0) {
-            throw new ValidationException("Product price less than 0");
+            throw new ValidationException("RULE №6", "Price must me bigger than 0", "price");
         }
 
         if (product.getDescription() == null) {
-            throw new ValidationException("Product description is null");
+            throw new ValidationException("RULE №8", "Description couldn't be longer than 2000 characters", "description");
         }
 
-        if (product.getDescription().length() > 1000) {
-            throw new ValidationException("Product description more than 1000 symbols");
+        if (product.getDescription().length() > 2000) {
+            throw new ValidationException("RULE №9", "Title and description must be in Latin", "description"");
         }
     }
 }
