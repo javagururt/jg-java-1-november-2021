@@ -1,28 +1,30 @@
 package student_rolands_gudels._lesson_11_collections.level_1_intern;
 
 public class Task_5 {
-   /* Дан класс Book:
 
-    public class Book {
-        private String title;
-        private String author;
 
-        Book(String author, String title) {
-            this.author = author;
-            this.title = title;
+    public static class Book {
+
+            private String title;
+            private String author;
+
+            Book(String author, String title) {
+                this.author = author;
+                this.title = title;
+            }
+
+            public String getTitle () {
+                return this.title;
+            }
+
+            public String getAuthor () {
+                return this.author;
+            }
+
         }
 
-        public String getTitle() {
-            return this.title;
-        }
 
-        public String getAuthor() {
-            return this.author;
-        }
-
-    }
-
-    Создайте класс BookListContainsDemo в котором продемонстрируйте как
+    /*Создайте класс BookListContainsDemo в котором продемонстрируйте как
     делают проверку есть ли в списке книга или её нет с помощью метода
     contains(). Если для правильной работы метода contains() требуется
     внести изменения в класс Book, сделайте это!
@@ -42,4 +44,6 @@ books.add(book2);
 
     Book bookNotInTheList = new Book("A3", "B3");
     boolean notContainsBook = books.contains(bookNotInTheList); // должно быть false*/
+
+    // Done
 }
