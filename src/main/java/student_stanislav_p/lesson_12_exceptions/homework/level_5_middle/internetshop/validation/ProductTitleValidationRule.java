@@ -19,11 +19,11 @@ public class ProductTitleValidationRule implements FieldValidationRule {
         if (product.getTitle().length() < 3){
             throw new ValidationException("RULE №2", "Title must me longer than 3 characters", "title");
         }
-        if (product.getDescription().length() > 100){
-            throw new ValidationException("RULE №3", "Description couldn't be longer than 100 characters", "title");
+        if (product.getTitle().length() > 100){
+            throw new ValidationException("RULE №3", "Title couldn't be longer than 100 characters", "title");
         }
-        if (!product.getTitle().matches("[a-zA-Z].*") && product.getDescription().matches("[a-zA-Z].*")){
-            throw new ValidationException("RULE №4", "Title and description must be in Latin", "title");
+        if (product.getTitle().matches("[a-zA-Z].*")){
+            throw new ValidationException("RULE №4", "Title must be in Latin", "title");
         }
     }
 

@@ -13,6 +13,13 @@ public class ProductDescriptionValidationRule implements FieldValidationRule {
          **/
 
 
+        if (product.getDescription().length() > 2000){
+            throw new ValidationException("RULE №8", "Description couldn't be longer than 2000 characters", "description");
+        }
+        if (product.getDescription().matches("[a-zA-Z].*")){
+            throw new ValidationException("RULE №9", "Description must be in Latin", "description");
+        }
+
     }
 
 }
