@@ -33,7 +33,7 @@ class ProductValidatorImplTest {
     }
 
     public void rule2() {
-        Product product = new Product("", 1, "description");
+        Product product = new Product("ad", 1, "description");
         List<ValidationException> exceptions = validator.validate(product);
         System.out.println(exceptions.toString());
 
