@@ -1,4 +1,4 @@
-package student_eduards_puzirevskis.lesson_11_collections.level_2_intern;
+package student_eduards_puzirevskis.lesson_11_collections.level_2_intern_3_junior;
 
 import java.util.Objects;
 
