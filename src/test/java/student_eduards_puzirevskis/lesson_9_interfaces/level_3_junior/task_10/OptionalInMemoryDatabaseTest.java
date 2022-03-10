@@ -1,14 +1,16 @@
-package student_eduards_puzirevskis.lesson_9_interfaces.level_3_junior.task_8;
+package student_eduards_puzirevskis.lesson_9_interfaces.level_3_junior.task_10;
 
 import org.junit.Test;
 
+import java.util.Optional;
+
 import static org.junit.Assert.*;
 
-public class InMemoryDatabaseTest {
+public class OptionalInMemoryDatabaseTest {
 
     @Test
     public void save() {
-        InMemoryDatabase memoryDatabase = new InMemoryDatabase();
+        OptionalInMemoryDatabase memoryDatabase = new OptionalInMemoryDatabase();
         Product pen = new Product("Pen");
         Product glue = new Product("Glue");
         Product pencil = new Product("Pencil");
@@ -40,23 +42,22 @@ public class InMemoryDatabaseTest {
                 new Product("Pencil"),
                 new Product("Marker"),
                 new Product("Mouse")};
-        InMemoryDatabase memoryDatabase = new InMemoryDatabase();
-        Product actual = memoryDatabase.findByTitle(victim,"Marker");
+        OptionalInMemoryDatabase memoryDatabase = new OptionalInMemoryDatabase();
+        Optional<Product> actual = memoryDatabase.findByTitle(victim, "Marker");
         Product expected = new Product("Marker");
 
-        assertEquals(expected.getTitle(), actual.getTitle());
+        assertEquals(expected.getTitle(),actual.get().getTitle());
     }
 
     @Test
-    public void shouldReturnNull() {
+    public void shouldReturnEmpty() {
         Product[] victim = {new Product("Pen"),
                 new Product("Glue"),
                 new Product("Pencil"),
                 new Product("Marker"),
                 new Product("Mouse")};
-        InMemoryDatabase memoryDatabase = new InMemoryDatabase();
-        Product actual = memoryDatabase.findByTitle(victim,"Gun");
-
-        assertNull(actual);
+        OptionalInMemoryDatabase memoryDatabase = new OptionalInMemoryDatabase();
+        Optional<Product> actual = memoryDatabase.findByTitle(victim, "Gun");
+        assertEquals(actual, Optional.empty());
     }
 }
