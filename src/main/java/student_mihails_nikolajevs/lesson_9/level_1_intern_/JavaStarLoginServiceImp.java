@@ -21,7 +21,9 @@ class JavaStarLoginServiceImpl {
 // Создал класс JavaStarLoginServiceImp . Так как пересекался с package_student_veselov !!!
 
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class JavaStarLoginServiceImp implements JavaStarLoginServiceI {
     public boolean canLogin(String login, String password) {
         return (login != null)

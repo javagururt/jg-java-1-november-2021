@@ -1,5 +1,8 @@
 package student_julija_radchenko.lesson_8_homeworks.level_4_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 abstract class Shape {
     private String title;
 
@@ -8,6 +11,7 @@ abstract class Shape {
     }
 
     abstract double calculateArea();
+
     abstract double calculatePerimeter();
 
 }

@@ -1,14 +1,17 @@
 package student_mihails_nikolajevs.lesson_9.level_2_intern_;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorSwitchVersion implements DayOfTheWeekDetector {
 
 
     @Override
     public String detectDayName(int number) {
         switch (number) {
-            case 1 :
+            case 1:
                 return "Monday";
-            case 2 :
+            case 2:
                 return "Tuesday";
             case 3 :
                 return "Wednesday";

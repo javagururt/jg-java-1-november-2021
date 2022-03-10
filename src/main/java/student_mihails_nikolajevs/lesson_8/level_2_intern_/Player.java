@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_8.level_2_intern_;
+
+import teacher.annotations.CodeReview;
+
 /*
 Исправьте код программы так, что бы он компилировался.
 Изменения можно вносить только в код конструктора класса HumanPlayer.
@@ -21,6 +24,7 @@ class HumanPlayer extends Player {
 
 }
  */
+@CodeReview(approved = true)
 public class Player {
 
     private String name;

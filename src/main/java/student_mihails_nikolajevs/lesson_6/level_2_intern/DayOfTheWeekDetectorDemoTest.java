@@ -1,10 +1,13 @@
 package student_mihails_nikolajevs.lesson_6.level_2_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorDemoTest {
 
     public static void main(String[] args) {
 
-    DayOfTheWeekDetectorDemoTest test = new DayOfTheWeekDetectorDemoTest();
+        DayOfTheWeekDetectorDemoTest test = new DayOfTheWeekDetectorDemoTest();
         test.findDayOfTheWeekTest();
         test.shouldReturnMonday();
         test.shouldReturnTuesday();
@@ -15,7 +18,7 @@ public class DayOfTheWeekDetectorDemoTest {
         test.shouldReturnSunday();
     }
 
-   public void findDayOfTheWeekTest() {
+    public void findDayOfTheWeekTest() {
         DayOfTheWeekDetector dayOfTheWeekDetector = new DayOfTheWeekDetector();
         String day = "Monday";
 
@@ -24,15 +27,15 @@ public class DayOfTheWeekDetectorDemoTest {
         } else {
             System.out.println(" TEST FAILED ");
         }
-   }
+    }
 
-   public void shouldReturnMonday(){
-       DayOfTheWeekDetector dayOfTheWeekDetector = new DayOfTheWeekDetector();
-       String dayOfTheWeek = dayOfTheWeekDetector.findDayOfTheWeek(1);
-       checkTestResult("Monday".equals(dayOfTheWeek),"Monday");
-   }
+    public void shouldReturnMonday(){
+        DayOfTheWeekDetector dayOfTheWeekDetector = new DayOfTheWeekDetector();
+        String dayOfTheWeek = dayOfTheWeekDetector.findDayOfTheWeek(1);
+        checkTestResult("Monday".equals(dayOfTheWeek),"Monday");
+    }
 
-   public void shouldReturnTuesday(){
+    public void shouldReturnTuesday(){
         DayOfTheWeekDetector dayOfTheWeekDetector = new DayOfTheWeekDetector();
         String dayOfTheWeek = dayOfTheWeekDetector.findDayOfTheWeek(2);
         checkTestResult("Tuesday".equals(dayOfTheWeek),"Tuesday");

@@ -6,8 +6,12 @@ package student_mihails_nikolajevs.lesson_5.level_4_junior_;
 - распечатайте на консоль все элементы массива
 - найдите наименьшее число в массиве и выведети его на консоль.
  */
+
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_28 {
 
     public static void main(String[] args) {
@@ -23,11 +27,11 @@ public class Task_28 {
 
             System.out.println(number[i]);
         }
-            int min =  number[0];
+        int min =  number[0];
 
         for (int b = 0; b < number.length; b++) {
             if (number [b] < min) {
-            min = number[b];
+                min = number[b];
             }
         }
 

@@ -7,8 +7,12 @@ package student_mihails_nikolajevs.lesson_5.level_4_junior_;
 - распечатайте на консоль все элементы массива
 - найдите все нечётные числа в массиве и выведети их на консоль.
  */
+
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_30 {
 
     public static void main(String[] args) {

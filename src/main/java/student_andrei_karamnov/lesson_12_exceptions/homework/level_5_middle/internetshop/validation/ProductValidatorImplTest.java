@@ -1,10 +1,11 @@
 package student_andrei_karamnov.lesson_12_exceptions.homework.level_5_middle.internetshop.validation;
 
-import student_andrei_karamnov.lesson_12_exceptions.homework.level_5_middle.internetshop.Product;
-
 import java.util.List;
 
+import student_andrei_karamnov.lesson_12_exceptions.homework.level_5_middle.internetshop.Product;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class ProductValidatorImplTest {
 
     private ProductTitleValidationRule titleValidationRule = new ProductTitleValidationRule();
@@ -38,6 +39,7 @@ class ProductValidatorImplTest {
         checkResult(exceptions.get(0).getFieldName().equals("title"), "rule1");
         checkResult(exceptions.get(0).getDescription().equals("Title can not be empty"), "rule1");
     }
+
     public void rule2(){
         Product product = new Product("as", 1, "description");
         List<ValidationException> exceptions = validator.validate(product);

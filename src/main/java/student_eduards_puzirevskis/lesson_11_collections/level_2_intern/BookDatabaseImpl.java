@@ -4,37 +4,40 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class BookDatabaseImpl implements BookDatabase {
 
-     List<Book> bookList = new ArrayList<>();
-     private Long bookStartId = 1L;
+    List<Book> bookList = new ArrayList<>();
+    private Long bookStartId = 1L;
 
-     @Override
-     public Long save(Book book) {
-         book.setId(bookStartId);
-         bookList.add(book);
-         bookStartId++;
-         return bookStartId;
-     }
+    @Override
+    public Long save(Book book) {
+        book.setId(bookStartId);
+        bookList.add(book);
+        bookStartId++;
+        return bookStartId;
+    }
 
     @Override
     public boolean delete(Long bookId) {
-            if(!findBookINListById(bookId)) {
-                return false;
-            }else{
-                bookList.remove(getBookIndexInListById(bookId));
-                return true;
-            }
+        if(!findBookINListById(bookId)) {
+            return false;
+        }else{
+            bookList.remove(getBookIndexInListById(bookId));
+            return true;
         }
+    }
 
     @Override
     public boolean delete(Book book) {
-         for (Book bookInList: bookList){
-             if (bookInList.equals(book)) {
-                 bookList.remove(book);
-                 return true;
-             }
-         }
+        for (Book bookInList: bookList){
+            if (bookInList.equals(book)) {
+                bookList.remove(book);
+                return true;
+            }
+        }
         return false;
     }
 
@@ -50,12 +53,12 @@ class BookDatabaseImpl implements BookDatabase {
 
     @Override
     public List<Book> findByAuthor(String author) {
-         List<Book> booksByAuthor = new ArrayList<>();
-         for (Book book: bookList) {
-             if (book.getAuthor().equals(author)) {
-                 booksByAuthor.add(book);
-             }
-         }
+        List<Book> booksByAuthor = new ArrayList<>();
+        for (Book book: bookList) {
+            if (book.getAuthor().equals(author)) {
+                booksByAuthor.add(book);
+            }
+        }
         return booksByAuthor;
     }
 
@@ -72,7 +75,7 @@ class BookDatabaseImpl implements BookDatabase {
 
     @Override
     public int countAllBooks() {
-         int bookCounter = 0;
+        int bookCounter = 0;
         for (int i = 0; i < bookList.size(); i++) {
             bookCounter++;
         }

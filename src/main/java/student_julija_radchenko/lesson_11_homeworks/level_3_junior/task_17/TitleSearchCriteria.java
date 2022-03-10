@@ -2,7 +2,9 @@ package student_julija_radchenko.lesson_11_homeworks.level_3_junior.task_17;
 
 import student_julija_radchenko.lesson_11_homeworks.level_3_junior.task_15.Book;
 import student_julija_radchenko.lesson_11_homeworks.level_3_junior.task_15.SearchCriteria;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class TitleSearchCriteria implements SearchCriteria {
     private String titleToSearch;
 
@@ -12,12 +14,12 @@ public class TitleSearchCriteria implements SearchCriteria {
 
     @Override
     public boolean match(Book book) {
-       if(book.getTitle().equals(this.titleToSearch)) {
-           return true;
-       }else{
-           return false;}
-       }
-
-
+        if(book.getTitle().equals(this.titleToSearch)) {
+            return true;
+        }else{
+            return false;}
     }
+
+
+}
 

@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_9.level_1_intern_;
+
+import teacher.annotations.CodeReview;
+
 /*
 Создаём интерфейс для структуры данных список.
 
@@ -16,6 +19,7 @@ package student_mihails_nikolajevs.lesson_9.level_1_intern_;
 
 Цель этого задания самостоятельно разработать свой интерфейс MyList.
  */
+@CodeReview(approved = true)
 public interface MyList {
 
 /*

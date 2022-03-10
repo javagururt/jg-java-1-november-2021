@@ -1,6 +1,9 @@
 package student_julija_radchenko.lesson_8_homeworks.level_3_junior.Task_13;
 
-public class BMW extends Car{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class BMW extends Car {
     @Override
     public void gas() {
 

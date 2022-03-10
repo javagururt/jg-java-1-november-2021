@@ -15,6 +15,9 @@ class ArrayUtil {
 
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ArrayUtil {
 
     public static int[] createArray(int arrayLength) {
@@ -33,7 +36,7 @@ public class ArrayUtil {
     public void printArrayToConsole(int[] array) {
         for (int i : array)
 
-        System.out.println(i);
+            System.out.println(i);
     }
 
     public int findMaxNumber(int[] array) {

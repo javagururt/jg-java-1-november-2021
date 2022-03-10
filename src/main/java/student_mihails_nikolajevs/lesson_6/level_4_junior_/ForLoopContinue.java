@@ -1,5 +1,8 @@
 package student_mihails_nikolajevs.lesson_6.level_4_junior_;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ForLoopContinue {
 
     public static void main(String[] args) {
@@ -8,7 +11,7 @@ public class ForLoopContinue {
             if (i == 10) {
                 continue;
             }
-                System.out.println(i);
+            System.out.println(i);
         }
     }
 }

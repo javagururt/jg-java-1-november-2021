@@ -1,6 +1,9 @@
 package student_andrei_karamnov.lesson_12_exceptions.homework.level_5_middle.internetshop.validation;
 
-public class ValidationException extends Exception{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class ValidationException extends Exception {
 
    /* public ValidationException(String message) {
         super(message);

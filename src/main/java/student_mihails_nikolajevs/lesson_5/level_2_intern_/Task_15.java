@@ -10,6 +10,9 @@ package student_mihails_nikolajevs.lesson_5.level_2_intern_;
 
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_15 {
 
     public static void main(String[] args) {
@@ -26,7 +29,7 @@ public class Task_15 {
 
             number[i] = number[i] + 2;}
 
-        for ( int i = 0; i < number.length; i++) {
+        for (int i = 0; i < number.length; i++) {
 
             System.out.println(" New Value Of Number " + (i + 1) + " : " + number[i]);
         }

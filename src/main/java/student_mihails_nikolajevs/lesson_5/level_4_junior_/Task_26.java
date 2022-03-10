@@ -7,9 +7,12 @@ package student_mihails_nikolajevs.lesson_5.level_4_junior_;
 - распечатайте на консоль все элементы массива.
  */
 
-import java.util.Scanner;
 import java.util.Random;
+import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_26 {
 
     public static void main(String[] args) {

@@ -6,7 +6,12 @@ package student_mihails_nikolajevs.lesson_5.level_2_intern_;
  - выведите значение каждой ячейки на консоль.
 
  */
-import java.util.*;
+
+import java.util.Random;
+
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_12 {
 
     public static void main(String[] args) {

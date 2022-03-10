@@ -2,20 +2,23 @@ package student_eduards_puzirevskis.lesson_7_encapsulation.level_6_middle;
 
 import java.math.BigDecimal;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class CreditCard {
 
-     private int cardNumber;
-     private int pinCode;
-     private BigDecimal balance = BigDecimal.ZERO;
-     private BigDecimal creditLimit = BigDecimal.ZERO;
-     private BigDecimal loanDebt = BigDecimal.ZERO;
+    private int cardNumber;
+    private int pinCode;
+    private BigDecimal balance = BigDecimal.ZERO;
+    private BigDecimal creditLimit = BigDecimal.ZERO;
+    private BigDecimal loanDebt = BigDecimal.ZERO;
 
 
-     public CreditCard(int cardNumber, int pinCode){
-         super();
-         this.cardNumber = cardNumber;
-         this.pinCode = pinCode;
-     }
+    public CreditCard(int cardNumber, int pinCode) {
+        super();
+        this.cardNumber = cardNumber;
+        this.pinCode = pinCode;
+    }
 
     public int getCardNumber() {
         return cardNumber;

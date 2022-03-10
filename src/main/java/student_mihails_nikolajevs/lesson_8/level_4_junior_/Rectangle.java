@@ -1,5 +1,7 @@
 package student_mihails_nikolajevs.lesson_8.level_4_junior_;
 
+import teacher.annotations.CodeReview;
+
 /*
 оздание иерархии класса Shape (геометрическая фигура).
 
@@ -8,6 +10,7 @@ package student_mihails_nikolajevs.lesson_8.level_4_junior_;
 Shape: calculateArea() и calculatePerimeter().
 Напишите тесты для класса Rectangle.
  */
+@CodeReview(approved = true)
 class Rectangle extends Shape {
 
      private double firstSide;

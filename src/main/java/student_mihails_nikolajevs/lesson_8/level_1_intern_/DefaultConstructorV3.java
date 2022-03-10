@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_8.level_1_intern_;
+
+import teacher.annotations.CodeReview;
+
 /*
 Какие значения принимают свойства класса по умолчанию
 (ссылки на объекты и примитивные типы данных)
@@ -25,6 +28,7 @@ class DefaultConstructorV3 {
 инстанции в отдельной строке. Для получения значения свойств
 воспользуйтесь соответствующими get() методами.
  */
+@CodeReview(approved = true)
 public class DefaultConstructorV3 {
 
     private String fullName;

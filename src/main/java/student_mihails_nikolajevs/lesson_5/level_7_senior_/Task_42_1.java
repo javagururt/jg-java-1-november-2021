@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_5.level_7_senior_;
+
+import teacher.annotations.CodeReview;
+
 /*
 Задача №1
 Необходимо перебрать все элементы массива и вывести в консоль.
@@ -20,6 +23,7 @@ class Test {
 136
 387
  */
+@CodeReview(approved = true)
 public class Task_42_1 {
 
     public static void main(String[] args) {

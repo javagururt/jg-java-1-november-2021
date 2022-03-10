@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class OptionalInMemoryDatabase implements OptionalDatabase {
 
     private List<OptionalProduct> productList = new ArrayList<>();
@@ -20,6 +23,6 @@ public class OptionalInMemoryDatabase implements OptionalDatabase {
             if (listItem.getTitle().equals(productTitle)) {
             }
         }return Optional.empty();
-        }
+    }
 
 }
