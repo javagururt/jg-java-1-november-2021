@@ -20,6 +20,7 @@ class ProductValidatorImplTest {
         test.rule2();
         test.rule3();
         test.rule4();
+        test.rule9();
 
     }
 
@@ -64,6 +65,18 @@ class ProductValidatorImplTest {
         checkResult(exceptions.get(0).getFieldName().equals("title"), "rule4");
         checkResult(exceptions.get(0).getDescription().equals("Title must be in Latin"), "rule4");
     }
+
+    public void rule9() {
+        Product product = new Product("Abc", 1, "description АБВГД");
+        List<ValidationException> exceptions = validator.validate(product);
+        System.out.println(exceptions.toString());
+
+        checkResult(exceptions.size() == 1, "rule9");
+        checkResult(exceptions.get(0).getRuleName().equals("RULE №9"), "rule9");
+        checkResult(exceptions.get(0).getFieldName().equals("description"), "rule9");
+        checkResult(exceptions.get(0).getDescription().equals("Description must be in Latin"), "rule9");
+    }
+
 
     private void checkResult(boolean condition, String testName) {
         if (condition) {
