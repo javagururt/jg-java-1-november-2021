@@ -1,5 +1,7 @@
 package student_mihails_nikolajevs.lesson_9.level_2_intern_;
 
+import teacher.annotations.CodeReview;
+
 /*
 Несколько имплементаций одного интерфейса.
 
@@ -43,7 +45,7 @@ class DayOfTheWeekDetectorIfVersion {
 
 Протестируйте все имплементации.
  */
-
+@CodeReview(approved = true)
 class DayOfTheWeekDetectorIfVersion implements DayOfTheWeekDetector {
 
 

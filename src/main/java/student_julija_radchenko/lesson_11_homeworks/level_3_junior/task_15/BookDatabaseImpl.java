@@ -6,7 +6,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class BookDatabaseImpl implements BookDatabase{
 
     List<Book> bookList = new ArrayList<>();
@@ -20,6 +22,7 @@ public class BookDatabaseImpl implements BookDatabase{
         startId++;
         return startId;
     }
+
     @Override
     public boolean delete(Long bookId) {
         if (!isBookIdInBooksList(bookId)) {
@@ -29,6 +32,7 @@ public class BookDatabaseImpl implements BookDatabase{
             return true;
         }
     }
+
     @Override
     public boolean delete(Book book) {
         if (!isBookInBookList(book)) {
@@ -38,6 +42,7 @@ public class BookDatabaseImpl implements BookDatabase{
             return true;
         }
     }
+
     @Override
     public Optional<Book> findById(Long bookId) {
         for (Book book : bookList){
@@ -83,7 +88,6 @@ public class BookDatabaseImpl implements BookDatabase{
     }
 
 
-
     private boolean isBookInBookList(Book book){
         for (Book bookInList : bookList){
             if(bookInList.equals(book)) {
@@ -100,6 +104,7 @@ public class BookDatabaseImpl implements BookDatabase{
             }
         }return false;
     }
+
     private int getBookIndexInListById (Long bookId){
         int bookIndexInList = 0;
         for (int i =0; i< bookList.size(); i++) {

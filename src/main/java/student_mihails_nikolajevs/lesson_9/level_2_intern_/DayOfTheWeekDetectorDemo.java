@@ -27,11 +27,14 @@ package student_mihails_nikolajevs.lesson_9.level_2_intern_;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class DayOfTheWeekDetectorDemo {
 
     DayOfTheWeekDetector detector;
 
-    public DayOfTheWeekDetectorDemo(DayOfTheWeekDetector detector){
+    public DayOfTheWeekDetectorDemo(DayOfTheWeekDetector detector) {
 
         this.detector = detector;
     }
@@ -48,11 +51,11 @@ public class DayOfTheWeekDetectorDemo {
     }
 
     public void run () {
-    Scanner scanner = new Scanner(System.in);
-    System.out.println("Enter Day Number : ");
-    int dayNumber = scanner.nextInt();
-    String nameOfDay = detector.detectDayName(dayNumber);
-    System.out.println("Today is : " + nameOfDay);
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Enter Day Number : ");
+        int dayNumber = scanner.nextInt();
+        String nameOfDay = detector.detectDayName(dayNumber);
+        System.out.println("Today is : " + nameOfDay);
 
     }
 }

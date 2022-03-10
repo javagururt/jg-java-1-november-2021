@@ -1,12 +1,15 @@
 package student_mihails_nikolajevs.lesson_8.level_3_junior_.task_13;
-// Придумайте и создайте абстрактный класс и его потомков.
 
+import teacher.annotations.CodeReview;
+
+// Придумайте и создайте абстрактный класс и его потомков.
+@CodeReview(approved = true)
 abstract class Notebook {
 
-     private String brand;
-     private String model;
-     private String color;
-     private double price;
+    private String brand;
+    private String model;
+    private String color;
+    private double price;
 
 
      public String getBrand() {

@@ -1,11 +1,13 @@
 package student_andrei_karamnov.lesson_12_exceptions.homework.level_5_middle.internetshop.validation;
 
-import student_andrei_karamnov.lesson_12_exceptions.homework.level_5_middle.internetshop.Product;
-
 import java.util.ArrayList;
 import java.util.List;
 
-public class ProductValidatorImpl implements ProductValidator{
+import student_andrei_karamnov.lesson_12_exceptions.homework.level_5_middle.internetshop.Product;
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class ProductValidatorImpl implements ProductValidator {
 
     private ProductTitleValidationRule titleValidationRule;
     private ProductPriceValidationRule priceValidationRule;
@@ -40,5 +42,5 @@ public class ProductValidatorImpl implements ProductValidator{
         }
         return exceptions;
     }
-    }
+}
 

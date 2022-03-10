@@ -5,7 +5,12 @@ package student_mihails_nikolajevs.lesson_5.level_2_intern_;
  - заполните каждую ячейку массива числом, запрошенным у пользователя,
  - выведите значение каждой ячейки на консоль.
  */
-import java.util.*;
+
+import java.util.Scanner;
+
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_11 {
 
     public static void main(String[] args) {

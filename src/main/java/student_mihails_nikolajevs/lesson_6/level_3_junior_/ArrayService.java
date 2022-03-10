@@ -17,8 +17,12 @@ boolean - тип возвращаемого значения:
 Создайте указанный метод в классе ArrayService и напишите
 его реализацию.
  */
+
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ArrayService {
 
     boolean contains(int[] arr, int numberToSearch) {
@@ -26,7 +30,7 @@ public class ArrayService {
             if (arr[i] == numberToSearch)
                 return true;
         }
-            return false;
+        return false;
     }
     /*
      int countOccurrences(int[] arr, int numberToSearch)
@@ -52,31 +56,31 @@ int - тип возвращаемого значения, потому что к
         return count;
     }
 
-/*
-  boolean replaceFirst(int[] arr, int numberToReplace, int newNumber)
+    /*
+      boolean replaceFirst(int[] arr, int numberToReplace, int newNumber)
 
-replaceFirst - замена первого вхождения, в названии метода
-                   используем глагол для указания того
-                   действия, которое выполняет этот метод;
-int[] arr - в метод надо передать сам массив в котором будет
-            осуществляться поиск;
-int numberToReplace - так же входным параметром будет само число,
-                      первое вхождение которого нужно заменить на другое число;
-int newNumber - так же входным параметром будет число,
-                на которое надо заменить первое вхождение numberToReplace;
-boolean - тип возвращаемого значения
-            true - если метод нашёл и заменил numberToReplace на newNumber,
-            false - если метод не нашёл и не заменил numberToReplace на newNumber.
- */
-      boolean replaceFirst(int[] arr, int numberToReplace, int newNumber) {
-          for (int i = 0; i < arr.length; i++) {
-              if (arr[i] == numberToReplace) {
-                  arr[i] = newNumber;
-                  return true;
-              }
-          }
-                  return false;
-      }
+    replaceFirst - замена первого вхождения, в названии метода
+                       используем глагол для указания того
+                       действия, которое выполняет этот метод;
+    int[] arr - в метод надо передать сам массив в котором будет
+                осуществляться поиск;
+    int numberToReplace - так же входным параметром будет само число,
+                          первое вхождение которого нужно заменить на другое число;
+    int newNumber - так же входным параметром будет число,
+                    на которое надо заменить первое вхождение numberToReplace;
+    boolean - тип возвращаемого значения
+                true - если метод нашёл и заменил numberToReplace на newNumber,
+                false - если метод не нашёл и не заменил numberToReplace на newNumber.
+     */
+    boolean replaceFirst(int[] arr, int numberToReplace, int newNumber) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] == numberToReplace) {
+                arr[i] = newNumber;
+                return true;
+            }
+        }
+        return false;
+    }
 
 /*
  int replaceAll(int[] arr, int numberToReplace, int newNumber)
@@ -100,7 +104,7 @@ int - тип возвращаемого значения, число произ�
                 count ++;
             }
         }
-            return count;
+        return count;
     }
 
 /*
@@ -120,11 +124,11 @@ void - тип возвращаемого значения, у данного м�
 
 
     void revert(int[] arr) {
-         for (int i = 0; i < arr.length / 2; i++) {
-             int reverseNumber = arr[i];
-             arr[i] = arr[arr.length - i - 1];
-             arr[arr.length - i - 1] = reverseNumber;
-         }
+        for (int i = 0; i < arr.length / 2; i++) {
+            int reverseNumber = arr[i];
+            arr[i] = arr[arr.length - i - 1];
+            arr[arr.length - i - 1] = reverseNumber;
+        }
     }
 
  /*

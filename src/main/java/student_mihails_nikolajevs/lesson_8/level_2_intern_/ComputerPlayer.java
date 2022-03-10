@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_8.level_2_intern_;
+
+import teacher.annotations.CodeReview;
+
 /*
 Внесите изменения в код программы так,
 чтобы можно было создать экземпляр класса ComputerPlayer.
@@ -23,6 +26,7 @@ class ComputerPlayer {
 
 }
  */
+@CodeReview(approved = true)
 public class ComputerPlayer extends Player {
 
     public ComputerPlayer(String name) {

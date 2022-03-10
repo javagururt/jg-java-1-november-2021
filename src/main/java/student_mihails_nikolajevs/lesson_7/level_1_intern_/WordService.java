@@ -1,5 +1,7 @@
 package student_mihails_nikolajevs.lesson_7.level_1_intern_;
 
+import teacher.annotations.CodeReview;
+
 /*
 Учимся разбивать задачу на подзадачи.
 
@@ -19,7 +21,7 @@ class WordService {
            // смело создавайте дополнительные методы
     }
  */
-
+@CodeReview(approved = true)
 class WordService {
 
     public static void main(String[] args) {

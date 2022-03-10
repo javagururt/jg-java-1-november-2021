@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_5.level_1_intern_;
+
+import teacher.annotations.CodeReview;
+
 /*
 Найдите ошибку в программе и исправить её:
 
@@ -10,6 +13,7 @@ class ArrayDefinition1 {
 
 }
  */
+@CodeReview(approved = true)
 public class Task_1 {
 
     // class ArrayDefinition1 {

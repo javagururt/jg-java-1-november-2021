@@ -7,8 +7,12 @@ package student_mihails_nikolajevs.lesson_5.level_4_junior_;
 - найдите наибольшее число в массиве и выведети его на консоль.
 
  */
+
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_27 {
 
     public static void main(String[] args) {

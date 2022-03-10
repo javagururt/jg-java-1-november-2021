@@ -8,6 +8,9 @@ package student_mihails_nikolajevs.lesson_5.level_2_intern_;
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_10 {
 
     public static void main(String[] args) {

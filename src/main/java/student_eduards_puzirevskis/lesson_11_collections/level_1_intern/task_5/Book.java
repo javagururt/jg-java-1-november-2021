@@ -1,23 +1,24 @@
 package student_eduards_puzirevskis.lesson_11_collections.level_1_intern.task_5;
 
-import java.util.Objects;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class Book {
-     private String title;
-     private String author;
+    private String title;
+    private String author;
 
-     Book(String author, String title) {
-         this.author = author;
-         this.title = title;
-     }
+    Book(String author, String title) {
+        this.author = author;
+        this.title = title;
+    }
 
-     public String getTitle() {
-         return this.title;
-     }
+    public String getTitle() {
+        return this.title;
+    }
 
-     public String getAuthor() {
-         return this.author;
-     }
+    public String getAuthor() {
+        return this.author;
+    }
 
 
     @Override

@@ -1,12 +1,17 @@
 package student_julija_radchenko.lesson_8_homeworks.level_4_intern;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Circle extends Shape {
 
     private double radius;
-    Circle (double radius){
+
+    Circle(double radius) {
         super("circle");
         this.radius = radius;
     }
+
     @Override
     double calculateArea() {
         return Math.PI * (radius * radius);

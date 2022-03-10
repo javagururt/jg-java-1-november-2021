@@ -20,8 +20,9 @@ class ArrayUtilTest {
 }
  */
 
-import java.util.Arrays;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class ArrayUtilTest {
 
     public static void main(String[] args) {
@@ -30,6 +31,7 @@ public class ArrayUtilTest {
         test.shouldCreateArray();
 
     }
+
     public void shouldCreateArray() {
         int arrayLength = 20;
         int expectedResult = 20;
@@ -41,6 +43,6 @@ public class ArrayUtilTest {
             System.out.println(" ARRAY TEST SUCCESS ");
         } else
             System.out.println(" ARRAY TEST FAILED ");
-        }
     }
+}
 

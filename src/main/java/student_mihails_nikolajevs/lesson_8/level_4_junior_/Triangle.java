@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_8.level_4_junior_;
+
+import teacher.annotations.CodeReview;
+
 /*
 Создание иерархии класса Shape (геометрическая фигура).
 
@@ -8,6 +11,7 @@ package student_mihails_nikolajevs.lesson_8.level_4_junior_;
 Shape: calculateArea() и calculatePerimeter().
 Напишите тесты для класса Triangle.
  */
+@CodeReview(approved = true)
 class Triangle extends Shape {
 
       private double sideLength;

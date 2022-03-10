@@ -13,9 +13,9 @@ package student_mihails_nikolajevs.lesson_6.level_4_junior_;
 в дальнейшем поможет справиться с более сложными задачами.
  */
 
-import java.util.Random;
-import java.util.Arrays;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class TwoDimensionalArray {
 
 

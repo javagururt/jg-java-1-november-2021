@@ -3,6 +3,9 @@ package student_julija_radchenko.lesson_9_homeworks.level_3_junior.task_8;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class InMemoryDatabase implements ProductDatabase {
 
     private List<Product> productList = new ArrayList<>();
@@ -19,8 +22,8 @@ public class InMemoryDatabase implements ProductDatabase {
             if (listItem.getTitle().equals(productTitle)) {
                 return listItem;
             }
-            }return null;
-        }
+        }return null;
     }
+}
 
 

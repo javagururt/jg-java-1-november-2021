@@ -7,6 +7,10 @@ package student_mihails_nikolajevs.lesson_5.level_2_intern_;
  */
 
 import java.util.Random;
+
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_14 {
 
     public static void main(String[] args) {
@@ -27,9 +31,9 @@ public class Task_14 {
 
             System.out.println(" Number " + (i + 1) + " : " + number[i]);
         }
-            average = sum / number.length;
+        average = sum / number.length;
 
-            System.out.println(" AVERAGE OF ALL NUMBERS : " + average);
+        System.out.println(" AVERAGE OF ALL NUMBERS : " + average);
 
     }
 }

@@ -1,6 +1,9 @@
 package student_mihails_nikolajevs.lesson_7.level_5_middle_;
 
 import java.util.Scanner;
+
+import teacher.annotations.CodeReview;
+
 /*
 Разработать класс PowerCalculator, который реализует единственный метод
 для возведения заданного числа в указанную степень.
@@ -11,7 +14,7 @@ import java.util.Scanner;
 Все тестовые сценарии должны отрабатывать без ошибок.
 
  */
-
+@CodeReview(approved = true)
 public class PowerCalculator {
 
 

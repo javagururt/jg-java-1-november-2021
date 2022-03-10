@@ -2,6 +2,9 @@ package student_mihails_nikolajevs.lesson_6.level_3_junior_;
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ArrayServiceTest {
 
     public static void main(String[] args) {
@@ -85,6 +88,7 @@ public class ArrayServiceTest {
             System.out.println("ReplaceFirstNumberTest is FAILED");
         }
     }
+
     public void doesNotReplaceFirstNumberTest() {
         int numberToReplace = 5;
         int[] arr = {2, 1, 4, 4, 1};
@@ -98,6 +102,7 @@ public class ArrayServiceTest {
             System.out.println("DoesNotReplaceFirstNumberTest is FAILED");
         }
     }
+
     public void replaceAllTest() {
         int numberToReplace = 1;
         int[] arr ={2, 3, 5, 1, 1};
@@ -113,6 +118,7 @@ public class ArrayServiceTest {
         }
 
     }
+
     public void doesNotReplaceAllTest() {
         int numberToReplace = 5;
         int[] arr ={2, 3, 5, 5, 1};
@@ -127,6 +133,7 @@ public class ArrayServiceTest {
             System.out.println("DoesNotReplaceAllTest is FAILED");
         }
     }
+
     public void revertTest() {
         int[] arr ={1, 2, 3, 4, 5};
         int[] expectedResult = {5, 4, 3, 2, 1};
@@ -139,6 +146,7 @@ public class ArrayServiceTest {
             System.out.println("RevertTest is FAILED");
         }
     }
+
     public void sortTest() {
         int[] arr = {4, 2, 3, 5, 1};
         int[] expectedResult = {1, 2, 3, 4, 5};

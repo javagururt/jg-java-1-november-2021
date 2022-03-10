@@ -2,6 +2,9 @@ package student_julija_radchenko.lesson_6_homeworks.level_3_junior;
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ArrayService {
 
     boolean contains(int[] arr, int numberToSearch) {
@@ -55,6 +58,7 @@ public class ArrayService {
 
         }
     }
+
     void sort(int[] arr){
         Arrays.sort(arr);
     }

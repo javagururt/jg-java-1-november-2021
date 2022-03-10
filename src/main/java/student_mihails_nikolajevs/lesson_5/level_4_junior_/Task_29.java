@@ -6,8 +6,12 @@ package student_mihails_nikolajevs.lesson_5.level_4_junior_;
 - распечатайте на консоль все элементы массива
 - найдите все чётные числа в массиве и выведети их на консоль.
  */
+
 import java.util.Random;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_29 {
 
     public static void main(String[] args) {

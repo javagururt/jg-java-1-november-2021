@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_8.level_4_junior_;
+
+import teacher.annotations.CodeReview;
+
 /*
 оздание иерархии класса Shape (геометрическая фигура).
 
@@ -25,6 +28,7 @@ class Circle extends Shape {
 
 }
  */
+@CodeReview(approved = true)
 class Circle extends Shape {
 
     private double radius;
