@@ -1,6 +1,6 @@
 package student_eduards_puzirevskis.lesson_11_collections.level_3_4_junior.task_27;
 
-import org.jetbrains.annotations.NotNull;
+//import org.jetbrains.annotations.NotNull;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -22,7 +22,7 @@ class UniqueWordFinder {
         return textSet;
   }
 
- @NotNull
+ //@NotNull
  private String[] getTextArray(String text) {
   String textToLowerCase = text.toLowerCase();
   String textWithoutPunctuationMarks = textToLowerCase.replaceAll("\\p{Punct}", "");
