@@ -25,11 +25,11 @@ public class BookListContainsDemo {
         Book_level_1 bookInTheList = new Book_level_1("Author1", "Book1");
         books.add(bookInTheList);
         boolean containsBook = books.contains(bookInTheList);
-        System.out.println("Is book in the list? -"+containsBook);
+        System.out.println("Is book 'Author1' in the list? -"+containsBook);
 
         Book_level_1 bookNotInTheList = new Book_level_1("Author3", "Book3");
         boolean notContainsBook = books.contains(bookNotInTheList);
-        System.out.println("Is book in the list? -"+notContainsBook);
+        System.out.println("Is book 'Author3' in the list? -"+notContainsBook);
 
 
     }
