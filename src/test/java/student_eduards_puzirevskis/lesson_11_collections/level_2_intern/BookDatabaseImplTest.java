@@ -1,4 +1,4 @@
-package student_eduards_puzirevskis.lesson_11_collections.level_2_intern_3_junior;
+package student_eduards_puzirevskis.lesson_11_collections.level_2_intern;
 
 import org.junit.Test;
 
@@ -112,7 +112,5 @@ public class BookDatabaseImplTest {
         assertFalse(bookDatabase.bookList.contains(maskaradLermontov));
         assertFalse(bookDatabase.bookList.contains(maskaradDjuma));
     }
-
-
 
 }
