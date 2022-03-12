@@ -2,9 +2,7 @@ package student_eduards_puzirevskis.lesson_11_collections.level_2_intern;
 
 import org.junit.Test;
 
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import static org.junit.Assert.*;
 
@@ -21,9 +19,7 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldSave() {
-        bookDatabase.save(it);
-        bookDatabase.save(houseOfTheDragon);
-        bookDatabase.save(lordOfTheRings);
+        saveBooks(it, houseOfTheDragon, lordOfTheRings);
         assertTrue(bookDatabase.bookList.contains(it));
         assertTrue(bookDatabase.bookList.contains(houseOfTheDragon));
         assertTrue(bookDatabase.bookList.contains(lordOfTheRings));
@@ -32,20 +28,22 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldDeleteById() {
-        bookDatabase.save(it);
-        bookDatabase.save(houseOfTheDragon);
-        bookDatabase.save(lordOfTheRings);
+        saveBooks(it, houseOfTheDragon, lordOfTheRings);
         assertTrue(bookDatabase.delete(1L));
         assertTrue(bookDatabase.delete(2L));
         assertTrue(bookDatabase.delete(3L));
         assertFalse(bookDatabase.delete(4L));
     }
 
-    @Test
-    public void shouldDeleteByName() {
+    private void saveBooks(Book it, Book houseOfTheDragon, Book lordOfTheRings) {
         bookDatabase.save(it);
         bookDatabase.save(houseOfTheDragon);
         bookDatabase.save(lordOfTheRings);
+    }
+
+    @Test
+    public void shouldDeleteByName() {
+        saveBooks(it, houseOfTheDragon, lordOfTheRings);
         assertTrue(bookDatabase.delete(it));
         assertTrue(bookDatabase.delete(houseOfTheDragon));
         assertTrue(bookDatabase.delete(lordOfTheRings));
@@ -54,9 +52,7 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldFindById() {
-        bookDatabase.save(it);
-        bookDatabase.save(houseOfTheDragon);
-        bookDatabase.save(lordOfTheRings);
+        saveBooks(it, houseOfTheDragon, lordOfTheRings);
         assertEquals(bookDatabase.findById(1L).get(), it);
         assertEquals(bookDatabase.findById(2L).get(), houseOfTheDragon);
         assertEquals(bookDatabase.findById(3L).get(), lordOfTheRings);
@@ -65,9 +61,7 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldFindByAuthor() {
-        bookDatabase.save(it);
-        bookDatabase.save(houseOfTheDragon);
-        bookDatabase.save(lordOfTheRings);
+        saveBooks(it, houseOfTheDragon, lordOfTheRings);
         bookDatabase.save(shining);
         List<Book> victim = bookDatabase.findByAuthor("Stephen King");
         assertTrue(victim.contains(it));
@@ -78,9 +72,7 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldFindByTitle() {
-        bookDatabase.save(it);
-        bookDatabase.save(houseOfTheDragon);
-        bookDatabase.save(lordOfTheRings);
+        saveBooks(it, houseOfTheDragon, lordOfTheRings);
         bookDatabase.save(maskaradDjuma);
         bookDatabase.save(maskaradLermontov);
         List<Book> victim = bookDatabase.findByTitle("Маскарад");
@@ -92,12 +84,8 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldCountAllBooks() {
-        bookDatabase.save(it);
-        bookDatabase.save(houseOfTheDragon);
-        bookDatabase.save(lordOfTheRings);
-        bookDatabase.save(maskaradDjuma);
-        bookDatabase.save(maskaradLermontov);
-        bookDatabase.save(shining);
+        saveBooks(it, houseOfTheDragon, lordOfTheRings);
+        saveBooks(maskaradDjuma, maskaradLermontov, shining);
         int expectedBookCount = 6;
         int actualBookCount = bookDatabase.countAllBooks();
         assertEquals(expectedBookCount,actualBookCount);
@@ -105,9 +93,7 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldDeleteByAuthor() {
-        bookDatabase.save(it);
-        bookDatabase.save(houseOfTheDragon);
-        bookDatabase.save(lordOfTheRings);
+        saveBooks(it, houseOfTheDragon, lordOfTheRings);
         bookDatabase.save(shining);
         bookDatabase.deleteByAuthor("Stephen King");
         assertTrue(bookDatabase.bookList.contains(lordOfTheRings));
@@ -118,9 +104,7 @@ public class BookDatabaseImplTest {
 
     @Test
     public void shouldDeleteByTitle() {
-        bookDatabase.save(maskaradLermontov);
-        bookDatabase.save(maskaradDjuma);
-        bookDatabase.save(lordOfTheRings);
+        saveBooks(maskaradLermontov, maskaradDjuma, lordOfTheRings);
         bookDatabase.save(shining);
         bookDatabase.deleteByTitle("Маскарад");
         assertTrue(bookDatabase.bookList.contains(lordOfTheRings));
@@ -128,7 +112,5 @@ public class BookDatabaseImplTest {
         assertFalse(bookDatabase.bookList.contains(maskaradLermontov));
         assertFalse(bookDatabase.bookList.contains(maskaradDjuma));
     }
-
-
 
 }

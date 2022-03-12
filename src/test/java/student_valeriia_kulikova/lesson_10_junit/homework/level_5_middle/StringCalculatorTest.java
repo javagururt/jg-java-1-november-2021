@@ -1,10 +1,8 @@
 package student_valeriia_kulikova.lesson_10_junit.homework.level_5_middle;
 
-import org.junit.Assert;
 import org.junit.Test;
-
-import static org.junit.Assert.*;
 import static org.junit.Assert.assertEquals;
+
 public class StringCalculatorTest {
     @Test
             public void Test1 () {
@@ -13,9 +11,7 @@ public class StringCalculatorTest {
         int expectedResult = 45;
         int realResult = test.add(text);
         assertEquals(expectedResult,realResult);
-
     }
-
     @Test
     public void Test2 () {
         StringCalculator test = new StringCalculator();
@@ -23,7 +19,6 @@ public class StringCalculatorTest {
         int expectedResult = 0;
         int realResult = test.add(text);
         assertEquals(expectedResult,realResult);
-
     }
     @Test
     public void Test3 () {
@@ -32,7 +27,6 @@ public class StringCalculatorTest {
         int expectedResult = 0;
         int realResult = test.add(text);
         assertEquals(expectedResult,realResult);
-
     }
     @Test
     public void Test4 () {
