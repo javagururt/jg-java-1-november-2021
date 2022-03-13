@@ -10,6 +10,5 @@ public class TaxCalculatorDemo {
 
         System.out.println(taxCalculator.calculateTax(BigDecimal.valueOf(35000)));
         System.out.println(taxCalculator.calculateTax(BigDecimal.valueOf(50000)));
-
     }
 }
