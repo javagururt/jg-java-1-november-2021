@@ -20,6 +20,7 @@ class TaxCalculatorImpl implements TaxCalculator {
 
     @Override
     public BigDecimal calculateTax(BigDecimal income) {
+
         int compareResult = income.compareTo(BigDecimal.valueOf(20000));
         if (compareResult > 0) {
             return (income.subtract(BigDecimal.valueOf(20000))
