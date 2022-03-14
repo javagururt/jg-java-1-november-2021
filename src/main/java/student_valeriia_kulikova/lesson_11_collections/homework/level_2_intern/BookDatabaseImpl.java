@@ -3,7 +3,9 @@ package student_valeriia_kulikova.lesson_11_collections.homework.level_2_intern;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Scanner;
+import java.util.Objects;
+import java.util.Optional;
+
 
 public class BookDatabaseImpl implements  BookDatabase {
 
@@ -15,4 +17,47 @@ public class BookDatabaseImpl implements  BookDatabase {
         return book.getId();
     }
 
+    @Override
+    public boolean delete(Long bookId) {
+        for (int i = 0; i < list.size(); i++) {
+            if (bookId == list.get(i).getId()) {
+                list.remove(i);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public boolean delete(BookWithID book) {
+        for (int i = 0; i < list.size(); i++) {
+            if (Objects.equals(book, list.get(i))) {
+                list.remove(i);
+                return true;
+            }
+        }
+        return false;
+    }
+
+    @Override
+    public Optional<BookWithID> findById(Long bookId) {
+        for (int i = 0; i < list.size(); i++) {
+            if (bookId == list.get(i).getId()) {
+                return Optional.of(list.get(i));
+            }
+        }
+        return Optional.empty();
+    }
+
+    @Override
+    public List<BookWithID> findByAuthor(String author) {
+        List<BookWithID> findByAuthor = new ArrayList<>();
+        for (int i = 0; i < list.size(); i++) {
+            if (Objects.equals(author, list.get(i).getAuthor())) {
+                findByAuthor.add(list.get(i));
+            }
+
+        }
+        return findByAuthor;
+    }
 }

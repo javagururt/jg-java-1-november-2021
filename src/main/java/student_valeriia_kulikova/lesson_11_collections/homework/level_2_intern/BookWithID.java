@@ -2,7 +2,7 @@ package student_valeriia_kulikova.lesson_11_collections.homework.level_2_intern;
 
 import java.util.Objects;
 
-public class BookWithID {
+public class BookWithID  {
     private Long id;
     private String title;
     private String author;
@@ -51,4 +51,6 @@ public class BookWithID {
     public int hashCode() {
         return Objects.hash(id, title, author);
     }
+
+
 }
