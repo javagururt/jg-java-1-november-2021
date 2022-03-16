@@ -2,9 +2,7 @@ package student_julija_radchenko.lesson_11_homeworks.level_3_junior.task_15;
 
 
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 import teacher.annotations.CodeReview;
 
@@ -74,17 +72,70 @@ public class BookDatabaseImpl implements BookDatabase{
 
     @Override
     public int countAllBooks() {
+
         return bookList.size();
     }
 
     @Override
     public void deleteByAuthor(String author) {
+
         bookList.removeAll(findByAuthor(author));
     }
 
     @Override
     public void deleteByTitle(String title) {
+
         bookList.removeAll(findByTitle(title));
+    }
+
+    @Override
+    public List<Book> find(SearchCriteria searchCriteria) {
+        List<Book> findList = new ArrayList<>();
+        for(Book book:bookList){
+            if(searchCriteria.match(book)){
+                findList.add(book);
+            }
+        }
+        return findList;
+    }
+
+    @Override
+    public Set<String> findUniqueAuthors() {
+        Set<String> uniqueAuthors = new TreeSet<>();
+        for(Book book : bookList){
+            uniqueAuthors.add(book.getAuthor());
+        }
+        return uniqueAuthors;
+    }
+
+    @Override
+    public Set<String> findUniqueTitles() {
+        Set<String> uniqueTitles = new TreeSet<>();
+        for(Book book:bookList){
+            uniqueTitles.add(book.getTitle());
+        }
+        return uniqueTitles;
+    }
+
+    @Override
+    public Set<Book> findUniqueBooks() {
+        Set<Book> uniqueBooks = new HashSet<>();
+        for(Book book: bookList){
+            uniqueBooks.add(book);
+        }
+        return uniqueBooks;
+    }
+
+    @Override
+    public boolean contains(Book book) {
+        boolean doesContain = false;
+        for(Book eachBook: bookList){
+        if(eachBook.equals(book)){
+            doesContain = true;
+        }
+        } return doesContain;
+
+
     }
 
 
