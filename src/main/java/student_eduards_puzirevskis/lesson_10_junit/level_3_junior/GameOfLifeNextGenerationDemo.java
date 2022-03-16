@@ -5,6 +5,8 @@ import org.jetbrains.annotations.NotNull;
 import java.util.Random;
 import java.util.Scanner;
 
+//еще не закончил
+
 class GameOfLifeNextGenerationDemo {
   public static void main(String[] args) {
 
