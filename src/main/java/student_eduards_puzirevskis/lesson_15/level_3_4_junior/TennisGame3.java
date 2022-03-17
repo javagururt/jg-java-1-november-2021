@@ -15,25 +15,24 @@ class TennisGame3 implements TennisGame {
      }
 
      public String score() {
-         String s;
+         String actualScore;
          if (firstPlayerScore < 4 && secondPlayerScore < 4 && !(firstPlayerScore + secondPlayerScore == 6)) {
              String[] playerResult = new String[]{"Love", "Fifteen", "Thirty", "Forty"};
-             s = playerResult[firstPlayerScore];
-             return s + " - " + playerResult[secondPlayerScore];
+             actualScore = playerResult[firstPlayerScore];
+             return actualScore + " - " + playerResult[secondPlayerScore];
          } else {
              if (firstPlayerScore == secondPlayerScore)
                  return "Deuce";
-             s = firstPlayerScore > secondPlayerScore ? firstPlayerName : secondPlayerName;
-             return ((firstPlayerScore-secondPlayerScore)*(firstPlayerScore-secondPlayerScore) == 1) ? "Advantage " + s : "Win " + s;
+             actualScore = firstPlayerScore > secondPlayerScore ? firstPlayerName : secondPlayerName;
+             return ((firstPlayerScore-secondPlayerScore)*(firstPlayerScore-secondPlayerScore) == 1) ? "Advantage " + actualScore : "Win " + actualScore;
          }
      }
 
      public void wonPoint(String playerName) {
          if (Objects.equals(playerName, "First player"))
-             this.firstPlayerScore += 1;
-         else
-             this.secondPlayerScore += 1;
-
+             this.firstPlayerScore++;
+         if (Objects.equals(playerName, "Second player"))
+             this.secondPlayerScore++;
      }
 
 }

@@ -1,11 +1,11 @@
-package student_eduards_puzirevskis.lesson_10_junit.level_3_junior;
+package student_eduards_puzirevskis.lesson_10_junit.level_3_4_junior;
 
 import org.jetbrains.annotations.NotNull;
 
 import java.util.Random;
 import java.util.Scanner;
 
-//еще не закончил
+
 
 class GameOfLifeNextGenerationDemo {
   public static void main(String[] args) {

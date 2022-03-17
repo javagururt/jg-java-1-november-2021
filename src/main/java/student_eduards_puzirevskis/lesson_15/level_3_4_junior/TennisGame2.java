@@ -11,102 +11,100 @@ class TennisGame2 implements TennisGame {
      public String secondPlayerResult = "";
      private String player1Name;
      private String player2Name;
+     private String[] playerActualResult = new String[]{"Love", "Fifteen", "Thirty", "Forty"};
+     private String actualScore = "";
 
-     public TennisGame2(String player1Name, String player2Name) {
+
+    public TennisGame2(String player1Name, String player2Name) {
          this.player1Name = player1Name;
          this.player2Name = player2Name;
      }
 
      public String score() {
-         String score = "";
          if (firstPlayerPoints == secondPlayerPoints && firstPlayerPoints < 4) {
              if (firstPlayerPoints ==0)
-                 score = "Love";
+                 actualScore = playerActualResult[0];
              if (firstPlayerPoints ==1)
-                 score = "Fifteen";
+                 actualScore = playerActualResult[1];
              if (firstPlayerPoints ==2)
-                 score = "Thirty";
-             score = score + " - " + score;
+                 actualScore = playerActualResult[2];
+             actualScore = actualScore + " - " + actualScore;
          }
          if (firstPlayerPoints == secondPlayerPoints && firstPlayerPoints >=3)
-             score = "Deuce";
+             actualScore = "Deuce";
 
          if (firstPlayerPoints > 0 && secondPlayerPoints ==0) {
              if (firstPlayerPoints ==1)
-                 firstPlayerResult = "Fifteen";
+                 firstPlayerResult = playerActualResult[1];
              if (firstPlayerPoints ==2)
-                 firstPlayerResult = "Thirty";
+                 firstPlayerResult = playerActualResult[2];
              if (firstPlayerPoints ==3)
-                 firstPlayerResult = "Forty";
+                 firstPlayerResult = playerActualResult[3];
 
              secondPlayerResult = "Love";
-             score = firstPlayerResult + " - " + secondPlayerResult;
+             actualScore = firstPlayerResult + " - " + secondPlayerResult;
          }
          if (secondPlayerPoints > 0 && firstPlayerPoints ==0) {
              if (secondPlayerPoints ==1)
-                 secondPlayerResult = "Fifteen";
+                 secondPlayerResult = playerActualResult[1];
              if (secondPlayerPoints ==2)
-                 secondPlayerResult = "Thirty";
+                 secondPlayerResult = playerActualResult[2];
              if (secondPlayerPoints ==3)
-                 secondPlayerResult = "Forty";
+                 secondPlayerResult = playerActualResult[3];
 
              firstPlayerResult = "Love";
-             score = firstPlayerResult + " - " + secondPlayerResult;
+             actualScore = firstPlayerResult + " - " + secondPlayerResult;
          }
 
          if (firstPlayerPoints > secondPlayerPoints && firstPlayerPoints < 4) {
              if (firstPlayerPoints ==2)
-                 firstPlayerResult ="Thirty";
+                 firstPlayerResult = playerActualResult[2];
              if (firstPlayerPoints ==3)
-                 firstPlayerResult ="Forty";
+                 firstPlayerResult = playerActualResult[3];
              if (secondPlayerPoints ==1)
-                 secondPlayerResult ="Fifteen";
+                 secondPlayerResult = playerActualResult[1];
              if (secondPlayerPoints ==2)
-                 secondPlayerResult ="Thirty";
-             score = firstPlayerResult + " - " + secondPlayerResult;
+                 secondPlayerResult = playerActualResult[2];
+             actualScore = firstPlayerResult + " - " + secondPlayerResult;
          }
          if (secondPlayerPoints > firstPlayerPoints && secondPlayerPoints < 4) {
              if (secondPlayerPoints ==2)
-                 secondPlayerResult ="Thirty";
+                 secondPlayerResult = playerActualResult[2];
              if (secondPlayerPoints ==3)
-                 secondPlayerResult ="Forty";
+                 secondPlayerResult = playerActualResult[3];
              if (firstPlayerPoints ==1)
-                 firstPlayerResult ="Fifteen";
+                 firstPlayerResult = playerActualResult[1];
              if (firstPlayerPoints ==2)
-                 firstPlayerResult ="Thirty";
-             score = firstPlayerResult + " - " + secondPlayerResult;
+                 firstPlayerResult = playerActualResult[2];
+             actualScore = firstPlayerResult + " - " + secondPlayerResult;
          }
 
          if (firstPlayerPoints > secondPlayerPoints && secondPlayerPoints >= 3) {
-             score = "Advantage First player";
+             actualScore = "Advantage First player";
          }
 
          if (secondPlayerPoints > firstPlayerPoints && firstPlayerPoints >= 3) {
-             score = "Advantage Second player";
+             actualScore = "Advantage Second player";
          }
 
-         if (firstPlayerPoints >=4 && secondPlayerPoints >=0 && (firstPlayerPoints - secondPlayerPoints)>=2) {
-             score = "Win First player";
+         if (playerWinCondition(firstPlayerPoints, secondPlayerPoints)) {
+             actualScore = "Win First player";
          }
-         if (secondPlayerPoints >=4 && firstPlayerPoints >=0 && (secondPlayerPoints - firstPlayerPoints)>=2) {
-             score = "Win Second player";
+         if (playerWinCondition(secondPlayerPoints, firstPlayerPoints)) {
+             actualScore = "Win Second player";
          }
-         return score;
+         return actualScore;
      }
 
-     public void P1Score() {
-         firstPlayerPoints++;
-     }
+    private boolean playerWinCondition(int firstPlayerPoints, int secondPlayerPoints) {
+        return firstPlayerPoints >= 4 && secondPlayerPoints >= 0 && (firstPlayerPoints - secondPlayerPoints) >= 2;
+    }
 
-     public void P2Score() {
-         secondPlayerPoints++;
-     }
-
-     public void wonPoint(String player) {
+    public void wonPoint(String player) {
          if (Objects.equals(player, "First player"))
-             P1Score();
-         else
-             P2Score();
+             firstPlayerPoints++;
+         if (Objects.equals(player, "Second player"))
+             secondPlayerPoints++;
      }
 
 }

@@ -1,5 +1,7 @@
 package student_eduards_puzirevskis.lesson_15.level_3_4_junior;
 
+import org.jetbrains.annotations.NotNull;
+
 import java.util.Objects;
 
 class TennisGame1 implements TennisGame {
@@ -16,28 +18,19 @@ class TennisGame1 implements TennisGame {
 
      public void wonPoint(String playerName) {
          if (Objects.equals(playerName, "First player"))
-             firstPlayerScore += 1;
+             firstPlayerScore++;
          else
-             secondPlayerScore += 1;
+             secondPlayerScore++;
      }
 
      public String score() {
          StringBuilder score = new StringBuilder();
          int tempScore;
          if (firstPlayerScore == secondPlayerScore) {
-             score = new StringBuilder(switch (firstPlayerScore) {
-                 case 0 -> "Love - Love";
-                 case 1 -> "Fifteen - Fifteen";
-                 case 2 -> "Thirty - Thirty";
-                 default -> "Deuce";
-             });
+             score = sameScore();
          }
          else if (firstPlayerScore >=4 || secondPlayerScore >=4) {
-             int minusResult = firstPlayerScore - secondPlayerScore;
-             if (minusResult==1) score = new StringBuilder("Advantage First player");
-             else if (minusResult ==-1) score = new StringBuilder("Advantage Second player");
-             else if (minusResult>=2) score = new StringBuilder("Win First player");
-             else score = new StringBuilder("Win Second player");
+             score = oneOfPlayerCanOrHasWin();
          }
          else {
              for (int i=1; i<3; i++) {
@@ -53,5 +46,28 @@ class TennisGame1 implements TennisGame {
          }
          return score.toString();
      }
+
+    @NotNull
+    private StringBuilder oneOfPlayerCanOrHasWin() {
+        StringBuilder score;
+        int playerOutrunning = firstPlayerScore - secondPlayerScore;
+        if (playerOutrunning==1) score = new StringBuilder("Advantage First player");
+        else if (playerOutrunning ==-1) score = new StringBuilder("Advantage Second player");
+        else if (playerOutrunning>=2) score = new StringBuilder("Win First player");
+        else score = new StringBuilder("Win Second player");
+        return score;
+    }
+
+    @NotNull
+    private StringBuilder sameScore() {
+        StringBuilder score;
+        score = new StringBuilder(switch (firstPlayerScore) {
+            case 0 -> "Love - Love";
+            case 1 -> "Fifteen - Fifteen";
+            case 2 -> "Thirty - Thirty";
+            default -> "Deuce";
+        });
+        return score;
+    }
 
 }

@@ -1,12 +1,12 @@
-package student_eduards_puzirevskis.lesson_10_junit.level_3_junior;
+package student_eduards_puzirevskis.lesson_10_junit.level_3_4_junior;
 
-// еще не закончил
+
 
 class GameOfLifeNextGenerationCalculator {
 
     public int[] check(String[][] lifeMap, int[] point) {
 
-        int n = 0;
+        int counter = 0;
         for (int i = 0; i < lifeMap.length; i++) {
             for (int j = 0; j < lifeMap.length; j++) {
                 int life = 0;
@@ -36,30 +36,30 @@ class GameOfLifeNextGenerationCalculator {
                 }
                 if (lifeMap[i][j].equals("●")) {
                     if (life == 1)
-                        point[n] = 1;
+                        point[counter] = 1;
                     else if (life == 2 || life == 3)
-                        point[n] = 2;
+                        point[counter] = 2;
                     else if (life >= 4)
-                        point[n] = 1;
+                        point[counter] = 1;
                 } else {
                     if (life == 3)
-                        point[n] = 3;
+                        point[counter] = 3;
                 }
-                n++;
+                counter++;
             }
         }
         return point;
     }
 
     public String[][] calculate(String[][] lifeMap, int[] point) {
-        int n = 0;
+        int counter = 0;
         for (int i = 0; i < lifeMap.length; i++) {
             for (int j = 0; j < lifeMap.length; j++) {
-                if (point[n] == 1)
+                if (point[counter] == 1)
                     lifeMap[i][j] = "o";
-                if (point[n] == 3)
+                if (point[counter] == 3)
                 {lifeMap[i][j] = "●";
-                    n++;
+                    counter++;
                 }
             }
         }
