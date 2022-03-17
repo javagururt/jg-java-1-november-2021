@@ -1,41 +1,42 @@
 package student_eduards_puzirevskis.lesson_10_junit.level_3_4_junior;
 
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Random;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
 
 
+@CodeReview(approved = true)
 class GameOfLifeNextGenerationDemo {
-  public static void main(String[] args) {
+ public static void main(String[] args) {
 
-   String[][] lifeMap = getFieldSizeFromUser();
+  String[][] lifeMap = getFieldSizeFromUser();
 
-   GameOfLifeNextGenerationCalculator gOLDemo = new GameOfLifeNextGenerationCalculator();
+  GameOfLifeNextGenerationCalculator gOLDemo = new GameOfLifeNextGenerationCalculator();
 
-   getRandomField(lifeMap);
+  getRandomField(lifeMap);
 
-   while (true) {
+  while (true) {
 
-    System.out.println ("Initial state:");
-    gOLDemo.printLifeMap(lifeMap);
-    System.out.println("===========");
+   System.out.println ("Initial state:");
+   gOLDemo.printLifeMap(lifeMap);
+   System.out.println("===========");
 
-    System.out.println ("Type \"0\" to get next generation");
-    System.out.println("Type any other integer to exit.");
-    int exitBottom = new Scanner(System.in).nextInt();
-    if (exitBottom != 0) {
-     break;
-    }
-    int[] point = gOLDemo.check(lifeMap, new int[lifeMap.length* lifeMap.length]);
-    lifeMap = gOLDemo.calculate(lifeMap, point).clone();
-    gOLDemo.printLifeMap(lifeMap);
-    System.out.println("===========");
+   System.out.println ("Type \"0\" to get next generation");
+   System.out.println("Type any other integer to exit.");
+   int exitBottom = new Scanner(System.in).nextInt();
+   if (exitBottom != 0) {
+    break;
    }
+   int[] point = gOLDemo.check(lifeMap, new int[lifeMap.length* lifeMap.length]);
+   lifeMap = gOLDemo.calculate(lifeMap, point).clone();
+   gOLDemo.printLifeMap(lifeMap);
+   System.out.println("===========");
   }
+ }
 
- @NotNull
+
  private static String[][] getFieldSizeFromUser() {
   System.out.println("Hello! Let's play Game of life!");
   System.out.println("Please, how big will be our field?");

@@ -1,7 +1,9 @@
 package student_eduards_puzirevskis.lesson_10_junit.level_3_4_junior;
 
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class GameOfLifeNextGenerationCalculator {
 
     public int[] check(String[][] lifeMap, int[] point) {
@@ -57,8 +59,7 @@ class GameOfLifeNextGenerationCalculator {
             for (int j = 0; j < lifeMap.length; j++) {
                 if (point[counter] == 1)
                     lifeMap[i][j] = "o";
-                if (point[counter] == 3)
-                {lifeMap[i][j] = "●";
+                if (point[counter] == 3) {lifeMap[i][j] = "●";
                     counter++;
                 }
             }

@@ -1,7 +1,8 @@
 package student_dmitrijs_sinkevics.lesson_9.lvl_3_junior;
 
-import java.util.Optional;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class ProductDatabaseOptionalTest {
     public static void main(String[] args) {
         ProductDatabaseOptionalTest test = new ProductDatabaseOptionalTest();

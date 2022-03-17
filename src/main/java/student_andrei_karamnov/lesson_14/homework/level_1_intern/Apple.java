@@ -2,11 +2,14 @@ package student_andrei_karamnov.lesson_14.homework.level_1_intern;
 
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Apple {
     private String color;
     private int weight;
 
-    public Apple (String color, int weight) {
+    public Apple(String color, int weight) {
         this.color = color;
         this.weight = weight;
     }

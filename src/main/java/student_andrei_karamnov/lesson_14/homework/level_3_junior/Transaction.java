@@ -2,6 +2,9 @@ package student_andrei_karamnov.lesson_14.homework.level_3_junior;
 
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Transaction {
 
     private Trader trader;

@@ -1,5 +1,8 @@
 package student_dmitrijs_sinkevics.lesson_9.lvl_3_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class ProductDataBaseTest {
     public static void main(String[] args) {
         ProductDataBaseTest test = new ProductDataBaseTest();
@@ -7,9 +10,9 @@ public class ProductDataBaseTest {
     }
 
     void findByTitleTest() {
-        InMemoryDatabase inMemoryDatabase=new InMemoryDatabase();
+        InMemoryDatabase inMemoryDatabase = new InMemoryDatabase();
 
-        Product carOne= new Product("Ford");
+        Product carOne = new Product("Ford");
         Product carTwo= new Product("Mazda");
         Product carThree= new Product("Lexus");
         Product carFour= new Product("VW");

@@ -1,13 +1,19 @@
 package student_dmitrijs_sinkevics.lesson_9.lvl_3_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class InMemoryDatabase implements ProductDatabase {
 
     public Product[] directory;
 
-    public InMemoryDatabase() {directory = new Product[0];
+    public InMemoryDatabase() {
+        directory = new Product[0];
     }
 
-    public Product[] getDatabase() {return directory;}
+    public Product[] getDatabase() {
+        return directory;
+    }
 
 
     @Override

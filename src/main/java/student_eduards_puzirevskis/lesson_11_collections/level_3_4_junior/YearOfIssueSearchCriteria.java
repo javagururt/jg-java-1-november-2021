@@ -1,21 +1,24 @@
 package student_eduards_puzirevskis.lesson_11_collections.level_3_4_junior;
 
- class YearOfIssueSearchCriteria implements SearchCriteria {
+import teacher.annotations.CodeReview;
 
-  private final int yearOfIssueToSearch;
+@CodeReview(approved = true)
+class YearOfIssueSearchCriteria implements SearchCriteria {
 
-  public YearOfIssueSearchCriteria(int yearOfIssueToSearch) {
-   this.yearOfIssueToSearch = yearOfIssueToSearch;
-  }
+ private final int yearOfIssueToSearch;
 
-  @Override
-  public boolean match(Book book) {
-   return book.getYearOfIssue() == this.yearOfIssueToSearch;
-  }
-
-  @Override
-  public String searchCriteriaName() {
-   return "Year of Issue Criteria";
-  }
-
+ public YearOfIssueSearchCriteria(int yearOfIssueToSearch) {
+  this.yearOfIssueToSearch = yearOfIssueToSearch;
  }
+
+ @Override
+ public boolean match(Book book) {
+  return book.getYearOfIssue() == this.yearOfIssueToSearch;
+ }
+
+ @Override
+ public String searchCriteriaName() {
+  return "Year of Issue Criteria";
+ }
+
+}

@@ -1,11 +1,12 @@
 package student_andrei_karamnov.lesson_14.homework.level_1_intern;
 
 
-import student_andrei_karamnov.lesson_11_collection.homework.level_3_junior.domain.Book;
-
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class FruitStorage {
 
     public List<Apple> getAllApples() {

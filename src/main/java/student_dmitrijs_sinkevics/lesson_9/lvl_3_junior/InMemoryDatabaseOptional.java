@@ -2,13 +2,19 @@ package student_dmitrijs_sinkevics.lesson_9.lvl_3_junior;
 
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class InMemoryDatabaseOptional implements ProductDataBaseOptional {
     public Product[] directory;
 
-    public InMemoryDatabaseOptional() {directory = new Product[0];
+    public InMemoryDatabaseOptional() {
+        directory = new Product[0];
     }
 
-    public Product[] getDatabase() {return directory;}
+    public Product[] getDatabase() {
+        return directory;
+    }
 
 
     @Override

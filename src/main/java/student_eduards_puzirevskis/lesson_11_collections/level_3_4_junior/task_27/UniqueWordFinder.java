@@ -7,28 +7,30 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class UniqueWordFinder {
 
-  public String getText() {
+    public String getText() {
         System.out.println("Please, write your text: ");
         Scanner scanner = new Scanner(System.in);
         return scanner.nextLine();
-  }
+    }
 
-  public Set<String> find(String text) {
+    public Set<String> find(String text) {
         Set<String> textSet = new HashSet<>();
         String[] textArray = getTextArray(text);
         Collections.addAll(textSet, textArray);
         return textSet;
-  }
+    }
 
- //@NotNull
- private String[] getTextArray(String text) {
-  String textToLowerCase = text.toLowerCase();
-  String textWithoutPunctuationMarks = textToLowerCase.replaceAll("\\p{Punct}", "");
-  return textWithoutPunctuationMarks.split(" ");
- }
-
+    //@NotNull
+    private String[] getTextArray(String text) {
+        String textToLowerCase = text.toLowerCase();
+        String textWithoutPunctuationMarks = textToLowerCase.replaceAll("\\p{Punct}", "");
+        return textWithoutPunctuationMarks.split(" ");
+    }
 
 
 }

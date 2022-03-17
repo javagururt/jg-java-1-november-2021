@@ -1,7 +1,8 @@
 package student_dmitrijs_sinkevics.lesson_9.lvl_4_junior;
 
-import student_dmitrijs_sinkevics.lesson_9.lvl_3_junior.ProductDataBaseTest;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class TemperatureConverterTest {
     public static void main(String[] args) {
         TemperatureConverterTest test = new TemperatureConverterTest();
