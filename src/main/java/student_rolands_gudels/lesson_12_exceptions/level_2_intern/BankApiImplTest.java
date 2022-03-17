@@ -3,6 +3,9 @@ package student_rolands_gudels.lesson_12_exceptions.level_2_intern;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class BankApiImplTest {
     public static void main(String[] args) {
         BankApiImplTest test = new BankApiImplTest();

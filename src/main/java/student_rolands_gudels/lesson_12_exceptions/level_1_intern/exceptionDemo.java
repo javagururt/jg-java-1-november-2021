@@ -1,7 +1,9 @@
 package student_rolands_gudels.lesson_12_exceptions.level_1_intern;
 
 import student_rolands_gudels.lesson_5_arrays_for_loop.lesson_12_exceptions.level_1_intern.FactorialException;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class exceptionDemo {
     public static void main(String[] args) {
         class Factorial {
@@ -21,8 +23,7 @@ public class exceptionDemo {
         try{
             int result = Factorial.getFactorial(0);
             System.out.println(result);
-        }
-        catch(FactorialException ex){
+        } catch(FactorialException ex){
 
             System.out.println(ex.getMessage());
             System.out.println(ex.getNumber());

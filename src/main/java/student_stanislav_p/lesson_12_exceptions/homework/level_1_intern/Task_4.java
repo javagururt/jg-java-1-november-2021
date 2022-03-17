@@ -1,15 +1,19 @@
 package student_stanislav_p.lesson_12_exceptions.homework.level_1_intern;
 
-public class Task_4 {}
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class Task_4 {
+}
 
 
-    class MyException extends Exception {
-        private int detail;
+class MyException extends Exception {
+    private int detail;
 
-        public MyException(int detail, String message) {
-            super(message);
-            this.detail = detail;
-        }
+    public MyException(int detail, String message) {
+        super(message);
+        this.detail = detail;
+    }
 
         @Override
         public String toString() {

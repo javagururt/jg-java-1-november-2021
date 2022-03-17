@@ -3,9 +3,11 @@ package student_stanislav_p.lesson_12_exceptions.homework.level_1_intern;
 
 //Исправьте код:
 
-//class MyException extends Throwable, Exception, RuntimeException {
+import teacher.annotations.CodeReview;
 
-class MyException3 extends Throwable{
+//class MyException extends Throwable, Exception, RuntimeException {
+@CodeReview(approved = true)
+class MyException3 extends Throwable {
 }
 
 public class Task_3 {

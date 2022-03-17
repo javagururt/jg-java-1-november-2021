@@ -12,15 +12,18 @@ package student_stanislav_p.lesson_12_exceptions.homework.level_3_junior;
 4. Compiler Error
  */
 
-/** результат из пункта 1
- отработает блок catch
- а блок finally отработает в любом случае*/
+import teacher.annotations.CodeReview;
 
+/**
+ * результат из пункта 1 отработает блок catch а блок finally отработает в любом случае
+ */
 
-class TestException extends Exception { }
+@CodeReview(approved = true)
+class TestException extends Exception {
+}
 
-    class Main {
-        public static void main(String args[]) {
+class Main {
+    public static void main(String args[]) {
             try {
                 throw new TestException();
             } catch(TestException t) {

@@ -1,10 +1,9 @@
 package student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop;
 
 import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.product.Product;
-import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.validation.*;
+import teacher.annotations.CodeReview;
 
-import java.util.List;
-
+@CodeReview(approved = true)
 class MachesTest {
 
 

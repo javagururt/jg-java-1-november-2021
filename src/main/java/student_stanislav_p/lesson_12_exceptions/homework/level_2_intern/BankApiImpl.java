@@ -3,6 +3,9 @@ package student_stanislav_p.lesson_12_exceptions.homework.level_2_intern;
 import java.util.List;
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class BankApiImpl implements BankApi {
 
     private List<BankClient> clients;
