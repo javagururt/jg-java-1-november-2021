@@ -1,6 +1,5 @@
 package student_stanislav_p.lesson_15.homework.level_5_middle.gildedrose;
 
-import teacher.lesson_15.homework.level_5_middle.gildedrose.Item;
 
 import java.util.List;
 
