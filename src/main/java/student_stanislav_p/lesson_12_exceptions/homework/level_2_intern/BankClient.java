@@ -1,21 +1,24 @@
 package student_stanislav_p.lesson_12_exceptions.homework.level_2_intern;
 
-    class BankClient {
+import teacher.annotations.CodeReview;
 
-        private String uid;
-        private String fullName;
+@CodeReview(approved = true)
+class BankClient {
 
-        public BankClient(String uid, String fullName) {
-            this.uid = uid;
-            this.fullName = fullName;
-        }
+    private String uid;
+    private String fullName;
 
-        public String getUid() {
-            return this.uid;
-        }
+    public BankClient(String uid, String fullName) {
+        this.uid = uid;
+        this.fullName = fullName;
+    }
 
-        public String getFullName() {
-            return this.fullName;
-        }
+    public String getUid() {
+        return this.uid;
+    }
+
+    public String getFullName() {
+        return this.fullName;
+    }
 
 }

@@ -1,17 +1,23 @@
 package student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop;
 
-import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.product.Product;
-import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.validation.*;
-
 import java.util.List;
 
+import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.product.Product;
+import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.validation.ProductDescriptionValidationRule;
+import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.validation.ProductPriceValidationRule;
+import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.validation.ProductTitleValidationRule;
+import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.validation.ProductValidator;
+import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.validation.ProductValidatorImpl;
+import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.validation.ValidationException;
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class ProductValidatorImplTest {
 
     private ProductTitleValidationRule titleValidationRule = new ProductTitleValidationRule();
     private ProductPriceValidationRule priceValidationRule = new ProductPriceValidationRule();
     private ProductDescriptionValidationRule descriptionValidationRule = new ProductDescriptionValidationRule();
     private ProductValidator validator = new ProductValidatorImpl(titleValidationRule, priceValidationRule, descriptionValidationRule);
-
 
 
     public static void main(String[] args) {
@@ -130,7 +136,6 @@ class ProductValidatorImplTest {
     }
 
 
-
     public void rule9() {
         Product product = new Product("Abc", 1, "description АБВГД");
         List<ValidationException> exceptions = validator.validate(product);
@@ -150,7 +155,6 @@ class ProductValidatorImplTest {
             System.out.println(testName + " = FAIL");
         }
     }
-
 
 
 }

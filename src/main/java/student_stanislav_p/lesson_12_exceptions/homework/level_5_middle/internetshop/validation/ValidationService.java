@@ -1,7 +1,9 @@
 package student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.validation;
 
 import student_stanislav_p.lesson_12_exceptions.homework.level_5_middle.internetshop.product.Product;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class ValidationService {
 
 
@@ -15,7 +17,7 @@ public class ValidationService {
         if (product.getTitle().length() > 100) {
             throw new ValidationException("RULE №3", "Description couldn't be longer than 100 characters", "title");
         }
-        
+
         if (product.getPrice() == null) {
             throw new ValidationException("RULE №5", "Price can not be empty", "price");
         }

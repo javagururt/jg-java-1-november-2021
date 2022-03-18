@@ -4,7 +4,9 @@ package student_eduards_puzirevskis.lesson_11_collections.level_3_4_junior;
 
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 class Book {
     private Long id;
     private String title;

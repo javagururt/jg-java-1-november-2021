@@ -1,7 +1,14 @@
 package student_eduards_puzirevskis.lesson_11_collections.level_3_4_junior;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Optional;
+import java.util.Set;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class BookDatabaseImpl implements BookDatabase {
 
     List<Book> bookList = new ArrayList<>();
@@ -148,7 +155,6 @@ class BookDatabaseImpl implements BookDatabase {
             }
         } return bookIndexInList;
     }
-
 
 
 }

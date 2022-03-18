@@ -12,7 +12,9 @@ package student_stanislav_p.lesson_12_exceptions.homework.level_4_junior;
 
 import java.util.ArrayList;
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class Task_25 {
     public static void main(String[] args) {
         Task_25 no = new Task_25();

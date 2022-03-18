@@ -19,28 +19,29 @@ try {
 
 */
 
-/** Написано неправильно. Надо поменять местами блоки catch */
+/**
+ * Написано неправильно. Надо поменять местами блоки catch
+ */
 
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class MultiCatchExample {
 
-            public static void main(String args[])
-            {
-                Scanner scn = new Scanner(System.in);
-                try {
-                    int n = Integer.parseInt(scn.nextLine());
+    public static void main(String args[]) {
+        Scanner scn = new Scanner(System.in);
+        try {
+            int n = Integer.parseInt(scn.nextLine());
 
-                    System.out.println(n + " is a " + (99%n == 0) +" factor of 99");
-                }
-                catch (ArithmeticException e)  // сперва мы обрабатываем это исключения
-                {
-                    System.out.println("Arithmetic " + e);
-                }
-                catch (Exception e)
-                {
-                    System.out.println("Exception " + e);
-                }
-            }
+            System.out.println(n + " is a " + (99 % n == 0) + " factor of 99");
+        } catch (ArithmeticException e)  // сперва мы обрабатываем это исключения
+        {
+            System.out.println("Arithmetic " + e);
+        } catch (Exception e) {
+            System.out.println("Exception " + e);
+        }
+    }
 }

@@ -3,6 +3,7 @@ package student_julija_radchenko.lesson_11_homeworks.level_3_junior.task_15;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 import teacher.annotations.CodeReview;
 
@@ -26,6 +27,16 @@ public interface BookDatabase {
     void deleteByAuthor(String author);
 
     void deleteByTitle(String title);
+
+    List<Book> find(SearchCriteria searchCriteria);
+
+    Set<String> findUniqueAuthors();
+
+    Set<String> findUniqueTitles();
+
+    Set<Book> findUniqueBooks();
+
+    boolean contains(Book book);
 
 }
 

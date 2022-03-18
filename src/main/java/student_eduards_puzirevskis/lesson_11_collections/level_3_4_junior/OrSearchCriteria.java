@@ -1,23 +1,26 @@
 package student_eduards_puzirevskis.lesson_11_collections.level_3_4_junior;
 
- class OrSearchCriteria implements SearchCriteria {
+import teacher.annotations.CodeReview;
 
-  private SearchCriteria leftCondition;
-  private SearchCriteria rightCondition;
+@CodeReview(approved = true)
+class OrSearchCriteria implements SearchCriteria {
 
-  public OrSearchCriteria(SearchCriteria leftCondition, SearchCriteria rightCondition) {
-   this.leftCondition = leftCondition;
-   this.rightCondition = rightCondition;
-  }
+ private SearchCriteria leftCondition;
+ private SearchCriteria rightCondition;
 
-  @Override
-  public boolean match(Book book) {
-   return this.leftCondition.match(book) || this.rightCondition.match(book);
-  }
-
-  @Override
-  public String searchCriteriaName() {
-   return this.leftCondition.searchCriteriaName() + " OR " + this.rightCondition.searchCriteriaName();
-  }
-
+ public OrSearchCriteria(SearchCriteria leftCondition, SearchCriteria rightCondition) {
+  this.leftCondition = leftCondition;
+  this.rightCondition = rightCondition;
  }
+
+ @Override
+ public boolean match(Book book) {
+  return this.leftCondition.match(book) || this.rightCondition.match(book);
+ }
+
+ @Override
+ public String searchCriteriaName() {
+  return this.leftCondition.searchCriteriaName() + " OR " + this.rightCondition.searchCriteriaName();
+ }
+
+}

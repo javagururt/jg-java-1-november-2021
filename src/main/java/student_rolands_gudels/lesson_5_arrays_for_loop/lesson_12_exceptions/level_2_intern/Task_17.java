@@ -6,5 +6,7 @@ public class Task_17 {
 
     class AccessDeniedException extends Exception {
 
+   Потому - что в RuntimeException могут быть сгенерированы, но не пойманы во время выполнения метода.
+
     }*/
 }
