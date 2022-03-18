@@ -1,14 +1,13 @@
 package student_stanislav_p.lesson_16.lessoncode;
 
-import teacher.lesson_16.lessoncode.BankAccount;
 
 import java.math.BigDecimal;
 
 class BankAccountDepositRunnable implements Runnable {
 
-    private teacher.lesson_16.lessoncode.BankAccount bankAccount;
+    private BankAccount bankAccount;
 
-    public BankAccountDepositRunnable(teacher.lesson_16.lessoncode.BankAccount bankAccount) {
+    public BankAccountDepositRunnable(BankAccount bankAccount) {
         this.bankAccount = bankAccount;
     }
 

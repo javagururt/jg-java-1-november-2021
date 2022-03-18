@@ -1,14 +1,13 @@
 package student_stanislav_p.lesson_16.lessoncode;
 
-import teacher.lesson_16.lessoncode.BankAccount;
-import teacher.lesson_16.lessoncode.BankAccountDepositRunnable;
+
 
 import java.util.Date;
 
 class BankAccountDemo {
 
     public static void main(String[] args) throws InterruptedException {
-        var bankAccount = new teacher.lesson_16.lessoncode.BankAccount();
+        var bankAccount = new BankAccount();
         bankAccount.setCardholder("Ruslan");
         var depositThread = new Thread(new BankAccountDepositRunnable(bankAccount));
         depositThread.start();

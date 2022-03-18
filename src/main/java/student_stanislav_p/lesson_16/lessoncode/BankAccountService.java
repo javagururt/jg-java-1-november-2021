@@ -1,8 +1,6 @@
 package student_stanislav_p.lesson_16.lessoncode;
 
-import teacher.lesson_16.lessoncode.BankAccount;
-import teacher.lesson_16.lessoncode.BankAccountRepository;
-import teacher.lesson_16.lessoncode.BankAccountValidationService;
+
 
 import java.math.BigDecimal;
 import java.util.Random;
@@ -11,14 +9,14 @@ class BankAccountService {
 
     private BankAccountValidationService validationService;
     private BankAccountRepository repository;
-    private teacher.lesson_16.lessoncode.BankAccount bankAccount;
+    private BankAccount bankAccount;
 
     BankAccountService(BankAccountValidationService validationService, BankAccountRepository repository) {
         this.validationService = validationService;
         this.repository = repository;
     }
 
-    void increaseBalance(teacher.lesson_16.lessoncode.BankAccount bankAccount, BigDecimal deposit) {
+    void increaseBalance(BankAccount bankAccount, BigDecimal deposit) {
         this.bankAccount = bankAccount;
 
         sleep();

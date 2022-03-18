@@ -2,8 +2,7 @@ package student_stanislav_p.lesson_15.homework.level_6_middle.videostore;
 
 // This file is the original program.  It has been left here so you can compare it with the refactored version.
 
-import teacher.lesson_15.homework.level_6_middle.videostore.Movie;
-import teacher.lesson_15.homework.level_6_middle.videostore.Rental;
+
 
 import java.util.Enumeration;
 import java.util.Vector;
@@ -17,7 +16,7 @@ class Customer {
         this.name = name;
     }
 
-    public void addRental(teacher.lesson_15.homework.level_6_middle.videostore.Rental rental) {
+    public void addRental(Rental rental) {
         rentals.addElement(rental);
     }
 
@@ -33,19 +32,19 @@ class Customer {
 
         while (rentals.hasMoreElements()) {
             double thisAmount = 0;
-            teacher.lesson_15.homework.level_6_middle.videostore.Rental each = (teacher.lesson_15.homework.level_6_middle.videostore.Rental) rentals.nextElement();
+            Rental each = (Rental) rentals.nextElement();
 
             // determines the amount for each line
             switch (each.getMovie().getPriceCode()) {
-                case teacher.lesson_15.homework.level_6_middle.videostore.Movie.REGULAR:
+                case Movie.REGULAR:
                     thisAmount += 2;
                     if (each.getDaysRented() > 2)
                         thisAmount += (each.getDaysRented() - 2) * 1.5;
                     break;
-                case teacher.lesson_15.homework.level_6_middle.videostore.Movie.NEW_RELEASE:
+                case Movie.NEW_RELEASE:
                     thisAmount += each.getDaysRented() * 3;
                     break;
-                case teacher.lesson_15.homework.level_6_middle.videostore.Movie.CHILDRENS:
+                case Movie.CHILDRENS:
                     thisAmount += 1.5;
                     if (each.getDaysRented() > 3)
                         thisAmount += (each.getDaysRented() - 3) * 1.5;
@@ -54,7 +53,7 @@ class Customer {
 
             frequentRenterPoints++;
 
-            if (each.getMovie().getPriceCode() == teacher.lesson_15.homework.level_6_middle.videostore.Movie.NEW_RELEASE
+            if (each.getMovie().getPriceCode() == Movie.NEW_RELEASE
                     && each.getDaysRented() > 1)
                 frequentRenterPoints++;
 

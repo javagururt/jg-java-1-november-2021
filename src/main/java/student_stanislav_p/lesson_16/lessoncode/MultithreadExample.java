@@ -1,7 +1,5 @@
 package student_stanislav_p.lesson_16.lessoncode;
 
-import teacher.lesson_16.lessoncode.BankAccount;
-import teacher.lesson_16.lessoncode.BankAccountService;
 
 import java.math.BigDecimal;
 
@@ -9,12 +7,12 @@ class MultithreadExample {
 
 
     public static void main(String[] args) throws InterruptedException {
-        var service = new teacher.lesson_16.lessoncode.BankAccountService(null, null);
-        var firstBankAccount = new teacher.lesson_16.lessoncode.BankAccount();
+        var service = new BankAccountService(null, null);
+        var firstBankAccount = new BankAccount();
         firstBankAccount.setAmount(new BigDecimal("10000"));
         firstBankAccount.setCardholder("Viktor");
 
-        var secondBankAccount = new teacher.lesson_16.lessoncode.BankAccount();
+        var secondBankAccount = new BankAccount();
         secondBankAccount.setCardholder("Ruslan");
 
         var thread1 = new Thread(() -> service.increaseBalance(firstBankAccount, new BigDecimal("10000")));
