@@ -7,11 +7,13 @@ public class BookWithID  {
     private String title;
     private String author;
     private static long count = 1L;
+    private String year;
 
-    BookWithID(String author, String title) {
+    public BookWithID(String author, String title) {
         this.author = author;
         this.title = title;
         this.id = count++;
+
     }
 
     public void setId(Long id) {
@@ -35,7 +37,7 @@ public class BookWithID  {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         BookWithID book = (BookWithID) o;
-        return id.equals(book.id) && title.equals(book.title) && author.equals(book.author);
+        return title.equals(book.title) && author.equals(book.author);
     }
 
     @Override
