@@ -1,6 +1,5 @@
 package student_valeriia_kulikova.lesson_9_interfaces.homework.level_3_junior;
 
-import java.util.Arrays;
 
 public class ProductDataBaseTest {
     public static void main(String[] args) {

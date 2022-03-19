@@ -1,8 +1,5 @@
 package student_valeriia_kulikova.lesson_11_collections.homework.level_2_intern;
 
-import student_valeriia_kulikova.lesson_11_collections.homework.level_3_junior.SearchCriteria.BookForSearch;
-import student_valeriia_kulikova.lesson_11_collections.homework.level_3_junior.SearchCriteria.SearchCriteria;
-
 import java.util.List;
 import java.util.Optional;
 

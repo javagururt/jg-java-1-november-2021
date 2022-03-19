@@ -1,4 +1,4 @@
-package student_valeriia_kulikova.lesson_11_collections.homework.level_3_junior.SearchCriteria;
+package student_valeriia_kulikova.lesson_11_collections.homework.level_3_4_junior.SearchCriteria;
 
 
 import java.util.Objects;

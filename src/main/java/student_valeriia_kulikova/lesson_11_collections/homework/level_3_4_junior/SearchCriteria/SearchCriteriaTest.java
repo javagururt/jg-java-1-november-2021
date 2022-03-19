@@ -1,7 +1,9 @@
-package student_valeriia_kulikova.lesson_11_collections.homework.level_3_junior.SearchCriteria;
+package student_valeriia_kulikova.lesson_11_collections.homework.level_3_4_junior.SearchCriteria;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class SearchCriteriaTest {
     public static void main(String[] args) {
@@ -28,6 +30,7 @@ public class SearchCriteriaTest {
         BookForSearch book3 = new BookForSearch("Author3", "Zveroboi", "1890");
         BookForSearch book4 = new BookForSearch("Kuper", "Zveroboi", "1890");
         BookForSearch book5 = new BookForSearch("Author3", "title5", "1995");
+        BookForSearch book6 = new BookForSearch("Author6", "title6", "2022");
         bookList.save(book1);
         bookList.save(book2);
         bookList.save(book3);
@@ -35,13 +38,31 @@ public class SearchCriteriaTest {
         bookList.save(book5);
 
 
-        List<BookForSearch> testResult = new ArrayList<>();
-        testResult.add(book2);
+        List<BookForSearch> expectedResultForTest6 = new ArrayList<>();
+        expectedResultForTest6.add(book2);
+        expectedResultForTest6.add(book4);
+        Set<String> expectedResultForTest7 = new HashSet<>();
+        expectedResultForTest7.add("Author1");
+        expectedResultForTest7.add("Kuper");
+        expectedResultForTest7.add("Author3");
 
-        testResult.add(book4);
+        Set<String> expectedResultForTest8 = new HashSet<>();
+        expectedResultForTest8.add("title1");
+        expectedResultForTest8.add("title2");
+        expectedResultForTest8.add("Zveroboi");
+        expectedResultForTest8.add("title5");
 
-        List<BookForSearch> realResult = bookList.find(authorSearchCriteria);
+        Set<BookForSearch> expectedResultForTest9 = new HashSet<>();
+        expectedResultForTest9.add(book1);
+        expectedResultForTest9.add(book2);
+        expectedResultForTest9.add(book3);
+        expectedResultForTest9.add(book4);
+        expectedResultForTest9.add(book5);
 
+        List<BookForSearch> realResultForTest6 = bookList.find(authorSearchCriteria);
+        Set<String> realResultForTest7 = bookList.findUniqueAuthors();
+        Set<String> realResultForTest8 = bookList.findUniqueTitles();
+        Set<BookForSearch> realResultForTest9 = bookList.findUniqueBooks();
 
 
         printTestResult("Test 1 'Search by Author'", authorSC.match(book1));
@@ -54,12 +75,17 @@ public class SearchCriteriaTest {
 
         printTestResult("Test 5 'Search 'OR'' ", orSC.match(book5));
 
-        printTestResult("Test 6 'Find by Search Criteria' ", realResult.equals(testResult));
-        printList("Real Result: ", realResult);
-        printList("Test Result", testResult);
-        printList("DB", bookList.list);
+        printTestResult("Test 6 'Find by Search Criteria' ", realResultForTest6.equals(expectedResultForTest6));
 
+        printTestResult("Test 7 'Find unique authors' ",  realResultForTest7.equals(expectedResultForTest7));
 
+        printTestResult("Test 8 'Find unique titles' ",  realResultForTest8.equals(expectedResultForTest8));
+
+        printTestResult("Test 9 'Find unique books' ", realResultForTest9.equals(expectedResultForTest9));
+
+        printTestResult("Test 10.1 (true) 'Contains Book'", bookList.contains(book1));
+
+        printTestResult("Test 10.2 (false) 'Contains Book'", !bookList.contains(book6));
     }
     public static void printTestResult(String text, boolean result) {
         if (result) {
@@ -69,13 +95,7 @@ public class SearchCriteriaTest {
         }
     }
 
-    private static void printList(String text, List list) {
-        System.out.println(text);
-        for (int i = 0; i < list.size(); i++) {
-            System.out.println(" " + list.get(i));
-        }
-        System.out.println();
-    }
+
 }
 
 
