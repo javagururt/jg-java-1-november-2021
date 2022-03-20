@@ -2,9 +2,9 @@
 
 Найдите в документации Java (javadoc) для чего испольхуются
 следующие ошибки:
-- ArrayIndexOutOfBoundsException
-- IllegalArgumentException
-- IOException
-- StackOverflowError
-- OutOfMemoryError
-- NumberFormatException
+- ArrayIndexOutOfBoundsException - выход за пределы массива
+- IllegalArgumentException - исключение во время выполнения метода. Находится внутри класса Runtime.
+- IOException - контролируемое исключение.
+- StackOverflowError - ошибка JVM. Находится внутри класса Error. Говорит о том, что нет больше памяти, JVM повреждена или закончились ресурсы.
+- OutOfMemoryError - ошибка JVM. Ошибка попытки JVM создать объекты, для которых нет места в памяти.
+- NumberFormatException - исключение. Например, если нужно конвертировать в числовое значение String, содержащий НЕ цифры, а буквы.
