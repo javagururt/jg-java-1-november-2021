@@ -3,9 +3,9 @@ package student_stanislav_p.lesson_12_exceptions.homework.level_1_intern;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
+
 public class Task_4 {
 }
-
 
 class MyException extends Exception {
     private int detail;
@@ -15,14 +15,14 @@ class MyException extends Exception {
         this.detail = detail;
     }
 
-        @Override
-        public String toString() {
-            return "MyException{"
-                    + "detail=" + detail
-                    + ", message=" + getMessage()
-                    + "} ";
-        }
+    @Override
+    public String toString() {
+        return "MyException{"
+                + "detail=" + detail
+                + ", message=" + getMessage()
+                + "} ";
     }
+}
 
 class MyExceptionDemo {
     public static void main(String[] args) {
