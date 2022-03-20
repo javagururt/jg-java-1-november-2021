@@ -1,7 +1,9 @@
-Как правильно тестировать код, который может выкинуть ошибку?
+package student_valeriia_kulikova.lesson_12_exceptions.homework.level_2_intern;
 
-class BankApiImplTest {
+import java.util.ArrayList;
+import java.util.List;
 
+public class BankApiImplTest {
     public static void main(String[] args) {
         BankApiImplTest test = new BankApiImplTest();
         test.shouldThrowExceptionWhenCredentialsNotHaveAppropriateRole();
@@ -9,9 +11,9 @@ class BankApiImplTest {
 
     public void shouldThrowExceptionWhenCredentialsNotHaveAppropriateRole() {
         List<BankClient> clients = new ArrayList();
-        BankApi api = new BankApi(clients);
+        BankApi api = new BankApiImpl(clients);
 
-        List<Role> roles = new ArrayList();
+        List<UserCredentials.Role> roles = new ArrayList();
         UserCredentials credentials = new UserCredentials(roles);
 
         try {
@@ -24,5 +26,4 @@ class BankApiImplTest {
         }
 
     }
-
 }

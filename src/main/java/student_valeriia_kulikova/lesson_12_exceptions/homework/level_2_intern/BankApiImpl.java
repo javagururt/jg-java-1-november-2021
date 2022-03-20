@@ -1,6 +1,9 @@
-Создайте класс BankApiImpl так, что бы он реализовывал интерфейс BankApi:
+package student_valeriia_kulikova.lesson_12_exceptions.homework.level_2_intern;
 
-class BankApiImpl implements BankApi {
+import java.util.List;
+import java.util.Optional;
+
+public class BankApiImpl implements BankApi {
 
     private List<BankClient> clients;
 
@@ -10,7 +13,7 @@ class BankApiImpl implements BankApi {
 
     public Optional<BankClient> findByUid(UserCredentials credentials,
                                           String uid) throws AccessDeniedException {
-        if (credentials.getRoles().contains(Role.CAN_SEARCH_CLIENTS)) {
+        if (credentials.getRoles().contains(UserCredentials.Role.CAN_SEARCH_CLIENTS)) {
             throw new AccessDeniedException();
         }
         for (BankClient client : clients) {
@@ -20,7 +23,4 @@ class BankApiImpl implements BankApi {
         }
         return Optional.empty();
     }
-
 }
-
-Создайте класс BankApiImplTest и напишите тесты для метода findByUid().
