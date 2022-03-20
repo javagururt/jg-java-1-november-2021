@@ -14,6 +14,7 @@ public class BankApiImplTest {
         BankApi api = new BankApiImpl(clients);
 
         List<UserCredentials.Role> roles = new ArrayList();
+        roles.add(UserCredentials.Role.CAN_SEARCH_CLIENTS);
         UserCredentials credentials = new UserCredentials(roles);
 
         try {
