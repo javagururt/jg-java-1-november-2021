@@ -1,4 +1,4 @@
-package student_dmitrijs_sinkevics.lesson_11.lvl_2_intern;
+package student_dmitrijs_sinkevics.lesson_11.lvl_2_3;
 
 import java.util.List;
 import java.util.Optional;
