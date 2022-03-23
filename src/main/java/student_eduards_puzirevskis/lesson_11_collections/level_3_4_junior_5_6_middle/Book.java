@@ -1,4 +1,4 @@
-package student_eduards_puzirevskis.lesson_11_collections.level_3_4_junior;
+package student_eduards_puzirevskis.lesson_11_collections.level_3_4_junior_5_6_middle;
 
 
 
@@ -7,13 +7,13 @@ import java.util.Objects;
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-class Book {
+public class Book {
     private Long id;
     private String title;
     private String author;
     private int yearOfIssue;
 
-    Book(String title, String author, int yearOfIssue) {
+    public Book(String title, String author, int yearOfIssue) {
         this.title = title;
         this.author = author;
         this.yearOfIssue = yearOfIssue;

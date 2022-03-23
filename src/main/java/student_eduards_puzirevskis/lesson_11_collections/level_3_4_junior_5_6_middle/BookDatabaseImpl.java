@@ -1,15 +1,11 @@
-package student_eduards_puzirevskis.lesson_11_collections.level_3_4_junior;
+package student_eduards_puzirevskis.lesson_11_collections.level_3_4_junior_5_6_middle;
 
-import java.util.ArrayList;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Optional;
-import java.util.Set;
+import java.util.*;
 
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-class BookDatabaseImpl implements BookDatabase {
+public class BookDatabaseImpl implements BookDatabase {
 
     List<Book> bookList = new ArrayList<>();
     private Long bookStartId = 1L;
@@ -138,6 +134,24 @@ class BookDatabaseImpl implements BookDatabase {
         return false;
     }
 
+    @Override
+    public Map<String, List<Book>> getAuthorToBooksMap() {
+        Map<String, List<Book>> byAuthor = new HashMap<>();
+        for (Book book: bookList) {
+            byAuthor.put(book.getAuthor(),findByAuthor(book.getAuthor()));
+        }
+        return byAuthor;
+    }
+
+    @Override
+    public Map<String, Integer> getEachAuthorBookCount() {
+        Map<String, Integer> authorBookCountInTheList = new HashMap<>();
+        for (Book book: bookList) {
+            authorBookCountInTheList.put(book.getAuthor(), countBooksByAuthor(book.getAuthor()));
+        }
+        return authorBookCountInTheList;
+    }
+
     private boolean findBookINListById(Long bookId) {
         for (Book book : bookList) {
             if (book.getId().equals(bookId)) {
@@ -145,6 +159,16 @@ class BookDatabaseImpl implements BookDatabase {
             }
         }
         return false;
+    }
+
+    private int countBooksByAuthor(String author) {
+        int countOfBooks = 0;
+        for (Book book : bookList) {
+            if (book.getAuthor().equals(author)) {
+                countOfBooks++;
+            }
+        }
+        return countOfBooks;
     }
 
     private int getBookIndexInListById(Long bookId) {
