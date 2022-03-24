@@ -1,0 +1,23 @@
+package student_eduards_puzirevskis.lesson_11_collections.level_3_4_junior_5_6_middle;
+
+import org.junit.Test;
+
+import static org.junit.Assert.*;
+
+public class TitleSearchCriteriaTest {
+
+    @Test
+    public void shouldFindMatch() {
+        Book it = new Book("It", "Stephen King", 1986);
+        TitleSearchCriteria criteria = new TitleSearchCriteria("It");
+        assertTrue(criteria.match(it));
+    }
+
+    @Test
+    public void shouldNotFindMatch() {
+        Book houseOfTheDragon = new Book("House of the dragon", "George Martin", 2021);
+        TitleSearchCriteria criteria = new TitleSearchCriteria("It");
+        assertFalse(criteria.match(houseOfTheDragon));
+    }
+
+}
