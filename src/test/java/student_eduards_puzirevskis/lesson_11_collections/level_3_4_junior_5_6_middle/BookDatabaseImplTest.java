@@ -1,9 +1,10 @@
-package student_eduards_puzirevskis.lesson_11_collections.level_3_4_junior;
+package student_eduards_puzirevskis.lesson_11_collections.level_3_4_junior_5_6_middle;
 
 import org.junit.Test;
 
 
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 
 import static org.junit.Assert.*;
@@ -138,6 +139,31 @@ public class BookDatabaseImplTest {
         Book gameOfThrones = new Book("Game Of Thrones", "George Martin",1996);
         assertFalse(bookDatabase.contains(gameOfThrones));
     }
+
+    @Test
+    public void shouldReturnMapByAuthor() {
+        bookDatabase.save(it);
+        bookDatabase.save(shining);
+        bookDatabase.save(lordOfTheRings);
+        List<Book> expectedKing = List.of(it, shining);
+        List<Book> expectedTolkien = List.of(lordOfTheRings);
+        Map<String, List<Book>> victim = bookDatabase.getAuthorToBooksMap();
+        assertTrue(victim.containsKey("Stephen King") && victim.containsValue(expectedKing));
+        assertTrue(victim.containsKey("John Tolkien") && victim.containsValue(expectedTolkien));
+    }
+
+    @Test
+    public void shouldCountBooksByAuthor() {
+        bookDatabase.save(it);
+        bookDatabase.save(shining);
+        bookDatabase.save(lordOfTheRings);
+        Map<String, Integer> actual = bookDatabase.getEachAuthorBookCount();
+        Map<String,Integer> expected = Map.of(
+                "Stephen King", 2,
+                "John Tolkien",1 );
+        assertEquals(actual, expected);
+    }
+
 
     private void saveBooks(Book it, Book houseOfTheDragon, Book lordOfTheRings, Book shining, Book maskaradDjuma, Book maskaradLermontov) {
         bookDatabase.save(it);

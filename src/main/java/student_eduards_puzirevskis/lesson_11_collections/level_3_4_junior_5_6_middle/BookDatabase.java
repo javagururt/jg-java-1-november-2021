@@ -1,13 +1,14 @@
-package student_eduards_puzirevskis.lesson_11_collections.level_3_4_junior;
+package student_eduards_puzirevskis.lesson_11_collections.level_3_4_junior_5_6_middle;
 
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
 
 import teacher.annotations.CodeReview;
 
 @CodeReview(approved = true)
-interface BookDatabase {
+public interface BookDatabase {
 
      Long save(Book book);
 
@@ -36,5 +37,9 @@ interface BookDatabase {
      Set<Book> findUniqueBooks();
 
      boolean contains(Book book);
+
+     Map<String, List<Book>> getAuthorToBooksMap();
+
+     Map<String, Integer> getEachAuthorBookCount();
 
 }
