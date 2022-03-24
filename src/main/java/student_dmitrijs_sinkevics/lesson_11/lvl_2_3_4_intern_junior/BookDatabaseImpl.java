@@ -1,8 +1,6 @@
-package student_dmitrijs_sinkevics.lesson_11.lvl_2_3;
+package student_dmitrijs_sinkevics.lesson_11.lvl_2_3_4_intern_junior;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class BookDatabaseImpl implements BookDatabase {
 
@@ -118,6 +116,38 @@ public class BookDatabaseImpl implements BookDatabase {
                 books.remove(i);
             }
         }
+    }
+
+    @Override
+    public Set<String> findUniqueAuthors() {
+        Set<String> authors = new HashSet<>();
+        for (int i = 0; i < books.size(); i++){
+            authors.add(books.get(i).getAuthor());
+        }
+        return authors;
+    }
+
+    @Override
+    public Set<String> findUniqueTitles() {
+        Set<String> titles = new HashSet<>();
+        for (int i = 0; i < books.size(); i++){
+            titles.add(books.get(i).getTitle());
+        }
+        return titles;
+    }
+
+    @Override
+    public Set<Book> findUniqueBooks() {
+        Set<Book> uniqueBookList = new HashSet<>();
+        for (int i = 0; i < books.size(); i++){
+            uniqueBookList.add(books.get(i));
+        }
+        return uniqueBookList;
+    }
+
+    @Override
+    public boolean contains(Book book) {
+        return books.contains(book);
     }
 
 

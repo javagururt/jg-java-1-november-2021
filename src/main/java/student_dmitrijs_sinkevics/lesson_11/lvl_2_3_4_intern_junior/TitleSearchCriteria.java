@@ -1,4 +1,4 @@
-package student_dmitrijs_sinkevics.lesson_11.lvl_2_3;
+package student_dmitrijs_sinkevics.lesson_11.lvl_2_3_4_intern_junior;
 
 public class TitleSearchCriteria implements SearchCriteria {
 

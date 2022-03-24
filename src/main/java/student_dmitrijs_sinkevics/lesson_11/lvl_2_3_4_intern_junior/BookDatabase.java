@@ -1,7 +1,8 @@
-package student_dmitrijs_sinkevics.lesson_11.lvl_2_3;
+package student_dmitrijs_sinkevics.lesson_11.lvl_2_3_4_intern_junior;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 public interface BookDatabase {
     Long save(Book book);
@@ -14,5 +15,8 @@ public interface BookDatabase {
     int countAllBooks();
     void deleteByAuthor(String author);
     void deleteByTitle(String title);
-
+    Set<String> findUniqueAuthors();
+    Set<String> findUniqueTitles();
+    Set<Book> findUniqueBooks();
+    boolean contains(Book book);
 }
