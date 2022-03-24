@@ -83,6 +83,17 @@ public class BookDatabaseImpl implements BookDatabase {
     }
 
     @Override
+    public List<Book> find(SearchCriteria searchCriteria) {
+        List<Book> searchList = new ArrayList<>();
+        for (Book book : books) {
+            if (searchCriteria.equals(book.getTitle()) || searchCriteria.equals(book.getAuthor()) || searchCriteria.equals(book.getYearOfIssue())) {
+                searchList.add(book);
+            }
+        }
+        return searchList;
+    }
+
+    @Override
     public int countAllBooks() {
 
         int booksCount = books.size();
@@ -108,4 +119,6 @@ public class BookDatabaseImpl implements BookDatabase {
             }
         }
     }
+
+
 }

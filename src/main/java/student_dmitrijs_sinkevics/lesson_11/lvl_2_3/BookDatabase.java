@@ -10,6 +10,7 @@ public interface BookDatabase {
     Optional<Book> findById(Long bookId);
     List<Book> findByAuthor(String author);
     List<Book> findByTitle(String title);
+    List<Book> find(SearchCriteria searchCriteria);
     int countAllBooks();
     void deleteByAuthor(String author);
     void deleteByTitle(String title);
