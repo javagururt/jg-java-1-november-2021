@@ -16,7 +16,7 @@ interface TaxCalculator {
 
 }
  */
-class TaxCalculatorImpl implements TaxCalculator {
+public class TaxCalculatorImpl implements TaxCalculator {
 
     @Override
     public BigDecimal calculateTax(BigDecimal income) {

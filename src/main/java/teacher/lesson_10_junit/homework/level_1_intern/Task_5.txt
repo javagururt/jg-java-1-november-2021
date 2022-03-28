@@ -1,4 +1,4 @@
-Реализация класса TaxCalculatorImpl:
+                                                                             Реализация класса TaxCalculatorImpl:
 
 import java.math.BigDecimal;
 
