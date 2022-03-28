@@ -2,6 +2,7 @@ package student_mihails_nikolajevs.lesson_11_collections.level_2_intern_;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.Set;
 
 public interface BookDatabase {
 
@@ -22,5 +23,9 @@ public interface BookDatabase {
     void deleteByAuthor(String author);
 
     void deleteByTitle(String title);
+
+    Set<String> findUniqueAuthors();
+
+
 
 }
