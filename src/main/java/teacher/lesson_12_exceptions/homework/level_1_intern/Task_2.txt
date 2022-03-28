@@ -2,4 +2,5 @@
 
 class MyException extends Throwables {
 
+
 }
