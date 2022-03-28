@@ -11,7 +11,7 @@ Shape: calculateArea() и calculatePerimeter().
 Напишите тесты для класса Square.
  */
 @CodeReview(approved = true)
-class Square extends Shape {
+public class Square extends Shape {
 
       private double side;
 

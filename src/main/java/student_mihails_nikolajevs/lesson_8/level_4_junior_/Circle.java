@@ -29,7 +29,7 @@ class Circle extends Shape {
 }
  */
 @CodeReview(approved = true)
-class Circle extends Shape {
+public class Circle extends Shape {
 
     private double radius;
 
@@ -38,11 +38,11 @@ class Circle extends Shape {
         this.radius = radius;
     }
     @Override
-    double calculateArea() {
+    public double calculateArea() {
         return radius * radius * Math.PI;
     }
     @Override
-    double calculatePerimeter() {
+    public double calculatePerimeter() {
         return 2 * radius * Math.PI;
     }
 

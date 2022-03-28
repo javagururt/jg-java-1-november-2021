@@ -11,7 +11,7 @@ Shape: calculateArea() и calculatePerimeter().
 Напишите тесты для класса Rectangle.
  */
 @CodeReview(approved = true)
-class Rectangle extends Shape {
+public class Rectangle extends Shape {
 
      private double firstSide;
      private double secondSide;
@@ -23,13 +23,12 @@ class Rectangle extends Shape {
      }
 
      @Override
-     double calculateArea() {
+     public double calculateArea() {
          return firstSide * secondSide;
      }
 
      @Override
-
-     double calculatePerimeter() {
+     public double calculatePerimeter() {
          return firstSide * 2 + secondSide * 2;
      }
 

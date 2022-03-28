@@ -12,7 +12,7 @@ Shape: calculateArea() и calculatePerimeter().
 Напишите тесты для класса Triangle.
  */
 @CodeReview(approved = true)
-class Triangle extends Shape {
+public class Triangle extends Shape {
 
       private double sideLength;
 
