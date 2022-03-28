@@ -1,0 +1,6 @@
+Почему класс AccessDeniedException в нашем случае
+лучше наследовать от Exception, а не от RuntimeException?
+
+От класса Exception унаследован RuntimeException.
+Exception – это проверенные исключения.
+RuntimeException – это непроверенные исключения.
