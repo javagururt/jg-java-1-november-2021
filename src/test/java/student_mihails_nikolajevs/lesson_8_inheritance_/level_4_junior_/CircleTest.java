@@ -1,4 +1,4 @@
-package student_mihails_nikolajevs.lesson_8_inheritance_.level_4_junior_;
+package java.student_mihails_nikolajevs.lesson_8_inheritance_.level_4_junior_;
 
 import org.junit.Test;
 import student_mihails_nikolajevs.lesson_8.level_4_junior_.Circle;
