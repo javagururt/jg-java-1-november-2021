@@ -36,4 +36,5 @@ public class TaxCalculatorImplTest {
         var taxToPay = taxCalculator.calculateTax(income);
         assertEquals(taxToPay, new BigDecimal("9000.00"));
     }
+
 }
