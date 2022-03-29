@@ -1,4 +1,4 @@
-package java.student_mihails_nikolajevs.lesson_10_junit_.level_1_intern_;
+package student_mihails_nikolajevs.lesson_10_junit_.level_1_intern_;
 
 import org.junit.Test;
 import student_mihails_nikolajevs.lesson_10_junit.level_1_intern_.TaxCalculator;
