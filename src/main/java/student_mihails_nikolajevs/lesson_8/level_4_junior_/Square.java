@@ -20,11 +20,11 @@ public class Square extends Shape {
           this.side = side;
       }
       @Override
-     double calculateArea() {
+      public double calculateArea() {
           return side * side;
      }
      @Override
-     double calculatePerimeter() {
+     public double calculatePerimeter() {
           return side * 4;
      }
 
