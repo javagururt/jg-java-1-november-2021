@@ -27,7 +27,7 @@ public class Triangle extends Shape {
       }
 
       @Override
-      double calculatePerimeter() {
+      public double calculatePerimeter() {
           return sideLength * 3;
       }
 }
