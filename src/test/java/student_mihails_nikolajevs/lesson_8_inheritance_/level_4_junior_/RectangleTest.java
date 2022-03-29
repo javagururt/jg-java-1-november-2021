@@ -1,4 +1,4 @@
-package java.student_mihails_nikolajevs.lesson_8_inheritance_.level_4_junior_;
+package student_mihails_nikolajevs.lesson_8_inheritance_.level_4_junior_;
 
 import org.junit.Test;
 import student_mihails_nikolajevs.lesson_8.level_4_junior_.Rectangle;
@@ -23,6 +23,7 @@ public class RectangleTest {
          double expected = 18;
 
          assertEquals(expected, actual, 0.0001);
+
      }
 }
 

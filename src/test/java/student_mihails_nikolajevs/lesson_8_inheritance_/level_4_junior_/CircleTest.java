@@ -1,4 +1,4 @@
-package java.student_mihails_nikolajevs.lesson_8_inheritance_.level_4_junior_;
+package student_mihails_nikolajevs.lesson_8_inheritance_.level_4_junior_;
 
 import org.junit.Test;
 import student_mihails_nikolajevs.lesson_8.level_4_junior_.Circle;
@@ -23,6 +23,7 @@ private Circle circle = new Circle("First Circle", 3);
         double expected = 18.849555921;
 
         assertEquals(expected,actual, 0.0001);
+
     }
 
 }
