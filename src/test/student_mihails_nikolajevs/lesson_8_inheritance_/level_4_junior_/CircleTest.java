@@ -25,5 +25,4 @@ private Circle circle = new Circle("First Circle", 3);
         assertEquals(expected,actual, 0.0001);
     }
 
-
 }

@@ -24,6 +24,5 @@ public class RectangleTest {
 
          assertEquals(expected, actual, 0.0001);
      }
-
 }
 
