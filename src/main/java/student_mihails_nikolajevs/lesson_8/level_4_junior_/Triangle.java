@@ -22,7 +22,7 @@ public class Triangle extends Shape {
       }
 
       @Override
-      double calculateArea() {
+      public double calculateArea() {
           return (sideLength * sideLength * Math.sqrt(3))/4;
       }
 
