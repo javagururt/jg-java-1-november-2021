@@ -26,7 +26,7 @@ public class WordServiceTest {
         if (realResult == expectedResult) {
             System.out.println("testWordCountCalculator is OK");
         } else {
-            System.out.println("testWordCountCalculator is FAIl");
+            System.out.println("testWordCountCalculator is FAIL");
         }
     }
 }
