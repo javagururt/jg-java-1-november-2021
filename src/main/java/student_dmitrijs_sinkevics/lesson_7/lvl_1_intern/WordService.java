@@ -6,7 +6,7 @@ public class WordService {
         WordService wordService = new WordService();
         String victimText = "apple banana banana coconut coconut coconut";
         String victimWord = wordService.findMostFrequentWord(victimText);
-        System.out.println("Most frequent word " + victimWord + " times");
+        System.out.println("Most frequent word " + victimWord);
     }
 
     public String findMostFrequentWord(String text) {
@@ -25,7 +25,7 @@ public class WordService {
 
         }
         System.out.println();
-        return  "(" + maxWordCount + ")" + " repeated " + totalCount;
+        return  "(" + maxWordCount + ")" + " repeated " + totalCount + " times";
     }
 
     public int wordCountCalculator (String[] separatedText, String desiredWord){
