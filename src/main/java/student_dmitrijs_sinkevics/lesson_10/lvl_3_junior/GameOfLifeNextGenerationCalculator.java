@@ -4,12 +4,12 @@ public class GameOfLifeNextGenerationCalculator {
 
     int width;
     int height;
-    int[][] map;
+    int[][] board;
 
     public GameOfLifeNextGenerationCalculator(int width, int height) {
         this.width = width;
         this.height = height;
-        this.map = new int[width][height];
+        this.board = new int[width][height];
     }
 
     public void printBoard() {
@@ -17,7 +17,7 @@ public class GameOfLifeNextGenerationCalculator {
         for (int y = 0; y < height; y++) {
             String line = "|";
             for (int x = 0; x < width; x++) {
-                if (this.map[x][y] == 0) {
+                if (this.board[x][y] == 0) {
                     line += "o";
                 } else {
                     line += "●";
@@ -30,11 +30,11 @@ public class GameOfLifeNextGenerationCalculator {
     }
 
     public void setAlive(int x, int y) {
-        this.map[x][y] = 1;
+        this.board[x][y] = 1;
     }
 
     public void setDead(int x, int y) {
-        this.map[x][y] = 0;
+        this.board[x][y] = 0;
     }
 
     public int countAliveNeighbours(int x, int y) {
@@ -63,7 +63,7 @@ public class GameOfLifeNextGenerationCalculator {
             return 0;
         }
 
-        return this.map[x][y];
+        return this.board[x][y];
     }
 
     public void step() {
@@ -90,7 +90,7 @@ public class GameOfLifeNextGenerationCalculator {
             }
         }
 
-        this.map = newBoard;
+        this.board = newBoard;
     }
 
 }
