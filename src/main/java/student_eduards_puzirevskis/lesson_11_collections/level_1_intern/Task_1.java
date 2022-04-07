@@ -1,7 +1,16 @@
 package student_eduards_puzirevskis.lesson_11_collections.level_1_intern;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Task_1 {
 
   /*
@@ -10,7 +19,7 @@ class Task_1 {
 PS: чем они отличаются друг от друга?
    */
 
-  List<String> myArrayList = new ArrayList<>();
+    List<String> myArrayList = new ArrayList<>();
 
   /*
   Коллекция, которая наследует свою функциональность от класса AbstractList и применяет интерфейс List.
@@ -20,7 +29,7 @@ PS: чем они отличаются друг от друга?
   Разрешает хранить дубликаты
    */
 
- List<String> stringListLinked = new LinkedList<>();
+    List<String> stringListLinked = new LinkedList<>();
  /*
  LinkedList — реализует интерфейс List. Является представителем двунаправленного списка,
   где каждый элемент структуры содержит указатели на предыдущий и следующий элементы.
@@ -31,7 +40,7 @@ PS: чем они отличаются друг от друга?
    Медленне в доступе, чем ArrayList, но быстрее добавляет/удаляет элементы
   */
 
- Map<String,Integer> hashmap = new HashMap<>();
+    Map<String,Integer> hashmap = new HashMap<>();
  /*
  HashMap позволяет хранить пары ключей и значений (key & value). Ключи не могут быть продублированы.
  По сути, это смесь ArrayList и LinkedList. Данные хранятся в корзинах, которые имеют тип
@@ -39,7 +48,7 @@ PS: чем они отличаются друг от друга?
  Данные можно получить по ключу
   */
 
- Set<String> hashSet = new HashSet<>();
+    Set<String> hashSet = new HashSet<>();
  /*
  HashSet в своей основе имеет HaspMap.
  Хранит только уникальные значения

@@ -2,10 +2,13 @@ package student_valeriia_kulikova.lesson_11_collections.homework.level_1_intern;
 
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Book {
 
-    private  String author;
-    private  int pages;
+    private String author;
+    private int pages;
     private String title;
 
     public String getAuthor() {

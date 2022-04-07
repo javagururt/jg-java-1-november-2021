@@ -1,15 +1,18 @@
 package student_valeriia_kulikova.lesson_9_interfaces.homework.level_3_junior;
 
-import java.util.Arrays;
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class OptionalProductDataBaseTest {
     public static void main(String[] args) {
         OptionalProductDataBaseTest test = new OptionalProductDataBaseTest();
         test.saveProductTest();
         test.findProductByTitleTest();
     }
-    void saveProductTest(){
+
+    void saveProductTest() {
         Product product1 = new Product("Alcatel");
         Product product2 = new Product("Apple");
         Product product3 = new Product("Sony");
@@ -51,11 +54,8 @@ public class OptionalProductDataBaseTest {
         Product expectedResult2 = product4;
 
 
-
         checkResult("TEST 2 (SEARCH)", newBase.findByTitle("Alcatel"), product1 );
         checkResult("TEST 3 (SEARCH)", newBase.findByTitle("Samsung"), product4 );
-
-
 
 
     }

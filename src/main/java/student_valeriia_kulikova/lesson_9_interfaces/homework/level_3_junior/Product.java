@@ -2,6 +2,9 @@ package student_valeriia_kulikova.lesson_9_interfaces.homework.level_3_junior;
 
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Product {
     private String title;
 

@@ -1,7 +1,10 @@
 package student_julija_radchenko.lesson_12_homeworks.level_3_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class NullPointerExceptionDemo {
-    public static void main (String []args){
+    public static void main(String[] args) {
 
         int[] nullLength = null;
         System.out.println(nullLength.length);

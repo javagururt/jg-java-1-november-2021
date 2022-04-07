@@ -1,4 +1,7 @@
 package student_eduards_puzirevskis.lesson_12_exeptions.level_2_intern;
 
- class AccessDeniedException extends Exception {
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+class AccessDeniedException extends Exception {
 }

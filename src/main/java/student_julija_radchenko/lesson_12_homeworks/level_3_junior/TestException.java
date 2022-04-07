@@ -1,12 +1,16 @@
 package student_julija_radchenko.lesson_12_homeworks.level_3_junior;
+
+import teacher.annotations.CodeReview;
+
 //Результат - Got the Test Exception
 //             Inside finally block
 //блок catch отработает, и блок finally отработает в любом случае.
+@CodeReview(approved = true)
+public class TestException extends Exception {
+}
 
-public class TestException extends Exception { }
-
-    class Main {
-public static void main(String args[]) {
+class Main {
+    public static void main(String args[]) {
         try {
         throw new TestException();
         } catch(TestException t) {

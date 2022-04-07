@@ -3,6 +3,9 @@ package student_valeriia_kulikova.lesson_11_collections.homework.level_3_4_junio
 
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class BookForSearch {
     private Long id;
     private String title;

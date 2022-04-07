@@ -2,6 +2,9 @@ package student_andrei_karamnov.lesson_12_exceptions.homework.level_5_middle.int
 
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Product {
 
     private String title;

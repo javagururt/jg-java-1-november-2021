@@ -2,15 +2,18 @@ package student_valeriia_kulikova.lesson_10_junit.homework.level_5_middle;
 
 import java.util.Arrays;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class StringCalculator {
     public int add(String numbers) {
-    String [] numbersStringArray = numbers.split(",");
+        String[] numbersStringArray = numbers.split(",");
         int sum = 0;
         try {
-        for (int i = 0; i < numbersStringArray.length; i++) {
-            sum = sum + Integer.parseInt (numbersStringArray[i]);
-        }}
-        catch (NumberFormatException e) {
+            for (int i = 0; i < numbersStringArray.length; i++) {
+                sum = sum + Integer.parseInt(numbersStringArray[i]);
+            }
+        } catch (NumberFormatException e) {
             System.out.println("Wrong format!");
             return 0;
         }
@@ -21,8 +24,8 @@ public class StringCalculator {
         String [] numbersStringArray = numbers.split(",|\n");
 
         int sum = 0;
-            for (int i = 0; i < numbersStringArray.length; i++) {
-                sum = sum + Integer.parseInt (numbersStringArray[i]);
+        for (int i = 0; i < numbersStringArray.length; i++) {
+            sum = sum + Integer.parseInt (numbersStringArray[i]);
         }
         return sum;
     }

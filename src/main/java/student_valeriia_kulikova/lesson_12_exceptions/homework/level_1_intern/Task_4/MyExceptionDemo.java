@@ -1,5 +1,8 @@
 package student_valeriia_kulikova.lesson_12_exceptions.homework.level_1_intern.Task_4;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class MyExceptionDemo {
     public static void main(String[] args) {
         int a = 10;
@@ -8,8 +11,7 @@ public class MyExceptionDemo {
                 throw new MyException("Our number > 5.");
             }
 
-        }
-        catch (MyException exception) {
+        } catch (MyException exception) {
             System.out.println(exception);
         }
     }

@@ -1,8 +1,11 @@
 package student_eduards_puzirevskis.lesson_14.level_1_2_intern;
 
-@FunctionalInterface
- interface ApplePredicate {
+import teacher.annotations.CodeReview;
 
-     boolean test (Apple apple);
+@CodeReview(approved = true)
+@FunctionalInterface
+interface ApplePredicate {
+
+    boolean test(Apple apple);
 
 }

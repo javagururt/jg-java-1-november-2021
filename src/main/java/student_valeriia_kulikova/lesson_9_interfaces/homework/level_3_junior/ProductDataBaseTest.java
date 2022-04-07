@@ -1,12 +1,15 @@
 package student_valeriia_kulikova.lesson_9_interfaces.homework.level_3_junior;
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class ProductDataBaseTest {
     public static void main(String[] args) {
         ProductDataBaseTest test = new ProductDataBaseTest();
         test.saveProductTest();
         test.findProductByTitleTest();
     }
+
     void saveProductTest(){
         Product product1 = new Product("Alcatel");
         Product product2 = new Product("Apple");
@@ -48,7 +51,6 @@ public class ProductDataBaseTest {
 
         checkResult("TEST 2 (SEARCH)", newBase.findByTitle("Alcatel"), product1 );
         checkResult("TEST 3 (SEARCH)", newBase.findByTitle("Samsung"), product4 );
-
 
 
     }

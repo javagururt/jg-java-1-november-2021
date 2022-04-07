@@ -1,5 +1,7 @@
 package student_eduards_puzirevskis.lesson_12_exeptions.level_3_junior;
 
+import teacher.annotations.CodeReview;
+
 /*
 Получим результат:
    1. Got the Test Exception
@@ -9,7 +11,7 @@ package student_eduards_puzirevskis.lesson_12_exeptions.level_3_junior;
    TestException() выводит на консоль "Got the Test Exception".
    Блок finally выполняется всегда
  */
-
+@CodeReview(approved = true)
  class TestException extends Exception {
 
      public static void main(String[] args) {

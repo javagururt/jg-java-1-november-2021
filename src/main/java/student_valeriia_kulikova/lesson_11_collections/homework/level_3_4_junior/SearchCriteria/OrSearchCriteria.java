@@ -2,7 +2,13 @@ package student_valeriia_kulikova.lesson_11_collections.homework.level_3_4_junio
 
 import java.util.Objects;
 
-public class OrSearchCriteria implements SearchCriteria{
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "обратите внимание на то, что можно упростить до одной строки" +
+        " (почти все методы match можно упростить) ")
+public class OrSearchCriteria implements SearchCriteria {
     private SearchCriteria leftCondition;
     private SearchCriteria rightCondition;
 

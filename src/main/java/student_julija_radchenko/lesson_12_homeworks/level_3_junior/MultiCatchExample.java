@@ -3,16 +3,18 @@ package student_julija_radchenko.lesson_12_homeworks.level_3_junior;
 // который в иерархии классов java.lang стоит ниже, чем Exception.
 // Сначала ловим unchecked исключения, потом checked исключения.
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class MultiCatchExample {
 
     public static void main( String[]args){
         try {
         } catch (ArithmeticException a) {
 
-    } catch (Exception e){
+        } catch (Exception e){
 
-    }
+        }
 
     }
 }

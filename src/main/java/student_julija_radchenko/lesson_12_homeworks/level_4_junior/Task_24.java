@@ -1,5 +1,8 @@
 package student_julija_radchenko.lesson_12_homeworks.level_4_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_24 {
 
     //Найдите в документации Java (javadoc) для чего испольхуются
@@ -10,7 +13,6 @@ public class Task_24 {
     //- StackOverflowError
     //- OutOfMemoryError
     //- NumberFormatException
-
 
 
     //ArrayIndexOutOfBoundsException кидается,

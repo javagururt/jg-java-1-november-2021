@@ -2,8 +2,10 @@ package student_eduards_puzirevskis.lesson_12_exeptions.level_3_junior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
 
- class WrongUserInputHandlingDemo {
+@CodeReview(approved = true)
+class WrongUserInputHandlingDemo {
 
     public static void main(String[] args) {
 

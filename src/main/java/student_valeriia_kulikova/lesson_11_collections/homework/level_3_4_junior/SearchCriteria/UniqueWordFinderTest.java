@@ -3,6 +3,9 @@ package student_valeriia_kulikova.lesson_11_collections.homework.level_3_4_junio
 import java.util.HashSet;
 import java.util.Set;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class UniqueWordFinderTest {
     public static void main(String[] args) {
         UniqueWordFinder testFinder = new UniqueWordFinder();
@@ -12,7 +15,7 @@ public class UniqueWordFinderTest {
         expectedResult.add("two");
         expectedResult.add("three");
 
-        Set <String> realResult = testFinder.find(textForFinder);
+        Set<String> realResult = testFinder.find(textForFinder);
 
         if (expectedResult.equals(realResult)) {
             System.out.println("Test 'Unique word finder' is OK.");

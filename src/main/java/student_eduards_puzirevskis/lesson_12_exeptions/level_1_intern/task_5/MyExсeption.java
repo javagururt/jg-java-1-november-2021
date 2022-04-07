@@ -1,15 +1,18 @@
 package student_eduards_puzirevskis.lesson_12_exeptions.level_1_intern.task_5;
 
- class MyExсeption extends Exception {
+import teacher.annotations.CodeReview;
 
-  private final int exceptionNumber;
+@CodeReview(approved = true)
+class MyExсeption extends Exception {
 
-  MyExсeption(int exceptionNumber, String message) {
-   super(message);
-   this.exceptionNumber = exceptionNumber;
-  }
+    private final int exceptionNumber;
 
-  public int getExceptionNumber() {
-   return exceptionNumber;
-  }
- }
+    MyExсeption(int exceptionNumber, String message) {
+        super(message);
+        this.exceptionNumber = exceptionNumber;
+    }
+
+    public int getExceptionNumber() {
+        return exceptionNumber;
+    }
+}

@@ -2,6 +2,8 @@ package student_eduards_puzirevskis.lesson_12_exeptions.level_3_junior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
 /*
 В первую очередь должна быть изменена последовательность блоков.
 Они должны быть выстроены в последовательности от более частных к обобщенным.
@@ -13,7 +15,7 @@ import java.util.Scanner;
 Блок catch (ArithmeticException a) ловит арифметические ошибки (самый яркий пример: деление на "0", уравнение не имеет корней)
 Блок (Exception e) ловит другие ошибки, к примеру неправильный ввод типа данных
  */
-
+@CodeReview(approved = true)
 class MultiCatchExample {
 
      public static void main(String[] args) {

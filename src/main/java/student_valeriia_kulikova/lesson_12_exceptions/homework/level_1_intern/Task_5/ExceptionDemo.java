@@ -1,15 +1,18 @@
 package student_valeriia_kulikova.lesson_12_exceptions.homework.level_1_intern.Task_5;
 
-public class ExceptionDemo extends Exception{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class ExceptionDemo extends Exception {
     public static void main(String[] args) {
         int a = 10;
         int b = 0;
-        arithmeticException(a,b);
-        int [] array = new int[2];
+        arithmeticException(a, b);
+        int[] array = new int[2];
         arrayException(array, 2);
     }
 
-    public static void arithmeticException (int a, int b){
+    public static void arithmeticException(int a, int b) {
 
         int c;
         try {

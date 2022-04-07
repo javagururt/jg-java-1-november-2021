@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class BookApp {
     public static void main(String[] args) {
         BookUI UI = new BookUI();
@@ -58,7 +61,6 @@ public class BookApp {
         printList("List of Books:", bookDatabase.list);
 
 
-
         BookWithID testByAuthor1 = new BookWithID("Author4", "Title4");
         BookWithID testByAuthor2 = new BookWithID("Author4", "Title5");
 
@@ -103,10 +105,6 @@ public class BookApp {
         }
 
 
-
-
-
-
         BookWithID testDeleteByAuthor1 = new BookWithID("Author2", "Title2");
         BookWithID testDeleteByAuthor2 = new BookWithID("Author3", "Title3");
 
@@ -144,8 +142,6 @@ public class BookApp {
     }
 
 
-
-
     private static void printList(String text, List list) {
         System.out.println(text);
         for (int i = 0; i < list.size(); i++) {
@@ -153,7 +149,6 @@ public class BookApp {
         }
         System.out.println();
     }
-
 
 
 }

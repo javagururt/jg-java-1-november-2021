@@ -1,5 +1,8 @@
 package student_valeriia_kulikova.lesson_12_exceptions.homework.level_3_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class NullPointerExceptionDemo {
     public static void main(String[] args) {
         String text = null;

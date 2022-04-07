@@ -2,7 +2,10 @@ package student_valeriia_kulikova.lesson_11_collections.homework.level_3_4_junio
 
 import java.util.Objects;
 
-public class YearOfIssueSearchCriteria implements SearchCriteria{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class YearOfIssueSearchCriteria implements SearchCriteria {
     private String yearOfIssueToSearch;
 
     public YearOfIssueSearchCriteria(String yearOfIssueToSearch) {

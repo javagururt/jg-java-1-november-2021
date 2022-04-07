@@ -1,6 +1,9 @@
 package student_eduards_puzirevskis.lesson_12_exeptions.level_3_junior;
 
- class Task_22 {
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+class Task_22 {
 
   /*
   Какой класс в Java является главным в иерархии классов ошибок

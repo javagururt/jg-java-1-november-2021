@@ -2,7 +2,11 @@ package student_valeriia_kulikova.lesson_11_collections.homework.level_3_4_junio
 
 import java.util.Objects;
 
-public class AndSearchCriteria implements SearchCriteria{
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+public class AndSearchCriteria implements SearchCriteria {
     private SearchCriteria leftCondition;
     private SearchCriteria rightCondition;
 
@@ -12,12 +16,15 @@ public class AndSearchCriteria implements SearchCriteria{
         this.rightCondition = rightCondition;
     }
 
+    @CodeReviewComment(comment = "можно упрости до" +
+            "return leftCondition.match(book) && rightCondition.match(book);")
     public boolean match(BookForSearch book) {
 
         if (leftCondition.match(book) && rightCondition.match(book)) {
             return true;
         } else {
-            return false;}
+            return false;
+        }
     }
 
     @Override

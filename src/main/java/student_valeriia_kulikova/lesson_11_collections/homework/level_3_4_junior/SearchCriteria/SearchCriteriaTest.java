@@ -5,6 +5,12 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "если используете `var`, то используйте везде." +
+        " Чтобы всегда был один стиль написания программы.")
 public class SearchCriteriaTest {
     public static void main(String[] args) {
         String author = "Author1";
@@ -13,7 +19,7 @@ public class SearchCriteriaTest {
         var authorSC = new AuthorSearchCriteria(author);
         var titleSC = new TitleSearchCriteria(title);
         var yearSC = new YearOfIssueSearchCriteria(year);
-        var andSC = new AndSearchCriteria(authorSC,titleSC);
+        var andSC = new AndSearchCriteria(authorSC, titleSC);
         var orSC = new OrSearchCriteria(authorSC, yearSC);
 
 
@@ -25,7 +31,7 @@ public class SearchCriteriaTest {
 
         BookForSearchDatabaseImpl bookList = new BookForSearchDatabaseImpl();
 
-       BookForSearch book1 = new BookForSearch("Author1", "title1", "1990");
+        BookForSearch book1 = new BookForSearch("Author1", "title1", "1990");
         BookForSearch book2 = new BookForSearch("Kuper", "title2", "1991");
         BookForSearch book3 = new BookForSearch("Author3", "Zveroboi", "1890");
         BookForSearch book4 = new BookForSearch("Kuper", "Zveroboi", "1890");
@@ -87,6 +93,7 @@ public class SearchCriteriaTest {
 
         printTestResult("Test 10.2 (false) 'Contains Book'", !bookList.contains(book6));
     }
+
     public static void printTestResult(String text, boolean result) {
         if (result) {
             System.out.println(text + " is OK");

@@ -1,7 +1,10 @@
 package student_eduards_puzirevskis.lesson_12_exeptions.level_2_intern;
 
- enum Role {
+import teacher.annotations.CodeReview;
 
-  CAN_SEARCH_CLIENTS
+@CodeReview(approved = true)
+enum Role {
+
+    CAN_SEARCH_CLIENTS
 
 }

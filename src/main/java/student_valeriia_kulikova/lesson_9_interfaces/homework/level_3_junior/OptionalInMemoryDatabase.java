@@ -3,14 +3,20 @@ package student_valeriia_kulikova.lesson_9_interfaces.homework.level_3_junior;
 import java.util.Objects;
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class OptionalInMemoryDatabase implements OptionalProductDatabase {
 
-    private Product [] products;
+    private Product[] products;
 
     public Product[] getProducts() {
         return products;
     }
-    public OptionalInMemoryDatabase () {products = new Product[0];}
+
+    public OptionalInMemoryDatabase() {
+        products = new Product[0];
+    }
 
     @Override
     public void save(Product product) {

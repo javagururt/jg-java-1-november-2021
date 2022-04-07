@@ -6,7 +6,11 @@ import java.util.List;
 import java.util.Objects;
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
 
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "list лучше сделать private, чтобы только база имела доступ к списку")
 public class BookDatabaseImpl implements  BookDatabase {
 
     List<BookWithID> list = new ArrayList<>();

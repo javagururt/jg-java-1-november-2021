@@ -2,12 +2,16 @@ package student_valeriia_kulikova.lesson_11_collections.homework.level_3_4_junio
 
 import java.util.Objects;
 
-public class TitleSearchCriteria implements SearchCriteria{
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class TitleSearchCriteria implements SearchCriteria {
     private String titleToSearch;
 
     public TitleSearchCriteria(String titleToSearch) {
         this.titleToSearch = titleToSearch;
     }
+
     @Override
     public boolean match(BookForSearch book) {
 

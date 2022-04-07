@@ -2,6 +2,9 @@ package student_dmitrijs_sinkevics.lesson_12.lvl_3_junior;
 
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class WrongUserInputHandlingDemo {
 
     public static void main(String[] args) {

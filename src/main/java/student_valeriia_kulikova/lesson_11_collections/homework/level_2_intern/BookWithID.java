@@ -2,7 +2,10 @@ package student_valeriia_kulikova.lesson_11_collections.homework.level_2_intern;
 
 import java.util.Objects;
 
-public class BookWithID  {
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+public class BookWithID {
     private Long id;
     private String title;
     private String author;

@@ -7,7 +7,11 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
 
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "список должен быть private, чтобы у других не было прямого доступа")
 public class BookForSearchDatabaseImpl implements BookForSearchDatabase {
 
     List<BookForSearch> list = new ArrayList<>();
@@ -19,7 +23,8 @@ public class BookForSearchDatabaseImpl implements BookForSearchDatabase {
     }
 
 
-
+    @CodeReviewComment(comment = "можно упростить до 1 строки." +
+            "return list.size();")
     @Override
     public int countAllBooks() {
         int count = list.size();
@@ -31,7 +36,7 @@ public class BookForSearchDatabaseImpl implements BookForSearchDatabase {
         List<BookForSearch> newCollection = new ArrayList<>();
         for (int i = 0; i < list.size(); i++) {
             if (searchCriteria.match(list.get(i))) {
-                    newCollection.add(list.get(i));
+                newCollection.add(list.get(i));
             }
         }
         return newCollection;
@@ -69,12 +74,12 @@ public class BookForSearchDatabaseImpl implements BookForSearchDatabase {
 
         for (int i = 0; i < list.size(); i++) {
             if (book.getAuthor().equals(list.get(i).getAuthor()) &&
-                book.getTitle().equals(list.get(i).getTitle()) &&
-                book.getYearOfIssueToSearch().equals(list.get(i).getYearOfIssueToSearch())) {
+                    book.getTitle().equals(list.get(i).getTitle()) &&
+                    book.getYearOfIssueToSearch().equals(list.get(i).getYearOfIssueToSearch())) {
                 return true;
 
             }
-            }
+        }
         return false;
     }
 }

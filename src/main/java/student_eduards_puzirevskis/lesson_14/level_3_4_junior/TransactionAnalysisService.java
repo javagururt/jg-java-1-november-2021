@@ -1,24 +1,26 @@
 package student_eduards_puzirevskis.lesson_14.level_3_4_junior;
 
 import java.util.Comparator;
-import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class TransactionAnalysisService {
 
-     public List<Transaction> findTransactionsByYear(List<Transaction> transactionList, int year) {
-      return transactionList.stream()
-              .filter(transaction -> transaction.getYear() == year)
-              .toList();
-     }
+    public List<Transaction> findTransactionsByYear(List<Transaction> transactionList, int year) {
+        return transactionList.stream()
+                .filter(transaction -> transaction.getYear() == year)
+                .toList();
+    }
 
-     public List<Transaction> sortTransactionsByValueIncrease(List<Transaction> transactions) {
-     return  transactions.stream()
-                 .sorted(Comparator.comparing(Transaction::getValue))
-                 .toList();
-     }
+    public List<Transaction> sortTransactionsByValueIncrease(List<Transaction> transactions) {
+        return transactions.stream()
+                .sorted(Comparator.comparing(Transaction::getValue))
+                .toList();
+    }
 
     public List<Transaction> sortTransactionsByValueDecrease(List<Transaction> transactions) {
         return  transactions.stream()

@@ -3,6 +3,9 @@ package student_valeriia_kulikova.lesson_11_collections.homework.level_1_intern;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_2 {
     public static void main(String[] args) {
         List<Integer> list1 = new ArrayList<>();

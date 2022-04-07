@@ -1,15 +1,18 @@
 package student_eduards_puzirevskis.lesson_14.level_1_2_intern;
 
- class AppleGreenColorPredicate implements ApplePredicate {
-     @Override
-     public boolean test(Apple apple) {
-         return "green".equals(apple.getColor());
-     }
- }
+import teacher.annotations.CodeReview;
 
- class AppleRedColorPredicate implements ApplePredicate {
-     @Override
-     public boolean test(Apple apple) {
+@CodeReview(approved = true)
+class AppleGreenColorPredicate implements ApplePredicate {
+    @Override
+    public boolean test(Apple apple) {
+        return "green".equals(apple.getColor());
+    }
+}
+
+class AppleRedColorPredicate implements ApplePredicate {
+    @Override
+    public boolean test(Apple apple) {
          return "red".equals(apple.getColor());
      }
  }

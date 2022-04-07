@@ -3,6 +3,9 @@ package student_andrei_karamnov.lesson_12_exceptions.homework.level_3_junior;
 import java.io.IOException;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class WrongUserInputHandlingDemo {
 
     /*Создайте класс WrongUserInputHandlingDemo

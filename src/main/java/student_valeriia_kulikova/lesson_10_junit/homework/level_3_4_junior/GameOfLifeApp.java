@@ -3,6 +3,9 @@ package student_valeriia_kulikova.lesson_10_junit.homework.level_3_4_junior;
 import java.util.Random;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class GameOfLifeApp {
     public static void main(String[] args) {
         GameOfLifeNextGenerationCalculator test = new GameOfLifeNextGenerationCalculator();
@@ -12,17 +15,17 @@ public class GameOfLifeApp {
         int choice = 0;
         while (checkChoice) {
             choice = newGame.userChoice();
-        if (choice == 1 || choice == 2) {
-            checkChoice = false;}
+            if (choice == 1 || choice == 2) {
+                checkChoice = false;}
         }
         boolean [][] gameField = newGame.createArray(choice);
         gameField = generator.fillingArray(gameField);
 
-         for (int i = 0; i < 10; i++) {
-             gameField = test.calculate(gameField);
-             System.out.println("****************** NEXT GENERATION *********************");
-             newGame.printGeneration(gameField);
-         }
+        for (int i = 0; i < 10; i++) {
+            gameField = test.calculate(gameField);
+            System.out.println("****************** NEXT GENERATION *********************");
+            newGame.printGeneration(gameField);
+        }
     }
 
     public int userChoice () {

@@ -3,6 +3,11 @@ package student_valeriia_kulikova.lesson_12_exceptions.homework.level_2_intern;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "указывайте generics. List<BankClient> clients = new ArrayList<>();")
 public class BankApiImplTest {
     public static void main(String[] args) {
         BankApiImplTest test = new BankApiImplTest();

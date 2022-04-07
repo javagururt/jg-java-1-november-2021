@@ -1,6 +1,9 @@
 package student_eduards_puzirevskis.lesson_12_exeptions.level_4_junior;
 
- class StackOverflowErrorDemo {
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
+class StackOverflowErrorDemo {
 
 //     public static void main(String[] args) {
 //

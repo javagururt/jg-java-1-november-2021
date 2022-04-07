@@ -1,5 +1,8 @@
 package student_valeriia_kulikova.lesson_9_interfaces.homework.level_3_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Task_6 {
     @FunctionalInterface
     public interface Function<T, R> {
