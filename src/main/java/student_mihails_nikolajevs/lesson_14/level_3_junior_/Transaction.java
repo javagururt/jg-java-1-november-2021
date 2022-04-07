@@ -2,6 +2,9 @@ package student_mihails_nikolajevs.lesson_14.level_3_junior_;
 
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Transaction {
 
     private Trader trader;
@@ -31,6 +34,7 @@ public class Transaction {
                 "year: "+this.year+", " +
                 "value:" + this.value +"}";
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -38,6 +42,7 @@ public class Transaction {
         Transaction that = (Transaction) o;
         return year == that.year && value == that.value && Objects.equals(trader, that.trader);
     }
+
     @Override
     public int hashCode(){
 

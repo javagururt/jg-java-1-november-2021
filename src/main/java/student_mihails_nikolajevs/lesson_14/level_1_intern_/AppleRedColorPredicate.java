@@ -1,10 +1,13 @@
 package student_mihails_nikolajevs.lesson_14.level_1_intern_;
 
-public class AppleRedColorPredicate implements  ApplePredicate {
+import teacher.annotations.CodeReview;
 
-     @Override
+@CodeReview(approved = true)
+public class AppleRedColorPredicate implements ApplePredicate {
+
+    @Override
     public boolean test(Apple apple) {
-         return "red".equals(apple.getColor());
+        return "red".equals(apple.getColor());
 
-     }
+    }
 }

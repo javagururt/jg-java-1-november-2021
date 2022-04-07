@@ -1,7 +1,9 @@
 package student_mihails_nikolajevs.lesson_14.level_3_junior_;
 
-//Вам поручили задачу по анализу данных в домене трейдеров и транзакций.
+import teacher.annotations.CodeReview;
 
+//Вам поручили задачу по анализу данных в домене трейдеров и транзакций.
+@CodeReview(approved = true)
 public class Trader {
 
     private String name;

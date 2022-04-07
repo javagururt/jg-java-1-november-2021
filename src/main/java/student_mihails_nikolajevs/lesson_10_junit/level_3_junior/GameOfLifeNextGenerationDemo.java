@@ -3,6 +3,9 @@ package student_mihails_nikolajevs.lesson_10_junit.level_3_junior;
 import java.util.Random;
 import java.util.Scanner;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class GameOfLifeNextGenerationDemo {
 
     public static void main(String[] args) {

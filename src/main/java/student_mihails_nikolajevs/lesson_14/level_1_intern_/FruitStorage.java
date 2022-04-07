@@ -3,6 +3,9 @@ package student_mihails_nikolajevs.lesson_14.level_1_intern_;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class FruitStorage {
 
     public List<Apple> getAllApples() {
@@ -17,6 +20,7 @@ class FruitStorage {
         apples.add(new Apple("yellow", 170));
         return apples;
     }
+
     public List<Apple> findApplesByColor(List<Apple> inventory, String color) {
         List<Apple> result = new ArrayList<>();
         for(Apple apple : inventory) {
@@ -26,6 +30,7 @@ class FruitStorage {
         }
         return result;
     }
+
     public List<Apple> findApples(List<Apple> inventory, ApplePredicate p) {
         List<Apple> result = new ArrayList<>();
         for(Apple apple : inventory) {

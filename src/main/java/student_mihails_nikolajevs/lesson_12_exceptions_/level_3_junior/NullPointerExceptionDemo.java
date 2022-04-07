@@ -1,9 +1,13 @@
 package student_mihails_nikolajevs.lesson_12_exceptions_.level_3_junior;
+
+import teacher.annotations.CodeReview;
+
 /*
 Создайте класс NullPointerExceptionDemo
 и в main() методе этого класса
 В комментариях напишите, когда происходит NullPointerException.
  */
+@CodeReview(approved = true)
 public class NullPointerExceptionDemo {
 
     public static void main(String[] args) {

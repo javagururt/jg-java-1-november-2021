@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_9.level_3_junior_.task_8_;
+
+import teacher.annotations.CodeReview;
+
 /*
 Создайте реализацию следующего интерфейса.
 
@@ -40,6 +43,7 @@ class Product {
 
 }
  */
+@CodeReview(approved = true)
 public interface ProductDatabase {
     void save(Product product);
 

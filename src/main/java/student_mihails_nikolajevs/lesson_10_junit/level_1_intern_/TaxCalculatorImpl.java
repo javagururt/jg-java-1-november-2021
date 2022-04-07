@@ -1,6 +1,9 @@
 package student_mihails_nikolajevs.lesson_10_junit.level_1_intern_;
 
 import java.math.BigDecimal;
+
+import teacher.annotations.CodeReview;
+
 /*
 Вам поручили разработать калькулятор налогов.
 В стране используется прогрессивная ставка налога.
@@ -16,6 +19,7 @@ interface TaxCalculator {
 
 }
  */
+@CodeReview(approved = true)
 public class TaxCalculatorImpl implements TaxCalculator {
 
     @Override

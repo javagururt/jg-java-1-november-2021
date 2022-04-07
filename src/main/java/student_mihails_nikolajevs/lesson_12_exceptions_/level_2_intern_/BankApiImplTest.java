@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "переменная clients - не используется. Указывайте generics при создании списков.")
 public class BankApiImplTest {
 
     public static void main(String[] args) {

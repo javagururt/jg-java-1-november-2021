@@ -4,13 +4,16 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class TransactionAnalysisService {
 
-   // public List<Transaction> findTransactionsIn2011(List<Transaction> transactions) {
-   //      return transactions.stream()
-   //            .filter(t -> t.getYear() == 2011)
-   //            .toList());
-   //  }
+    // public List<Transaction> findTransactionsIn2011(List<Transaction> transactions) {
+    //      return transactions.stream()
+    //            .filter(t -> t.getYear() == 2011)
+    //            .toList());
+    //  }
 
     public List<Transaction> findTransactionsByYear(List<Transaction> transactions, int year) {
         return transactions.stream()

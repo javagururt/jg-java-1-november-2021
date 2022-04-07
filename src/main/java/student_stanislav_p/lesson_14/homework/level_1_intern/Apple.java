@@ -3,6 +3,9 @@ package student_stanislav_p.lesson_14.homework.level_1_intern;
 
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class Apple {
     private String color;
     private int weight;

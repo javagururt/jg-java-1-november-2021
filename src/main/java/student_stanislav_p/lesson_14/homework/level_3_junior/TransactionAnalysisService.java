@@ -1,11 +1,13 @@
 package student_stanislav_p.lesson_14.homework.level_3_junior;
 
 
-
 import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class TransactionAnalysisService {
 
     public List<Transaction> findTransactionsByYear(List<Transaction> transactions, int year) {

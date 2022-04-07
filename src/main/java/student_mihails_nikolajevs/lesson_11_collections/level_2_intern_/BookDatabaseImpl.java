@@ -1,7 +1,13 @@
 package student_mihails_nikolajevs.lesson_11_collections.level_2_intern_;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Optional;
+import java.util.Set;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class BookDatabaseImpl implements BookDatabase {
 
     List<Book> bookList = new ArrayList<>();
@@ -35,6 +41,7 @@ class BookDatabaseImpl implements BookDatabase {
         }
         return false;
     }
+
     @Override
     public Optional<Book> findById(Long bookId) {
         for (Book book : bookList) {
@@ -70,23 +77,24 @@ class BookDatabaseImpl implements BookDatabase {
     @Override
     public int countAllBooks() {
 
-    int bookCounter = 0;
-        for ( int i = 0; i < bookList.size(); i++) {
+        int bookCounter = 0;
+        for (int i = 0; i < bookList.size(); i++) {
             bookCounter++;
-    }
-     return bookCounter;
+        }
+        return bookCounter;
 }
 
     @Override
     public void deleteByAuthor(String author) {
 
         bookList.removeIf(book -> book.getAuthor().equals(author));
-     }
-     @Override
+    }
+
+    @Override
     public void deleteByTitle(String title) {
 
         bookList.removeIf(book -> book.getTitle().equals(title));
-     }
+    }
 
     @Override
     public Set<String> findUniqueAuthors() {
@@ -100,15 +108,15 @@ class BookDatabaseImpl implements BookDatabase {
                 return true;
             }
         } return false;
-     }
+    }
 
 
-     private int getBookIndexInListById(Long bookId) {
+    private int getBookIndexInListById(Long bookId) {
         int bookIndexInList = 0;
         for (int i = 0; i < bookList.size(); i++) {
             if (bookList.get(i).getId().equals(bookId)) {
                 bookIndexInList = i;
             }
         } return bookIndexInList;
-     }
+    }
 }

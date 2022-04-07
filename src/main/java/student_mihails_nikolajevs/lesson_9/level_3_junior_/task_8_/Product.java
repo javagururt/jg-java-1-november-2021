@@ -1,18 +1,23 @@
 package student_mihails_nikolajevs.lesson_9.level_3_junior_.task_8_;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Product {
 
-   private String title;
+    private String title;
 
-   public Product(String title) {
-       this.title = title;
-   }
-   public String getTitle() {
-       return this.title;
-   }
-   public void setTitle(String title) {
-       this.title = title;
-   }
+    public Product(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return this.title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
 }
 
 

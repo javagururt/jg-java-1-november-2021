@@ -1,7 +1,9 @@
 package student_mihails_nikolajevs.lesson_9.level_3_junior_.task_7_;
 
-// interface ProductDatabase Не ЯВЛЯЕТСЯ ФУНКЦИОНАЛЬНЫМ!
+import teacher.annotations.CodeReview;
 
+// interface ProductDatabase Не ЯВЛЯЕТСЯ ФУНКЦИОНАЛЬНЫМ!
+@CodeReview(approved = true)
 public interface ProductDatabase {
     void save(Product product);
 

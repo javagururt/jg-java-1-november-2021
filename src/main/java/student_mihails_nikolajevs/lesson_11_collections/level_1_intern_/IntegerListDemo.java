@@ -9,19 +9,22 @@ package student_mihails_nikolajevs.lesson_11_collections.level_1_intern_;
 - обойти список и вывести на консоль каждый элемент.
  */
 
-import java.util.List;
 import java.util.ArrayList;
+import java.util.List;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class IntegerListDemo {
 
     public static void main(String[] args) {
 
-        List <Integer> demoList = new ArrayList<>();
+        List<Integer> demoList = new ArrayList<>();
         demoList.add(2);
         demoList.add(5);
         demoList.add(7);
         demoList.add(10);
-        demoList.add(2,4);
+        demoList.add(2, 4);
         System.out.println("Your Size List : " + demoList.size());
 
         demoList.remove(3);
@@ -30,9 +33,9 @@ public class IntegerListDemo {
         System.out.println("Your Size List : " + demoList.size());
         System.out.println("Is Your List is Empty Now ? " + demoList.isEmpty());
 
-            for (Integer listItem : demoList) {
-                System.out.println( "Your List includes element : " + listItem);
-            }
+        for (Integer listItem : demoList) {
+            System.out.println( "Your List includes element : " + listItem);
+        }
     }
 
 }

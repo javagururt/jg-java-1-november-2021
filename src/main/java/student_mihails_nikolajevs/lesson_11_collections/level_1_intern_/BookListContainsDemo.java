@@ -4,6 +4,9 @@ package student_mihails_nikolajevs.lesson_11_collections.level_1_intern_;
 import java.util.ArrayList;
 import java.util.List;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class BookListContainsDemo {
 
     public static void main(String[] args) {

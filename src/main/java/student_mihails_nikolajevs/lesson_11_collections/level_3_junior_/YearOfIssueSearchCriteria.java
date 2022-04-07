@@ -1,7 +1,9 @@
 package student_mihails_nikolajevs.lesson_11_collections.level_3_junior_;
 
 import student_mihails_nikolajevs.lesson_11_collections.level_2_intern_.Book;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class YearOfIssueSearchCriteria implements SearchCriteria {
 
     private final int  yearOfIssueToSearch;
@@ -14,6 +16,7 @@ public class YearOfIssueSearchCriteria implements SearchCriteria {
     public boolean match(Book book) {
         return book.getYearOfIssue() == this.yearOfIssueToSearch;
     }
+
     @Override
     public String searchCriteriaName() {
         return "Year of Issue Criteria";

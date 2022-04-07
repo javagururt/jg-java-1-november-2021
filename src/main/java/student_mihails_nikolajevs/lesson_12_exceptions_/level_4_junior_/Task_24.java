@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_12_exceptions_.level_4_junior_;
+
+import teacher.annotations.CodeReview;
+
 /*
 Знакомство с классами ошибок.
 
@@ -11,6 +14,7 @@ package student_mihails_nikolajevs.lesson_12_exceptions_.level_4_junior_;
 - OutOfMemoryError
 - NumberFormatException
  */
+@CodeReview(approved = true)
 public class Task_24 {
 
 // 1. ArrayIndexOutOfBoundsException - это исключение, появляющееся во время выполнения. Оно возникает тогда,

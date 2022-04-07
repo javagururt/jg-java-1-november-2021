@@ -1,4 +1,7 @@
 package student_mihails_nikolajevs.lesson_12_exceptions_.level_3_junior;
+
+import teacher.annotations.CodeReview;
+
 /*
 Какой результат мы получим?
 1. Got the Test Exception
@@ -10,6 +13,7 @@ package student_mihails_nikolajevs.lesson_12_exceptions_.level_3_junior;
 
 4. Compiler Error
  */
+@CodeReview(approved = true)
 public class TestException extends Exception {}
 
     class Main {

@@ -1,5 +1,8 @@
 package student_mihails_nikolajevs.lesson_9.level_3_junior_.task_6_;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 interface MyValue {
     double getValue();
 }

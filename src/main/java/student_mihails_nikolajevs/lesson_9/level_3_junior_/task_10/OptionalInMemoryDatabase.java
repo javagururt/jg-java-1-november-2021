@@ -2,6 +2,9 @@ package student_mihails_nikolajevs.lesson_9.level_3_junior_.task_10;
 
 import java.util.Optional;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 class OptionalInMemoryDatabase implements ProductDatabase {
 
     private Product[] database;

@@ -8,10 +8,12 @@ package student_mihails_nikolajevs.lesson_11_collections.level_3_junior_;
     boolean match(Book book);
  */
 import student_mihails_nikolajevs.lesson_11_collections.level_2_intern_.Book;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public interface SearchCriteria {
 
-   boolean match(Book book);
+    boolean match(Book book);
 
     String searchCriteriaName();
 }

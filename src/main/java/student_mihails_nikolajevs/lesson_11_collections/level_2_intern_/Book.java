@@ -16,8 +16,12 @@ Id это целое число. Первая в базе книга получ�
 Реализуйте в нём метод  Long save(Book book). Книги внутри класса BookDatabaseImpl
 храните в списке.
  */
+
 import java.util.Objects;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class Book {
     private Long id;
     private String title;
@@ -50,6 +54,7 @@ public class Book {
     public void setYearOfIssue(int yearOfIssue){
         this.yearOfIssue = yearOfIssue;
     }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

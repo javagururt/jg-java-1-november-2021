@@ -1,6 +1,8 @@
 package student_mihails_nikolajevs.lesson_9.level_3_junior_.task_9_;
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class Optional {
 /*
 Найдите в интернете информацию про класс java.util.Optional.

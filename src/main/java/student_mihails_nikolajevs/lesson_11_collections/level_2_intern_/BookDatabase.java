@@ -4,6 +4,9 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Set;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public interface BookDatabase {
 
     Long save(Book book);
@@ -25,7 +28,6 @@ public interface BookDatabase {
     void deleteByTitle(String title);
 
     Set<String> findUniqueAuthors();
-
 
 
 }

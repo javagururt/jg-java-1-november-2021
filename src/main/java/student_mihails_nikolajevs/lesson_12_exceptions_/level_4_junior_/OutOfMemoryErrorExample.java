@@ -7,15 +7,21 @@ package student_mihails_nikolajevs.lesson_12_exceptions_.level_4_junior_;
 
 Память JVM не безгранична!
  */
+
 import java.util.ArrayList;
 
+import teacher.annotations.CodeReview;
+import teacher.annotations.CodeReviewComment;
+
+@CodeReview(approved = true)
+@CodeReviewComment(comment = "указывайте gennerics. ArrayList<Integer> arrayList = new ArrayList<>();")
 public class OutOfMemoryErrorExample {
 
     public static void main(String[] args) {
 
-        ArrayList arrayList = new ArrayList<>();
+        ArrayList<Integer> arrayList = new ArrayList<>();
         int number = 5000;
-        while (true){
+        while (true) {
             arrayList.add(number);
         }
     }

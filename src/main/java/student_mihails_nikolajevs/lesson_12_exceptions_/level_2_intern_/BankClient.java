@@ -1,5 +1,8 @@
 package student_mihails_nikolajevs.lesson_12_exceptions_.level_2_intern_;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class BankClient {
 
     private String uid;      // уникальный идентификатор клиента
@@ -12,9 +15,11 @@ public class BankClient {
         this.uid = uid;
         this.fullName = fullName;
     }
+
     public String getUid(){
         return this.uid;
     }
+
     public String getFullName(){
         return this.fullName;
     }

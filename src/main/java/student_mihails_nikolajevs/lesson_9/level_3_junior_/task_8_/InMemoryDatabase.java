@@ -1,7 +1,9 @@
 package student_mihails_nikolajevs.lesson_9.level_3_junior_.task_8_;
 
 
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class InMemoryDatabase implements ProductDatabase {
 
     private Product[] data;

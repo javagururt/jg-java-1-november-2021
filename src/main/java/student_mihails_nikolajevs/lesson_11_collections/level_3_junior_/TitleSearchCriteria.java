@@ -1,7 +1,9 @@
 package student_mihails_nikolajevs.lesson_11_collections.level_3_junior_;
 
 import student_mihails_nikolajevs.lesson_11_collections.level_2_intern_.Book;
+import teacher.annotations.CodeReview;
 
+@CodeReview(approved = true)
 public class TitleSearchCriteria implements SearchCriteria {
 
     private String titleToSearch;
@@ -13,7 +15,8 @@ public class TitleSearchCriteria implements SearchCriteria {
     @Override
     public boolean match(Book book) {
         return book.getTitle().equals(this.titleToSearch);
-        }
+    }
+
     @Override
     public String searchCriteriaName() {
         return "Title Criteria";

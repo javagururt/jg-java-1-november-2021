@@ -1,5 +1,8 @@
 package student_mihails_nikolajevs.lesson_12_exceptions_.level_3_junior;
 
+import teacher.annotations.CodeReview;
+
+@CodeReview(approved = true)
 public class MultiCatchExample {
 
     public static void main(String[] args) {
