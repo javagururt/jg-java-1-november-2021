@@ -27,4 +27,5 @@ public class DayOfTheWeekDetectorDemo {
         String dayName = type.detectDayName(numberOfDay);
         System.out.println("Your day: " + dayName);
     }
+
 }
