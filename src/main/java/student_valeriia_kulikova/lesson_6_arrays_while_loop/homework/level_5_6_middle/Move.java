@@ -1,4 +1,4 @@
-package student_valeriia_kulikova.lesson_6_arrays_while_loop.homework.level_5_middle;
+package student_valeriia_kulikova.lesson_6_arrays_while_loop.homework.level_5_6_middle;
 
 public class Move {
     private int x;
