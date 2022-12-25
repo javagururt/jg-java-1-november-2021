@@ -2,7 +2,7 @@ package student_mihails_nikolajevs.lesson_14;
 
 
 
-public class wholeNumber {
+public class WholeNumber {
     public static void main(String[] args) {
 
         double a = 10;
