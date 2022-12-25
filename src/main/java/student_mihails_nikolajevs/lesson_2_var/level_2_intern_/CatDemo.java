@@ -16,9 +16,9 @@ public class CatDemo {
         Cat secondCat = new Cat();
         secondCat.name = "Barsik";
         System.out.println(secondCat.name);
-        Cat thirdCat = new Cat();
-        thirdCat.name = "Bella";
+        Cat thirdCat = new Cat("Bella");
         System.out.println(thirdCat.name);
+
 
     }
 

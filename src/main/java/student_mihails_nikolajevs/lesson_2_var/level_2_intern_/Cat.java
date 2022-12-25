@@ -4,5 +4,10 @@ public class Cat {
    String name;
    int age;
    boolean hungry;
+   public Cat(){
 
+   }
+   public Cat(String newName) {
+      name = newName;
+   }
 }
