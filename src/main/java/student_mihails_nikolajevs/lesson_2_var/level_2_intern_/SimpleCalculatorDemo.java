@@ -14,8 +14,8 @@ public class SimpleCalculatorDemo {
         int b = scanner.nextInt();
 
         int userSumResult = calculator.sum(a,b);
-        System.out.println("Sum Result : " + userSumResult);
 
+        calculator.printSum(userSumResult);
     }
 
 }

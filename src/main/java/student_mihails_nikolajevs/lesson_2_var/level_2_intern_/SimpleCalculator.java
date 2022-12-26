@@ -7,4 +7,8 @@ public class SimpleCalculator {
     return result;
 
    }
+   public void printSum(int result){
+       System.out.println("Sum result = " + result);
+   }
+
 }
