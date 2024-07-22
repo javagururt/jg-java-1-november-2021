@@ -12,7 +12,7 @@ class VariablesDemo {
         System.out.println(age);
 
         int sumResult = x + y;
-        System.out.println("Sum Result =" + sumResult);
+        System.out.println("Sum Result = " + sumResult);
 
         boolean wantToDrink = true;
         System.out.println(wantToDrink);
